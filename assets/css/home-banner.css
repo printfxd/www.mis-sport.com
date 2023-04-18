@@ -1,0 +1,600 @@
+
+/* Banner */
+
+    #banner {
+        background-color: #000000;
+        color: #ffffff;
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        min-height: 40rem;
+        min-height: 95vh;
+        position: relative;
+        width: 100%;
+    }
+
+        #banner input, #banner select, #banner textarea {
+            color: #ffffff;
+        }
+
+        #banner a {
+            color: #ffffff;
+        }
+
+        #banner strong, #banner b {
+            color: #ffffff;
+        }
+
+        #banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
+            color: #ffffff;
+        }
+
+        #banner blockquote {
+            border-left-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner code {
+            background: rgba(255, 255, 255, 0.065);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner hr {
+            border-bottom-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner .box {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner input[type="submit"],
+        #banner input[type="reset"],
+        #banner input[type="button"],
+        #banner button,
+        #banner .button {
+            background-color: transparent;
+            border-color: #ffffff;
+            color: #ffffff !important;
+        }
+
+            #banner input[type="submit"]:after,
+            #banner input[type="reset"]:after,
+            #banner input[type="button"]:after,
+            #banner button:after,
+            #banner .button:after {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+            }
+
+            #banner input[type="submit"]:hover, #banner input[type="submit"]:focus,
+            #banner input[type="reset"]:hover,
+            #banner input[type="reset"]:focus,
+            #banner input[type="button"]:hover,
+            #banner input[type="button"]:focus,
+            #banner button:hover,
+            #banner button:focus,
+            #banner .button:hover,
+            #banner .button:focus {
+                background-color: rgba(255, 255, 255, 0.065);
+            }
+
+            #banner input[type="submit"]:active,
+            #banner input[type="reset"]:active,
+            #banner input[type="button"]:active,
+            #banner button:active,
+            #banner .button:active {
+                background-color: rgba(255, 255, 255, 0.165);
+            }
+
+            #banner input[type="submit"].icon:before,
+            #banner input[type="reset"].icon:before,
+            #banner input[type="button"].icon:before,
+            #banner button.icon:before,
+            #banner .button.icon:before {
+                color: #ffffff;
+            }
+
+            #banner input[type="submit"].primary,
+            #banner input[type="reset"].primary,
+            #banner input[type="button"].primary,
+            #banner button.primary,
+            #banner .button.primary {
+                box-shadow: none;
+                background-color: #000000;
+                color: #ffffff !important;
+            }
+
+                #banner input[type="submit"].primary:hover,
+                #banner input[type="reset"].primary:hover,
+                #banner input[type="button"].primary:hover,
+                #banner button.primary:hover,
+                #banner .button.primary:hover {
+                    background-color: rgba(0, 0, 0, 0.75);
+                }
+
+                #banner input[type="submit"].primary.icon:before,
+                #banner input[type="reset"].primary.icon:before,
+                #banner input[type="button"].primary.icon:before,
+                #banner button.primary.icon:before,
+                #banner .button.primary.icon:before {
+                    color: #ffffff !important;
+                }
+
+        #banner label {
+            color: #ffffff;
+        }
+
+        #banner input[type="text"],
+        #banner input[type="password"],
+        #banner input[type="email"],
+        #banner select,
+        #banner textarea {
+            background-color: #000000;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+            #banner input[type="text"]:focus,
+            #banner input[type="password"]:focus,
+            #banner input[type="email"]:focus,
+            #banner select:focus,
+            #banner textarea:focus {
+                border-color: #ffffff;
+                box-shadow: 0 0 0 1px #ffffff;
+            }
+
+        #banner select {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E");
+        }
+
+            #banner select option {
+                color: #ffffff;
+                background: #000000;
+            }
+
+        #banner input[type="checkbox"] + label,
+        #banner input[type="radio"] + label {
+            color: #ffffff;
+        }
+
+            #banner input[type="checkbox"] + label:before,
+            #banner input[type="radio"] + label:before {
+                background: #000000;
+                border-color: rgba(255, 255, 255, 0.25);
+            }
+
+        #banner input[type="checkbox"]:checked + label:before,
+        #banner input[type="radio"]:checked + label:before {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+        }
+
+        #banner input[type="checkbox"]:focus + label:before,
+        #banner input[type="radio"]:focus + label:before {
+            border-color: #ffffff;
+            box-shadow: 0 0 0 1px #ffffff;
+        }
+
+        #banner ::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #banner :-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #banner ::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #banner :-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #banner .formerize-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #banner ul.alt li {
+            border-top-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner header p {
+            color: #ffffff;
+        }
+
+        #banner header.major h1 {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner table tbody tr {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+            #banner table tbody tr:nth-child(2n + 1) {
+                background-color: rgba(255, 255, 255, 0.065);
+            }
+
+        #banner table th {
+            color: #ffffff;
+        }
+
+        #banner table thead {
+            border-bottom-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner table tfoot {
+            border-top-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner table.alt tbody tr td {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner ul.contact-icons li .icon:before {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        #banner .split h2 {
+            border-color: #ffffff;
+        }
+
+        #banner .split .content {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #banner .tabs > .titles > .title:hover {
+            box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.25);
+        }
+
+        #banner .tabs > .titles > .title.active {
+            box-shadow: 0 2px 0 0 #ffffff;
+        }
+
+        #banner:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            pointer-events: none;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0));
+            z-index: 2;
+        }
+
+        #banner h1 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            font-size: 4.75rem;
+            margin: 0 auto;
+            padding-bottom: 3rem;
+            position: relative;
+            text-align-last: justify;
+            text-align: justify;
+            opacity: 0.95;
+        }
+
+        #banner .inner {
+            -moz-transition: opacity 1.5s ease-in-out;
+            -webkit-transition: opacity 1.5s ease-in-out;
+            -ms-transition: opacity 1.5s ease-in-out;
+            transition: opacity 1.5s ease-in-out;
+            margin: 0 auto;
+            max-width: 65rem;
+            opacity: 1;
+            position: relative;
+            width: calc(100% - 4rem);
+            z-index: 3;
+        }
+
+        #banner .content {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            position: relative;
+            text-align: justify;
+            width: 100%;
+        }
+
+            #banner .content p {
+                border-right: 1px solid rgba(255, 255, 255, 0.25);
+                font-size: 1.5rem;
+                font-weight: 400;
+                min-width: 70%;
+                padding: 3rem 3rem 3rem 0;
+            }
+
+            #banner .content ul {
+                -moz-justify-content: -moz-flex-end;
+                -webkit-justify-content: -webkit-flex-end;
+                -ms-justify-content: -ms-flex-end;
+                justify-content: flex-end;
+            }
+
+        #banner .bg {
+            -moz-transition: opacity 2s ease-in-out;
+            -webkit-transition: opacity 2s ease-in-out;
+            -ms-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            opacity: 0.85;
+        }
+
+            #banner .bg div {
+                -moz-transition: opacity 3s ease;
+                -webkit-transition: opacity 3s ease;
+                -ms-transition: opacity 3s ease;
+                transition: opacity 3s ease;
+                background-size: cover;
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                visibility: hidden;
+                width: 150%;
+            }
+
+                #banner .bg div.visible {
+                    -moz-animation: bg 45s linear infinite;
+                    -webkit-animation: bg 45s linear infinite;
+                    -ms-animation: bg 45s linear infinite;
+                    animation: bg 45s linear infinite;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1;
+                }
+
+                    #banner .bg div.visible.top {
+                        z-index: 2;
+                    }
+
+                    @media screen and (max-width: 1280px) {
+
+                        #banner .bg div.visible {
+                            -moz-animation: bg 29.25s linear infinite;
+                            -webkit-animation: bg 29.25s linear infinite;
+                            -ms-animation: bg 29.25s linear infinite;
+                            animation: bg 29.25s linear infinite;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 736px) {
+
+                        #banner .bg div.visible {
+                            -moz-animation: bg 18s linear infinite;
+                            -webkit-animation: bg 18s linear infinite;
+                            -ms-animation: bg 18s linear infinite;
+                            animation: bg 18s linear infinite;
+                        }
+
+                    }
+
+                #banner .bg div:only-child {
+                    -moz-animation-direction: alternate !important;
+                    -webkit-animation-direction: alternate !important;
+                    -ms-animation-direction: alternate !important;
+                    animation-direction: alternate !important;
+                }
+
+            body.is-preload #banner .bg {
+                opacity: 0;
+            }
+
+    @-moz-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @-webkit-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @-ms-keyframes bg {
+        #banner 0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        #banner 100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+        @media screen and (max-width: 1680px) {
+
+            #banner {
+                padding-top: 4rem;
+            }
+
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            #banner {
+                min-height: 90vh;
+                padding-top: 3rem;
+            }
+
+                #banner .inner {
+                    margin: 0 auto;
+                    max-width: 75rem;
+                    width: calc(100% - 8rem);
+                }
+
+                #banner h1 {
+                    font-size: 4rem;
+                    padding-bottom: 3rem;
+                }
+
+                #banner .content p {
+                    font-size: 1.25rem;
+                }
+
+        }
+
+        @media screen and (max-width: 980px) {
+
+            #banner {
+                height: 95vh;
+                min-height: 700px;
+                padding-top: 3rem;
+            }
+
+                #banner h1 {
+                    font-size: 3rem;
+                    padding-bottom: 3rem;
+                    text-align-last: center;
+                    text-align: center;
+                }
+
+                #banner .content p {
+                    font-size: 1.25rem;
+                }
+
+                #banner .content {
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                    #banner .content p {
+                        border-right: none;
+                        font-size: 1.25rem;
+                        min-width: 100%;
+                        padding: 3rem 0 0 0;
+                        text-align: center;
+                    }
+
+                    #banner .content ul {
+                        -moz-justify-content: center;
+                        -webkit-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #banner {
+                min-height: 600px;
+            }
+
+                #banner h1 {
+                    font-size: 2.5rem;
+                    padding-bottom: 2rem;
+                }
+
+                #banner .inner {
+                    width: calc(100% - 6rem);
+                }
+
+                #banner .content p {
+                    padding-top: 2rem;
+                }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #banner {
+                min-height: 650px;
+                padding-top: 4rem;
+            }
+
+                #banner .inner {
+                    width: calc(100% - 4rem);
+                }
+
+                #banner h1 {
+                    padding-bottom: 2rem;
+                    text-align-last: center;
+                    text-align: center;
+                }
+
+                #banner .content {
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                    #banner .content p {
+                        font-size: 1.15rem;
+                        padding-top: 2rem;
+                    }
+
+                    #banner .content ul {
+                        -moz-justify-content: center;
+                        -webkit-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+        }
+
+        body.is-preload #banner .inner {
+            opacity: 0;
+        }
