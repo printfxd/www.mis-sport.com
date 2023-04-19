@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>PR-S BULLET MEN JERSEY</title>
+		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -117,9 +117,26 @@
               from {opacity: .4}
               to {opacity: 1}
             }
+
+            .img-full-page {
+                display: none;
+                position: fixed;
+                z-index: 99999;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat no-repeat;
+                background-position: center center;
+                background-color: rgba(0, 0, 0, 0.7);
+                overflow-x: hidden;
+            }
         </style>
     </head>
     <body class="is-preload">
+
+        <div class="img-full-page" onclick="this.style.display='none';"></div>
 
         <!-- Page wrapper -->
             <div id="page-wrapper">
@@ -151,80 +168,27 @@
 						<div class="inner">
                             <!-- Buttons -->
                                 <ul class="actions">
-                                    <li><a href="#" class="button">回上頁</a></li>
+                                    <li><a href="#" class="button" onclick="history.back();">回上頁</a></li>
                                 </ul>
                             <!-- Content -->
                                 <div class="row">
                                     <div class="col-6 col-12-small">
 										<!-- Slideshow container -->
-										<div class="slideshow-container">
-										    <div class="mySlides product-fade">
-										        <div class="numbertext"></div>
-										        <div class="text-center">
-										            <img src="images/item/men/jersey/PR-S Bullet Men Jersey/PR-S Bullet Men Jersey-01-Blue.png" style="width:80%;">
-										        </div>
-										        <div class="text"></div>
-										    </div>
-										    <div class="mySlides product-fade">
-                                                <div class="numbertext"></div>
-                                                <div class="text-center">
-                                                    <img src="images/item/men/jersey/PR-S Bullet Men Jersey/PR-S Bullet Men Jersey-02-Blue.png" style="width:80%;">
-                                                </div>
-                                                <div class="text"></div>
-                                            </div>
-                                            <div class="mySlides product-fade">
-                                                <div class="numbertext"></div>
-                                                <div class="text-center">
-                                                    <img src="images/item/men/jersey/PR-S Bullet Men Jersey/PR-S Bullet Men Jersey-05-Green.png" style="width:80%;">
-                                                </div>
-                                                <div class="text"></div>
-                                            </div>
-                                            <div class="mySlides product-fade">
-                                                <div class="numbertext"></div>
-                                                <div class="text-center">
-                                                    <img src="images/item/men/jersey/PR-S Bullet Men Jersey/PR-S Bullet Men Jersey-06-Green.png" style="width:80%;">
-                                                </div>
-                                                <div class="text"></div>
-                                            </div>
-                                            <div class="mySlides product-fade">
-                                                <div class="numbertext"></div>
-                                                <div class="text-center">
-                                                    <img src="images/item/men/jersey/PR-S Bullet Men Jersey/PR-S Bullet Men Jersey-07-red.png" style="width:80%;">
-                                                </div>
-                                                <div class="text"></div>
-                                            </div>
-                                            <div class="mySlides product-fade">
-                                                <div class="numbertext"></div>
-                                                <div class="text-center">
-                                                    <img src="images/item/men/jersey/PR-S Bullet Men Jersey/PR-S Bullet Men Jersey-08-red.png" style="width:80%;">
-                                                </div>
-                                                <div class="text"></div>
-                                            </div>
-                                            
+										<div class="slideshow-container product-fade product-img-slider" style="overflow-y:hidden;">
 										    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 										    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 										</div>
- 										<div style="text-align:center">
-										  <span class="dot" onclick="currentSlide(1)"></span>
-										  <span class="dot" onclick="currentSlide(2)"></span>
-										  <span class="dot" onclick="currentSlide(3)"></span>
-										  <span class="dot" onclick="currentSlide(4)"></span>
-                                          <span class="dot" onclick="currentSlide(5)"></span>
-                                          <span class="dot" onclick="currentSlide(6)"></span>
+ 										<div class="product-img-dots" style="text-align:center">
 										</div>
                                     </div>
                                     
                                     <div class="col-6 col-12-small">
                                         <!-- Product Properties container -->
-                                        <h2>PR-S BULLET MEN JERSEY</h2>
+                                        <h2 class="product-name">PR-S BULLET MEN JERSEY</h2>
                                         <br>
                                         <div class="row">
-                                            <div class="col-3">
-                                                <img src="images/logo/ALE-Logo2.jpg" alt="ALE" width="40" height="40" class="rounded-circle border border-white">
-                                            </div>
-                                            <div class="col-9">
-                                                <h5 class="text-end" style="color:IndianRed;"><sup class="text-decoration-line-through" style="color:Silver;" >NT$4,350 </sup>NT$3,980</h5>
-                                            </div> 
+                                            <div class="col-3 product-logo"></div>
+                                            <div class="col-9 product-price"></div> 
                                         </div>
                                         <!-- 
                                         <div class="row">
@@ -234,72 +198,49 @@
                                         <br><br>
                                         <ul class="alt">
                                             <li>
-                                                <p>極簡主義的視覺設計，統一和啞光飾面。採用雙彈性萊卡面料開發，可壓縮肌肉並提高運動表現。</p>
+                                                <p class="product-desc"></p>
                                                 <br>
                                                 <ul>
                                                     <li>
 	                                                    <div class="row">
 	                                                        <div class="col-4"><b>版型</b></div>
-	                                                        <div class="col-8">舒適 | 壓縮</div>
+	                                                        <div class="col-8 product-style"></div>
 	                                                    </div>
                                                     </li>
                                                     <li>
                                                         <div class="row">
                                                             <div class="col-4"><b>溫度範圍</b></div>
-                                                            <div class="col-8">17<sup>ºC</sup> ～ 35<sup>ºC</sup></div>
+                                                            <div class="col-8 product-temp"></div>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="row">
                                                             <div class="col-4"><b>防曬等級</b></div>
-                                                            <div class="col-8">50<sup>+</sup> UPF</div>
+                                                            <div class="col-8 product-spf"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-4"><b>防水等級</b></div>
+                                                            <div class="col-8 product-waterproof"></div>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="row">
                                                             <div class="col-4"><b>重量</b></div>
-                                                            <div class="col-8">182g (M號)</div>
+                                                            <div class="col-8 product-weight"></div>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="row">
                                                             <div class="col-4"><b>顏色</b></div>
-                                                            <div class="col-8">
-                                                                <div class="row">
-                                                                    <div class="col-1">
-                                                                        <i class="fa-solid fa-shirt" style="color:DarkSlateBlue;"></i>
-                                                                    </div>
-                                                                    <div class="col-1">
-                                                                        <i class="fa-solid fa-shirt" style="color:Tomato;"></i>
-                                                                    </div>
-                                                                    <div class="col-1">
-                                                                        <i class="fa-solid fa-shirt" style="color:SteelBlue;"></i>
-                                                                    </div>
-                                                                    <div class="col-1">
-                                                                        <i class="fa-solid fa-shirt" style="color:Orange;"></i>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                            </div>
+                                                            <div class="col-8 product-colors"></div>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="row">
                                                             <div class="col-4"><b>尺碼</b></div>
-                                                            <div class="col-8">
-                                                                <div class="row">
-		                                                            <div class="col-12">
-		                                                            <span class="badge rounded-pill text-bg-dark">2XS</span>
-		                                                            <span class="badge rounded-pill text-bg-dark">XS</span>
-		                                                            <span class="badge rounded-pill text-bg-dark">S</span>
-		                                                            <span class="badge rounded-pill text-bg-light text-decoration-line-through"><div style="color:Silver;">M</div></span>
-		                                                            <span class="badge rounded-pill text-bg-dark">L</span>
-		                                                            <span class="badge rounded-pill text-bg-light text-decoration-line-through"><div style="color:Silver;">XL</div></span>
-		                                                            <span class="badge rounded-pill text-bg-dark">2XL</span>
-		                                                            <span class="badge rounded-pill text-bg-light text-decoration-line-through"><div style="color:Silver;">3XL</div></span>
-		                                                            </div>
-		                                                        </div>
-                                                            </div>
+                                                            <div class="col-8 product-sizes"></div>
 		                                                </div>
                                                     </li>
                                                 </ul>
@@ -314,7 +255,7 @@
 	                                        </div>
 	                                        <div class="col-6 col-12-small">
                                                 <ul class="actions stacked">
-                                                    <li><a href="https://shopee.tw/ALE'-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-%E5%87%BA%E6%B8%85%E5%83%B9-Cooling-Jersey-(%E9%A0%82%E7%B4%9A%E8%BB%8A%E8%A1%A3)-i.2352815.5252398431?sp_atk=d3ce0bbc-fc25-4eab-804e-2253aa11287f&xptdk=d3ce0bbc-fc25-4eab-804e-2253aa11287f" class="button primary fit" target="_blank" >蝦皮下單</a></li>
+                                                    <li class="product-purchase"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -379,36 +320,86 @@
             <script src="assets/carousel-10/js/owl.carousel.min.js"></script>
             <script src="assets/carousel-10/js/popper.js"></script>
             <script src="assets/carousel-10/js/main.js"></script>
+            <script src="assets/js/product.js"></script>
             <!-- Slideshow -->
             <script>
                 let slideIndex = 1;
-                showSlides(slideIndex);
     
                 // Next/previous controls
                 function plusSlides(n) {
-                  showSlides(slideIndex += n);
+                  showSlides(slideIndex += n)
                 }
     
                 // Thumbnail image controls
                 function currentSlide(n) {
-                  showSlides(slideIndex = n);
+                  showSlides(slideIndex = n)
                 }
     
                 function showSlides(n) {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
+                  let i, slides = document.getElementsByClassName('mySlides')
+                  if (slides.length) {
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = 'none'
+                    }
                   }
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                  let dots = document.getElementsByClassName('dot')
+                  if (dots.length) {
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].classList.remove('active')
+                    }
                   }
-                  slides[slideIndex-1].style.display = "block";
-                  dots[slideIndex-1].className += " active";
+                  if (slides.length) slides[slideIndex-1].style.display = 'block'
+                  if (dots.length) dots[slideIndex-1].classList.add('active')
                 }
+                let touchendX = undefined, touchendY = undefined
+                let touchstartX = undefined, touchstartY = undefined
+                function setTouchEnd(x,y) { touchendX = x, touchendY = y }
+                function setTouchStart(x,y) { touchstartX = x, touchstartY = y }
+                function handleGesture(e) {
+                    if (touchendX < touchstartX) {
+                        plusSlides(1)
+                    } else if (touchendX > touchstartX) {
+                        plusSlides(-1)
+                    }
+                }
+                function initGestureForSlider() {
+                    const IsMobileScreen = () => window.matchMedia && window.matchMedia('(max-width: 736px)').matches;
+                    // window.screen.width, window.innerWidth, max-device-width
+                    document.querySelectorAll('.mySlides').forEach(el => {
+                        el.addEventListener('touchstart', (e) => {
+                            setTouchStart(e.changedTouches[0].screenX, e.changedTouches[0].screenY)
+                        })
+                        el.addEventListener('touchend', (e) => {
+                            setTouchEnd(e.changedTouches[0].screenX, e.changedTouches[0].screenY)
+                            handleGesture(e)
+                        })
+                        el.addEventListener('click', (e) => {
+                            if (IsMobileScreen()) return
+                            const imgUrl = e.target && e.target.tagName === 'IMG' && e.target.src
+                            if (!imgUrl) return
+                            const fullscreen = document.querySelector('.img-full-page')
+                            if (!fullscreen) return
+                            fullscreen.style.backgroundImage = 'url(' + imgUrl + ')'
+                            fullscreen.style.display = 'block'
+                        })
+                    })
+                }
+            </script>
+            <script>
+                $(() => {
+                    const config = {
+                        bookID: '1pd_HYXuSSExf-VC3R5qjpunBygxpSmTLq-wJy7pPPJg',
+                        keyUrl: '/assets/etc/enckey.txt',
+                        queryPrefix: 'product-',
+                        hashPrefix: 'show-',
+                    }
+                    setupProduct(document.body, initProductConfig(config)).then(() => {
+                        currentSlide(1)
+                        initGestureForSlider()
+                    })
+                })
             </script>
 	</body>
 </html>
