@@ -16,13 +16,10 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-//							'images/slides/slide01.jpg': '0% 35%',
-//							'images/slides/slide02.jpg': 'center',
-//							'images/slides/slide03.jpg': 'center',
-//							'images/slides/slide04.jpg': 'center',
-//							'images/slides/slide05.jpg': 'center',
-//							'images/slides/slide06.jpg': 'center',
-//							'images/slides/slide07.jpg': 'center'
+							'https://storage.googleapis.com/mis-sport/banner/slide01.jpg': '0% 35%',
+							'https://storage.googleapis.com/mis-sport/banner/slide02.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/slide05.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/slide06.jpg': 'center'
 						},
 
 					// Delay.
