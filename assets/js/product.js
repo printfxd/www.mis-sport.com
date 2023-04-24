@@ -3,8 +3,12 @@ const onClickProductColor = (colorEl) => {
     if (!colorEl.target) return
     const list = colorEl.target.dataset.sizes.split(',')
     document.querySelectorAll('.mine-circle-fill').forEach(e => {
-        if (e === colorEl.target) e.classList.add('active')
-        else e.classList.remove('active')
+        if (e === colorEl.target) {
+            e.classList.add('active')
+            document.querySelectorAll('.product-color-name').forEach(e2 => {
+                e2.textContent = '#' + colorEl.target.dataset.color;
+            })
+        }else e.classList.remove('active')
     })
     document.querySelectorAll('[data-product-size]').forEach(e => {
         let size = e.dataset.productSize
@@ -272,9 +276,9 @@ const setupProduct = async (rootNode, config) => {
                 '</div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(n => n.innerHTML = html)
             const list = dataStr.split(',').map(transform)
-            html = '<div class="row">' +
-                list.map(o => `<div class="col-1"><div class="mine-circle-fill" onclick="onClickProductColor(event);" data-sizes="${o.sizes.join(',')}" style="background-color:${o.color};"></div></div>`).join('') +
-                '</div>'
+            html = '<div class="row"><div class="col-12 text-capitalize product-color-name">選顏色看尺碼</div></div><div class="row"><div class="col-12">' +
+                list.map(o => `<div class="mine-circle-fill" onclick="onClickProductColor(event);" data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`).join('') +
+                '</div></div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
         }
     }
