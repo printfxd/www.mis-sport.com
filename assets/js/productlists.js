@@ -7,10 +7,13 @@ const onHoverProductCard = (e) => {
     if (!cardEl) return
     const img = cardEl.querySelector('img')
     if (!img) return
-    if (e.type === 'mouseenter' && img.dataset.hoverSrc)
-        img.src = img.dataset.hoverSrc
-    else if (e.type === 'mouseout' && img.dataset.src)
-        img.src = img.dataset.src
+    if (e.type === 'mouseenter') {
+        cardEl.classList.add('zoom-in')
+        if (img.dataset.hoverSrc) img.src = img.dataset.hoverSrc
+    } else if (e.type === 'mouseout') {
+        cardEl.classList.remove('zoom-in')
+        if (img.dataset.src) img.src = img.dataset.src
+    }
 }
 const setupProductLists = async (rootNode, config) => {
     const ATTR_NAME_FOR_ORDER = '_order'
