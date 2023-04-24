@@ -1,17 +1,19 @@
-const AllSizes = ['2XS', 'XS', 'S', 'M', 'L', '2L', '2XL', '3XL']
+const AllSizes = ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
 const onClickProductColor = (colorEl) => {
     if (!colorEl.target) return
     const list = colorEl.target.dataset.sizes.split(',')
-    document.querySelectorAll('[data-product-size]').forEach(sizeEl => {
-        let size = sizeEl.dataset.productSize
+    document.querySelectorAll('.mine-circle-fill').forEach(e => {
+        if (e === colorEl.target) e.classList.add('active')
+        else e.classList.remove('active')
+    })
+    document.querySelectorAll('[data-product-size]').forEach(e => {
+        let size = e.dataset.productSize
         if (list.includes(size)) {
-            sizeEl.classList.remove('text-bg-light', 'text-decoration-line-through')
-            sizeEl.classList.add('text-bg-dark')
-            sizeEl.innerHTML = size
+            e.classList.remove('text-bg-light', 'deactive')
+            e.classList.add('text-bg-dark')
         } else {
-            sizeEl.classList.add('text-bg-light', 'text-decoration-line-through')
-            sizeEl.classList.remove('text-bg-dark')
-            sizeEl.innerHTML = `<div style="color:Silver;">${size}</div>`
+            e.classList.add('text-bg-light', 'deactive')
+            e.classList.remove('text-bg-dark')
         }
     })
 }
@@ -136,6 +138,11 @@ const setupProduct = async (rootNode, config) => {
         return
     }
 
+    rootNode.querySelectorAll('.' + NodePrefix + 'path-list').forEach(e => {
+        e.innerHTML = `<li class="breadcrumb-item"><a href="/">Home</a></li>
+                       <li class="breadcrumb-item"><a href="#" onclick="history.back();">${config.brandName}</a></li>
+                       <li class="breadcrumb-item active" aria-current="page">${ProductName}</li>`
+    })
     if (aname2idx['ImgList'] != null || aname2idx['Img'] != null) {
         const dataStr = concerned.attrs[aname2idx['ImgList']] || concerned.attrs[aname2idx['Img']];
         if (dataStr) {
@@ -143,7 +150,7 @@ const setupProduct = async (rootNode, config) => {
             const setupImgSlider = (list) => (n) => {
                 n.innerHTML += list
                     .map(v => `<div class="mySlides product-fade"><div class="numbertext"></div>
-                                <div class="text-center"><img src="${v}" style="width:80%;"></div>
+                                <div class="text-center"><img class="zoom-in" src="${v}" style="width:80%;"></div>
                                 <div class="text"></div></div>`)
                     .join('')
 
@@ -261,12 +268,12 @@ const setupProduct = async (rootNode, config) => {
         const dataStr = concerned.attrs[aname2idx['ColorWithSizes']]
         if (dataStr) {
             let html = '<div class="row"><div class="col-12">' +
-                AllSizes.map(s => `<span class="badge rounded-pill text-bg-dark" data-product-size="${s}">${s}</span>`).join('') +
+                AllSizes.map(s => `<span class="badge text-bg-dark mine-size-button" data-product-size="${s}">${s}</span>`).join('') +
                 '</div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(n => n.innerHTML = html)
             const list = dataStr.split(',').map(transform)
             html = '<div class="row">' +
-                list.map(o => `<div class="col-1"><i class="fa-solid fa-shirt" onclick="onClickProductColor(event);" data-sizes="${o.sizes.join(',')}" style="color:${o.color};"></i></div>`).join('') +
+                list.map(o => `<div class="col-1"><div class="mine-circle-fill" onclick="onClickProductColor(event);" data-sizes="${o.sizes.join(',')}" style="background-color:${o.color};"></div></div>`).join('') +
                 '</div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
         }

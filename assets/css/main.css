@@ -2752,6 +2752,7 @@ input, select, textarea {
 					-webkit-animation: tab-title 0.5s ease forwards;
 					-ms-animation: tab-title 0.5s ease forwards;
 					animation: tab-title 0.5s ease forwards;
+					transform: scale(1.2);
 				}
 
 				.tabs > .titles > .title.active {
@@ -2759,6 +2760,10 @@ input, select, textarea {
 					-webkit-animation: tab-title 0.5s ease forwards;
 					-ms-animation: tab-title 0.5s ease forwards;
 					animation: tab-title 0.5s ease forwards;
+					color: white;
+					background-color: rgba(0, 0, 0, 0.7);
+					padding: 2px 15px 2px 15px;
+					border-radius: 15px;
 				}
 
 			@media screen and (max-width: 736px) {
