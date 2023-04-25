@@ -122,6 +122,8 @@ const setupProduct = async (rootNode, config) => {
         }))
     }
 
+    document.title = config.brandName + " " + ProductName
+
     const data = await fetchWithBrand(config.brandName)
 
     const aname2idx = attr2obj(data.shift())
