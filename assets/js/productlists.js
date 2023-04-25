@@ -142,6 +142,12 @@ const setupProductLists = async (rootNode, config) => {
         const logoUrl = itemObj.attrs[attr2idx['Logo']]
         const labelPrice = price4label(itemObj.attrs[attr2idx['Price']], itemObj.attrs[attr2idx['Price2']], itemObj.attrs[attr2idx['New']])
 
+        let dataStr;
+        let colorList = '';
+        if (dataStr = itemObj.attrs[attr2idx['ColorWithSizes']]) {
+            const list = dataStr.split(',').map((p) => p.replaceAll(')', '').split('(')[0])
+            colorList = list.map(c => `<div class="mine-circle-fill" style="background-color:${c};"></div>`).join('')
+        }
         return `<div class="col"><div class="card card-cover h-100% overflow-hidden text-bg-white rounded-4 shadow-lg"
         onmouseenter="onHoverProductCard(event);" onmouseout="onHoverProductCard(event);">
         <img src="${imgUrl}" data-src="${imgUrl}" ${hoverImgAttr} class="card-img-top" alt="${itemName}">
@@ -150,6 +156,7 @@ const setupProductLists = async (rootNode, config) => {
                 <li class="me-auto">${labelPrice.label}</li>
             </ul>
         </div>
+        <div class="d-flex justify-content-end p-2 pb-0">${colorList}</div>
         <div class="card-body">
             <h6 class="card-title text-center">${brandName}<br>${itemName}</h6>
             <br>
