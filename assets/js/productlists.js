@@ -167,7 +167,7 @@ const setupProductLists = async (rootNode, config) => {
                 <li class="me-auto">${labelPrice.label}</li>
             </ul>
         </div>
-        <div class="d-flex justify-content-end p-2 pb-0">${colorList}</div>
+        <div class="d-flex justify-content-center p-2 pb-0">${colorList}</div>
         <div class="card-body">
             <h6 class="card-title text-center">${brandName}<br>${itemName}</h6>
             <br>
