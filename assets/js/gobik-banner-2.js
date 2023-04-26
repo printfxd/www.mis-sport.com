@@ -7,7 +7,7 @@
 (function($) {
 
 	// Banner.
-		var $banner2 = $('#banner2');
+		var $gobikBanner2 = $('#gobikBanner2');
 
 		(function() {
 
@@ -34,7 +34,7 @@
 
 			// Create BG wrapper, BGs.
 				$wrapper = $('<div class="bg" />')
-					.appendTo($banner2);
+					.appendTo($gobikBanner2);
 
 				for (k in settings.images) {
 

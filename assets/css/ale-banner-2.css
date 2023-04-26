@@ -1,7 +1,7 @@
 
 /* ALE CYCLING Banner No1 */
 
-    #banner2 {
+    #aleBanner2 {
         background-color: #000000;
         color: #ffffff;
         align-items: center;
@@ -14,244 +14,244 @@
         width: 100%;
     }
 
-        #banner2 input, #banner2 select, #banner2 textarea {
+        #aleBanner2 input, #aleBanner2 select, #aleBanner2 textarea {
             color: #ffffff;
         }
 
-        #banner2 a {
+        #aleBanner2 a {
             color: #ffffff;
         }
 
-        #banner2 strong, #banner2 b {
+        #aleBanner2 strong, #aleBanner2 b {
             color: #ffffff;
         }
 
-        #banner2 h1, #banner2 h2, #banner2 h3, #banner2 h4, #banner2 h5, #banner2 h6 {
+        #aleBanner2 h1, #aleBanner2 h2, #aleBanner2 h3, #aleBanner2 h4, #aleBanner2 h5, #aleBanner2 h6 {
             color: #ffffff;
         }
 
-        #banner2 blockquote {
+        #aleBanner2 blockquote {
             border-left-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 code {
+        #aleBanner2 code {
             background: rgba(255, 255, 255, 0.065);
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 hr {
+        #aleBanner2 hr {
             border-bottom-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 .box {
+        #aleBanner2 .box {
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 input[type="submit"],
-        #banner2 input[type="reset"],
-        #banner2 input[type="button"],
-        #banner2 button,
-        #banner2 .button {
+        #aleBanner2 input[type="submit"],
+        #aleBanner2 input[type="reset"],
+        #aleBanner2 input[type="button"],
+        #aleBanner2 button,
+        #aleBanner2 .button {
             background-color: transparent;
             border-color: #ffffff;
             color: #ffffff !important;
         }
 
-            #banner2 input[type="submit"]:after,
-            #banner2 input[type="reset"]:after,
-            #banner2 input[type="button"]:after,
-            #banner2 button:after,
-            #banner2 .button:after {
+            #aleBanner2 input[type="submit"]:after,
+            #aleBanner2 input[type="reset"]:after,
+            #aleBanner2 input[type="button"]:after,
+            #aleBanner2 button:after,
+            #aleBanner2 .button:after {
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
             }
 
-            #banner2 input[type="submit"]:hover, #banner2 input[type="submit"]:focus,
-            #banner2 input[type="reset"]:hover,
-            #banner2 input[type="reset"]:focus,
-            #banner2 input[type="button"]:hover,
-            #banner2 input[type="button"]:focus,
-            #banner2 button:hover,
-            #banner2 button:focus,
-            #banner2 .button:hover,
-            #banner2 .button:focus {
+            #aleBanner2 input[type="submit"]:hover, #aleBanner2 input[type="submit"]:focus,
+            #aleBanner2 input[type="reset"]:hover,
+            #aleBanner2 input[type="reset"]:focus,
+            #aleBanner2 input[type="button"]:hover,
+            #aleBanner2 input[type="button"]:focus,
+            #aleBanner2 button:hover,
+            #aleBanner2 button:focus,
+            #aleBanner2 .button:hover,
+            #aleBanner2 .button:focus {
                 background-color: rgba(255, 255, 255, 0.065);
             }
 
-            #banner2 input[type="submit"]:active,
-            #banner2 input[type="reset"]:active,
-            #banner2 input[type="button"]:active,
-            #banner2 button:active,
-            #banner2 .button:active {
+            #aleBanner2 input[type="submit"]:active,
+            #aleBanner2 input[type="reset"]:active,
+            #aleBanner2 input[type="button"]:active,
+            #aleBanner2 button:active,
+            #aleBanner2 .button:active {
                 background-color: rgba(255, 255, 255, 0.165);
             }
 
-            #banner2 input[type="submit"].icon:before,
-            #banner2 input[type="reset"].icon:before,
-            #banner2 input[type="button"].icon:before,
-            #banner2 button.icon:before,
-            #banner2 .button.icon:before {
+            #aleBanner2 input[type="submit"].icon:before,
+            #aleBanner2 input[type="reset"].icon:before,
+            #aleBanner2 input[type="button"].icon:before,
+            #aleBanner2 button.icon:before,
+            #aleBanner2 .button.icon:before {
                 color: #ffffff;
             }
 
-            #banner2 input[type="submit"].primary,
-            #banner2 input[type="reset"].primary,
-            #banner2 input[type="button"].primary,
-            #banner2 button.primary,
-            #banner2 .button.primary {
+            #aleBanner2 input[type="submit"].primary,
+            #aleBanner2 input[type="reset"].primary,
+            #aleBanner2 input[type="button"].primary,
+            #aleBanner2 button.primary,
+            #aleBanner2 .button.primary {
                 box-shadow: none;
                 background-color: #000000;
                 color: #ffffff !important;
             }
 
-                #banner2 input[type="submit"].primary:hover,
-                #banner2 input[type="reset"].primary:hover,
-                #banner2 input[type="button"].primary:hover,
-                #banner2 button.primary:hover,
-                #banner2 .button.primary:hover {
+                #aleBanner2 input[type="submit"].primary:hover,
+                #aleBanner2 input[type="reset"].primary:hover,
+                #aleBanner2 input[type="button"].primary:hover,
+                #aleBanner2 button.primary:hover,
+                #aleBanner2 .button.primary:hover {
                     background-color: rgba(0, 0, 0, 0.75);
                 }
 
-                #banner2 input[type="submit"].primary.icon:before,
-                #banner2 input[type="reset"].primary.icon:before,
-                #banner2 input[type="button"].primary.icon:before,
-                #banner2 button.primary.icon:before,
-                #banner2 .button.primary.icon:before {
+                #aleBanner2 input[type="submit"].primary.icon:before,
+                #aleBanner2 input[type="reset"].primary.icon:before,
+                #aleBanner2 input[type="button"].primary.icon:before,
+                #aleBanner2 button.primary.icon:before,
+                #aleBanner2 .button.primary.icon:before {
                     color: #ffffff !important;
                 }
 
-        #banner2 label {
+        #aleBanner2 label {
             color: #ffffff;
         }
 
-        #banner2 input[type="text"],
-        #banner2 input[type="password"],
-        #banner2 input[type="email"],
-        #banner2 select,
-        #banner2 textarea {
+        #aleBanner2 input[type="text"],
+        #aleBanner2 input[type="password"],
+        #aleBanner2 input[type="email"],
+        #aleBanner2 select,
+        #aleBanner2 textarea {
             background-color: #000000;
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-            #banner2 input[type="text"]:focus,
-            #banner2 input[type="password"]:focus,
-            #banner2 input[type="email"]:focus,
-            #banner2 select:focus,
-            #banner2 textarea:focus {
+            #aleBanner2 input[type="text"]:focus,
+            #aleBanner2 input[type="password"]:focus,
+            #aleBanner2 input[type="email"]:focus,
+            #aleBanner2 select:focus,
+            #aleBanner2 textarea:focus {
                 border-color: #ffffff;
                 box-shadow: 0 0 0 1px #ffffff;
             }
 
-        #banner2 select {
+        #aleBanner2 select {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E");
         }
 
-            #banner2 select option {
+            #aleBanner2 select option {
                 color: #ffffff;
                 background: #000000;
             }
 
-        #banner2 input[type="checkbox"] + label,
-        #banner2 input[type="radio"] + label {
+        #aleBanner2 input[type="checkbox"] + label,
+        #aleBanner2 input[type="radio"] + label {
             color: #ffffff;
         }
 
-            #banner2 input[type="checkbox"] + label:before,
-            #banner2 input[type="radio"] + label:before {
+            #aleBanner2 input[type="checkbox"] + label:before,
+            #aleBanner2 input[type="radio"] + label:before {
                 background: #000000;
                 border-color: rgba(255, 255, 255, 0.25);
             }
 
-        #banner2 input[type="checkbox"]:checked + label:before,
-        #banner2 input[type="radio"]:checked + label:before {
+        #aleBanner2 input[type="checkbox"]:checked + label:before,
+        #aleBanner2 input[type="radio"]:checked + label:before {
             background-color: #ffffff;
             border-color: #ffffff;
             color: #000000;
         }
 
-        #banner2 input[type="checkbox"]:focus + label:before,
-        #banner2 input[type="radio"]:focus + label:before {
+        #aleBanner2 input[type="checkbox"]:focus + label:before,
+        #aleBanner2 input[type="radio"]:focus + label:before {
             border-color: #ffffff;
             box-shadow: 0 0 0 1px #ffffff;
         }
 
-        #banner2 ::-webkit-input-placeholder {
+        #aleBanner2 ::-webkit-input-placeholder {
             color: rgba(255, 255, 255, 0.75) !important;
         }
 
-        #banner2 :-moz-placeholder {
+        #aleBanner2 :-moz-placeholder {
             color: rgba(255, 255, 255, 0.75) !important;
         }
 
-        #banner2 ::-moz-placeholder {
+        #aleBanner2 ::-moz-placeholder {
             color: rgba(255, 255, 255, 0.75) !important;
         }
 
-        #banner2 :-ms-input-placeholder {
+        #aleBanner2 :-ms-input-placeholder {
             color: rgba(255, 255, 255, 0.75) !important;
         }
 
-        #banner2 .formerize-placeholder {
+        #aleBanner2 .formerize-placeholder {
             color: rgba(255, 255, 255, 0.75) !important;
         }
 
-        #banner2 ul.alt li {
+        #aleBanner2 ul.alt li {
             border-top-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 header p {
+        #aleBanner2 header p {
             color: #ffffff;
         }
 
-        #banner2 header.major h1 {
+        #aleBanner2 header.major h1 {
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 table tbody tr {
+        #aleBanner2 table tbody tr {
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-            #banner2 table tbody tr:nth-child(2n + 1) {
+            #aleBanner2 table tbody tr:nth-child(2n + 1) {
                 background-color: rgba(255, 255, 255, 0.065);
             }
 
-        #banner2 table th {
+        #aleBanner2 table th {
             color: #ffffff;
         }
 
-        #banner2 table thead {
+        #aleBanner2 table thead {
             border-bottom-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 table tfoot {
+        #aleBanner2 table tfoot {
             border-top-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 table.alt tbody tr td {
+        #aleBanner2 table.alt tbody tr td {
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 ul.contact-icons li .icon:before {
+        #aleBanner2 ul.contact-icons li .icon:before {
             background: #000000;
             color: #ffffff;
         }
 
-        #banner2 .split h2 {
+        #aleBanner2 .split h2 {
             border-color: #ffffff;
         }
 
-        #banner2 .split .content {
+        #aleBanner2 .split .content {
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 .tabs > .titles > .title:hover {
+        #aleBanner2 .tabs > .titles > .title:hover {
             box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.25);
         }
 
-        #banner2 .tabs > .titles > .title.active {
+        #aleBanner2 .tabs > .titles > .title.active {
             box-shadow: 0 2px 0 0 #ffffff;
         }
 
-        #banner2:before {
+        #aleBanner2:before {
             content: '';
             display: block;
             position: absolute;
@@ -264,7 +264,7 @@
             z-index: 2;
         }
 
-        #banner2 h1 {
+        #aleBanner2 h1 {
             border-bottom: 1px solid rgba(255, 255, 255, 0.25);
             color: #ffffff;
             font-size: 4.75rem;
@@ -276,7 +276,7 @@
             opacity: 0.95;
         }
 
-        #banner2 .inner {
+        #aleBanner2 .inner {
             -moz-transition: opacity 1.5s ease-in-out;
             -webkit-transition: opacity 1.5s ease-in-out;
             -ms-transition: opacity 1.5s ease-in-out;
@@ -289,7 +289,7 @@
             z-index: 3;
         }
 
-        #banner2 .content {
+        #aleBanner2 .content {
             -moz-align-items: center;
             -webkit-align-items: center;
             -ms-align-items: center;
@@ -303,7 +303,7 @@
             width: 100%;
         }
 
-            #banner2 .content p {
+            #aleBanner2 .content p {
                 border-right: 1px solid rgba(255, 255, 255, 0.25);
                 font-size: 1.5rem;
                 font-weight: 400;
@@ -311,14 +311,14 @@
                 padding: 3rem 3rem 3rem 0;
             }
 
-            #banner2 .content ul {
+            #aleBanner2 .content ul {
                 -moz-justify-content: -moz-flex-end;
                 -webkit-justify-content: -webkit-flex-end;
                 -ms-justify-content: -ms-flex-end;
                 justify-content: flex-end;
             }
 
-        #banner2 .bg {
+        #aleBanner2 .bg {
             -moz-transition: opacity 2s ease-in-out;
             -webkit-transition: opacity 2s ease-in-out;
             -ms-transition: opacity 2s ease-in-out;
@@ -333,7 +333,7 @@
             opacity: 0.85;
         }
 
-            #banner2 .bg div {
+            #aleBanner2 .bg div {
                 -moz-transition: opacity 3s ease;
                 -webkit-transition: opacity 3s ease;
                 -ms-transition: opacity 3s ease;
@@ -348,7 +348,7 @@
                 width: 150%;
             }
 
-                #banner2 .bg div.visible {
+                #aleBanner2 .bg div.visible {
                     -moz-animation: bg 45s linear infinite;
                     -webkit-animation: bg 45s linear infinite;
                     -ms-animation: bg 45s linear infinite;
@@ -358,13 +358,13 @@
                     z-index: 1;
                 }
 
-                    #banner2 .bg div.visible.top {
+                    #aleBanner2 .bg div.visible.top {
                         z-index: 2;
                     }
 
                     @media screen and (max-width: 1280px) {
 
-                        #banner2 .bg div.visible {
+                        #aleBanner2 .bg div.visible {
                             -moz-animation: bg 29.25s linear infinite;
                             -webkit-animation: bg 29.25s linear infinite;
                             -ms-animation: bg 29.25s linear infinite;
@@ -375,7 +375,7 @@
 
                     @media screen and (max-width: 736px) {
 
-                        #banner2 .bg div.visible {
+                        #aleBanner2 .bg div.visible {
                             -moz-animation: bg 18s linear infinite;
                             -webkit-animation: bg 18s linear infinite;
                             -ms-animation: bg 18s linear infinite;
@@ -384,14 +384,14 @@
 
                     }
 
-                #banner2 .bg div:only-child {
+                #aleBanner2 .bg div:only-child {
                     -moz-animation-direction: alternate !important;
                     -webkit-animation-direction: alternate !important;
                     -ms-animation-direction: alternate !important;
                     animation-direction: alternate !important;
                 }
 
-            body.is-preload #banner2 .bg {
+            body.is-preload #aleBanner2 .bg {
                 opacity: 0;
             }
 
@@ -428,14 +428,14 @@
     }
 
     @-ms-keyframes bg {
-        #banner2 0% {
+        0% {
             -moz-transform: translateX(0);
             -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
             transform: translateX(0);
         }
 
-        #banner2 100% {
+        100% {
             -moz-transform: translateX(-25%);
             -webkit-transform: translateX(-25%);
             -ms-transform: translateX(-25%);
@@ -461,7 +461,7 @@
 
         @media screen and (max-width: 1680px) {
 
-            #banner2 {
+            #aleBanner2 {
                 padding-top: 4rem;
             }
 
@@ -469,23 +469,23 @@
 
         @media screen and (max-width: 1280px) {
 
-            #banner2 {
+            #aleBanner2 {
                 min-height: 90vh;
                 padding-top: 3rem;
             }
 
-                #banner2 .inner {
+                #aleBanner2 .inner {
                     margin: 0 auto;
                     max-width: 75rem;
                     width: calc(100% - 8rem);
                 }
 
-                #banner2 h1 {
+                #aleBanner2 h1 {
                     font-size: 4rem;
                     padding-bottom: 3rem;
                 }
 
-                #banner2 .content p {
+                #aleBanner2 .content p {
                     font-size: 1.25rem;
                 }
 
@@ -493,24 +493,24 @@
 
         @media screen and (max-width: 980px) {
 
-            #banner2 {
+            #aleBanner2 {
                 height: 95vh;
                 min-height: 700px;
                 padding-top: 3rem;
             }
 
-                #banner2 h1 {
+                #aleBanner2 h1 {
                     font-size: 3rem;
                     padding-bottom: 3rem;
                     text-align-last: center;
                     text-align: center;
                 }
 
-                #banner2 .content p {
+                #aleBanner2 .content p {
                     font-size: 1.25rem;
                 }
 
-                #banner2 .content {
+                #aleBanner2 .content {
                     -moz-flex-wrap: wrap;
                     -webkit-flex-wrap: wrap;
                     -ms-flex-wrap: wrap;
@@ -518,7 +518,7 @@
                     width: 100%;
                 }
 
-                    #banner2 .content p {
+                    #aleBanner2 .content p {
                         border-right: none;
                         font-size: 1.25rem;
                         min-width: 100%;
@@ -526,7 +526,7 @@
                         text-align: center;
                     }
 
-                    #banner2 .content ul {
+                    #aleBanner2 .content ul {
                         -moz-justify-content: center;
                         -webkit-justify-content: center;
                         -ms-justify-content: center;
@@ -537,20 +537,20 @@
 
         @media screen and (max-width: 736px) {
 
-            #banner2 {
+            #aleBanner2 {
                 min-height: 600px;
             }
 
-                #banner2 h1 {
+                #aleBanner2 h1 {
                     font-size: 2.5rem;
                     padding-bottom: 2rem;
                 }
 
-                #banner2 .inner {
+                #aleBanner2 .inner {
                     width: calc(100% - 6rem);
                 }
 
-                #banner2 .content p {
+                #aleBanner2 .content p {
                     padding-top: 2rem;
                 }
 
@@ -558,22 +558,22 @@
 
         @media screen and (max-width: 480px) {
 
-            #banner2 {
+            #aleBanner2 {
                 min-height: 650px;
                 padding-top: 4rem;
             }
 
-                #banner2 .inner {
+                #aleBanner2 .inner {
                     width: calc(100% - 4rem);
                 }
 
-                #banner2 h1 {
+                #aleBanner2 h1 {
                     padding-bottom: 2rem;
                     text-align-last: center;
                     text-align: center;
                 }
 
-                #banner2 .content {
+                #aleBanner2 .content {
                     -moz-flex-wrap: wrap;
                     -webkit-flex-wrap: wrap;
                     -ms-flex-wrap: wrap;
@@ -581,12 +581,12 @@
                     width: 100%;
                 }
 
-                    #banner2 .content p {
+                    #aleBanner2 .content p {
                         font-size: 1.15rem;
                         padding-top: 2rem;
                     }
 
-                    #banner2 .content ul {
+                    #aleBanner2 .content ul {
                         -moz-justify-content: center;
                         -webkit-justify-content: center;
                         -ms-justify-content: center;
@@ -595,6 +595,6 @@
 
         }
 
-        body.is-preload #banner2 .inner {
+        body.is-preload #aleBanner2 .inner {
             opacity: 0;
         }
