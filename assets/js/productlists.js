@@ -145,8 +145,19 @@ const setupProductLists = async (rootNode, config) => {
         let dataStr;
         let colorList = '';
         if (dataStr = itemObj.attrs[attr2idx['ColorWithSizes']]) {
-            const list = dataStr.split(',').map((p) => p.replaceAll(')', '').split('(')[0])
-            colorList = list.map(c => `<div class="mine-circle-fill" style="background-color:${c};"></div>`).join('')
+            // input string format:'[label]color(x-y)'
+            // output color
+            const str2color = (s) => {
+                if (s && typeof s !== 'string') return null
+                let t = s.trim()
+                if (t.startsWith('[')) t = t.substring(t.indexOf(']') + 1)
+                const p = t.indexOf('(')
+                if (p == -1) return t.trim();
+                const c = t.substring(0, p).trim()
+                if (!c) return null
+                return '<div class="mine-circle-fill" style="background-color:' + c + ';"></div>';
+            }
+            colorList = dataStr.split(';').map(str2color).filter(Boolean).join('')
         }
         return `<div class="col"><div class="card card-cover h-100% overflow-hidden text-bg-white rounded-4 shadow-lg"
         onmouseenter="onHoverProductCard(event);" onmouseout="onHoverProductCard(event);">
