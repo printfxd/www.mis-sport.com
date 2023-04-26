@@ -1,15 +1,21 @@
 const AllSizes = ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
-const onClickProductColor = (colorEl) => {
-    if (!colorEl.target) return
-    const list = colorEl.target.dataset.sizes.split(',')
+const onClickProductColor = (e) => {
+    const colorEl = e.target
+    if (!colorEl) return
+    const list = colorEl.dataset.sizes.split(',')
     document.querySelectorAll('.mine-circle-fill').forEach(e => {
-        if (e === colorEl.target) {
+        if (e === colorEl) {
             e.classList.add('active')
             document.querySelectorAll('.product-color-name').forEach(e2 => {
-                e2.textContent = '#' + colorEl.target.dataset.color;
+                e2.textContent = '#' + colorEl.dataset.color
             })
-        }else e.classList.remove('active')
+        } else e.classList.remove('active')
     })
+    const label = colorEl.dataset.productImgLabel
+    if (label) {
+        const jumpTo = document.querySelector('.dot[data-product-img-label="' + label + '"]')
+        if (jumpTo) jumpTo.click()
+    }
     document.querySelectorAll('[data-product-size]').forEach(e => {
         let size = e.dataset.productSize
         if (list.includes(size)) {
@@ -31,7 +37,7 @@ const initProductConfig = (config) => {
     config.topicName = decodeURIComponent(info[1])
     config.seriresName = decodeURIComponent(info[2])
     config.productName = decodeURIComponent(info[3])
-    return config;
+    return config
 }
 const setupProduct = async (rootNode, config) => {
     const ATTR_NAME_FOR_ORDER = '_order'
@@ -62,7 +68,7 @@ const setupProduct = async (rootNode, config) => {
     const fetchWithBrand = async () => {
         return await fetchFromSheet({
             bookID: config.bookID,
-            sheetName: config.brandName,
+            sheetName: BrandName,
             dataRange: DATA_RANGE,
             keyUrl: config.keyUrl,
         })
@@ -122,9 +128,9 @@ const setupProduct = async (rootNode, config) => {
         }))
     }
 
-    document.title = config.brandName + " " + ProductName
+    document.title = BrandName + " " + ProductName + " | MIS Sport 米詩國際"
 
-    const data = await fetchWithBrand(config.brandName)
+    const data = await fetchWithBrand(BrandName)
 
     const aname2idx = attr2obj(data.shift())
 
@@ -133,7 +139,7 @@ const setupProduct = async (rootNode, config) => {
         console.error('not found concerned topic:', TopicName)
         return
     }
-    const concernedSerires = concernedTopic[SeriesName];
+    const concernedSerires = concernedTopic[SeriesName]
     if (!concernedSerires) {
         console.error(`not found concerned series:${TopicName}\\${SeriesName}`)
         return
@@ -146,24 +152,40 @@ const setupProduct = async (rootNode, config) => {
 
     rootNode.querySelectorAll('.' + NodePrefix + 'path-list').forEach(e => {
         e.innerHTML = `<li class="breadcrumb-item"><a href="/">Home</a></li>
-                       <li class="breadcrumb-item"><a href="#" onclick="history.back();">${config.brandName}</a></li>
+                       <li class="breadcrumb-item"><a href="${BrandName.toLowerCase()}.html">${BrandName}</a></li>
                        <li class="breadcrumb-item active" aria-current="page">${ProductName}</li>`
     })
     if (aname2idx['ImgList'] != null || aname2idx['Img'] != null) {
-        const dataStr = concerned.attrs[aname2idx['ImgList']] || concerned.attrs[aname2idx['Img']];
+        const dataStr = concerned.attrs[aname2idx['ImgList']] || concerned.attrs[aname2idx['Img']]
         if (dataStr) {
-            const list = dataStr.split(';')
+            // input string format:'[label]url'
+            // output object: { label:string, url:string }
+            const str2obj = (s) => {
+                if (s && typeof s !== 'string') return null
+                let o = {}, t = s.trim(), p
+                if (t.startsWith('[')) {
+                    p = t.indexOf(']')
+                    if (p != -1) o.label = t.substring(1, p).trim()
+                    t = t.substring(p + 1)
+                }
+                o.url = t.trim()
+                return o
+            }
+            const list = dataStr.split(';').map(str2obj).filter(Boolean)
             const setupImgSlider = (list) => (n) => {
                 n.innerHTML += list
-                    .map(v => `<div class="mySlides product-fade"><div class="numbertext"></div>
-                                <div class="text-center"><img class="zoom-in" src="${v}" style="width:80%;"></div>
+                    .map(o => `<div class="mySlides product-fade"><div class="numbertext"></div>
+                                <div class="text-center"><img class="zoom-in" src="${o.url}" style="width:80%;"></div>
                                 <div class="text"></div></div>`)
                     .join('')
-
             }
             const setupImgDots = (list) => (n) => {
                 n.innerHTML += list
-                    .map((_, i) => '<span class="dot" onclick="currentSlide(' + (i + 1) + ')"></span>')
+                    .map((o, i) => {
+                        let label = ''
+                        if (o.label) label = ' data-product-img-label="' + o.label + '"'
+                        return '<span class="dot" onclick="currentSlide(' + (i + 1) + ');"' + label + '></span>'
+                    })
                     .join('')
             }
             rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(setupImgSlider(list))
@@ -252,34 +274,54 @@ const setupProduct = async (rootNode, config) => {
         }
     }
     if (aname2idx['ColorWithSizes'] != null) {
-        // support rules:s-l, s-, m
-        const txt2sizes = (t) => {
-            if (t && typeof t === 'string') {
-                let r = t.toUpperCase().split('-')
-                let b = AllSizes.indexOf(r[0])
-                if (b != -1) {
-                    if (r.length == 1) return [r];
-                    let e = AllSizes.indexOf(r[1])
-                    if (e >= 0) e += 1
-                    else if (r.length > 1) e = AllSizes.length
-                    return AllSizes.slice(b, e)
-                }
-            }
-            return [];
-        }
-        const transform = (cs) => {
-            let d = cs.replaceAll(')', '').split('(')
-            return { color: d[0], sizes: txt2sizes(d[1]) }
-        }
         const dataStr = concerned.attrs[aname2idx['ColorWithSizes']]
         if (dataStr) {
-            let html = '<div class="row"><div class="col-12">' +
+            // support rules:s-l, s-, m
+            const str2sizes = (t) => {
+                if (t && typeof t === 'string') {
+                    const r = t.toUpperCase().split('-')
+                    if (r.length == 1) return [r]
+                    const b = AllSizes.indexOf(r[0])
+                    if (b != -1) {
+                        let e = AllSizes.indexOf(r[1])
+                        if (e >= 0) e += 1
+                        else if (r.length > 1) e = AllSizes.length
+                        return AllSizes.slice(b, e)
+                    }
+                }
+                return []
+            }
+            // input string format:'[label]color(x-y)'
+            // output object: { label:string, color:string, sizes:array }
+            const str2obj = (s) => {
+                if (s && typeof s !== 'string') return null
+                let o = {}, t = s.trim(), p
+                if (t.startsWith('[')) {
+                    p = t.indexOf(']')
+                    if (p != -1) o.label = t.substring(1, p).trim()
+                    t = t.substring(p + 1)
+                }
+                p = t.indexOf('(')
+                if (p != -1) {
+                    o.color = t.substring(0, p).trim()
+                    if (!o.color) return null
+                    t = t.substring(p + 1)
+                }
+                o.sizes = str2sizes(t)
+                return o
+            }
+            let html
+            html = '<div class="row"><div class="col-12">' +
                 AllSizes.map(s => `<span class="badge text-bg-dark mine-size-button" data-product-size="${s}">${s}</span>`).join('') +
                 '</div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(n => n.innerHTML = html)
-            const list = dataStr.split(',').map(transform)
-            html = '<div class="row"><div class="col-12 text-capitalize">選顏色看尺碼</div></div><div class="row"><div class="col-12">' +
-                list.map(o => `<div class="mine-circle-fill" onclick="onClickProductColor(event);" data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`).join('') +
+            const list = dataStr.split(';').map(str2obj).filter(Boolean)
+            html = '<div class="row"><div class="col-12">' +
+                list.map(o => '<div class="mine-circle-fill" onclick="onClickProductColor(event);"' +
+                        ' data-sizes="' + o.sizes.join(',') + '"' +
+                        ' data-color="' + o.color + '" style="background-color:' + o.color + ';"' +
+                        ' data-product-img-label="' + o.label + '"' +
+                        '></div>').join('') +
                 '</div></div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
         }
