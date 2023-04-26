@@ -68,7 +68,7 @@ const setupProduct = async (rootNode, config) => {
     const fetchWithBrand = async () => {
         return await fetchFromSheet({
             bookID: config.bookID,
-            sheetName: config.brandName,
+            sheetName: BrandName,
             dataRange: DATA_RANGE,
             keyUrl: config.keyUrl,
         })
@@ -128,9 +128,9 @@ const setupProduct = async (rootNode, config) => {
         }))
     }
 
-    document.title = config.brandName + " " + ProductName + " | MIS Sport 米詩國際"
+    document.title = BrandName + " " + ProductName + " | MIS Sport 米詩國際"
 
-    const data = await fetchWithBrand(config.brandName)
+    const data = await fetchWithBrand(BrandName)
 
     const aname2idx = attr2obj(data.shift())
 
@@ -152,7 +152,7 @@ const setupProduct = async (rootNode, config) => {
 
     rootNode.querySelectorAll('.' + NodePrefix + 'path-list').forEach(e => {
         e.innerHTML = `<li class="breadcrumb-item"><a href="/">Home</a></li>
-                       <li class="breadcrumb-item"><a href="#" onclick="history.back();">${config.brandName}</a></li>
+                       <li class="breadcrumb-item"><a href="${BrandName.toLowerCase()}.html">${BrandName}</a></li>
                        <li class="breadcrumb-item active" aria-current="page">${ProductName}</li>`
     })
     if (aname2idx['ImgList'] != null || aname2idx['Img'] != null) {
