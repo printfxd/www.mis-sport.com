@@ -128,7 +128,7 @@ const setupProduct = async (rootNode, config) => {
         }))
     }
 
-    document.title = config.brandName + " " + ProductName
+    document.title = config.brandName + " " + ProductName + " | MIS Sport 米詩國際"
 
     const data = await fetchWithBrand(config.brandName)
 
