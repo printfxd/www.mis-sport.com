@@ -276,9 +276,12 @@ const setupProduct = async (rootNode, config) => {
     if (aname2idx['ColorWithSizes'] != null) {
         const dataStr = concerned.attrs[aname2idx['ColorWithSizes']]
         if (dataStr) {
+            // input string format:'x-y'
             // support rules:s-l, s-, m
-            const str2sizes = (t) => {
-                if (t && typeof t === 'string') {
+            // output array:[], [x], [x,y,z,...]
+            const str2sizes = (s) => {
+                if (s && typeof s === 'string') {
+                    const t = s.trim()
                     const r = t.toUpperCase().split('-')
                     if (r.length == 1) return [r]
                     const b = AllSizes.indexOf(r[0])
@@ -292,7 +295,7 @@ const setupProduct = async (rootNode, config) => {
                 return []
             }
             // input string format:'[label]color(x-y)'
-            // output object: { label:string, color:string, sizes:array }
+            // output object:{ label:string, color:string, sizes:array }
             const str2obj = (s) => {
                 if (s && typeof s !== 'string') return null
                 let o = {}, t = s.trim(), p
@@ -307,7 +310,9 @@ const setupProduct = async (rootNode, config) => {
                     if (!o.color) return null
                     t = t.substring(p + 1)
                 }
-                o.sizes = str2sizes(t)
+                p = t.lastIndexOf(')')
+                if (p == -1) return null;
+                o.sizes = str2sizes(t.substring(0, p))
                 return o
             }
             let html
@@ -324,6 +329,8 @@ const setupProduct = async (rootNode, config) => {
                         '></div>').join('') +
                 '</div></div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
+            const first = rootNode.querySelector('.mine-circle-fill')
+            if (first) first.click()
         }
     }
     if (aname2idx['PurchaseUrl'] != null) {
