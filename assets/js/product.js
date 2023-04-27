@@ -235,6 +235,12 @@ const setupProduct = async (rootNode, config) => {
             rootNode.querySelectorAll('.' + NodePrefix + 'desc').forEach(n => n.innerHTML = html)
         }
     }
+    const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
+    const assignHtmlAndShow = (html) => (n) => {
+        n.innerHTML = html
+        const parent = closest(n, (p) => p.classList.contains('product-attr-hide-in-default'))
+        if (parent) parent.classList.remove('product-attr-hide-in-default');
+    }
     if (aname2idx['Style'] != null) {
         const dataStr = concerned.attrs[aname2idx['Style']]
         if (dataStr) {
@@ -245,14 +251,14 @@ const setupProduct = async (rootNode, config) => {
         const dataStr = concerned.attrs[aname2idx['Temperature']]
         if (dataStr) {
             const html = dataStr.replaceAll('ºC', '<sup>ºC</sup>')
-            rootNode.querySelectorAll('.' + NodePrefix + 'temp').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'temp').forEach(assignHtmlAndShow(html))
         }
     }
     if (aname2idx['SunProtect'] != null) {
         const dataStr = concerned.attrs[aname2idx['SunProtect']]
         if (dataStr) {
             const html = dataStr.replaceAll('+', '<sup>+</sup>')
-            rootNode.querySelectorAll('.' + NodePrefix + 'spf').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'spf').forEach(assignHtmlAndShow(html))
         }
     }
     if (aname2idx['Water'] != null) {
@@ -263,7 +269,7 @@ const setupProduct = async (rootNode, config) => {
             const stars = parseInt(dataStr)
             if (!isNaN(stars)) {
                 const html = [1, 2, 3, 4, 5].map(v => (stars >= v ? STAR_ICON : UNSTAR_ICON)).join('')
-                rootNode.querySelectorAll('.' + NodePrefix + 'waterproof').forEach(n => n.innerHTML = html)
+                rootNode.querySelectorAll('.' + NodePrefix + 'waterproof').forEach(assignHtmlAndShow(html))
             }
         }
     }
@@ -323,10 +329,10 @@ const setupProduct = async (rootNode, config) => {
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             html = '<div class="row"><div class="col-12">' +
                 list.map(o => '<div class="mine-circle-fill" onclick="onClickProductColor(event);"' +
-                        ' data-sizes="' + o.sizes.join(',') + '"' +
-                        ' data-color="' + o.color + '" style="background-color:' + o.color + ';"' +
-                        ' data-product-img-label="' + o.label + '"' +
-                        '></div>').join('') +
+                    ' data-sizes="' + o.sizes.join(',') + '"' +
+                    ' data-color="' + o.color + '" style="background-color:' + o.color + ';"' +
+                    ' data-product-img-label="' + o.label + '"' +
+                    '></div>').join('') +
                 '</div></div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
             const first = rootNode.querySelector('.mine-circle-fill')
