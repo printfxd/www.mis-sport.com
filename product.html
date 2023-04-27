@@ -246,10 +246,16 @@
                                                 <p class="product-desc"></p>
                                                 <br>
                                                 <ul>
-                                                    <li>
+                                                    <li class="product-attr-hide-in-default">
 	                                                    <div class="row">
 	                                                        <div class="col-4"><b>版型</b></div>
 	                                                        <div class="col-8 product-style"></div>
+	                                                    </div>
+                                                    </li>
+                                                    <li class="product-attr-hide-in-default">
+	                                                    <div class="row">
+	                                                        <div class="col-4"><b>騎乘風格</b></div>
+	                                                        <div class="col-8 product-biking-style"></div>
 	                                                    </div>
                                                     </li>
                                                     <li class="product-attr-hide-in-default">
@@ -422,7 +428,7 @@
                             if (!imgUrl) return
                             const fullscreen = document.querySelector('.img-full-page')
                             if (!fullscreen) return
-                            fullscreen.style.backgroundImage = 'url(' + imgUrl + ')'
+                            fullscreen.style.backgroundImage = 'url(\'' + imgUrl + '\')'
                             fullscreen.style.display = 'block'
                         })
                     })
