@@ -169,13 +169,14 @@ const setupProduct = async (rootNode, config) => {
                     t = t.substring(p + 1)
                 }
                 o.url = t.trim()
+                if (!o.url) return null
                 return o
             }
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             const setupImgSlider = (list) => (n) => {
                 n.innerHTML += list
                     .map(o => `<div class="mySlides product-fade"><div class="numbertext"></div>
-                                <div class="text-center"><img class="zoom-in" src="${o.url}" style="width:80%;"></div>
+                                <div class="text-center"><img class="zoom-in product-img-mask" src="${o.url}" style="width:80%;"></div>
                                 <div class="text"></div></div>`)
                     .join('')
             }
@@ -235,17 +236,33 @@ const setupProduct = async (rootNode, config) => {
             rootNode.querySelectorAll('.' + NodePrefix + 'desc').forEach(n => n.innerHTML = html)
         }
     }
+    const ATTR_HIDE_CLS = 'product-attr-hide-in-default'
     const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
     const assignHtmlAndShow = (html) => (n) => {
         n.innerHTML = html
-        const parent = closest(n, (p) => p.classList.contains('product-attr-hide-in-default'))
-        if (parent) parent.classList.remove('product-attr-hide-in-default');
+        const parent = closest(n, (p) => p.classList.contains(ATTR_HIDE_CLS))
+        if (parent) parent.classList.remove(ATTR_HIDE_CLS)
+    }
+    const assignTextAndShow = (txt) => (n) => {
+        n.textContent = txt
+        const parent = closest(n, (p) => p.classList.contains(ATTR_HIDE_CLS))
+        if (parent) parent.classList.remove(ATTR_HIDE_CLS)
+    }
+    const removeParentWithClass = (cls) => (n) => {
+        const parent = closest(n, (p) => p.classList.contains(cls))
+        if (parent) parent.parentNode.removeChild(parent)
     }
     if (aname2idx['Style'] != null) {
         const dataStr = concerned.attrs[aname2idx['Style']]
-        if (dataStr) {
-            rootNode.querySelectorAll('.' + NodePrefix + 'style').forEach(n => n.textContent = dataStr)
-        }
+        const list = rootNode.querySelectorAll('.' + NodePrefix + 'style')
+        if (dataStr) list.forEach(assignTextAndShow(dataStr))
+        else list.forEach(removeParentWithClass(ATTR_HIDE_CLS))
+    }
+    if (aname2idx['BikingStyle'] != null) {
+        const dataStr = concerned.attrs[aname2idx['BikingStyle']]
+        const list = rootNode.querySelectorAll('.' + NodePrefix + 'biking-style')
+        if (dataStr) list.forEach(assignTextAndShow(dataStr))
+        else list.forEach(removeParentWithClass(ATTR_HIDE_CLS))
     }
     if (aname2idx['Temperature'] != null) {
         const dataStr = concerned.attrs[aname2idx['Temperature']]
@@ -300,7 +317,7 @@ const setupProduct = async (rootNode, config) => {
                 }
                 return []
             }
-            // input string format:'[label]color(x-y)'
+            // input string format: 'color' or 'color(x-y)' or '[label]color(x-y)'
             // output object:{ label:string, color:string, sizes:array }
             const str2obj = (s) => {
                 if (s && typeof s !== 'string') return null
@@ -311,13 +328,15 @@ const setupProduct = async (rootNode, config) => {
                     t = t.substring(p + 1)
                 }
                 p = t.indexOf('(')
-                if (p != -1) {
-                    o.color = t.substring(0, p).trim()
-                    if (!o.color) return null
-                    t = t.substring(p + 1)
+                o.color = (p === -1 ? t : t.substring(0, p)).trim()
+                if (!o.color) return null
+                if (p === -1) {
+                    o.sizes = []
+                    return o
                 }
+                t = t.substring(p + 1)
                 p = t.lastIndexOf(')')
-                if (p == -1) return null;
+                if (p === -1) return null
                 o.sizes = str2sizes(t.substring(0, p))
                 return o
             }

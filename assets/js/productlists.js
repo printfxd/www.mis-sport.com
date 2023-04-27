@@ -136,7 +136,7 @@ const setupProductLists = async (rootNode, config) => {
         const brandName = itemLoc.brandName
         const itemName = itemObj.name
         const productUrl = `product.html#show-${brandName}|${itemLoc.topicName}|${itemLoc.seriesName}|${itemName}`
-        const imgs = itemObj.attrs[attr2idx['Img']].split(';')
+        const imgs = itemObj.attrs[attr2idx['Img']].split(';').filter(Boolean)
         const imgUrl = imgs[0]
         const hoverImgAttr = imgs[1] && `data-hover-src="${imgs[1]}"` || ''
         const logoUrl = itemObj.attrs[attr2idx['Logo']]
@@ -145,15 +145,14 @@ const setupProductLists = async (rootNode, config) => {
         let dataStr;
         let colorList = '';
         if (dataStr = itemObj.attrs[attr2idx['ColorWithSizes']]) {
-            // input string format:'[label]color(x-y)'
-            // output color
+            // input string format:'color' or '[label]color' or '[label]color(x-y)'
+            // output color button(html)
             const str2color = (s) => {
                 if (s && typeof s !== 'string') return null
                 let t = s.trim()
                 if (t.startsWith('[')) t = t.substring(t.indexOf(']') + 1)
                 const p = t.indexOf('(')
-                if (p == -1) return t.trim();
-                const c = t.substring(0, p).trim()
+                const c = (p === -1 ? t : t.substring(0, p)).trim()
                 if (!c) return null
                 return '<div class="mine-circle-fill" style="background-color:' + c + ';"></div>';
             }
