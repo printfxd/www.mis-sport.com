@@ -33,10 +33,10 @@ const initProductConfig = (config) => {
     const hash = document.location.hash
     if (!hash || !hash.startsWith(prefix)) throw new Error('not found product info')
     const info = hash.substring(prefix.length).split('|')
-    config.brandName = decodeURIComponent(info[0])
-    config.topicName = decodeURIComponent(info[1])
-    config.seriresName = decodeURIComponent(info[2])
-    config.productName = decodeURIComponent(info[3])
+    config.brandName = decodeURIComponent(info[0]).trim()
+    config.topicName = decodeURIComponent(info[1]).trim()
+    config.seriresName = decodeURIComponent(info[2]).trim()
+    config.productName = decodeURIComponent(info[3]).trim()
     return config
 }
 const setupProduct = async (rootNode, config) => {
@@ -78,11 +78,12 @@ const setupProduct = async (rootNode, config) => {
 
     const row2seriesList = (seriesMap, cols) => {
         let series
-        const seriesName = cols[1], itemName = cols[2]
+        const seriesName = (cols[1] || '').trim()
+        const itemName = (cols[2] || '').trim()
         const restCols = cols.slice(3) // 取之後的所有元素
-        if (seriesName) {
-            if (builtinAttr(seriesName))
-                throw new Error('invalid seriesName')
+        if (builtinAttr(seriesName))
+            throw new Error('invalid seriesName')
+        if (seriesName && !seriesMap[seriesName]) {
             series = {
                 seriesName: seriesName,
                 items: [],
@@ -98,7 +99,7 @@ const setupProduct = async (rootNode, config) => {
         if (itemName) {
             series.items.push({
                 name: itemName,
-                attrs: restCols,
+                attrs: restCols || [],
             })
         }
         return seriesMap
@@ -201,11 +202,11 @@ const setupProduct = async (rootNode, config) => {
             rootNode.querySelectorAll('.' + NodePrefix + 'logo').forEach(n => n.innerHTML = html)
         }
     }
-    const setupProductPrices = (v1, v2) => {
+    ((v1, v2) => {
         const withComma = (v) => {
             let num = NaN
-            if (typeof v == 'number') num = v
-            else if (typeof v == 'string') num = parseInt(v)
+            if (typeof v === 'number') num = v
+            else if (typeof v === 'string') num = parseInt(v)
             return !isNaN(num) && num.toLocaleString() || ''
         }
         const setupPrice = (v) => {
@@ -227,8 +228,7 @@ const setupProduct = async (rootNode, config) => {
         } else {
             (i1 > i2) ? priceAndDiscounted(i1, i2) : priceAndDiscounted(i2, i1)
         }
-    }
-    setupProductPrices(concerned.attrs[aname2idx['Price']], concerned.attrs[aname2idx['Price2']])
+    })(concerned.attrs[aname2idx['Price']], concerned.attrs[aname2idx['Price2']])
     if (aname2idx['Description'] != null) {
         const dataStr = concerned.attrs[aname2idx['Description']]
         if (dataStr) {

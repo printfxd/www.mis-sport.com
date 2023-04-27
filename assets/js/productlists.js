@@ -35,11 +35,12 @@ const setupProductLists = async (rootNode, config) => {
 
     const row2seriesList = (seriesMap, cols) => {
         let series
-        const seriesName = cols[1], itemName = cols[2]
+        const seriesName = (cols[1] || '').trim()
+        const itemName = (cols[2] || '').trim()
         const restCols = cols.slice(3) // 取之後的所有元素
-        if (seriesName) {
-            if (builtinAttr(seriesName))
-                throw new Error('invalid seriesName')
+        if (builtinAttr(seriesName))
+            throw new Error('invalid seriesName')
+        if (seriesName && !seriesMap[seriesName]) {
             series = {
                 seriesName: seriesName,
                 items: [],
@@ -55,7 +56,7 @@ const setupProductLists = async (rootNode, config) => {
         if (itemName) {
             series.items.push({
                 name: itemName,
-                attrs: restCols,
+                attrs: restCols || [],
             })
         }
         return seriesMap
@@ -96,20 +97,20 @@ const setupProductLists = async (rootNode, config) => {
             .then((json) => json.values)
     }
 
-    const withComma = (v) => {
-        let num = NaN
-        if (typeof v == 'number') num = v
-        else if (typeof v == 'string') num = parseInt(v)
-        return !isNaN(num) && num.toLocaleString() || ''
-    }
-
     const NEW_LABEL = `<img src="images/logo/new-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle border border-white"></img>`
     const SALE_LABEL = `<img src="images/logo/sale-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle border border-white"></img>`
+    const NO_LABEL = `<div width="42" height="42" class="rounded-circle border border-white"></div>`
 
     const price4label = (v1, v2, newItem) => {
+        const withComma = (v) => {
+            let num = NaN
+            if (typeof v === 'number') num = v
+            else if (typeof v === 'string') num = parseInt(v)
+            return !isNaN(num) && num.toLocaleString() || ''
+        }
         const setupPrice = (v, newItem) => {
             return {
-                label: newItem && NEW_LABEL,
+                label: newItem && NEW_LABEL || NO_LABEL,
                 price: `<p class="text-end stretched-link text-dark" style="word-wrap:break-word;">NT$${withComma(v)}</p>`,
             }
         }
@@ -121,7 +122,10 @@ const setupProductLists = async (rootNode, config) => {
         }
         const i1 = parseInt(v1), i2 = parseInt(v2)
         if (isNaN(i1)) {
-            if (isNaN(i2)) return console.error('invalid prices:', v1, v2)
+            if (isNaN(i2)) {
+                console.error('invalid prices:', v1, v2)
+                return { label: NO_LABEL, price: '' }
+            }
             return setupPrice(i2, newItem)
         } else if (isNaN(i2)) {
             return setupPrice(i1, newItem)
@@ -133,16 +137,17 @@ const setupProductLists = async (rootNode, config) => {
     }
 
     const itemObject2html = (itemObj, attr2idx, itemLoc) => {
+        let dataStr
         const brandName = itemLoc.brandName
         const itemName = itemObj.name
         const productUrl = `product.html#show-${brandName}|${itemLoc.topicName}|${itemLoc.seriesName}|${itemName}`
-        const imgs = itemObj.attrs[attr2idx['Img']].split(';').filter(Boolean)
-        const imgUrl = imgs[0]
-        const hoverImgAttr = imgs[1] && `data-hover-src="${imgs[1]}"` || ''
-        const logoUrl = itemObj.attrs[attr2idx['Logo']]
+        dataStr = itemObj.attrs[attr2idx['Img']] || ''
+        const imgList = dataStr.split(';').map((s) => s.trim()).filter(Boolean)
+        const imgUrl = imgList[0] || ''
+        const hoverImgAttr = imgList[1] && `data-hover-src="${imgList[1]}"` || ''
+        const logoUrl = itemObj.attrs[attr2idx['Logo']] || ''
         const labelPrice = price4label(itemObj.attrs[attr2idx['Price']], itemObj.attrs[attr2idx['Price2']], itemObj.attrs[attr2idx['New']])
 
-        let dataStr;
         let colorList = '';
         if (dataStr = itemObj.attrs[attr2idx['ColorWithSizes']]) {
             // input string format:'color' or '[label]color' or '[label]color(x-y)'
