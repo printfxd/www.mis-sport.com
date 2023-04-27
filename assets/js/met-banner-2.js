@@ -18,7 +18,8 @@
 						images: {
 							'https://storage.googleapis.com/mis-sport/banner/met/mtb/met-mtb-01.jpg': '0% 35%',
 							'https://storage.googleapis.com/mis-sport/banner/met/mtb/met-mtb-02.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/met/mtb/met-mtb-03.jpg': 'center'
+							'https://storage.googleapis.com/mis-sport/banner/met/mtb/met-mtb-03.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/met/mtb/met-mtb-04.jpg': 'center'
 						},
 
 					// Delay.
