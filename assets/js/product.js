@@ -176,9 +176,9 @@ const setupProduct = async (rootNode, config) => {
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             const setupImgSlider = (list) => (n) => {
                 n.innerHTML += list
-                    .map(o => `<div class="mySlides product-fade"><div class="numbertext"></div>
-                                <div class="text-center"><img class="zoom-in product-img-mask" src="${o.url}" style="width:80%;"></div>
-                                <div class="text"></div></div>`)
+                    .map(o => `<div class="mySlides product-fade" style="overflow:hidden;">
+                               <div class="text-center product-img-mask zoom-in" style="background-image:linear-gradient(to top,#f5f5f5 5px,transparent 15px),linear-gradient(to bottom,#f5f5f5 5px,transparent 15px),linear-gradient(to left,#f5f5f5 5px,transparent 15px),linear-gradient(to right,#f5f5f5 5px,transparent 15px),url('${o.url}');">
+                               <img src="${o.url}" style="width:80%;visibility:hidden;" /></div><div class="text"></div></div>`)
                     .join('')
             }
             const setupImgDots = (list) => (n) => {

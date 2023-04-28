@@ -161,14 +161,9 @@
                 }
             }
             .product-img-mask {
-                -webkit-mask-image: url(images/mask.png);
-                mask-image: url(images/mask.png);
-                -webkit-mask-size: cover;
-                mask-size: cover;
-                -webkit-mask-repeat: no-repeat;
-                mask-repeat: no-repeat;
-                mask-mode: alpha;
-                -webkit-mask-mode: alpha;
+                background-repeat: no-repeat;
+                background-size: 80%;
+                background-position: center;
             }
             span.mine-size-button {
                 margin-bottom: 1px;
@@ -433,8 +428,9 @@
                             handleGesture(e)
                         },{passive:true})
                         el.addEventListener('click', (e) => {
-                            if (IsMobileScreen()) return
-                            const imgUrl = e.target && e.target.tagName === 'IMG' && e.target.src
+                            if (!e.target || IsMobileScreen() || !e.target.classList.contains('product-img-mask')) return
+                            const tag = e.target.querySelector('img')
+                            const imgUrl = tag && tag.src
                             if (!imgUrl) return
                             const fullscreen = document.querySelector('.img-full-page')
                             if (!fullscreen) return
