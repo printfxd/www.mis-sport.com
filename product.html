@@ -45,22 +45,26 @@
             .prev, .next {
               cursor: pointer;
               position: absolute;
-              top: 50%;
+              top: 10%;
+              height: 80%;
               width: auto;
-              margin-top: -22px;
               padding: 16px;
               color: white;
               font-weight: bold;
               font-size: 18px;
               transition: 0.6s ease;
-              border-radius: 0 3px 3px 0;
+              border-radius: 15px 0 0 15px;
               user-select: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
             }
             
             /* Position the "next button" to the right */
             .next {
               right: 0;
-              border-radius: 3px 0 0 3px;
+              border-radius: 0 15px 15px 0;
             }
             
             /* On hover, add a black background color with a little bit see-through */
@@ -225,8 +229,6 @@
                                     <div class="col-6 col-12-small">
 										<!-- Slideshow container -->
 										<div class="slideshow-container product-fade product-img-slider" style="overflow-y:hidden;">
-										    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-										    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 										</div>
  										<div class="product-img-dots" style="text-align:center">
 										</div>
