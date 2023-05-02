@@ -140,7 +140,12 @@ const setupProductLists = async (rootNode, config) => {
         let dataStr
         const brandName = itemLoc.brandName
         const itemName = itemObj.name
-        const productUrl = `product.html#show-${brandName}|${itemLoc.topicName}|${itemLoc.seriesName}|${itemName}`
+        const urlParams = new URLSearchParams('show=1');
+        urlParams.append('brand', brandName)
+        urlParams.append('topic', itemLoc.topicName)
+        urlParams.append('series', itemLoc.seriesName)
+        urlParams.append('product', itemName)
+        const productUrl = "product.html?" + urlParams.toString()
         dataStr = itemObj.attrs[attr2idx['Img']] || ''
         const imgList = dataStr.split(';').map((s) => s.trim()).filter(Boolean)
         const imgUrl = imgList[0] || ''

@@ -28,15 +28,12 @@ const onClickProductColor = (e) => {
     })
 }
 const initProductConfig = (config) => {
-    if (!config || !config.hashPrefix) throw new Error('config.hashPrefix not found')
-    const prefix = '#' + config.hashPrefix
-    const hash = document.location.hash
-    if (!hash || !hash.startsWith(prefix)) throw new Error('not found product info')
-    const info = hash.substring(prefix.length).split('|')
-    config.brandName = decodeURIComponent(info[0]).trim()
-    config.topicName = decodeURIComponent(info[1]).trim()
-    config.seriresName = decodeURIComponent(info[2]).trim()
-    config.productName = decodeURIComponent(info[3]).trim()
+    const urlParams = new URLSearchParams(window.location && window.location.search);
+    if (!urlParams || !urlParams.has('show')) throw new Error('not found product info')
+    config.brandName = decodeURIComponent(urlParams.get('brand')).trim()
+    config.topicName = decodeURIComponent(urlParams.get('topic')).trim()
+    config.seriresName = decodeURIComponent(urlParams.get('series')).trim()
+    config.productName = decodeURIComponent(urlParams.get('product')).trim()
     return config
 }
 const setupProduct = async (rootNode, config) => {
