@@ -174,10 +174,12 @@ const setupProduct = async (rootNode, config) => {
                 return o
             }
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
+            const GRADIENTS = 'linear-gradient(to top,#f5f5f5 5px,transparent 15px),linear-gradient(to bottom,#f5f5f5 5px,transparent 15px),linear-gradient(to left,#f5f5f5 5px,transparent 15px),linear-gradient(to right,#f5f5f5 5px,transparent 15px),'
+            const gradientNotFulllySuppoted = () => (navigator.userAgent || '').match(/iPhone/)
             const setupImgSlider = (list) => (n) => {
                 n.innerHTML = list
                     .map(o => `<div class="mySlides product-fade" style="overflow:hidden;">
-                               <div class="text-center product-img-mask zoom-in" style="background-image:linear-gradient(to top,#f5f5f5 5px,transparent 15px),linear-gradient(to bottom,#f5f5f5 5px,transparent 15px),linear-gradient(to left,#f5f5f5 5px,transparent 15px),linear-gradient(to right,#f5f5f5 5px,transparent 15px),url('${o.url}');">
+                               <div class="text-center product-img-mask zoom-in" style="background-image:${gradientNotFulllySuppoted() ? '' : GRADIENTS}url('${o.url}');">
                                <img src="${o.url}" style="width:80%;visibility:hidden;" /></div><div class="text"></div></div>`)
                     .join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>'
             }
