@@ -23,6 +23,7 @@ const setupProductLists = async (rootNode, config) => {
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
 
     const builtinAttr = (n) => n.startsWith('_')
+    const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
 
     const fetchFromSheet = async (config) => {
         const bookID = config.bookID, sheetName = config.sheetName, dataRange = config.dataRange
@@ -90,7 +91,7 @@ const setupProductLists = async (rootNode, config) => {
         return await fetchFromSheet({
             bookID: config.bookID,
             sheetName: config.brandName,
-            dataRange: 'A1:Z50',
+            dataRange: 'A1:Z200',
             keyUrl: config.keyUrl,
         })
             .then((response) => response.json())
@@ -147,10 +148,10 @@ const setupProductLists = async (rootNode, config) => {
         urlParams.append('product', itemName)
         const productUrl = "product.html?" + urlParams.toString()
         dataStr = itemObj.attrs[attr2idx['Img']] || ''
-        const imgList = dataStr.split(';').map((s) => s.trim()).filter(Boolean)
-        const imgUrl = imgList[0] || ''
+        const imgList = dataStr.split(';').map((s) => embedUrl(s)).filter(Boolean)
+        const imgUrl = imgList[0]
         const hoverImgAttr = imgList[1] && `data-hover-src="${imgList[1]}"` || ''
-        const logoUrl = itemObj.attrs[attr2idx['Logo']] || ''
+        const logoUrl = embedUrl(itemObj.attrs[attr2idx['Logo']])
         const labelPrice = price4label(itemObj.attrs[attr2idx['Price']], itemObj.attrs[attr2idx['Price2']], itemObj.attrs[attr2idx['New']])
 
         let colorList = '';
