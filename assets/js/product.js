@@ -52,6 +52,7 @@ const setupProduct = async (rootNode, config) => {
     const NodePrefix = config.queryPrefix
 
     const builtinAttr = (n) => n.startsWith('_')
+    const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
 
     const fetchFromSheet = async (config) => {
         const bookID = config.bookID, sheetName = config.sheetName, dataRange = config.dataRange
@@ -166,7 +167,7 @@ const setupProduct = async (rootNode, config) => {
                     if (p != -1) o.label = t.substring(1, p).trim()
                     t = t.substring(p + 1)
                 }
-                o.url = t.trim()
+                o.url = embedUrl(t)
                 if (!o.url) return null
                 return o
             }
@@ -195,7 +196,7 @@ const setupProduct = async (rootNode, config) => {
     }
     rootNode.querySelectorAll('.' + NodePrefix + 'name').forEach(n => n.textContent = concerned.name)
     if (aname2idx['Logo'] != null) {
-        const url = concerned.attrs[aname2idx['Logo']]
+        const url = embedUrl(concerned.attrs[aname2idx['Logo']])
         if (url) {
             const html = `<img src="${url}" alt="${BrandName}" width="40" height="40" class="rounded-circle border border-white">`
             rootNode.querySelectorAll('.' + NodePrefix + 'logo').forEach(n => n.innerHTML = html)
@@ -358,7 +359,7 @@ const setupProduct = async (rootNode, config) => {
         }
     }
     if (aname2idx['PurchaseUrl'] != null) {
-        const url = concerned.attrs[aname2idx['PurchaseUrl']]
+        const url = embedUrl(concerned.attrs[aname2idx['PurchaseUrl']])
         if (url) {
             const html = `<a class="button primary fit" href=${url} target="_blank">蝦皮下單</a>`
             rootNode.querySelectorAll('.' + NodePrefix + 'purchase').forEach(n => n.innerHTML = html)
