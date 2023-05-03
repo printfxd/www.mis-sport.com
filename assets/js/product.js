@@ -150,8 +150,8 @@ const setupProduct = async (rootNode, config) => {
     }
 
     rootNode.querySelectorAll('.' + NodePrefix + 'path-list').forEach(e => {
-        e.innerHTML = `<li class="breadcrumb-item"><a href="/">Home</a></li>
-                       <li class="breadcrumb-item"><a href="${BrandName.toLowerCase()}.html">${BrandName}</a></li>
+        e.innerHTML = `<li class="breadcrumb-item"><a class="link-dark" href="/">HOME</a></li>
+                       <li class="breadcrumb-item"><a class="link-dark" href="${BrandName.toLowerCase()}.html">${BrandName}</a></li>
                        <li class="breadcrumb-item active" aria-current="page">${ProductName}</li>`
     })
     if (aname2idx['ImgList'] != null || aname2idx['Img'] != null) {
