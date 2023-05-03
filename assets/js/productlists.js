@@ -90,7 +90,7 @@ const setupProductLists = async (rootNode, config) => {
         return await fetchFromSheet({
             bookID: config.bookID,
             sheetName: config.brandName,
-            dataRange: 'A1:Z50',
+            dataRange: 'A1:Z200',
             keyUrl: config.keyUrl,
         })
             .then((response) => response.json())
