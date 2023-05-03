@@ -21,6 +21,7 @@ const setupProductLists = async (rootNode, config) => {
 
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
+    const LIMIT_ALL_ITEMS = config.limit_for_show_all_items || 20
 
     const builtinAttr = (n) => n.startsWith('_')
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
@@ -216,6 +217,7 @@ const setupProductLists = async (rootNode, config) => {
         if (!topicObj) return
         const seriesNameList = topicObj[ATTR_NAME_FOR_ORDER]
         let allItemsHtml = ''
+        let countItems = 0
         const seriesHtml = seriesNameList.map((seriesName) => {
             const seriesObj = topicObj[seriesName]
             if (!seriesObj) return ''
@@ -226,9 +228,16 @@ const setupProductLists = async (rootNode, config) => {
                     seriesName: seriesName,
                 }))
                 .join('\n')
-            allItemsHtml += itemsHtml
+            if (countItems <= LIMIT_ALL_ITEMS) {
+                allItemsHtml += itemsHtml
+                countItems += topicObj[seriesName].items.length
+            }
             return seriesTemplate(seriesName, itemsHtml)
         })
-        tab.innerHTML = seriesTemplate('ALL', allItemsHtml) + seriesHtml.join('\n')
+        if (countItems <= LIMIT_ALL_ITEMS) {
+            tab.innerHTML = seriesTemplate('ALL', allItemsHtml) + seriesHtml.join('\n')
+        } else {
+            tab.innerHTML = seriesHtml.join('\n')
+        }
     })
 }
