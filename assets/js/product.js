@@ -159,39 +159,37 @@ const setupProduct = async (rootNode, config) => {
         if (dataStr) {
             // input string format:'[label]url'
             // output object: { label:string, url:string }
+            let lastLabel = undefined
             const str2obj = (s) => {
                 if (s && typeof s !== 'string') return null
                 let o = {}, t = s.trim(), p
                 if (t.startsWith('[')) {
                     p = t.indexOf(']')
-                    if (p != -1) o.label = t.substring(1, p).trim()
+                    if (p != -1) lastLabel = o.label = t.substring(1, p).trim()
                     t = t.substring(p + 1)
                 }
                 o.url = embedUrl(t)
                 if (!o.url) return null
+                if (!o.label && lastLabel) o.label = lastLabel
+                if (o.label) o.labelHtml = `data-product-img-label="${o.label}"`
                 return o
             }
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
-            const GRADIENTS = 'linear-gradient(to top,#f5f5f5 5px,transparent 15px),linear-gradient(to bottom,#f5f5f5 5px,transparent 15px),linear-gradient(to left,#f5f5f5 5px,transparent 15px),linear-gradient(to right,#f5f5f5 5px,transparent 15px),'
-            const gradientNotFulllySuppoted = () => (navigator.userAgent || '').match(/iPhone/)
-            const setupImgSlider = (list) => (n) => {
-                n.innerHTML = list
-                    .map(o => `<div class="mySlides product-fade" style="overflow:hidden;">
-                               <div class="text-center product-img-mask zoom-in" style="background-image:${gradientNotFulllySuppoted() ? '' : GRADIENTS}url('${o.url}');">
-                               <img src="${o.url}" style="width:80%;visibility:hidden;" /></div><div class="text"></div></div>`)
-                    .join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>'
+            const GRADCOLORS = '#f5f5f5 5px,transparent 15px'
+            const gradientHtml = (navigator && navigator.userAgent || '').match(/iPhone/) ? '' :
+                `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`;
+            const obj2ImgSlider = (o) => {
+                return `<div class="mySlides product-fade" style="overflow:hidden;">
+                    <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
+                    <img src="${o.url}" style="width:80%;visibility:hidden;" /></div></div>`
             }
-            const setupImgDots = (list) => (n) => {
-                n.innerHTML += list
-                    .map((o, i) => {
-                        let label = ''
-                        if (o.label) label = ' data-product-img-label="' + o.label + '"'
-                        return '<span class="dot" onclick="currentSlide(' + (i + 1) + ');"' + label + '></span>'
-                    })
-                    .join('')
-            }
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(setupImgSlider(list))
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(setupImgDots(list))
+            const obj2ImgDots = (o, i) => `<span class="dot" onclick="currentSlide(${i + 1});" ${o.labelHtml}></span>`
+            const fnSetupHtml = (html) => (e) => e.innerHTML = html
+            const fnAppendHtml = (html) => (e) => e.innerHTML += html
+            const list2ImgSlider = (list) => fnSetupHtml(list.map(obj2ImgSlider).join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>')
+            const list2ImgDots = (list) => fnAppendHtml(list.map(obj2ImgDots).join(''))
+            rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(list2ImgSlider(list))
+            rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(list2ImgDots(list))
         }
     }
     rootNode.querySelectorAll('.' + NodePrefix + 'name').forEach(n => n.textContent = concerned.name)
