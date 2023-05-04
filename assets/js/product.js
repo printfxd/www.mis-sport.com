@@ -172,7 +172,7 @@ const setupProduct = async (rootNode, config) => {
         const dataStr = concerned.attrs[aname2idx['ImgList']] || concerned.attrs[aname2idx['Img']]
         if (dataStr) {
             // input string format:'[label]url'
-            // output object: { label:string, url:string }
+            // output object: { label:string, url:string, labelHtml:string }
             let lastLabel = undefined
             const str2obj = (s) => {
                 if (s && typeof s !== 'string') return null
@@ -185,7 +185,7 @@ const setupProduct = async (rootNode, config) => {
                 o.url = embedUrl(t)
                 if (!o.url) return null
                 if (!o.label && lastLabel) o.label = lastLabel
-                if (o.label) o.labelHtml = `data-product-img-label="${o.label}"`
+                o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
                 return o
             }
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
@@ -331,7 +331,7 @@ const setupProduct = async (rootNode, config) => {
                 return []
             }
             // input string format: 'color' or 'color(x-y)' or '[label]color(x-y)'
-            // output object:{ label:string, color:string, sizes:array }
+            // output object:{ label:string, color:string, sizes:array, labelHtml:string }
             const str2obj = (s) => {
                 if (s && typeof s !== 'string') return null
                 let o = {}, t = s.trim(), p
@@ -345,12 +345,14 @@ const setupProduct = async (rootNode, config) => {
                 if (!o.color) return null
                 if (p === -1) {
                     o.sizes = []
+                    o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
                     return o
                 }
                 t = t.substring(p + 1)
                 p = t.lastIndexOf(')')
                 if (p === -1) return null
                 o.sizes = str2sizes(t.substring(0, p))
+                o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
                 return o
             }
             let html
@@ -360,12 +362,9 @@ const setupProduct = async (rootNode, config) => {
             rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(n => n.innerHTML = html)
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             html = '<div class="row"><div class="col-12">' +
-                list.map(o => '<div class="mine-circle-fill" onclick="onClickProductColor(event);"' +
-                    ' data-sizes="' + o.sizes.join(',') + '"' +
-                    ' data-color="' + o.color + '" style="background-color:' + o.color + ';"' +
-                    ' data-product-img-label="' + o.label + '"' +
-                    '></div>').join('') +
-                '</div></div></div>'
+                list.map(o => 
+                    `<div class="mine-circle-fill" onclick="onClickProductColor(event);" ${o.labelHtml} data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`
+                ).join('') + '</div></div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
             const first = rootNode.querySelector('.mine-circle-fill')
             if (first) first.click()
