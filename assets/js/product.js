@@ -39,7 +39,7 @@ const initProductConfig = (config) => {
 const setupProduct = async (rootNode, config) => {
     const ATTR_NAME_FOR_ORDER = '_order'
     const ATTR_NAME_FOR_TOPIC = '_topic'
-    const DATA_RANGE = 'A1:BZ50'
+    const DATA_RANGE = 'A1:AZ200'
 
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')

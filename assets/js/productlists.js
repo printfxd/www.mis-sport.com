@@ -18,6 +18,7 @@ const onHoverProductCard = (e) => {
 const setupProductLists = async (rootNode, config) => {
     const ATTR_NAME_FOR_ORDER = '_order'
     const ATTR_NAME_FOR_TOPIC = '_topic'
+    const DATA_RANGE = 'A1:AZ200'
 
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
@@ -92,7 +93,7 @@ const setupProductLists = async (rootNode, config) => {
         return await fetchFromSheet({
             bookID: config.bookID,
             sheetName: config.brandName,
-            dataRange: 'A1:Z200',
+            dataRange: DATA_RANGE,
             keyUrl: config.keyUrl,
         })
             .then((response) => response.json())
