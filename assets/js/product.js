@@ -178,18 +178,19 @@ const setupProduct = async (rootNode, config) => {
             const GRADCOLORS = '#f5f5f5 5px,transparent 15px'
             const gradientHtml = (navigator && navigator.userAgent || '').match(/iPhone/) ? '' :
                 `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`;
-            const obj2ImgSlider = (o) => {
-                return `<div class="mySlides product-fade" style="overflow:hidden;">
-                    <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
-                    <img src="${o.url}" style="width:80%;visibility:hidden;" /></div></div>`
-            }
+            const obj2ImgSlider = (o) => `<div class="mySlides product-fade" style="overflow:hidden;">
+                <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
+                <img src="${o.url}" style="width:80%;visibility:hidden;" /></div></div>`
             const obj2ImgDots = (o, i) => `<span class="dot" onclick="currentSlide(${i + 1});" ${o.labelHtml}></span>`
+            const obj2ImgWindow = (o) => `<a href="${o.url}"><img src="${o.url}" ${o.labelHtml} /></a>`
             const fnSetupHtml = (html) => (e) => e.innerHTML = html
             const fnAppendHtml = (html) => (e) => e.innerHTML += html
             const list2ImgSlider = (list) => fnSetupHtml(list.map(obj2ImgSlider).join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>')
             const list2ImgDots = (list) => fnAppendHtml(list.map(obj2ImgDots).join(''))
+            const list2ImgWindow = (list) => fnSetupHtml(list.map(obj2ImgWindow).join(''))
             rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(list2ImgSlider(list))
             rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(list2ImgDots(list))
+            rootNode.querySelectorAll('.' + NodePrefix + 'img-window').forEach(list2ImgWindow(list))
         }
     }
     rootNode.querySelectorAll('.' + NodePrefix + 'name').forEach(n => n.textContent = concerned.name)

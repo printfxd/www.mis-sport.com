@@ -134,7 +134,7 @@
                 background-size: contain;
                 background-repeat: no-repeat no-repeat;
                 background-position: center center;
-                background-color: rgba(0, 0, 0, 0.7);
+                background-color: rgba(255, 255, 255, 0.875);
                 overflow-x: hidden;
             }
             .mine-circle-fill{
@@ -231,11 +231,17 @@
                             <!-- Content -->
                                 <div class="row">
                                     <div class="col-6 col-12-small">
-										<!-- Slideshow container -->
-										<div class="slideshow-container product-fade product-img-slider" style="overflow-y:hidden;">
-										</div>
- 										<div class="product-img-dots" style="text-align:center">
-										</div>
+                                        <!-- lg 以上顯示 .gallery -->
+                                        <div class="gallery d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block product-img-window">
+                                        </div>
+                                        <!-- md 以下顯示 .slideshow-container -->
+                                        <div class="d-none d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+                                            <!-- Slideshow container -->
+                                            <div class="slideshow-container product-img-slider" style="overflow-y:hidden;">
+                                            </div>
+                                            <div class="product-img-dots" style="text-align:center">
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                     <div class="col-6 col-12-small">
@@ -456,6 +462,7 @@
                     setupProduct(document.body, initProductConfig(config)).then(() => {
                         currentSlide(1)
                         initGestureForSlider()
+                        initGallery(jQuery)
                     })
                 })
             </script>
