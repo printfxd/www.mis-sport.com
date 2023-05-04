@@ -15,6 +15,20 @@ const onClickProductColor = (e) => {
     if (label) {
         const jumpTo = document.querySelector('.dot[data-product-img-label="' + label + '"]')
         if (jumpTo) jumpTo.click()
+        const show = (e) => e.parentNode.style.display = 'block';
+        const hide = (e) => e.parentNode.style.display = 'none';
+        const list = document.querySelectorAll('img[data-product-img-label="' + label + '"]')
+        if (list.length == 0) {
+            document.querySelectorAll('img[data-product-img-label]').forEach(show)
+        } else {
+            document.querySelectorAll('img[data-product-img-label]').forEach(hide)
+            list.forEach(show)
+        }
+        if (list.length === 1 || list.length === 2) {
+            document.querySelectorAll('.gallery').forEach(e => e.style.columns = 1)
+        } else {
+            document.querySelectorAll('.gallery').forEach(e => e.style.removeProperty('columns'))
+        }
     }
     document.querySelectorAll('[data-product-size]').forEach(e => {
         let size = e.dataset.productSize
