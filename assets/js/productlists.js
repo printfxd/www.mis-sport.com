@@ -15,6 +15,21 @@ const onHoverProductCard = (e) => {
         if (img.dataset.src) img.src = img.dataset.src
     }
 }
+const onTabSelected = (e) => {
+    if (!e.target) return;
+    const idx = e.target.selectedIndex || -1
+    let sectionEl = e.target.parentNode;
+    while (sectionEl != null && sectionEl.tagName !== 'SECTION') {
+        if (sectionEl == sectionEl.parentNode) break
+        sectionEl = sectionEl.parentNode
+    }
+    const titleEl = sectionEl.querySelectorAll('li.title')[idx]
+    if (titleEl) titleEl.dispatchEvent(new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window,
+    }))
+}
 const setupProductLists = async (rootNode, config) => {
     const ATTR_NAME_FOR_ORDER = '_order'
     const ATTR_NAME_FOR_TOPIC = '_topic'
@@ -22,7 +37,10 @@ const setupProductLists = async (rootNode, config) => {
 
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
+
+    // default values
     const LIMIT_ALL_ITEMS = config.limit_for_show_all_items || 20
+    const SELECT_NODE = config.querySelectNode || '.select-tabs'
 
     const builtinAttr = (n) => n.startsWith('_')
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
@@ -150,8 +168,8 @@ const setupProductLists = async (rootNode, config) => {
         urlParams.append('product', itemName)
         const productUrl = "product.html?" + urlParams.toString()
         dataStr = itemObj.attrs[attr2idx['Img']] || ''
-        const imgList = dataStr.split(';').map((s) => embedUrl(s)).filter(Boolean)
-        const imgUrl = imgList[0]
+        const imgList = dataStr.split(';').map(embedUrl).filter(Boolean)
+        const imgUrl = imgList[0] || ''
         const hoverImgAttr = imgList[1] && `data-hover-src="${imgList[1]}"` || ''
         const logoUrl = embedUrl(itemObj.attrs[attr2idx['Logo']])
         const labelPrice = price4label(itemObj.attrs[attr2idx['Price']], itemObj.attrs[attr2idx['Price2']], itemObj.attrs[attr2idx['New']])
@@ -214,6 +232,7 @@ const setupProductLists = async (rootNode, config) => {
     node4list.forEach((node, idx) => {
         const tab = node.querySelector(config.queryTabNode)
         if (!tab) return console.error('not found tabs for items')
+        const sel = node.querySelector(SELECT_NODE)
         const topicObj = listByTopic[idx]
         if (!topicObj) return
         const seriesNameList = topicObj[ATTR_NAME_FOR_ORDER]
@@ -237,8 +256,10 @@ const setupProductLists = async (rootNode, config) => {
         })
         if (countItems <= LIMIT_ALL_ITEMS) {
             tab.innerHTML = seriesTemplate('ALL', allItemsHtml) + seriesHtml.join('\n')
+            if (sel) sel.innerHTML = '<option>ALL</option>' + seriesNameList.map((n) => `<option>${n}</option>`).join('\n')
         } else {
             tab.innerHTML = seriesHtml.join('\n')
+            if (sel) sel.innerHTML = seriesNameList.map((n) => `<option>${n}</option>`).join('\n')
         }
     })
 }
