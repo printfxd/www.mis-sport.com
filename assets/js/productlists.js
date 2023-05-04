@@ -1,8 +1,7 @@
 const onHoverProductCard = (e) => {
-    let cardEl = e && e.target;
+    let cardEl = e && e.target
     while (cardEl != null && !cardEl.classList.contains('card')) {
-        if (cardEl == cardEl.parentNode) break
-        cardEl = cardEl.parentNode
+        cardEl = cardEl == cardEl.parentNode ? null : cardEl.parentNode
     }
     if (!cardEl) return
     const img = cardEl.querySelector('img')
@@ -16,19 +15,16 @@ const onHoverProductCard = (e) => {
     }
 }
 const onTabSelected = (e) => {
-    if (!e.target) return;
-    const idx = e.target.selectedIndex || -1
-    let sectionEl = e.target.parentNode;
+    const selEl = e && e.target
+    if (!selEl) return;
+    const idx = selEl.selectedIndex == null ? -1 : selEl.selectedIndex
+    let sectionEl = selEl.parentNode;
     while (sectionEl != null && sectionEl.tagName !== 'SECTION') {
-        if (sectionEl == sectionEl.parentNode) break
-        sectionEl = sectionEl.parentNode
+        sectionEl = sectionEl == sectionEl.parentNode ? null : sectionEl.parentNode
     }
+    if (!sectionEl) return
     const titleEl = sectionEl.querySelectorAll('li.title')[idx]
-    if (titleEl) titleEl.dispatchEvent(new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-        view: window,
-    }))
+    if (titleEl) titleEl.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }))
 }
 const setupProductLists = async (rootNode, config) => {
     const ATTR_NAME_FOR_ORDER = '_order'
