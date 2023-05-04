@@ -15,16 +15,16 @@ const onClickProductColor = (e) => {
     if (label) {
         const jumpTo = document.querySelector('.dot[data-product-img-label="' + label + '"]')
         if (jumpTo) jumpTo.click()
-        const show = (e) => e.parentNode.style.display = 'block';
-        const hide = (e) => e.parentNode.style.display = 'none';
+        const pshow = (e) => e.parentNode.style.display = 'block'
+        const phide = (e) => e.parentNode.style.display = 'none'
         const list = document.querySelectorAll('img[data-product-img-label="' + label + '"]')
         if (list.length == 0) {
-            document.querySelectorAll('img[data-product-img-label]').forEach(show)
+            document.querySelectorAll('img[data-product-img-label]').forEach(pshow)
         } else {
-            document.querySelectorAll('img[data-product-img-label]').forEach(hide)
-            list.forEach(show)
+            document.querySelectorAll('img[data-product-img-label]').forEach(phide)
+            list.forEach(pshow)
         }
-        if (list.length === 1 || list.length === 2) {
+        if (list.length <= 2) {
             document.querySelectorAll('.gallery').forEach(e => e.style.columns = 1)
         } else {
             document.querySelectorAll('.gallery').forEach(e => e.style.removeProperty('columns'))
@@ -42,7 +42,7 @@ const onClickProductColor = (e) => {
     })
 }
 const initProductConfig = (config) => {
-    const urlParams = new URLSearchParams(window.location && window.location.search);
+    const urlParams = new URLSearchParams(window.location && window.location.search)
     if (!urlParams || !urlParams.has('show')) throw new Error('not found product info')
     config.brandName = decodeURIComponent(urlParams.get('brand')).trim()
     config.topicName = decodeURIComponent(urlParams.get('topic')).trim()
@@ -67,6 +67,7 @@ const setupProduct = async (rootNode, config) => {
 
     const builtinAttr = (n) => n.startsWith('_')
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
+    const innerHtml = (html) => (e) => e.innerHTML = html
 
     const fetchFromSheet = async (config) => {
         const bookID = config.bookID, sheetName = config.sheetName, dataRange = config.dataRange
@@ -191,20 +192,25 @@ const setupProduct = async (rootNode, config) => {
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             const GRADCOLORS = '#f5f5f5 5px,transparent 15px'
             const gradientHtml = (navigator && navigator.userAgent || '').match(/iPhone/) ? '' :
-                `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`;
+                `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`
             const obj2ImgSlider = (o) => `<div class="mySlides product-fade" style="overflow:hidden;">
                 <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
                 <img src="${o.url}" style="width:80%;visibility:hidden;" /></div></div>`
             const obj2ImgDots = (o, i) => `<span class="dot" onclick="currentSlide(${i + 1});" ${o.labelHtml}></span>`
             const obj2ImgWindow = (o) => `<a href="${o.url}"><img src="${o.url}" ${o.labelHtml} /></a>`
-            const fnSetupHtml = (html) => (e) => e.innerHTML = html
-            const fnAppendHtml = (html) => (e) => e.innerHTML += html
-            const list2ImgSlider = (list) => fnSetupHtml(list.map(obj2ImgSlider).join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>')
-            const list2ImgDots = (list) => fnAppendHtml(list.map(obj2ImgDots).join(''))
-            const list2ImgWindow = (list) => fnSetupHtml(list.map(obj2ImgWindow).join(''))
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(list2ImgSlider(list))
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(list2ImgDots(list))
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-window').forEach(list2ImgWindow(list))
+            const sliderHtml = list.map(obj2ImgSlider).join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>'
+            const dotsHtml = list.map(obj2ImgDots).join('')
+            const windowHtml = list.map(obj2ImgWindow).join('')
+            rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(innerHtml(sliderHtml))
+            rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(innerHtml(dotsHtml))
+            rootNode.querySelectorAll('.' + NodePrefix + 'img-window').forEach(innerHtml(windowHtml))
+            if (list.filter((x) => x.labelHtml).length === 0) {
+                if (list.length <= 2) {
+                    document.querySelectorAll('.gallery').forEach((e) => e.style.columns = 1)
+                } else {
+                    document.querySelectorAll('.gallery').forEach((e) => e.style.removeProperty('columns'))
+                }
+            }
         }
     }
     rootNode.querySelectorAll('.' + NodePrefix + 'name').forEach(n => n.textContent = concerned.name)
@@ -212,7 +218,7 @@ const setupProduct = async (rootNode, config) => {
         const url = embedUrl(concerned.attrs[aname2idx['Logo']])
         if (url) {
             const html = `<img src="${url}" alt="${BrandName}" width="40" height="40" class="rounded-circle border border-white">`
-            rootNode.querySelectorAll('.' + NodePrefix + 'logo').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'logo').forEach(innerHtml(html))
         }
     }
     ((v1, v2) => {
@@ -224,11 +230,11 @@ const setupProduct = async (rootNode, config) => {
         }
         const setupPrice = (v) => {
             const html = `<h5 class="text-end" style="color:black;">NT$ ${withComma(v)}</h5>`
-            rootNode.querySelectorAll('.' + NodePrefix + 'price').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'price').forEach(innerHtml(html))
         }
         const priceAndDiscounted = (p, d) => {
             const html = `<h5 class="text-end" style="color:IndianRed;"><sup class="text-decoration-line-through" style="color:Silver;">NT$${withComma(p)} </sup>NT$${withComma(d)}</h5>`
-            rootNode.querySelectorAll('.' + NodePrefix + 'price').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'price').forEach(innerHtml(html))
         }
         let i1 = parseInt(v1), i2 = parseInt(v2)
         if (isNaN(i1)) {
@@ -246,7 +252,7 @@ const setupProduct = async (rootNode, config) => {
         const dataStr = concerned.attrs[aname2idx['Description']]
         if (dataStr) {
             const html = dataStr.replaceAll('\n', '<br />')
-            rootNode.querySelectorAll('.' + NodePrefix + 'desc').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'desc').forEach(innerHtml(html))
         }
     }
     const ATTR_HIDE_CLS = 'product-attr-hide-in-default'
@@ -359,13 +365,13 @@ const setupProduct = async (rootNode, config) => {
             html = '<div class="row"><div class="col-12">' +
                 AllSizes.map(s => `<span class="badge text-bg-dark mine-size-button" data-product-size="${s}">${s}</span>`).join('') +
                 '</div></div>'
-            rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(innerHtml(html))
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             html = '<div class="row"><div class="col-12">' +
-                list.map(o => 
+                list.map(o =>
                     `<div class="mine-circle-fill" onclick="onClickProductColor(event);" ${o.labelHtml} data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`
                 ).join('') + '</div></div></div>'
-            rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(innerHtml(html))
             const first = rootNode.querySelector('.mine-circle-fill')
             if (first) first.click()
         }
@@ -374,7 +380,7 @@ const setupProduct = async (rootNode, config) => {
         const url = embedUrl(concerned.attrs[aname2idx['PurchaseUrl']])
         if (url) {
             const html = `<a class="button primary fit" href=${url} target="_blank">蝦皮下單</a>`
-            rootNode.querySelectorAll('.' + NodePrefix + 'purchase').forEach(n => n.innerHTML = html)
+            rootNode.querySelectorAll('.' + NodePrefix + 'purchase').forEach(innerHtml(html))
         }
     }
 }
