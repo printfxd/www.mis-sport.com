@@ -1,0 +1,599 @@
+/* Pro Teams Banner No2 */
+
+    #proteamsBanner2 {
+        background-color: #000000;
+        color: #ffffff;
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        min-height: 40rem;
+        min-height: 95vh;
+        position: relative;
+        width: 100%;
+    }
+
+        #proteamsBanner2 input, #proteamsBanner2 select, #proteamsBanner2 textarea {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 a {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 strong, #proteamsBanner2 b {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 h1, #proteamsBanner2 h2, #proteamsBanner2 h3, #proteamsBanner2 h4, #proteamsBanner2 h5, #proteamsBanner2 h6 {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 blockquote {
+            border-left-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 code {
+            background: rgba(255, 255, 255, 0.065);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 hr {
+            border-bottom-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 .box {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 input[type="submit"],
+        #proteamsBanner2 input[type="reset"],
+        #proteamsBanner2 input[type="button"],
+        #proteamsBanner2 button,
+        #proteamsBanner2 .button {
+            background-color: transparent;
+            border-color: #ffffff;
+            color: #ffffff !important;
+        }
+
+            #proteamsBanner2 input[type="submit"]:after,
+            #proteamsBanner2 input[type="reset"]:after,
+            #proteamsBanner2 input[type="button"]:after,
+            #proteamsBanner2 button:after,
+            #proteamsBanner2 .button:after {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+            }
+
+            #proteamsBanner2 input[type="submit"]:hover, #proteamsBanner2 input[type="submit"]:focus,
+            #proteamsBanner2 input[type="reset"]:hover,
+            #proteamsBanner2 input[type="reset"]:focus,
+            #proteamsBanner2 input[type="button"]:hover,
+            #proteamsBanner2 input[type="button"]:focus,
+            #proteamsBanner2 button:hover,
+            #proteamsBanner2 button:focus,
+            #proteamsBanner2 .button:hover,
+            #proteamsBanner2 .button:focus {
+                background-color: rgba(255, 255, 255, 0.065);
+            }
+
+            #proteamsBanner2 input[type="submit"]:active,
+            #proteamsBanner2 input[type="reset"]:active,
+            #proteamsBanner2 input[type="button"]:active,
+            #proteamsBanner2 button:active,
+            #proteamsBanner2 .button:active {
+                background-color: rgba(255, 255, 255, 0.165);
+            }
+
+            #proteamsBanner2 input[type="submit"].icon:before,
+            #proteamsBanner2 input[type="reset"].icon:before,
+            #proteamsBanner2 input[type="button"].icon:before,
+            #proteamsBanner2 button.icon:before,
+            #proteamsBanner2 .button.icon:before {
+                color: #ffffff;
+            }
+
+            #proteamsBanner2 input[type="submit"].primary,
+            #proteamsBanner2 input[type="reset"].primary,
+            #proteamsBanner2 input[type="button"].primary,
+            #proteamsBanner2 button.primary,
+            #proteamsBanner2 .button.primary {
+                box-shadow: none;
+                background-color: #000000;
+                color: #ffffff !important;
+            }
+
+                #proteamsBanner2 input[type="submit"].primary:hover,
+                #proteamsBanner2 input[type="reset"].primary:hover,
+                #proteamsBanner2 input[type="button"].primary:hover,
+                #proteamsBanner2 button.primary:hover,
+                #proteamsBanner2 .button.primary:hover {
+                    background-color: rgba(0, 0, 0, 0.75);
+                }
+
+                #proteamsBanner2 input[type="submit"].primary.icon:before,
+                #proteamsBanner2 input[type="reset"].primary.icon:before,
+                #proteamsBanner2 input[type="button"].primary.icon:before,
+                #proteamsBanner2 button.primary.icon:before,
+                #proteamsBanner2 .button.primary.icon:before {
+                    color: #ffffff !important;
+                }
+
+        #proteamsBanner2 label {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 input[type="text"],
+        #proteamsBanner2 input[type="password"],
+        #proteamsBanner2 input[type="email"],
+        #proteamsBanner2 select,
+        #proteamsBanner2 textarea {
+            background-color: #000000;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+            #proteamsBanner2 input[type="text"]:focus,
+            #proteamsBanner2 input[type="password"]:focus,
+            #proteamsBanner2 input[type="email"]:focus,
+            #proteamsBanner2 select:focus,
+            #proteamsBanner2 textarea:focus {
+                border-color: #ffffff;
+                box-shadow: 0 0 0 1px #ffffff;
+            }
+
+        #proteamsBanner2 select {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E");
+        }
+
+            #proteamsBanner2 select option {
+                color: #ffffff;
+                background: #000000;
+            }
+
+        #proteamsBanner2 input[type="checkbox"] + label,
+        #proteamsBanner2 input[type="radio"] + label {
+            color: #ffffff;
+        }
+
+            #proteamsBanner2 input[type="checkbox"] + label:before,
+            #proteamsBanner2 input[type="radio"] + label:before {
+                background: #000000;
+                border-color: rgba(255, 255, 255, 0.25);
+            }
+
+        #proteamsBanner2 input[type="checkbox"]:checked + label:before,
+        #proteamsBanner2 input[type="radio"]:checked + label:before {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+        }
+
+        #proteamsBanner2 input[type="checkbox"]:focus + label:before,
+        #proteamsBanner2 input[type="radio"]:focus + label:before {
+            border-color: #ffffff;
+            box-shadow: 0 0 0 1px #ffffff;
+        }
+
+        #proteamsBanner2 ::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #proteamsBanner2 :-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #proteamsBanner2 ::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #proteamsBanner2 :-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #proteamsBanner2 .formerize-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #proteamsBanner2 ul.alt li {
+            border-top-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 header p {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 header.major h1 {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 table tbody tr {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+            #proteamsBanner2 table tbody tr:nth-child(2n + 1) {
+                background-color: rgba(255, 255, 255, 0.065);
+            }
+
+        #proteamsBanner2 table th {
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 table thead {
+            border-bottom-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 table tfoot {
+            border-top-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 table.alt tbody tr td {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 ul.contact-icons li .icon:before {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        #proteamsBanner2 .split h2 {
+            border-color: #ffffff;
+        }
+
+        #proteamsBanner2 .split .content {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 .tabs > .titles > .title:hover {
+            box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.25);
+        }
+
+        #proteamsBanner2 .tabs > .titles > .title.active {
+            box-shadow: 0 2px 0 0 #ffffff;
+        }
+
+        #proteamsBanner2:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            pointer-events: none;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0));
+            z-index: 2;
+        }
+
+        #proteamsBanner2 h1 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            font-size: 4.75rem;
+            margin: 0 auto;
+            padding-bottom: 3rem;
+            position: relative;
+            text-align-last: justify;
+            text-align: justify;
+            opacity: 0.95;
+        }
+
+        #proteamsBanner2 .inner {
+            -moz-transition: opacity 1.5s ease-in-out;
+            -webkit-transition: opacity 1.5s ease-in-out;
+            -ms-transition: opacity 1.5s ease-in-out;
+            transition: opacity 1.5s ease-in-out;
+            margin: 0 auto;
+            max-width: 65rem;
+            opacity: 1;
+            position: relative;
+            width: calc(100% - 4rem);
+            z-index: 3;
+        }
+
+        #proteamsBanner2 .content {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            position: relative;
+            text-align: justify;
+            width: 100%;
+        }
+
+            #proteamsBanner2 .content p {
+                border-right: 1px solid rgba(255, 255, 255, 0.25);
+                font-size: 1.5rem;
+                font-weight: 400;
+                min-width: 70%;
+                padding: 3rem 3rem 3rem 0;
+            }
+
+            #proteamsBanner2 .content ul {
+                -moz-justify-content: -moz-flex-end;
+                -webkit-justify-content: -webkit-flex-end;
+                -ms-justify-content: -ms-flex-end;
+                justify-content: flex-end;
+            }
+
+        #proteamsBanner2 .bg {
+            -moz-transition: opacity 2s ease-in-out;
+            -webkit-transition: opacity 2s ease-in-out;
+            -ms-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            opacity: 0.85;
+        }
+
+            #proteamsBanner2 .bg div {
+                -moz-transition: opacity 3s ease;
+                -webkit-transition: opacity 3s ease;
+                -ms-transition: opacity 3s ease;
+                transition: opacity 3s ease;
+                background-size: cover;
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                visibility: hidden;
+                width: 150%;
+            }
+
+                #proteamsBanner2 .bg div.visible {
+                    -moz-animation: bg 45s linear infinite;
+                    -webkit-animation: bg 45s linear infinite;
+                    -ms-animation: bg 45s linear infinite;
+                    animation: bg 45s linear infinite;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1;
+                }
+
+                    #proteamsBanner2 .bg div.visible.top {
+                        z-index: 2;
+                    }
+
+                    @media screen and (max-width: 1280px) {
+
+                        #proteamsBanner2 .bg div.visible {
+                            -moz-animation: bg 29.25s linear infinite;
+                            -webkit-animation: bg 29.25s linear infinite;
+                            -ms-animation: bg 29.25s linear infinite;
+                            animation: bg 29.25s linear infinite;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 736px) {
+
+                        #proteamsBanner2 .bg div.visible {
+                            -moz-animation: bg 18s linear infinite;
+                            -webkit-animation: bg 18s linear infinite;
+                            -ms-animation: bg 18s linear infinite;
+                            animation: bg 18s linear infinite;
+                        }
+
+                    }
+
+                #proteamsBanner2 .bg div:only-child {
+                    -moz-animation-direction: alternate !important;
+                    -webkit-animation-direction: alternate !important;
+                    -ms-animation-direction: alternate !important;
+                    animation-direction: alternate !important;
+                }
+
+            body.is-preload #proteamsBanner2 .bg {
+                opacity: 0;
+            }
+
+    @-moz-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @-webkit-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @-ms-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+        @media screen and (max-width: 1680px) {
+
+            #proteamsBanner2 {
+                padding-top: 4rem;
+            }
+
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            #proteamsBanner2 {
+                min-height: 90vh;
+                padding-top: 3rem;
+            }
+
+                #proteamsBanner2 .inner {
+                    margin: 0 auto;
+                    max-width: 75rem;
+                    width: calc(100% - 8rem);
+                }
+
+                #proteamsBanner2 h1 {
+                    font-size: 4rem;
+                    padding-bottom: 3rem;
+                }
+
+                #proteamsBanner2 .content p {
+                    font-size: 1.25rem;
+                }
+
+        }
+
+        @media screen and (max-width: 980px) {
+
+            #proteamsBanner2 {
+                height: 95vh;
+                min-height: 700px;
+                padding-top: 3rem;
+            }
+
+                #proteamsBanner2 h1 {
+                    font-size: 3rem;
+                    padding-bottom: 3rem;
+                    text-align-last: center;
+                    text-align: center;
+                }
+
+                #proteamsBanner2 .content p {
+                    font-size: 1.25rem;
+                }
+
+                #proteamsBanner2 .content {
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                    #proteamsBanner2 .content p {
+                        border-right: none;
+                        font-size: 1.25rem;
+                        min-width: 100%;
+                        padding: 3rem 0 0 0;
+                        text-align: center;
+                    }
+
+                    #proteamsBanner2 .content ul {
+                        -moz-justify-content: center;
+                        -webkit-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #proteamsBanner2 {
+                min-height: 600px;
+            }
+
+                #proteamsBanner2 h1 {
+                    font-size: 2.5rem;
+                    padding-bottom: 2rem;
+                }
+
+                #proteamsBanner2 .inner {
+                    width: calc(100% - 6rem);
+                }
+
+                #proteamsBanner2 .content p {
+                    padding-top: 2rem;
+                }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #proteamsBanner2 {
+                min-height: 650px;
+                padding-top: 4rem;
+            }
+
+                #proteamsBanner2 .inner {
+                    width: calc(100% - 4rem);
+                }
+
+                #proteamsBanner2 h1 {
+                    padding-bottom: 2rem;
+                    text-align-last: center;
+                    text-align: center;
+                }
+
+                #proteamsBanner2 .content {
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                    #proteamsBanner2 .content p {
+                        font-size: 1.15rem;
+                        padding-top: 2rem;
+                    }
+
+                    #proteamsBanner2 .content ul {
+                        -moz-justify-content: center;
+                        -webkit-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+        }
+
+        body.is-preload #proteamsBanner2 .inner {
+            opacity: 0;
+        }

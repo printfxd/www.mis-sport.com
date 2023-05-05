@@ -7,7 +7,7 @@
 (function($) {
 
 	// Banner.
-		var $proteamsBanner = $('#proteamsBanner');
+		var $proteamsBanner2 = $('#proteamsBanner2');
 
 		(function() {
 
@@ -34,7 +34,7 @@
 
 			// Create BG wrapper, BGs.
 				$wrapper = $('<div class="bg" />')
-					.appendTo($proteamsBanner);
+					.appendTo($proteamsBanner2);
 
 				for (k in settings.images) {
 
