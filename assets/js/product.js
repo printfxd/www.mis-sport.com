@@ -191,7 +191,7 @@ const setupProduct = async (rootNode, config) => {
             }
             const list = dataStr.split(';').map(str2obj).filter(Boolean)
             const GRADCOLORS = '#f5f5f5 5px,transparent 15px'
-            const gradientHtml = (navigator && navigator.userAgent || '').match(/iPhone/) ? '' :
+            const gradientHtml = (navigator && navigator.userAgent || '').match(/iPad|iPhone/) ? '' :
                 `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`
             const obj2ImgSlider = (o) => `<div class="mySlides product-fade" style="overflow:hidden;">
                 <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
