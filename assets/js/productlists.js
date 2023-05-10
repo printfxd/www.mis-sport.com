@@ -34,8 +34,15 @@ const setupProductLists = async (rootNode, config) => {
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
 
+    const numDef = (v, def) => {
+        let num = NaN
+        if (typeof v === 'string') num = parseInt(v)
+        else if (typeof v === 'number') num = v
+        return isNaN(num) ? def : n
+    }
+
     // default values
-    const LIMIT_ALL_ITEMS = config.limit_for_show_all_items || 20
+    const LIMIT_ALL_ITEMS = numDef(config.limit_for_show_all_items, 0)
     const SELECT_NODE = config.querySelectNode || '.select-tabs'
 
     const builtinAttr = (n) => n.startsWith('_')
