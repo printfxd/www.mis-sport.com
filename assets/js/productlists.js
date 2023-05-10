@@ -40,14 +40,18 @@ const setupProductLists = async (rootNode, config) => {
 
     const builtinAttr = (n) => n.startsWith('_')
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
+    const chkrsp = (r) => {
+        if (!r) return undefined
+        if (r.ok) return r
+        throw new Error(`error code:${failure.status} msg:${failure.statusText}`)
+    }
 
     const fetchFromSheet = async (config) => {
-        const bookID = config.bookID, sheetName = config.sheetName, dataRange = config.dataRange
-        const accessKey = await fetch(config.keyUrl)
-            .then((response) => response.text())
-            .then((base64) => atob(base64))
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${bookID}/values/${sheetName}!${dataRange}?key=${accessKey}`
-        return fetch(url)
+        const sheetName = config.sheetName, dataRange = config.dataRange
+        const rspList = await Promise.all([fetch(config.bookUrl), fetch(config.keyUrl)])
+        chkrsp(rspList.find(r => !r.ok))
+        const decoded = (await Promise.all(rspList.map((r) => r.text()))).map(atob)
+        return fetch(`https://sheets.googleapis.com/v4/spreadsheets/${decoded[0]}/values/${sheetName}!${dataRange}?key=${decoded[1]}`)
     }
 
     const row2seriesList = (seriesMap, cols) => {
@@ -105,13 +109,11 @@ const setupProductLists = async (rootNode, config) => {
 
     const fetchWithBrand = async () => {
         return await fetchFromSheet({
-            bookID: config.bookID,
             sheetName: config.brandName,
             dataRange: DATA_RANGE,
+            bookUrl: config.bookUrl,
             keyUrl: config.keyUrl,
-        })
-            .then((response) => response.json())
-            .then((json) => json.values)
+        }).then(chkrsp).then((r) => r.json()).then((j) => j.values)
     }
 
     const NEW_LABEL = `<img src="images/logo/new-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle"></img>`
