@@ -50,9 +50,10 @@
 				}
 
 			// Main loop.
+			if ($bgs.length > 0 ) {
 				$bgs[pos].addClass('visible');
 				$bgs[pos].addClass('top');
-
+			
 				// Bail if we only have a single BG or the client doesn't support transitions.
 					if ($bgs.length == 1)
 						return;
@@ -77,6 +78,6 @@
 						}, settings.delay / 2);
 
 				}, settings.delay);
-
+			}
 		})();
 })(jQuery);

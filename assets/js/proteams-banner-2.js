@@ -50,6 +50,7 @@
 				}
 
 			// Main loop.
+			if ($bgs.length > 0 ) {
 				$bgs[pos].addClass('visible');
 				$bgs[pos].addClass('top');
 
@@ -77,6 +78,6 @@
 						}, settings.delay / 2);
 
 				}, settings.delay);
-
+			}
 		})();
 })(jQuery);
