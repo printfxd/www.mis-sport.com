@@ -180,6 +180,7 @@
                 border-color: silver;
                 color: silver !important;
             }
+            [j-if], [j-else], [j-else-if]{ display: none; }
         </style>
     </head>
     <body class="is-preload">
@@ -318,12 +319,12 @@
                                         <div class="row">
 	                                        <div class="col-6 col-12-small">
 	                                            <ul class="actions stacked">
-	                                                <li><a href="#" class="button fit">尺碼表</a></li>
+	                                                <li j-if="SizeGuide"><a class="button fit" j-set-url="href=SizeGuide">尺碼表</a></li>
 	                                            </ul>
 	                                        </div>
 	                                        <div class="col-6 col-12-small">
                                                 <ul class="actions stacked">
-                                                    <li class="product-purchase"></li>
+                                                    <li j-if="PurchaseUrl"><a class="button primary fit" j-set-url="href=PurchaseUrl" target="_blank">蝦皮下單</a></li>
                                                 </ul>
                                             </div>
                                         </div>

@@ -378,11 +378,73 @@ const setupProduct = async (rootNode, config) => {
             if (first) first.click()
         }
     }
-    if (aname2idx['PurchaseUrl'] != null) {
-        const url = embedUrl(concerned.attrs[aname2idx['PurchaseUrl']])
-        if (url) {
-            const html = `<a class="button primary fit" href=${url} target="_blank">蝦皮下單</a>`
-            rootNode.querySelectorAll('.' + NodePrefix + 'purchase').forEach(innerHtml(html))
+
+    const Dobj = {
+        SizeGuide: concerned.attrs[aname2idx['SizeGuide']],
+        PurchaseUrl: concerned.attrs[aname2idx['PurchaseUrl']],
+    }
+
+    const getValueThenRemove = (attr) => {
+        if (!attr) return
+        return (el) => {
+            if (!el) return false
+            const key = el.getAttribute(attr)
+            if (Dobj[key] != null) {
+                el.removeAttribute(attr)
+                return key
+            }
+            return false
         }
     }
+
+    rootNode.querySelectorAll('[j-set]').forEach(el => {
+        const pair = el.getAttribute('j-set').split('=')
+        if (pair.length === 2) {
+            const val = Dobj[pair[1]]
+            if (val != null) {
+                el.setAttribute(pair[0], val)
+            }
+        }
+    })
+
+    rootNode.querySelectorAll('[j-set-url]').forEach(el => {
+        const pair = el.getAttribute('j-set-url').split('=')
+        if (pair.length === 2) {
+            const val = Dobj[pair[1]]
+            if (val != null) {
+                el.setAttribute(pair[0], embedUrl(val))
+            }
+        }
+    })
+
+    const getSiblings = (e) => {
+        const siblings = []
+        if (!e.parentNode) return siblings
+        let sibling = e.parentNode.firstChild
+        while (sibling) {
+            if (sibling.nodeType === 1 && sibling !== e) {
+                siblings.push(sibling)
+            }
+            sibling = sibling.nextSibling
+        }
+        return siblings
+    }
+
+    const fnIf = getValueThenRemove('j-if')
+    const fnElif = getValueThenRemove('j-else-if')
+
+    rootNode.querySelectorAll('[j-if]').forEach(el => {
+        if (fnIf(el)) return
+        const list = getSiblings(el)
+        let found = false
+        list.filter(e => e.hasAttribute('j-else-if'))
+            .forEach(sb => {
+                if (fnElif(sb) !== false) {
+                    found = true
+                }
+            })
+        if (found) return
+        const els = list.find(e => e.hasAttribute('j-else'))
+        if (els) els.removeAttribute('j-else')
+    })
 }
