@@ -224,8 +224,10 @@
                                 </ul>
                                 <hr>
                                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                                    <ol class="breadcrumb product-path-list">
+                                    <ol class="breadcrumb">
                                       <li class="breadcrumb-item"><a class="link-dark" href="/">HOME</a></li>
+                                      <li j-if="BrandUrl" class="breadcrumb-item"><a class="link-dark" j-set-url="href=BrandUrl">{{BrandName}}</a></li>
+                                      <li j-if="ProductName" class="breadcrumb-item active" aria-current="page">{{ProductName}}</li>
                                     </ol>
                                 </nav>
                                 <br>
@@ -247,11 +249,20 @@
                                     
                                     <div class="col-6 col-12-small">
                                         <!-- Product Properties container -->
-                                        <h2 class="product-name"></h2>
+                                        <h2 j-if="ProductName">{{ ProductName }}</h2>
                                         <br>
                                         <div class="row">
-                                            <div class="col-3 product-logo"></div>
-                                            <div class="col-9 product-price"></div> 
+                                            <div class="col-3">
+                                                <img j-if="Logo" j-set-url="src=Logo" width="40" height="40" class="rounded-circle border border-white">
+                                            </div>
+
+                                            <div class="col-9">
+                                                <h5 j-if="Price" class="text-end" style="color:black;">NT$ {{Price}}</h5>
+                                                <h5 j-if="Discounted" class="text-end" style="color:IndianRed;">
+                                                    <sup class="text-decoration-line-through" style="color:Silver;">NT${{Original}} </sup>
+                                                    NT${{Discounted}}
+                                                </h5>
+                                            </div>
                                         </div>
                                         <!-- 
                                         <div class="row">
@@ -261,31 +272,31 @@
                                         <br><br>
                                         <ul class="alt">
                                             <li>
-                                                <p class="product-desc"></p>
+                                                <p j-set-html="Description"></p>
                                                 <br>
                                                 <ul>
-                                                    <li class="product-attr-hide-in-default">
+                                                    <li j-if="Style">
 	                                                    <div class="row">
 	                                                        <div class="col-4"><b>版型</b></div>
-	                                                        <div class="col-8 product-style"></div>
+	                                                        <div class="col-8">{{Style}}</div>
 	                                                    </div>
                                                     </li>
-                                                    <li class="product-attr-hide-in-default">
+                                                    <li j-if="BikingStyle">
 	                                                    <div class="row">
 	                                                        <div class="col-4"><b>騎乘風格</b></div>
-	                                                        <div class="col-8 product-biking-style"></div>
+	                                                        <div class="col-8">{{BikingStyle}}</div>
 	                                                    </div>
                                                     </li>
-                                                    <li class="product-attr-hide-in-default">
+                                                    <li j-if="SunProtect">
                                                         <div class="row">
                                                             <div class="col-4"><b>溫度範圍</b></div>
-                                                            <div class="col-8 product-temp"></div>
+                                                            <div class="col-8" j-set-html="Temperature"></div>
                                                         </div>
                                                     </li>
-                                                    <li class="product-attr-hide-in-default">
+                                                    <li j-if="SunProtect">
                                                         <div class="row">
                                                             <div class="col-4"><b>防曬等級</b></div>
-                                                            <div class="col-8 product-spf"></div>
+                                                            <div class="col-8" j-set-html="SunProtect"></div>
                                                         </div>
                                                     </li>
                                                     <li class="product-attr-hide-in-default">
@@ -297,7 +308,7 @@
                                                     <li>
                                                         <div class="row">
                                                             <div class="col-4"><b>重量</b></div>
-                                                            <div class="col-8 product-weight"></div>
+                                                            <div class="col-8" j-if="Weight">{{Weight}}</div>
                                                         </div>
                                                     </li>
                                                     <li>

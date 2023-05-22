@@ -166,11 +166,6 @@ const setupProduct = async (rootNode, config) => {
         return
     }
 
-    rootNode.querySelectorAll('.' + NodePrefix + 'path-list').forEach(e => {
-        e.innerHTML = `<li class="breadcrumb-item"><a class="link-dark" href="/">HOME</a></li>
-                       <li class="breadcrumb-item"><a class="link-dark" href="${BrandName.toLowerCase()}.html">${BrandName}</a></li>
-                       <li class="breadcrumb-item active" aria-current="page">${ProductName}</li>`
-    })
     if (aname2idx['ImgList'] != null || aname2idx['Img'] != null) {
         const dataStr = concerned.attrs[aname2idx['ImgList']] || concerned.attrs[aname2idx['Img']]
         if (dataStr) {
@@ -215,89 +210,13 @@ const setupProduct = async (rootNode, config) => {
             }
         }
     }
-    rootNode.querySelectorAll('.' + NodePrefix + 'name').forEach(n => n.textContent = concerned.name)
-    if (aname2idx['Logo'] != null) {
-        const url = embedUrl(concerned.attrs[aname2idx['Logo']])
-        if (url) {
-            const html = `<img src="${url}" alt="${BrandName}" width="40" height="40" class="rounded-circle border border-white">`
-            rootNode.querySelectorAll('.' + NodePrefix + 'logo').forEach(innerHtml(html))
-        }
-    }
-    ((v1, v2) => {
-        const withComma = (v) => {
-            let num = NaN
-            if (typeof v === 'number') num = v
-            else if (typeof v === 'string') num = parseInt(v)
-            return !isNaN(num) && num.toLocaleString() || ''
-        }
-        const setupPrice = (v) => {
-            const html = `<h5 class="text-end" style="color:black;">NT$ ${withComma(v)}</h5>`
-            rootNode.querySelectorAll('.' + NodePrefix + 'price').forEach(innerHtml(html))
-        }
-        const priceAndDiscounted = (p, d) => {
-            const html = `<h5 class="text-end" style="color:IndianRed;"><sup class="text-decoration-line-through" style="color:Silver;">NT$${withComma(p)} </sup>NT$${withComma(d)}</h5>`
-            rootNode.querySelectorAll('.' + NodePrefix + 'price').forEach(innerHtml(html))
-        }
-        let i1 = parseInt(v1), i2 = parseInt(v2)
-        if (isNaN(i1)) {
-            if (isNaN(i2)) return console.error('invalid prices:', v1, v2)
-            setupPrice(i2)
-        } else if (isNaN(i2)) {
-            setupPrice(i1)
-        } else if (i1 == i2) {
-            setupPrice(i1)
-        } else {
-            (i1 > i2) ? priceAndDiscounted(i1, i2) : priceAndDiscounted(i2, i1)
-        }
-    })(concerned.attrs[aname2idx['Price']], concerned.attrs[aname2idx['Price2']])
-    if (aname2idx['Description'] != null) {
-        const dataStr = concerned.attrs[aname2idx['Description']]
-        if (dataStr) {
-            const html = dataStr.replaceAll('\n', '<br />')
-            rootNode.querySelectorAll('.' + NodePrefix + 'desc').forEach(innerHtml(html))
-        }
-    }
+
     const ATTR_HIDE_CLS = 'product-attr-hide-in-default'
     const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
     const assignHtmlAndShow = (html) => (n) => {
         n.innerHTML = html
         const parent = closest(n, (p) => p.classList.contains(ATTR_HIDE_CLS))
         if (parent) parent.classList.remove(ATTR_HIDE_CLS)
-    }
-    const assignTextAndShow = (txt) => (n) => {
-        n.textContent = txt
-        const parent = closest(n, (p) => p.classList.contains(ATTR_HIDE_CLS))
-        if (parent) parent.classList.remove(ATTR_HIDE_CLS)
-    }
-    const removeParentWithClass = (cls) => (n) => {
-        const parent = closest(n, (p) => p.classList.contains(cls))
-        if (parent) parent.parentNode.removeChild(parent)
-    }
-    if (aname2idx['Style'] != null) {
-        const dataStr = concerned.attrs[aname2idx['Style']]
-        const list = rootNode.querySelectorAll('.' + NodePrefix + 'style')
-        if (dataStr) list.forEach(assignTextAndShow(dataStr))
-        else list.forEach(removeParentWithClass(ATTR_HIDE_CLS))
-    }
-    if (aname2idx['BikingStyle'] != null) {
-        const dataStr = concerned.attrs[aname2idx['BikingStyle']]
-        const list = rootNode.querySelectorAll('.' + NodePrefix + 'biking-style')
-        if (dataStr) list.forEach(assignTextAndShow(dataStr))
-        else list.forEach(removeParentWithClass(ATTR_HIDE_CLS))
-    }
-    if (aname2idx['Temperature'] != null) {
-        const dataStr = concerned.attrs[aname2idx['Temperature']]
-        if (dataStr) {
-            const html = dataStr.replaceAll('ºC', '<sup>ºC</sup>')
-            rootNode.querySelectorAll('.' + NodePrefix + 'temp').forEach(assignHtmlAndShow(html))
-        }
-    }
-    if (aname2idx['SunProtect'] != null) {
-        const dataStr = concerned.attrs[aname2idx['SunProtect']]
-        if (dataStr) {
-            const html = dataStr.replaceAll('+', '<sup>+</sup>')
-            rootNode.querySelectorAll('.' + NodePrefix + 'spf').forEach(assignHtmlAndShow(html))
-        }
     }
     if (aname2idx['Water'] != null) {
         const STAR_ICON = '<i class="bi bi-star-fill text-muted"></i>'
@@ -309,12 +228,6 @@ const setupProduct = async (rootNode, config) => {
                 const html = [1, 2, 3, 4, 5].map(v => (stars >= v ? STAR_ICON : UNSTAR_ICON)).join('')
                 rootNode.querySelectorAll('.' + NodePrefix + 'waterproof').forEach(assignHtmlAndShow(html))
             }
-        }
-    }
-    if (aname2idx['Weight'] != null) {
-        const dataStr = concerned.attrs[aname2idx['Weight']]
-        if (dataStr) {
-            rootNode.querySelectorAll('.' + NodePrefix + 'weight').forEach(n => n.textContent = dataStr)
         }
     }
     if (aname2idx['ColorWithSizes'] != null) {
@@ -380,42 +293,106 @@ const setupProduct = async (rootNode, config) => {
     }
 
     const Dobj = {
+        BrandUrl: `${BrandName.toLowerCase()}.html`,
+        BrandName: BrandName,
+        ProductName: ProductName,
+        Logo: concerned.attrs[aname2idx['Logo']],
+        Description: (concerned.attrs[aname2idx['Description']] || '').replaceAll('\n', '<br />'),
+        Style: concerned.attrs[aname2idx['Style']],
+        BikingStyle: concerned.attrs[aname2idx['BikingStyle']],
+        Temperature: (concerned.attrs[aname2idx['Temperature']] || '').replaceAll('ºC', '<sup>ºC</sup>'),
+        SunProtect: (concerned.attrs[aname2idx['SunProtect']] || '').replaceAll('+', '<sup>+</sup>'),
+        Weight: concerned.attrs[aname2idx['Weight']],
         SizeGuide: concerned.attrs[aname2idx['SizeGuide']],
         PurchaseUrl: concerned.attrs[aname2idx['PurchaseUrl']],
     }
 
-    const getValueThenRemove = (attr) => {
-        if (!attr) return
-        return (el) => {
-            if (!el) return false
-            const key = el.getAttribute(attr)
-            if (Dobj[key] != null) {
-                el.removeAttribute(attr)
-                return key
+    const setupPrices = (v1, v2) => {
+        const withComma = (v) => {
+            let num = NaN
+            if (typeof v === 'number') num = v
+            else if (typeof v === 'string') num = parseInt(v)
+            return !isNaN(num) && num.toLocaleString() || ''
+        }
+        let i1 = parseInt(v1), i2 = parseInt(v2)
+        if (isNaN(i1)) {
+            if (isNaN(i2)) return console.error('invalid prices:', v1, v2)
+            Dobj.Price = withComma(i2)
+        } else if (isNaN(i2)) {
+            Dobj.Price = withComma(i1)
+        } else if (i1 == i2) {
+            Dobj.Price = withComma(i1)
+        } else {
+            if (i1 > i2) {
+                Dobj.Original = withComma(i1)
+                Dobj.Discounted = withComma(i2)
+            } else {
+                Dobj.Original = withComma(i2)
+                Dobj.Discounted = withComma(i1)
             }
-            return false
+        }
+    }
+    setupPrices(concerned.attrs[aname2idx['Price']], concerned.attrs[aname2idx['Price2']])
+
+    const qall = (s) => rootNode.querySelectorAll(s)
+    const foreachq = (s, e) => qall(s).forEach(e)
+
+    const getSetterThenRemove = (attr, setter) => {
+        const s = typeof setter === 'function' ? setter : ((v) => v)
+        return (e) => {
+            const v = s(e, e.getAttribute(attr))
+            e.removeAttribute(attr)
+            return v
         }
     }
 
-    rootNode.querySelectorAll('[j-set]').forEach(el => {
-        const pair = el.getAttribute('j-set').split('=')
-        if (pair.length === 2) {
-            const val = Dobj[pair[1]]
-            if (val != null) {
-                el.setAttribute(pair[0], val)
-            }
-        }
-    })
+    foreachq('[j-set]', getSetterThenRemove('j-set', (e, a) => {
+        const p = a.split('=')
+        e.setAttribute(p[0], Dobj[p[1]])
+    }))
+    foreachq('[j-set-url]', getSetterThenRemove('j-set-url', (e, a) => {
+        const p = a.split('=')
+        const u = embedUrl(Dobj[p[1]])
+        e.setAttribute(p[0], u)
+    }))
+    foreachq('[j-set-html]', getSetterThenRemove('j-set-html', (e, a) => e.innerHTML = Dobj[a] || ''))
 
-    rootNode.querySelectorAll('[j-set-url]').forEach(el => {
-        const pair = el.getAttribute('j-set-url').split('=')
-        if (pair.length === 2) {
-            const val = Dobj[pair[1]]
-            if (val != null) {
-                el.setAttribute(pair[0], embedUrl(val))
+    const applyTemplate = (data) => {
+        const templateNodes = []
+        foreachq(
+            ':not(iframe):not(script):not(style):not(br):not(img):not(input)',
+            el => el.childNodes.forEach(c => {
+                if (c.nodeType !== Node.TEXT_NODE || !c.nodeValue.match(/{{\s*(.*?)\s*}}/g)) return
+                templateNodes.push(c)
+            }))
+        const cached = {}
+        templateNodes.forEach(el => {
+            const text = el.nodeValue
+            let replaced = text
+            for (const match of text.matchAll(/{{\s*(.*?)\s*}}/gm)) {
+                const t = match[0]
+                if (!cached[t]) {
+                    const v = data[match[1]];
+                    cached[t] = v == null ? '' : v
+                }
+                replaced = replaced.replace(t, cached[t])
             }
-        }
-    })
+            el.nodeValue = replaced
+        })
+    }
+    applyTemplate(Dobj)
+
+    const removeSelf = (e) => e.parentNode.removeChild(e)
+
+    const getValueOrRemove = (attr, data) =>
+        getSetterThenRemove(attr, (e, a) => {
+            if (data[a]) {
+                e.removeAttribute(attr)
+                return a
+            }
+            removeSelf(e)
+            return false
+        })
 
     const getSiblings = (e) => {
         const siblings = []
@@ -430,21 +407,18 @@ const setupProduct = async (rootNode, config) => {
         return siblings
     }
 
-    const fnIf = getValueThenRemove('j-if')
-    const fnElif = getValueThenRemove('j-else-if')
+    const fnIf = getValueOrRemove('j-if', Dobj)
+    const fnElif = getValueOrRemove('j-else-if', Dobj)
 
-    rootNode.querySelectorAll('[j-if]').forEach(el => {
-        if (fnIf(el)) return
-        const list = getSiblings(el)
-        let found = false
-        list.filter(e => e.hasAttribute('j-else-if'))
-            .forEach(sb => {
-                if (fnElif(sb) !== false) {
-                    found = true
-                }
-            })
-        if (found) return
-        const els = list.find(e => e.hasAttribute('j-else'))
-        if (els) els.removeAttribute('j-else')
+    foreachq('[j-if]', el => {
+        let evaluated = fnIf(el) !== false
+        getSiblings(el).forEach(sb => {
+            if (!sb.hasAttribute('j-else-if') && !sb.hasAttribute('j-else')) return
+            if (evaluated) {
+                removeSelf(sb)
+            } else {
+                evaluated = fnElif(sb) !== false
+            }
+        })
     })
 }
