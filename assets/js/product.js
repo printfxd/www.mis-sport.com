@@ -287,6 +287,17 @@ const setupProduct = async (rootNode, config) => {
                     `<div class="mine-circle-fill" onclick="onClickProductColor(event);" ${o.labelHtml} data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`
                 ).join('') + '</div></div></div>'
             rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(innerHtml(html))
+
+            list.forEach(o => {
+                const l = o.labelHtml
+                const c = o.color
+                if (l) rootNode.querySelectorAll(`.dot[${l}]`).forEach(d => {
+                    d.style.backgroundColor = c
+                    d.style.opacity = 0.6
+                    d.style.border = 'solid 1px'
+                })
+            })
+
             const first = rootNode.querySelector('.mine-circle-fill')
             if (first) first.click()
         }
