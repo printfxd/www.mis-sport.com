@@ -373,7 +373,7 @@ const setupProduct = async (rootNode, config) => {
         foreachq(
             ':not(iframe):not(script):not(style):not(br):not(img):not(input)',
             el => el.childNodes.forEach(c => {
-                if (c.nodeType !== Node.TEXT_NODE || !c.nodeValue.match(/{{\s*(.*?)\s*}}/g)) return
+                if (c.nodeType !== Node.TEXT_NODE || !c.nodeValue.match(/{{\s*(.*?)\s*}}/)) return
                 templateNodes.push(c)
             }))
         const cached = {}
