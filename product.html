@@ -182,6 +182,13 @@
                 color: silver !important;
             }
             [j-if], [j-else], [j-else-if]{ display: none; }
+            .size-guide-inside-page {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 640px;
+                height: 100%;
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -331,7 +338,7 @@
                                         <div class="row">
 	                                        <div class="col-6 col-12-small">
 	                                            <ul class="actions stacked">
-	                                                <li j-if="SizeGuide"><a class="button fit" j-set-url="href=SizeGuide">尺碼表</a></li>
+	                                                <li j-if="SizeGuide"><a class="button fit" onclick="showInsideWindowByUrl(event);" j-set-url="data-url=SizeGuide">尺碼表</a></li>
 	                                            </ul>
 	                                        </div>
 	                                        <div class="col-6 col-12-small">
@@ -440,9 +447,9 @@
                         plusSlides(-1)
                     }
                 }
+                const IsMobileScreen = () => window.matchMedia && window.matchMedia('(max-width: 736px)').matches;
+                // window.screen.width, window.innerWidth, max-device-width
                 function initGestureForSlider() {
-                    const IsMobileScreen = () => window.matchMedia && window.matchMedia('(max-width: 736px)').matches;
-                    // window.screen.width, window.innerWidth, max-device-width
                     document.querySelectorAll('.mySlides').forEach(el => {
                         el.addEventListener('touchstart', (e) => {
                             setTouchStart(e.changedTouches[0].screenX, e.changedTouches[0].screenY)
@@ -458,10 +465,25 @@
                             if (!imgUrl) return
                             const fullscreen = document.querySelector('.img-full-page')
                             if (!fullscreen) return
+                            fullscreen.innerHTML = ''
                             fullscreen.style.backgroundImage = 'url(\'' + imgUrl + '\')'
                             fullscreen.style.display = 'block'
                         })
                     })
+                }
+                function showInsideWindowByUrl(e) {
+                    e.preventDefault()
+                    const url = e.target && e.target.dataset.url
+                    if (!url) return
+                    if (IsMobileScreen()) {
+                        window.location.href = url
+                        return
+                    }
+                    const fullscreen = document.querySelector('.img-full-page')
+                    if (!fullscreen) return
+                    fullscreen.innerHTML = `<iframe src="${url}" class="size-guide-inside-page">你的瀏覽器不支援 iframe,請點擊<a href="${url}">這裡</a></iframe>`
+                    fullscreen.style.removeProperty('background-image')
+                    fullscreen.style.display = 'block'
                 }
             </script>
             <script>
