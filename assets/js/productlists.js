@@ -1,8 +1,6 @@
+const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
 const onHoverProductCard = (e) => {
-    let cardEl = e && e.target
-    while (cardEl != null && !cardEl.classList.contains('card')) {
-        cardEl = cardEl == cardEl.parentNode ? null : cardEl.parentNode
-    }
+    const cardEl = closest(e.target, (p) => p.classList.contains('card'))
     if (!cardEl) return
     const img = cardEl.querySelector('img')
     if (!img) return
@@ -13,6 +11,14 @@ const onHoverProductCard = (e) => {
         cardEl.classList.remove('zoom-in')
         if (img.dataset.src) img.src = img.dataset.src
     }
+}
+const onClickProductCard = (e) => {
+    const cardEl = closest(e.target, (p) => p.classList.contains('card'))
+    if (!cardEl) return
+    const img = cardEl.querySelector('img')
+    if (!img) return
+    cardEl.classList.remove('zoom-in')
+    if (img.dataset.src) img.src = img.dataset.src
 }
 const onTabSelected = (e) => {
     const selEl = e && e.target
@@ -213,7 +219,7 @@ const setupProductLists = async (rootNode, config) => {
                 <li class="me-auto"></li>
                 <li class="me-auto"></li>
                 <li class="me-auto">
-                    <a class="product-link" href="${productUrl}">${labelPrice.price}</a>
+                    <a class="product-link" href="${productUrl}" onclick="onClickProductCard(event);">${labelPrice.price}</a>
                 </li>
             </ul>
         </div></div></div>`
