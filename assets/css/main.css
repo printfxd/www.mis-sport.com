@@ -2101,6 +2101,64 @@ input, select, textarea {
 				color: #ffffff !important;
 			}
 
+		/* LINE's button icon */
+		input[type="submit"].line,
+		input[type="reset"].line,
+		input[type="button"].line,
+		button.line,
+		.button.line {
+			box-shadow: none;
+			background-color: #06C755;
+			color: #ffffff !important;
+			border-color: #06C755;
+		}
+
+			input[type="submit"].line:hover,
+			input[type="reset"].line:hover,
+			input[type="button"].line:hover,
+			button.line:hover,
+			.button.line:hover {
+				background-color: #087d39;
+				border-color: #087d39;
+			}
+
+			input[type="submit"].line.icon:before,
+			input[type="reset"].line.icon:before,
+			input[type="button"].line.icon:before,
+			button.line.icon:before,
+			.button.line.icon:before {
+				color: #ffffff !important;
+			}
+
+			/* Shopee's button icon */
+			input[type="submit"].shopee,
+			input[type="reset"].shopee,
+			input[type="button"].shopee,
+			button.shopee,
+			.button.shopee {
+				box-shadow: none;
+				background-color: #EF4E2D;
+				color: #ffffff !important;
+				border-color: #EF4E2D;
+			}
+	
+				input[type="submit"].shopee:hover,
+				input[type="reset"].shopee:hover,
+				input[type="button"].shopee:hover,
+				button.shopee:hover,
+				.button.shopee:hover {
+					background-color: #a0341f;
+					border-color: #a0341f;
+				}
+	
+				input[type="submit"].shopee.icon:before,
+				input[type="reset"].shopee.icon:before,
+				input[type="button"].shopee.icon:before,
+				button.shopee.icon:before,
+				.button.shopee.icon:before {
+					color: #ffffff !important;
+				}
+	
 /* Form */
 
 	form {
