@@ -422,14 +422,21 @@ const setupProduct = async (rootNode, config) => {
     const fnElif = getValueOrRemove('j-else-if', Dobj)
 
     foreachq('[j-if]', el => {
+        const sbList = getSiblings(el)
         let evaluated = fnIf(el) !== false
-        getSiblings(el).forEach(sb => {
-            if (!sb.hasAttribute('j-else-if') && !sb.hasAttribute('j-else')) return
+        let theElse = null
+        sbList.forEach(sb => {
+            if (sb.hasAttribute('j-else')) {
+                theElse = sb
+                return
+            }
+            if (!sb.hasAttribute('j-else-if')) return
             if (evaluated) {
                 removeSelf(sb)
             } else {
                 evaluated = fnElif(sb) !== false
             }
         })
+        if (!evaluated && theElse) theElse.removeAttribute('j-else')
     })
 }
