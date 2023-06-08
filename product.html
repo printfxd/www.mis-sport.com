@@ -258,6 +258,14 @@
                                     <div class="col-6 col-12-small">
                                         <!-- Product Properties container -->
                                         <h2 j-if="ProductName">{{ ProductName }}</h2>
+                                        <div style="display: flex;justify-content: flex-end;">
+                                        <div class="line-it-button float-end"
+                                            data-lang="zh_Hant" data-type="share-a" data-env="REAL" 
+                                            j-set-url="data-url=ThisProductUrl"
+                                            data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;">
+                                        </div>
+                                        <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                                    </div>
                                         <br>
                                         <div class="row">
                                             <div class="col-3">

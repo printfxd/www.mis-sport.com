@@ -316,6 +316,7 @@ const setupProduct = async (rootNode, config) => {
         Weight: concerned.attrs[aname2idx['Weight']],
         SizeGuide: concerned.attrs[aname2idx['SizeGuide']],
         PurchaseUrl: concerned.attrs[aname2idx['PurchaseUrl']],
+        ThisProductUrl: location.href,
     }
 
     const setupPrices = (v1, v2) => {
