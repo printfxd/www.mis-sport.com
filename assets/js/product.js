@@ -317,6 +317,7 @@ const setupProduct = async (rootNode, config) => {
         SizeGuide: concerned.attrs[aname2idx['SizeGuide']],
         PurchaseUrl: concerned.attrs[aname2idx['PurchaseUrl']],
         ThisProductUrl: location.href,
+        IsMobile: navigator && navigator.userAgent && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent),
     }
 
     const setupPrices = (v1, v2) => {

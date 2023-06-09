@@ -264,7 +264,7 @@
                                                 data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;">
                                             </div>
                                             <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-                                            <a class="btn btn-sm btn-primary" onclick="shareToMessenger(event);" style="border:0;padding:0 6px;margin:0;height:20px;font-size: 10px;font-weight: 600;line-height: 20px;"><i class="bi bi-facebook" style="width:13px;margin: right 4px;"></i> 分享</a>
+                                            <a j-if="IsMobile" class="btn btn-sm btn-primary" onclick="shareToMessenger(event);" style="border:0;padding:0 6px;margin:0;height:20px;font-size:10px;font-weight:600;line-height:20px;"><i class="bi bi-facebook" style="margin-right:3px;line-height:20px;"></i> 分享</a>
                                         </div>
                                         <br>
                                         <div class="row">
@@ -458,8 +458,6 @@
                 }
                 const shareToMessenger = (e) => {
                     e.preventDefault()
-                    const isMobile = navigator && navigator.userAgent && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-                    console.debug('isMobile', isMobile)
                     window.open("fb-messenger://share?link=" + encodeURIComponent(window.location.href))
                 }
                 const IsMobileScreen = () => window.matchMedia && window.matchMedia('(max-width: 736px)').matches;
