@@ -1,0 +1,600 @@
+
+/* BICYCLE LINE Banner No1 */
+
+    #blBanner2 {
+        background-color: #000000;
+        color: #ffffff;
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        min-height: 40rem;
+        min-height: 95vh;
+        position: relative;
+        width: 100%;
+    }
+
+        #blBanner2 input, #blBanner2 select, #blBanner2 textarea {
+            color: #ffffff;
+        }
+
+        #blBanner2 a {
+            color: #ffffff;
+        }
+
+        #blBanner2 strong, #blBanner2 b {
+            color: #ffffff;
+        }
+
+        #blBanner2 h1, #blBanner2 h2, #blBanner2 h3, #blBanner2 h4, #blBanner2 h5, #blBanner2 h6 {
+            color: #ffffff;
+        }
+
+        #blBanner2 blockquote {
+            border-left-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 code {
+            background: rgba(255, 255, 255, 0.065);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 hr {
+            border-bottom-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 .box {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 input[type="submit"],
+        #blBanner2 input[type="reset"],
+        #blBanner2 input[type="button"],
+        #blBanner2 button,
+        #blBanner2 .button {
+            background-color: transparent;
+            border-color: #ffffff;
+            color: #ffffff !important;
+        }
+
+            #blBanner2 input[type="submit"]:after,
+            #blBanner2 input[type="reset"]:after,
+            #blBanner2 input[type="button"]:after,
+            #blBanner2 button:after,
+            #blBanner2 .button:after {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+            }
+
+            #blBanner2 input[type="submit"]:hover, #blBanner2 input[type="submit"]:focus,
+            #blBanner2 input[type="reset"]:hover,
+            #blBanner2 input[type="reset"]:focus,
+            #blBanner2 input[type="button"]:hover,
+            #blBanner2 input[type="button"]:focus,
+            #blBanner2 button:hover,
+            #blBanner2 button:focus,
+            #blBanner2 .button:hover,
+            #blBanner2 .button:focus {
+                background-color: rgba(255, 255, 255, 0.065);
+            }
+
+            #blBanner2 input[type="submit"]:active,
+            #blBanner2 input[type="reset"]:active,
+            #blBanner2 input[type="button"]:active,
+            #blBanner2 button:active,
+            #blBanner2 .button:active {
+                background-color: rgba(255, 255, 255, 0.165);
+            }
+
+            #blBanner2 input[type="submit"].icon:before,
+            #blBanner2 input[type="reset"].icon:before,
+            #blBanner2 input[type="button"].icon:before,
+            #blBanner2 button.icon:before,
+            #blBanner2 .button.icon:before {
+                color: #ffffff;
+            }
+
+            #blBanner2 input[type="submit"].primary,
+            #blBanner2 input[type="reset"].primary,
+            #blBanner2 input[type="button"].primary,
+            #blBanner2 button.primary,
+            #blBanner2 .button.primary {
+                box-shadow: none;
+                background-color: #000000;
+                color: #ffffff !important;
+            }
+
+                #blBanner2 input[type="submit"].primary:hover,
+                #blBanner2 input[type="reset"].primary:hover,
+                #blBanner2 input[type="button"].primary:hover,
+                #blBanner2 button.primary:hover,
+                #blBanner2 .button.primary:hover {
+                    background-color: rgba(0, 0, 0, 0.75);
+                }
+
+                #blBanner2 input[type="submit"].primary.icon:before,
+                #blBanner2 input[type="reset"].primary.icon:before,
+                #blBanner2 input[type="button"].primary.icon:before,
+                #blBanner2 button.primary.icon:before,
+                #blBanner2 .button.primary.icon:before {
+                    color: #ffffff !important;
+                }
+
+        #blBanner2 label {
+            color: #ffffff;
+        }
+
+        #blBanner2 input[type="text"],
+        #blBanner2 input[type="password"],
+        #blBanner2 input[type="email"],
+        #blBanner2 select,
+        #blBanner2 textarea {
+            background-color: #000000;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+            #blBanner2 input[type="text"]:focus,
+            #blBanner2 input[type="password"]:focus,
+            #blBanner2 input[type="email"]:focus,
+            #blBanner2 select:focus,
+            #blBanner2 textarea:focus {
+                border-color: #ffffff;
+                box-shadow: 0 0 0 1px #ffffff;
+            }
+
+        #blBanner2 select {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E");
+        }
+
+            #blBanner2 select option {
+                color: #ffffff;
+                background: #000000;
+            }
+
+        #blBanner2 input[type="checkbox"] + label,
+        #blBanner2 input[type="radio"] + label {
+            color: #ffffff;
+        }
+
+            #blBanner2 input[type="checkbox"] + label:before,
+            #blBanner2 input[type="radio"] + label:before {
+                background: #000000;
+                border-color: rgba(255, 255, 255, 0.25);
+            }
+
+        #blBanner2 input[type="checkbox"]:checked + label:before,
+        #blBanner2 input[type="radio"]:checked + label:before {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+        }
+
+        #blBanner2 input[type="checkbox"]:focus + label:before,
+        #blBanner2 input[type="radio"]:focus + label:before {
+            border-color: #ffffff;
+            box-shadow: 0 0 0 1px #ffffff;
+        }
+
+        #blBanner2 ::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #blBanner2 :-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #blBanner2 ::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #blBanner2 :-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #blBanner2 .formerize-placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        #blBanner2 ul.alt li {
+            border-top-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 header p {
+            color: #ffffff;
+        }
+
+        #blBanner2 header.major h1 {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 table tbody tr {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+            #blBanner2 table tbody tr:nth-child(2n + 1) {
+                background-color: rgba(255, 255, 255, 0.065);
+            }
+
+        #blBanner2 table th {
+            color: #ffffff;
+        }
+
+        #blBanner2 table thead {
+            border-bottom-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 table tfoot {
+            border-top-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 table.alt tbody tr td {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 ul.contact-icons li .icon:before {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        #blBanner2 .split h2 {
+            border-color: #ffffff;
+        }
+
+        #blBanner2 .split .content {
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 .tabs > .titles > .title:hover {
+            box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.25);
+        }
+
+        #blBanner2 .tabs > .titles > .title.active {
+            box-shadow: 0 2px 0 0 #ffffff;
+        }
+
+        #blBanner2:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            pointer-events: none;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0));
+            z-index: 2;
+        }
+
+        #blBanner2 h1 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            font-size: 4.75rem;
+            margin: 0 auto;
+            padding-bottom: 3rem;
+            position: relative;
+            text-align-last: justify;
+            text-align: justify;
+            opacity: 0.95;
+        }
+
+        #blBanner2 .inner {
+            -moz-transition: opacity 1.5s ease-in-out;
+            -webkit-transition: opacity 1.5s ease-in-out;
+            -ms-transition: opacity 1.5s ease-in-out;
+            transition: opacity 1.5s ease-in-out;
+            margin: 0 auto;
+            max-width: 65rem;
+            opacity: 1;
+            position: relative;
+            width: calc(100% - 4rem);
+            z-index: 3;
+        }
+
+        #blBanner2 .content {
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            position: relative;
+            text-align: justify;
+            width: 100%;
+        }
+
+            #blBanner2 .content p {
+                border-right: 1px solid rgba(255, 255, 255, 0.25);
+                font-size: 1.5rem;
+                font-weight: 400;
+                min-width: 70%;
+                padding: 3rem 3rem 3rem 0;
+            }
+
+            #blBanner2 .content ul {
+                -moz-justify-content: -moz-flex-end;
+                -webkit-justify-content: -webkit-flex-end;
+                -ms-justify-content: -ms-flex-end;
+                justify-content: flex-end;
+            }
+
+        #blBanner2 .bg {
+            -moz-transition: opacity 2s ease-in-out;
+            -webkit-transition: opacity 2s ease-in-out;
+            -ms-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            opacity: 0.85;
+        }
+
+            #blBanner2 .bg div {
+                -moz-transition: opacity 3s ease;
+                -webkit-transition: opacity 3s ease;
+                -ms-transition: opacity 3s ease;
+                transition: opacity 3s ease;
+                background-size: cover;
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                visibility: hidden;
+                width: 150%;
+            }
+
+                #blBanner2 .bg div.visible {
+                    -moz-animation: bg 45s linear infinite;
+                    -webkit-animation: bg 45s linear infinite;
+                    -ms-animation: bg 45s linear infinite;
+                    animation: bg 45s linear infinite;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1;
+                }
+
+                    #blBanner2 .bg div.visible.top {
+                        z-index: 2;
+                    }
+
+                    @media screen and (max-width: 1280px) {
+
+                        #blBanner2 .bg div.visible {
+                            -moz-animation: bg 29.25s linear infinite;
+                            -webkit-animation: bg 29.25s linear infinite;
+                            -ms-animation: bg 29.25s linear infinite;
+                            animation: bg 29.25s linear infinite;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 736px) {
+
+                        #blBanner2 .bg div.visible {
+                            -moz-animation: bg 18s linear infinite;
+                            -webkit-animation: bg 18s linear infinite;
+                            -ms-animation: bg 18s linear infinite;
+                            animation: bg 18s linear infinite;
+                        }
+
+                    }
+
+                #blBanner2 .bg div:only-child {
+                    -moz-animation-direction: alternate !important;
+                    -webkit-animation-direction: alternate !important;
+                    -ms-animation-direction: alternate !important;
+                    animation-direction: alternate !important;
+                }
+
+            body.is-preload #blBanner2 .bg {
+                opacity: 0;
+            }
+
+    @-moz-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @-webkit-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @-ms-keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+    @keyframes bg {
+        0% {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -moz-transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
+        }
+    }
+
+        @media screen and (max-width: 1680px) {
+
+            #blBanner2 {
+                padding-top: 4rem;
+            }
+
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            #blBanner2 {
+                min-height: 90vh;
+                padding-top: 3rem;
+            }
+
+                #blBanner2 .inner {
+                    margin: 0 auto;
+                    max-width: 75rem;
+                    width: calc(100% - 8rem);
+                }
+
+                #blBanner2 h1 {
+                    font-size: 4rem;
+                    padding-bottom: 3rem;
+                }
+
+                #blBanner2 .content p {
+                    font-size: 1.25rem;
+                }
+
+        }
+
+        @media screen and (max-width: 980px) {
+
+            #blBanner2 {
+                height: 95vh;
+                min-height: 700px;
+                padding-top: 3rem;
+            }
+
+                #blBanner2 h1 {
+                    font-size: 3rem;
+                    padding-bottom: 3rem;
+                    text-align-last: center;
+                    text-align: center;
+                }
+
+                #blBanner2 .content p {
+                    font-size: 1.25rem;
+                }
+
+                #blBanner2 .content {
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                    #blBanner2 .content p {
+                        border-right: none;
+                        font-size: 1.25rem;
+                        min-width: 100%;
+                        padding: 3rem 0 0 0;
+                        text-align: center;
+                    }
+
+                    #blBanner2 .content ul {
+                        -moz-justify-content: center;
+                        -webkit-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #blBanner2 {
+                min-height: 600px;
+            }
+
+                #blBanner2 h1 {
+                    font-size: 2.5rem;
+                    padding-bottom: 2rem;
+                }
+
+                #blBanner2 .inner {
+                    width: calc(100% - 6rem);
+                }
+
+                #blBanner2 .content p {
+                    padding-top: 2rem;
+                }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #blBanner2 {
+                min-height: 650px;
+                padding-top: 4rem;
+            }
+
+                #blBanner2 .inner {
+                    width: calc(100% - 4rem);
+                }
+
+                #blBanner2 h1 {
+                    padding-bottom: 2rem;
+                    text-align-last: center;
+                    text-align: center;
+                }
+
+                #blBanner2 .content {
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                    #blBanner2 .content p {
+                        font-size: 1.15rem;
+                        padding-top: 2rem;
+                    }
+
+                    #blBanner2 .content ul {
+                        -moz-justify-content: center;
+                        -webkit-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+        }
+
+        body.is-preload #blBanner2 .inner {
+            opacity: 0;
+        }
