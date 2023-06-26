@@ -129,8 +129,8 @@ const setupProductLists = async (rootNode, config) => {
         }).then(chkrsp).then((r) => r.json()).then((j) => j.values)
     }
 
-    const NEW_LABEL = `<img src="images/logo/new-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle"></img>`
-    const SALE_LABEL = `<img src="images/logo/sale-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle"></img>`
+    const NEW_LABEL = `<img src="https://storage.googleapis.com/mis-sport/logo/new-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle"></img>`
+    const SALE_LABEL = `<img src="https://storage.googleapis.com/mis-sport/logo/sale-item.png" alt="${config.brandName}" width="42" height="42" class="rounded-circle"></img>`
     const NO_LABEL = `<div width="42" height="42"></div>`
 
     const price4label = (v1, v2, newItem) => {
