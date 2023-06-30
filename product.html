@@ -108,10 +108,6 @@
               box-shadow: 2px 2px 2px grey;
               opacity: 1.0 !important;
             }
-            
-            .product-attr-hide-in-default {
-              display: none;
-            }
 
             /* Fading animation */
             .product-fade {
@@ -314,10 +310,10 @@
                                                             <div class="col-8" j-set-html="SunProtect"></div>
                                                         </div>
                                                     </li>
-                                                    <li class="product-attr-hide-in-default">
+                                                    <li j-if="Water">
                                                         <div class="row">
                                                             <div class="col-4"><b>防水等級</b></div>
-                                                            <div class="col-8 product-waterproof"></div>
+                                                            <div class="col-8" j-set-html="Water"></div>
                                                         </div>
                                                     </li>
                                                     <li j-if="Weight">
@@ -504,6 +500,19 @@
                         bookUrl: '/assets/etc/encbook.txt',
                         keyUrl: '/assets/etc/enckey.txt',
                         queryPrefix: 'product-',
+                        attrTransformer: {
+                            Description: (v) => v ? v.replaceAll('\n', '<br />') : '',
+                            Temperature: (v) => v ? v.replaceAll('ºC', '<sup>ºC</sup>') : '',
+                            SunProtect: (v) => v ? v.replaceAll('+', '<sup>+</sup>') : '',
+                            Water: (v) => {
+                                const STAR_ICON = '<i class="bi bi-star-fill text-muted"></i>'
+                                const UNSTAR_ICON = '<i class="bi bi-star"></i>'
+                                const stars = parseInt(v)
+                                if (isNaN(stars)) return ''
+                                console.debug(stars)
+                                return [1, 2, 3, 4, 5].map(v => (stars >= v ? STAR_ICON : UNSTAR_ICON)).join('')
+                            }
+                        }
                     }
                     setupProduct(document.body, initProductConfig(config)).then(() => {
                         currentSlide(1)

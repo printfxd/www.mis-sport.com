@@ -147,8 +147,8 @@ const setupProduct = async (rootNode, config) => {
     document.title = BrandName + " " + ProductName + " | MIS Sport 米詩國際"
 
     const data = await fetchWithBrand(BrandName)
-
-    const aname2idx = attr2obj(data.shift())
+    const header = data.shift() // 第一個是header row
+    const aname2idx = attr2obj(header)
 
     const concernedTopic = transform(data).find(t => t[ATTR_NAME_FOR_TOPIC] === TopicName)
     if (!concernedTopic) {
@@ -210,26 +210,7 @@ const setupProduct = async (rootNode, config) => {
             }
         }
     }
-
-    const ATTR_HIDE_CLS = 'product-attr-hide-in-default'
     const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
-    const assignHtmlAndShow = (html) => (n) => {
-        n.innerHTML = html
-        const parent = closest(n, (p) => p.classList.contains(ATTR_HIDE_CLS))
-        if (parent) parent.classList.remove(ATTR_HIDE_CLS)
-    }
-    if (aname2idx['Water'] != null) {
-        const STAR_ICON = '<i class="bi bi-star-fill text-muted"></i>'
-        const UNSTAR_ICON = '<i class="bi bi-star"></i>'
-        const dataStr = concerned.attrs[aname2idx['Water']]
-        if (dataStr) {
-            const stars = parseInt(dataStr)
-            if (!isNaN(stars)) {
-                const html = [1, 2, 3, 4, 5].map(v => (stars >= v ? STAR_ICON : UNSTAR_ICON)).join('')
-                rootNode.querySelectorAll('.' + NodePrefix + 'waterproof').forEach(assignHtmlAndShow(html))
-            }
-        }
-    }
     if (aname2idx['ColorWithSizes'] != null) {
         const dataStr = concerned.attrs[aname2idx['ColorWithSizes']]
         if (dataStr) {
@@ -307,19 +288,25 @@ const setupProduct = async (rootNode, config) => {
         BrandUrl: `${BrandName.toLowerCase()}.html`,
         BrandName: BrandName,
         ProductName: ProductName,
-        Logo: concerned.attrs[aname2idx['Logo']],
-        Description: (concerned.attrs[aname2idx['Description']] || '').replaceAll('\n', '<br />'),
-        Style: concerned.attrs[aname2idx['Style']],
-        BikingStyle: concerned.attrs[aname2idx['BikingStyle']],
-        Temperature: (concerned.attrs[aname2idx['Temperature']] || '').replaceAll('ºC', '<sup>ºC</sup>'),
-        SunProtect: (concerned.attrs[aname2idx['SunProtect']] || '').replaceAll('+', '<sup>+</sup>'),
-        Weight: concerned.attrs[aname2idx['Weight']],
-        SizeGuide: concerned.attrs[aname2idx['SizeGuide']],
-        PurchaseUrl: concerned.attrs[aname2idx['PurchaseUrl']],
         ThisProductUrl: location.href,
         IsMobile: navigator && navigator.userAgent && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent),
         CanBack: window.history.length >= 2,
-    }
+        assignValues: function (nameList, valList) {
+            if (!Array.isArray(nameList) || !Array.isArray(valList)) return
+            valList.forEach((val, i) => {
+                const name = nameList[i]
+                if (name) this[name] = val || ''
+            }, this)
+        },
+        applyTransformer: function (transformer) {
+            if (typeof transformer !== 'object') return
+            Object.keys(transformer).forEach(key => this[key] = transformer[key](this[key], this), this)
+        },
+    };
+
+    header.splice(0, 3)
+    Dobj.assignValues(header, concerned.attrs)
+    Dobj.applyTransformer(config.attrTransformer)
 
     const setupPrices = (v1, v2) => {
         const withComma = (v) => {
