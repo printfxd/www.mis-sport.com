@@ -302,7 +302,7 @@
 	                                                        <div class="col-8">{{BikingStyle}}</div>
 	                                                    </div>
                                                     </li>
-                                                    <li j-if="SunProtect">
+                                                    <li j-if="Temperature">
                                                         <div class="row">
                                                             <div class="col-4"><b>溫度範圍</b></div>
                                                             <div class="col-8" j-set-html="Temperature"></div>
@@ -320,7 +320,7 @@
                                                             <div class="col-8 product-waterproof"></div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li j-if="Weight">
                                                         <div class="row">
                                                             <div class="col-4"><b>重量</b></div>
                                                             <div class="col-8" j-if="Weight">{{Weight}}</div>
