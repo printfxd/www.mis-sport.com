@@ -233,9 +233,9 @@
                                       <li j-if="ProductName" class="breadcrumb-item active" aria-current="page">{{ProductName}}</li>
                                     </ol>
                                 </nav>
-                                <br>
+                                <br><br>
                             <!-- Content -->
-                                <div class="row">
+                                <div class="row" style="display:flex; flex-direction:row;">
                                     <div class="col-7 col-7-xlarge col-6-large col-12-medium col-12-small col-12-xsmall">
                                         <!-- lg 以上顯示 .gallery -->
                                         <div class="gallery d-none d-lg-block product-img-window">
@@ -243,15 +243,17 @@
                                         <!-- md 以下顯示 .slideshow-container -->
                                         <div class="d-block d-lg-none">
                                             <!-- Slideshow container -->
-                                            <div class="slideshow-container product-img-slider" style="overflow-y:hidden;">
+                                            <div class="slideshow-container product-img-slider">
                                             </div>
                                             <div class="product-img-dots" style="text-align:center">
                                             </div>
+                                            <br>
                                         </div>
                                     </div>
-                                    <div class="col-5 col-5-xlarge col-6-large col-12-medium col-12-small col-12-xsmall">
+                                    <div class="col-5 col-5-xlarge col-6-large col-12-medium col-12-small col-12-xsmall" style="position:sticky; top:0; height:100%;">
                                         <!-- Product Properties container -->
                                         <h2 j-if="ProductName">{{ ProductName }}</h2>
+                                        <br>
                                         <div style="display: flex;justify-content: flex-end;">
                                             <div class="line-it-button" j-set-url="data-url=ThisProductUrl"
                                                 data-lang="zh_Hant" data-type="share-a" data-env="REAL"
@@ -299,19 +301,19 @@
                                                     </li>
                                                     <li j-if="Temperature">
                                                         <div class="row">
-                                                            <div class="col-4"><b>溫度</b></div>
+                                                            <div class="col-4"><b>溫度範圍</b></div>
                                                             <div class="col-8" j-set-html="Temperature"></div>
                                                         </div>
                                                     </li>
                                                     <li j-if="SunProtect">
                                                         <div class="row">
-                                                            <div class="col-4"><b>抗曬</b></div>
+                                                            <div class="col-4"><b>防曬係數</b></div>
                                                             <div class="col-8" j-set-html="SunProtect"></div>
                                                         </div>
                                                     </li>
                                                     <li j-if="Water">
                                                         <div class="row">
-                                                            <div class="col-4"><b>防水</b></div>
+                                                            <div class="col-4"><b>防水等級</b></div>
                                                             <div class="col-8" j-set-html="Water"></div>
                                                         </div>
                                                     </li>
@@ -323,8 +325,8 @@
                                                     </li>
                                                     <li j-if="Pad">
                                                         <div class="row">
-                                                            <div class="col-4"><b>褲墊</b></div>
-                                                            <div class="col-8" j-set-html="Pad"></div>
+                                                            <div class="col-4"><b>褲墊等級</b></div>
+                                                            <div class="col-8">{{Pad}}</div>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -510,14 +512,6 @@
                             Temperature: (v) => v ? v.replaceAll('ºC', '<sup>ºC</sup>') : '',
                             SunProtect: (v) => v ? v.replaceAll('+', '<sup>+</sup>') : '',
                             Water: (v) => {
-                                const STAR_ICON = '<i class="bi bi-star-fill text-muted"></i>'
-                                const UNSTAR_ICON = '<i class="bi bi-star"></i>'
-                                const stars = parseInt(v)
-                                if (isNaN(stars)) return ''
-                                console.debug(stars)
-                                return [1, 2, 3, 4, 5].map(v => (stars >= v ? STAR_ICON : UNSTAR_ICON)).join('')
-                            },
-                            Pad: (v) => {
                                 const STAR_ICON = '<i class="bi bi-star-fill text-muted"></i>'
                                 const UNSTAR_ICON = '<i class="bi bi-star"></i>'
                                 const stars = parseInt(v)
