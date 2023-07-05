@@ -24,7 +24,7 @@ const onClickProductColor = (e) => {
             document.querySelectorAll('img[data-product-img-label]').forEach(phide)
             list.forEach(pshow)
         }
-        if (list.length <= 2) {
+        if (list.length <= 10) {
             document.querySelectorAll('.gallery').forEach(e => e.style.columns = 1)
         } else {
             document.querySelectorAll('.gallery').forEach(e => e.style.removeProperty('columns'))
@@ -202,7 +202,7 @@ const setupProduct = async (rootNode, config) => {
             rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(innerHtml(dotsHtml))
             rootNode.querySelectorAll('.' + NodePrefix + 'img-window').forEach(innerHtml(windowHtml))
             if (list.filter((x) => x.labelHtml).length === 0) {
-                if (list.length <= 2) {
+                if (list.length <= 10) {
                     document.querySelectorAll('.gallery').forEach((e) => e.style.columns = 1)
                 } else {
                     document.querySelectorAll('.gallery').forEach((e) => e.style.removeProperty('columns'))
