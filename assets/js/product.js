@@ -324,6 +324,7 @@ const setupProduct = async (rootNode, config) => {
         } else if (i1 == i2) {
             Dobj.Price = withComma(i1)
         } else {
+            Dobj.Price = undefined;
             if (i1 > i2) {
                 Dobj.Original = withComma(i1)
                 Dobj.Discounted = withComma(i2)
