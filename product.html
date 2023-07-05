@@ -233,10 +233,10 @@
                                       <li j-if="ProductName" class="breadcrumb-item active" aria-current="page">{{ProductName}}</li>
                                     </ol>
                                 </nav>
-                                <br><br>
+                                <hr>
                             <!-- Content -->
                                 <div class="row" style="display:flex; flex-direction:row;">
-                                    <div class="col-7 col-7-xlarge col-6-large col-12-medium col-12-small col-12-xsmall">
+                                    <div class="col-5 col-5-xlarge col-5-large col-12-medium col-12-small col-12-xsmall">
                                         <!-- lg 以上顯示 .gallery -->
                                         <div class="gallery d-none d-lg-block product-img-window">
                                         </div>
@@ -250,9 +250,9 @@
                                             <br>
                                         </div>
                                     </div>
-                                    <div class="col-5 col-5-xlarge col-6-large col-12-medium col-12-small col-12-xsmall" style="position:sticky; top:0; height:100%;">
+                                    <div class="col-1 col-1-xlarge col-1-large col-12-medium col-12-small col-12-xsmall"></div>
+                                    <div class="col-6 col-6-xlarge col-6-large col-12-medium col-12-small col-12-xsmall" style="position:sticky; top:0; height:100%;">
                                         <!-- Product Properties container -->
-                                        <h2 j-if="ProductName">{{ ProductName }}</h2>
                                         <br>
                                         <div style="display: flex;justify-content: flex-end;">
                                             <div class="line-it-button" j-set-url="data-url=ThisProductUrl"
@@ -263,100 +263,74 @@
                                             <a j-if="IsMobile" class="btn btn-sm btn-primary" onclick="shareToMessenger(event);" style="border:0;padding:0 6px;margin:0;height:20px;font-size:10px;font-weight:600;line-height:20px;"><i class="bi bi-facebook" style="margin-right:3px;line-height:20px;"></i> 分享</a>
                                         </div>
                                         <br>
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <img j-if="Logo" j-set-url="src=Logo" width="40" height="40" class="rounded-circle border border-white">
-                                            </div>
-
-                                            <div class="col-9">
-                                                <h5 j-if="Price" class="text-end" style="color:black;">NT$ {{Price}}</h5>
-                                                <h5 j-if="Discounted" class="text-end" style="color:IndianRed;">
-                                                    <sup class="text-decoration-line-through" style="color:Silver;">NT${{Original}} </sup>
-                                                    NT${{Discounted}}
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <!-- 
-                                        <div class="row">
-                                            <h5 class="text-end" style="color:Black;">NT$3,980</h5>
-                                        </div>
-                                        -->
-                                        <br><br>
-                                        <ul class="alt">
-                                            <li>
-                                                <p j-set-html="Description"></p>
-                                                <br>
-                                                <ul>
-                                                    <li j-if="Style">
-	                                                    <div class="row">
-	                                                        <div class="col-4"><b>版型</b></div>
-	                                                        <div class="col-8">{{Style}}</div>
-	                                                    </div>
-                                                    </li>
-                                                    <li j-if="BikingStyle">
-	                                                    <div class="row">
-	                                                        <div class="col-4"><b>騎乘風格</b></div>
-	                                                        <div class="col-8">{{BikingStyle}}</div>
-	                                                    </div>
-                                                    </li>
-                                                    <li j-if="Temperature">
-                                                        <div class="row">
-                                                            <div class="col-4"><b>溫度範圍</b></div>
-                                                            <div class="col-8" j-set-html="Temperature"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li j-if="SunProtect">
-                                                        <div class="row">
-                                                            <div class="col-4"><b>防曬係數</b></div>
-                                                            <div class="col-8" j-set-html="SunProtect"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li j-if="Water">
-                                                        <div class="row">
-                                                            <div class="col-4"><b>防水等級</b></div>
-                                                            <div class="col-8" j-set-html="Water"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li j-if="Weight">
-                                                        <div class="row">
-                                                            <div class="col-4"><b>重量</b></div>
-                                                            <div class="col-8" j-if="Weight">{{Weight}}</div>
-                                                        </div>
-                                                    </li>
-                                                    <li j-if="Pad">
-                                                        <div class="row">
-                                                            <div class="col-4"><b>褲墊等級</b></div>
-                                                            <div class="col-8">{{Pad}}</div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-4"><b>顏色</b></div>
-                                                            <div class="col-8 product-colors"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-4"><b>尺碼</b></div>
-                                                            <div class="col-8 product-sizes"></div>
-		                                                </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
                                         <br>
+                                        <div class="box shadow p-3 mb-5 rounded" style="border-width: 2px;">
+										<!-- Product Properties container -->
                                         <div class="row">
-	                                        <div class="col-6 col-12-small">
-	                                            <ul class="actions stacked">
-	                                                <li j-if="SizeGuide"><a class="button fit" onclick="showInsideWindowByUrl(event);" j-set-url="data-url=SizeGuide"><i class="bi bi-rulers" style="font-size: 1.2em;"></i> 尺碼表</a></li>
-	                                            </ul>
-	                                        </div>
-	                                        <div class="col-6 col-12-small">
-                                                <ul class="actions stacked">
-                                                    <li j-if="PurchaseUrl"><a class="button shopee fit" j-set-url="href=PurchaseUrl" target="_blank"><i class="bi bi-bag-fill" style="font-size: 1.2em;"></i> 蝦皮下單</a></li>
-                                                    <li j-else><a href="https://line.me/R/ti/p/@457xrpaj" class="button line fit" target="_blank"><i class="bi bi-line" style="font-size: 1.2em;"></i> 歡迎來店洽詢</a></li>
-                                                </ul>
+                                            <h4 j-if="ProductName">{{ ProductName }}</h4>
+                                            <div class="row">
+                                                <p class="text-secondary text-top">{{ EnglishName }}</p>
                                             </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img j-if="Logo" j-set-url="src=Logo" width="40" height="40" class="rounded-circle border border-white" style="vertical-align: middle;">
+                                                </div>
+                                                <div class="col-9">
+                                                    <h5 j-if="Price" class="text-end" style="color:black;">NT$ {{Price}}</h5>
+                                                    <h5 j-if="Discounted" class="text-end" style="color:IndianRed;">
+                                                        <sup class="text-decoration-line-through" style="color:Silver;">NT${{Original}} </sup>
+                                                        NT${{Discounted}}
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <hr>
+                                        </div>
+                                        <br>
+                                        <!-- lg 以上顯示 2:10 & 3:9 -->
+                                        <div class="d-none d-lg-block">
+                                            <div class="row">
+                                                <div class="col-2 col-2-xlarge col-3-large col-12-medium col-12-small col-12-xsmall"><code><b>顏色</b></code></div>
+                                                <div class="col-10 col-10-xlarge col-9-large col-12-medium col-12-small col-12-xsmall product-colors"></div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-2 col-2-xlarge col-3-large col-12-medium col-12-small col-12-xsmall"><code><b>尺寸</b></code></div>
+                                                <div class="col-10 col-10-xlarge col-9-large col-12-medium col-12-small col-12-xsmall product-sizes"></div>
+                                            </div>
+                                        </div>
+                                        <!-- md 以下顯示 text-center -->
+                                        <div class="d-block d-lg-none">
+                                            <div class="row">
+                                                <div class="col-12 text-center"><code><b>顏色</b></code></div>
+                                                <br><br>
+                                                <div class="col-12 text-center product-colors"></div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-12 text-center"><code><b>尺寸</b></code></div>
+                                                <br><br>
+                                                <div class="col-12 text-center product-sizes"></div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-6 col-12-small">
+                                            <ul class="actions stacked">
+                                                <li j-if="SizeGuide"><a class="button fit" onclick="showInsideWindowByUrl(event);" j-set-url="data-url=SizeGuide"><i class="bi bi-rulers" style="font-size: 1.2em;"></i> 尺碼表</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-12-small">
+                                            <ul class="actions stacked">
+                                                <li j-if="PurchaseUrl"><a class="button shopee fit" j-set-url="href=PurchaseUrl" target="_blank"><i class="bi bi-bag-fill" style="font-size: 1.2em;"></i> 蝦皮下單</a></li>
+                                                <li j-else><a href="https://line.me/R/ti/p/@457xrpaj" class="button line fit" target="_blank"><i class="bi bi-line" style="font-size: 1.2em;"></i> 歡迎來店洽詢</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -367,29 +341,80 @@
 
                 <!-- Footer -->
                     <section id="footer" class="wrapper">
-                        <div class="inner">
-                            <div class="split">
-                                <div class="content">
-                                    <header>
-                                        <h2><img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="38" height="auto" class="rounded-circle" /> 關於我們</h2>
-                                    </header>
-                                    <p>
-                                        <span class="image left">
-                                            <img src="https://storage.googleapis.com/mis-sport/home/mis-sport-shop.jpg" alt="" />
-                                        </span>
-                                        MIS Sport於2016創立，成員皆是單車的愛好者，主因是對運動及單車的熱誠，進而成立公司，想把好的單車產品推廣給台灣喜愛單車活動的朋友．
-                                        <br>
-                                        如同我們的口號"you are not alone"一樣, 我們的責任是建立一個友善的騎車環境與社群，透過騎乘單車，連結我們與社群之間的情誼．
-                                    </p>
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10 box">
+                                <div class="row">
+                                    <div class="col-7 col-7-xlarge col-7-large col-12-medium col-12-small col-12-xsmall">
+                                        <div class="row">
+                                            <header class="major special">
+                                                <h2 class="text-center">商品描述</h2>
+                                            </header>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-1"></div>         
+                                            <div class="col-10">
+                                                <blockquote>
+                                                    <p j-set-html="Description"></p>
+                                                </blockquote>
+                                            </div>
+                                            <div class="col-1"></div>         
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-lg-block col-1" style="border-right: thick solid #C0C0C0; border-width:1px; left:50%;"></div>
+                                    <div class="d-block d-lg-none"><br><br></div>
+                                    <div class="col-4 col-4-xlarge col-4-large col-12-medium col-12-small col-12-xsmall">
+                                        <header class="major special">
+                                            <h2 class="text-center">細節與材質</h2>
+                                        </header>
+                                        <ul  class="alt" style="list-style-type: none; margin: 0; padding: 0;">
+                                            <li j-if="Style">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>版型</b></code></div>
+                                                    <div class="col-7">{{Style}}</div>
+                                                </div>
+                                            </li>
+                                            <li j-if="BikingStyle">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>騎乘風格</b></code></div>
+                                                    <div class="col-7">{{BikingStyle}}</div>
+                                                </div>
+                                            </li>
+                                            <li j-if="Temperature">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>溫度範圍</b></code></div>
+                                                    <div class="col-7" j-set-html="Temperature"></div>
+                                                </div>
+                                            </li>
+                                            <li j-if="SunProtect">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>防曬係數</b></code></div>
+                                                    <div class="col-7" j-set-html="SunProtect"></div>
+                                                </div>
+                                            </li>
+                                            <li j-if="Water">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>防水等級</b></code></div>
+                                                    <div class="col-7" j-set-html="Water"></div>
+                                                </div>
+                                            </li>
+                                            <li j-if="Weight">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>重量</b></code></div>
+                                                    <div class="col-7" j-if="Weight">{{Weight}}</div>
+                                                </div>
+                                            </li>
+                                            <li j-if="Pad">
+                                                <div class="row">
+                                                    <div class="col-5"><code><b>褲墊等級</b></code></div>
+                                                    <div class="col-7">{{Pad}}</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                
-                                <ul class="contact-icons">
-                                    <li><a href="https://www.facebook.com/MISsports" class="icon brands alt fa-facebook-f"><span class="label">FB@MISsports</span></a></li>
-									<li><a href="https://line.me/R/ti/p/@457xrpaj" class="icon brands alt fa-line"><span class="label">LINE@Mis Sport</span></a></li>
-									<li><a href="mailto:official@mis-sport.com" class="icon solid alt fa-envelope"><span class="label">official@mis-sport.com</span></a></li>
-									<li><a href="tel:+886-2-28853525"class="icon solid alt fa-phone"><span class="label">(02) 2885 3525</span></a></li>
-                                </ul>
                             </div>
+                            <div class="col-1"></div>
                         </div>
                     </section>
 
