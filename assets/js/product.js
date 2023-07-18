@@ -51,8 +51,6 @@ const initProductConfig = (config) => {
     return config
 }
 const setupProduct = async (rootNode, config) => {
-    const ATTR_NAME_FOR_ORDER = '_order'
-    const ATTR_NAME_FOR_TOPIC = '_topic'
     const DATA_RANGE = 'A1:AZ200'
 
     if (!config) throw new Error('config not found')
@@ -60,18 +58,17 @@ const setupProduct = async (rootNode, config) => {
     if (typeof config.queryPrefix !== 'string' || config.queryPrefix) config.queryPrefix = 'product-'
 
     const BrandName = config.brandName
-    const TopicName = config.topicName
-    const SeriesName = config.seriresName
-    const ProductName = config.productName
+    let TopicName = config.topicName
+    let SeriesName = config.seriresName
+    let ProductName = config.productName
     const NodePrefix = config.queryPrefix
 
-    const builtinAttr = (n) => n.startsWith('_')
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
     const innerHtml = (html) => (e) => e.innerHTML = html
     const chkrsp = (r) => {
         if (!r) return undefined
         if (r.ok) return r
-        throw new Error(`error code:${failure.status} msg:${failure.statusText}`)
+        throw new Error(`error code:${r.status} msg:${r.statusText}`)
     }
 
     const fetchFromSheet = async (config) => {
@@ -91,222 +88,168 @@ const setupProduct = async (rootNode, config) => {
         }).then(chkrsp).then((r) => r.json()).then((j) => j.values)
     }
 
-    const row2seriesList = (seriesMap, cols) => {
-        let series
-        const seriesName = (cols[1] || '').trim()
-        const itemName = (cols[2] || '').trim()
-        const restCols = cols.slice(3) // 取之後的所有元素
-        if (builtinAttr(seriesName))
-            throw new Error('invalid seriesName')
-        if (seriesName && !seriesMap[seriesName]) {
-            series = {
-                seriesName: seriesName,
-                items: [],
-            }
-            seriesMap[seriesName] = series
-            seriesMap[ATTR_NAME_FOR_ORDER].push(seriesName)
-        } else {
-            const series_order = seriesMap[ATTR_NAME_FOR_ORDER]
-            // 如果連一個series都還沒定義就寫item,則忽略該行資料
-            if (!series_order.length) return seriesMap
-            series = seriesMap[series_order[series_order.length - 1]]
-        }
-        if (itemName) {
-            series.items.push({
-                name: itemName,
-                attrs: restCols || [],
+    const trimStr = (s) => typeof s === 'string' ? s.trim() : s
+
+    const getReducerForRow2obj = (header) => (prev, val, idx) => {
+        let attr = trimStr(header[idx])
+        if (attr) prev[attr] = trimStr(val)
+        return prev
+    }
+
+    const transform = (rows, headerRow) => {
+        const row2obj = getReducerForRow2obj((headerRow === undefined) ? rows.shift() : headerRow)
+        const couldBeLast = ['Topic', 'Series', 'EnglishSeries']
+        const nonEmptyAttrs = ['ProductName']
+        let last = {}
+        const objList = []
+        rows.forEach(row => {
+            if (!row || !row.length) return
+            const obj = row.reduce(row2obj, {})
+            couldBeLast.forEach((attr) => {
+                if (obj[attr]) last[attr] = obj[attr]
+                else obj[attr] = last[attr]
             })
-        }
-        return seriesMap
-    }
-
-    const splitRows = (rows) => {
-        const indexes = rows.reduce((last, row, idx) => {
-            if (row[0]) last.push(idx)
-            return last
+            if (nonEmptyAttrs.find((attr) => !obj[attr])) return
+            objList.push(obj)
         }, [])
-        return indexes.map((e, i, a) => rows.slice(e, a[i + 1]))
+        return objList
     }
 
-    const attr2obj = (row) => {
-        let obj = {}
-        if (!Array.isArray(row)) return obj
-        row.forEach((n, i) => { if (i - 3 >= 0) obj[n] = i - 3 })
-        return obj
-    }
+    const isConcernedProdcut = it => (it.Topic === TopicName && it.Series === SeriesName && it.ProductName === ProductName)
 
-    const transform = (rows) => {
-        const cleared = rows.filter((c) => c && c.length)
-        const lists = splitRows(cleared)
-        return lists.map(rows => rows.reduce(row2seriesList, {
-            [ATTR_NAME_FOR_ORDER]: [],
-            [ATTR_NAME_FOR_TOPIC]: rows.length > 0 && rows[0].length > 0 && rows[0][0],
-        }))
-    }
+    const data = await fetchWithBrand(BrandName)
+    const concerned = transform(data).find(isConcernedProdcut)
+    console.debug(concerned)
+
+    TopicName = concerned.Topic
+    SeriesName = concerned.Series
+    ProductName = concerned.ProductName
 
     document.title = BrandName + " " + ProductName + " | MIS Sport 米詩國際"
 
-    const data = await fetchWithBrand(BrandName)
-    const header = data.shift() // 第一個是header row
-    const aname2idx = attr2obj(header)
-
-    const concernedTopic = transform(data).find(t => t[ATTR_NAME_FOR_TOPIC] === TopicName)
-    if (!concernedTopic) {
-        console.error('not found concerned topic:', TopicName)
-        return
-    }
-    const concernedSerires = concernedTopic[SeriesName]
-    if (!concernedSerires) {
-        console.error(`not found concerned series:${TopicName}\\${SeriesName}`)
-        return
-    }
-    const concerned = concernedSerires.items.find(it => it.name === ProductName)
-    if (!concerned) {
-        console.error(`not found concerned product:${TopicName}\\${SeriesName}\\${ProductName}`)
-        return
-    }
-
-    if (aname2idx['ImgList'] != null || aname2idx['Img'] != null) {
-        const dataStr = concerned.attrs[aname2idx['ImgList']] || concerned.attrs[aname2idx['Img']]
-        if (dataStr) {
-            // input string format:'[label]url'
-            // output object: { label:string, url:string, labelHtml:string }
-            let lastLabel = undefined
-            const str2obj = (s) => {
-                if (s && typeof s !== 'string') return null
-                let o = {}, t = s.trim(), p
-                if (t.startsWith('[')) {
-                    p = t.indexOf(']')
-                    if (p != -1) lastLabel = o.label = t.substring(1, p).trim()
-                    t = t.substring(p + 1)
-                }
-                o.url = embedUrl(t)
-                if (!o.url) return null
-                if (!o.label && lastLabel) o.label = lastLabel
-                o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
-                return o
+    if (concerned.ImgList || concerned.Img) {
+        // input string format:'[label]url'
+        // output object: { label:string, url:string, labelHtml:string }
+        let lastLabel = undefined
+        const str2obj = (s) => {
+            if (s && typeof s !== 'string') return null
+            let o = {}, t = s.trim(), p
+            if (t.startsWith('[')) {
+                p = t.indexOf(']')
+                if (p != -1) lastLabel = o.label = t.substring(1, p).trim()
+                t = t.substring(p + 1)
             }
-            const list = dataStr.split(';').map(str2obj).filter(Boolean)
-            const GRADCOLORS = '#f5f5f5 5px,transparent 15px'
-            const gradientHtml = (navigator && navigator.userAgent || '').match(/iPad|iPhone/) ? '' :
-                `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`
-            const obj2ImgSlider = (o) => `<div class="mySlides product-fade" style="overflow:hidden;">
-                <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
-                <img src="${o.url}" style="width:80%;visibility:hidden;" /></div></div>`
-            const obj2ImgDots = (o, i) => `<span class="dot" onclick="currentSlide(${i + 1});" ${o.labelHtml}></span>`
-            const obj2ImgWindow = (o) => `<a href="${o.url}"><img src="${o.url}" ${o.labelHtml} /></a>`
-            const sliderHtml = list.map(obj2ImgSlider).join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>'
-            const dotsHtml = list.map(obj2ImgDots).join('')
-            const windowHtml = list.map(obj2ImgWindow).join('')
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(innerHtml(sliderHtml))
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(innerHtml(dotsHtml))
-            rootNode.querySelectorAll('.' + NodePrefix + 'img-window').forEach(innerHtml(windowHtml))
-            if (list.filter((x) => x.labelHtml).length === 0) {
-                if (list.length <= 10) {
-                    document.querySelectorAll('.gallery').forEach((e) => e.style.columns = 1)
-                } else {
-                    document.querySelectorAll('.gallery').forEach((e) => e.style.removeProperty('columns'))
-                }
+            o.url = embedUrl(t)
+            if (!o.url) return null
+            if (!o.label && lastLabel) o.label = lastLabel
+            o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
+            return o
+        }
+        const list = (concerned.ImgList || concerned.Img || '').split(';').map(str2obj).filter(Boolean)
+        const GRADCOLORS = '#f5f5f5 5px,transparent 15px'
+        const gradientHtml = (navigator && navigator.userAgent || '').match(/iPad|iPhone/) ? '' :
+            `linear-gradient(to top,${GRADCOLORS}),linear-gradient(to bottom,${GRADCOLORS}),linear-gradient(to left,${GRADCOLORS}),linear-gradient(to right,${GRADCOLORS}),`
+        const obj2ImgSlider = (o) => `<div class="mySlides product-fade" style="overflow:hidden;">
+            <div class="text-center product-img-mask zoom-in" ${o.labelHtml} style="background-image:${gradientHtml}url('${o.url}');">
+            <img src="${o.url}" style="width:80%;visibility:hidden;" /></div></div>`
+        const obj2ImgDots = (o, i) => `<span class="dot" onclick="currentSlide(${i + 1});" ${o.labelHtml}></span>`
+        const obj2ImgWindow = (o) => `<a href="${o.url}"><img src="${o.url}" ${o.labelHtml} /></a>`
+        const sliderHtml = list.map(obj2ImgSlider).join('') + '<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>'
+        const dotsHtml = list.map(obj2ImgDots).join('')
+        const windowHtml = list.map(obj2ImgWindow).join('')
+        rootNode.querySelectorAll('.' + NodePrefix + 'img-slider').forEach(innerHtml(sliderHtml))
+        rootNode.querySelectorAll('.' + NodePrefix + 'img-dots').forEach(innerHtml(dotsHtml))
+        rootNode.querySelectorAll('.' + NodePrefix + 'img-window').forEach(innerHtml(windowHtml))
+        if (list.filter((x) => x.labelHtml).length === 0) {
+            if (list.length <= 10) {
+                document.querySelectorAll('.gallery').forEach((e) => e.style.columns = 1)
+            } else {
+                document.querySelectorAll('.gallery').forEach((e) => e.style.removeProperty('columns'))
             }
         }
     }
     const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
-    if (aname2idx['ColorWithSizes'] != null) {
-        const dataStr = concerned.attrs[aname2idx['ColorWithSizes']]
-        if (dataStr) {
-            // input string format:'x-y'
-            // support rules:s-l, s-, m
-            // output array:[], [x], [x,y,z,...]
-            const str2sizes = (s) => {
-                if (s && typeof s === 'string') {
-                    const t = s.trim()
-                    const r = t.toUpperCase().split('-')
-                    if (r.length == 1) return [r]
-                    const b = AllSizes.indexOf(r[0])
-                    if (b != -1) {
-                        let e = AllSizes.indexOf(r[1])
-                        if (e >= 0) e += 1
-                        else if (r.length > 1) e = AllSizes.length
-                        return AllSizes.slice(b, e)
-                    }
+    if (concerned.ColorWithSizes) {
+        // input string format:'x-y'
+        // support rules:s-l, s-, m
+        // output array:[], [x], [x,y,z,...]
+        const str2sizes = (s) => {
+            if (s && typeof s === 'string') {
+                const t = s.trim()
+                const r = t.toUpperCase().split('-')
+                if (r.length == 1) return [r]
+                const b = AllSizes.indexOf(r[0])
+                if (b != -1) {
+                    let e = AllSizes.indexOf(r[1])
+                    if (e >= 0) e += 1
+                    else if (r.length > 1) e = AllSizes.length
+                    return AllSizes.slice(b, e)
                 }
-                return []
             }
-            // input string format: 'color' or 'color(x-y)' or '[label]color(x-y)'
-            // output object:{ label:string, color:string, sizes:array, labelHtml:string }
-            const str2obj = (s) => {
-                if (s && typeof s !== 'string') return null
-                let o = {}, t = s.trim(), p
-                if (t.startsWith('[')) {
-                    p = t.indexOf(']')
-                    if (p != -1) o.label = t.substring(1, p).trim()
-                    t = t.substring(p + 1)
-                }
-                p = t.indexOf('(')
-                o.color = (p === -1 ? t : t.substring(0, p)).trim()
-                if (!o.color) return null
-                if (p === -1) {
-                    o.sizes = []
-                    o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
-                    return o
-                }
+            return []
+        }
+        // input string format: 'color' or 'color(x-y)' or '[label]color(x-y)'
+        // output object:{ label:string, color:string, sizes:array, labelHtml:string }
+        const str2obj = (s) => {
+            if (s && typeof s !== 'string') return null
+            let o = {}, t = s.trim(), p
+            if (t.startsWith('[')) {
+                p = t.indexOf(']')
+                if (p != -1) o.label = t.substring(1, p).trim()
                 t = t.substring(p + 1)
-                p = t.lastIndexOf(')')
-                if (p === -1) return null
-                o.sizes = str2sizes(t.substring(0, p))
+            }
+            p = t.indexOf('(')
+            o.color = (p === -1 ? t : t.substring(0, p)).trim()
+            if (!o.color) return null
+            if (p === -1) {
+                o.sizes = []
                 o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
                 return o
             }
-            let html
-            html = '<div class="row"><div class="col-12">' +
-                AllSizes.map(s => `<span class="badge text-bg-dark mine-size-button" data-product-size="${s}">${s}</span>`).join('') +
-                '</div></div>'
-            rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(innerHtml(html))
-            const list = dataStr.split(';').map(str2obj).filter(Boolean)
-            html = '<div class="row"><div class="col-12">' +
-                list.map(o =>
-                    `<div class="mine-circle-fill" onclick="onClickProductColor(event);" ${o.labelHtml} data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`
-                ).join('') + '</div></div></div>'
-            rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(innerHtml(html))
-
-            list.forEach(o => {
-                const l = o.labelHtml
-                const c = o.color
-                if (l) rootNode.querySelectorAll(`.dot[${l}]`).forEach(d => {
-                    d.style.backgroundColor = c
-                    d.style.opacity = 0.6
-                    d.style.border = 'solid 1px'
-                })
-            })
-
-            const first = rootNode.querySelector('.mine-circle-fill')
-            if (first) first.click()
+            t = t.substring(p + 1)
+            p = t.lastIndexOf(')')
+            if (p === -1) return null
+            o.sizes = str2sizes(t.substring(0, p))
+            o.labelHtml = o.label && `data-product-img-label="${o.label}"` || ''
+            return o
         }
+        let html
+        html = '<div class="row"><div class="col-12">' +
+            AllSizes.map(s => `<span class="badge text-bg-dark mine-size-button" data-product-size="${s}">${s}</span>`).join('') +
+            '</div></div>'
+        rootNode.querySelectorAll('.' + NodePrefix + 'sizes').forEach(innerHtml(html))
+        const list = concerned.ColorWithSizes.split(';').map(str2obj).filter(Boolean)
+        html = '<div class="row"><div class="col-12">' +
+            list.map(o =>
+                `<div class="mine-circle-fill" onclick="onClickProductColor(event);" ${o.labelHtml} data-sizes="${o.sizes.join(',')}" data-color="${o.color}" style="background-color:${o.color};"></div>`
+            ).join('') + '</div></div></div>'
+        rootNode.querySelectorAll('.' + NodePrefix + 'colors').forEach(innerHtml(html))
+
+        list.forEach(o => {
+            const l = o.labelHtml
+            const c = o.color
+            if (l) rootNode.querySelectorAll(`.dot[${l}]`).forEach(d => {
+                d.style.backgroundColor = c
+                d.style.opacity = 0.6
+                d.style.border = 'solid 1px'
+            })
+        })
+
+        const first = rootNode.querySelector('.mine-circle-fill')
+        if (first) first.click()
     }
 
-    const Dobj = {
-        BrandUrl: `${BrandName.toLowerCase()}.html`,
-        BrandName: BrandName,
-        ProductName: ProductName,
-        ThisProductUrl: location.href,
-        IsMobile: navigator && navigator.userAgent && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent),
-        CanBack: window.history.length >= 2,
-        assignValues: function (nameList, valList) {
-            if (!Array.isArray(nameList) || !Array.isArray(valList)) return
-            valList.forEach((val, i) => {
-                const name = nameList[i]
-                if (name) this[name] = val || ''
-            }, this)
-        },
-        applyTransformer: function (transformer) {
-            if (typeof transformer !== 'object') return
-            Object.keys(transformer).forEach(key => this[key] = transformer[key](this[key], this), this)
-        },
-    };
+    concerned.BrandUrl = `${BrandName.toLowerCase()}.html`
+    concerned.BrandName = BrandName
+    concerned.ProductName = ProductName
+    concerned.ThisProductUrl = location.href
+    concerned.IsMobile = navigator && navigator.userAgent && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+    concerned.CanBack = window.history.length >= 2
+    if (config.attrTransformer) {
+        Object.keys(config.attrTransformer).forEach(key => concerned[key] = config.attrTransformer[key](concerned[key], concerned))
+    }
 
-    header.splice(0, 3)
-    Dobj.assignValues(header, concerned.attrs)
-    Dobj.applyTransformer(config.attrTransformer)
+    const Dobj = concerned
 
     const setupPrices = (v1, v2) => {
         const withComma = (v) => {
@@ -334,7 +277,7 @@ const setupProduct = async (rootNode, config) => {
             }
         }
     }
-    setupPrices(concerned.attrs[aname2idx['Price']], concerned.attrs[aname2idx['Price2']])
+    setupPrices(concerned.Price, concerned.Price2)
 
     const qall = (s) => rootNode.querySelectorAll(s)
     const foreachq = (s, e) => qall(s).forEach(e)
