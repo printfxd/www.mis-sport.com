@@ -43,11 +43,17 @@ const onClickProductColor = (e) => {
 }
 const initProductConfig = (config) => {
     const urlParams = new URLSearchParams(window.location && window.location.search)
-    if (!urlParams || !urlParams.has('show')) throw new Error('not found product info')
-    config.brandName = decodeURIComponent(urlParams.get('brand')).trim()
-    config.topicName = decodeURIComponent(urlParams.get('topic')).trim()
-    config.seriresName = decodeURIComponent(urlParams.get('series')).trim()
-    config.productName = decodeURIComponent(urlParams.get('product')).trim()
+    if (!urlParams || !urlParams.has('s')) throw new Error('not found product info')
+    // must given
+    config.brandName = decodeURIComponent(urlParams.get('b')).trim()
+    // product info
+    config.enTopic = decodeURIComponent(urlParams.get('et')).trim()
+    config.enSerires = decodeURIComponent(urlParams.get('es')).trim()
+    config.enProduct = decodeURIComponent(urlParams.get('ep')).trim()
+    // or
+    config.topicName = decodeURIComponent(urlParams.get('t')).trim()
+    config.seriresName = decodeURIComponent(urlParams.get('ss')).trim()
+    config.productName = decodeURIComponent(urlParams.get('p')).trim()
     return config
 }
 const setupProduct = async (rootNode, config) => {
@@ -57,10 +63,6 @@ const setupProduct = async (rootNode, config) => {
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
     if (typeof config.queryPrefix !== 'string' || config.queryPrefix) config.queryPrefix = 'product-'
 
-    const BrandName = config.brandName
-    let TopicName = config.topicName
-    let SeriesName = config.seriresName
-    let ProductName = config.productName
     const NodePrefix = config.queryPrefix
 
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
@@ -81,7 +83,7 @@ const setupProduct = async (rootNode, config) => {
 
     const fetchWithBrand = async () => {
         return await fetchFromSheet({
-            sheetName: BrandName,
+            sheetName: config.brandName,
             dataRange: DATA_RANGE,
             bookUrl: config.bookUrl,
             keyUrl: config.keyUrl,
@@ -115,17 +117,28 @@ const setupProduct = async (rootNode, config) => {
         return objList
     }
 
-    const isConcernedProdcut = it => (it.Topic === TopicName && it.Series === SeriesName && it.ProductName === ProductName)
+    const cmp = (s, p) => {
+        if (!s || !p) return false
+        if (typeof s === 'string')
+            return (s.replaceAll(' ', '_') === p)
+        return s == p
+    }
 
-    const data = await fetchWithBrand(BrandName)
-    const concerned = transform(data).find(isConcernedProdcut)
-    console.debug(concerned)
+    const isConcerneded = it =>
+        (cmp(it.Topic, config.topicName) || cmp(it.EnglishTopic, config.enTopic)) &&
+        (cmp(it.Series, config.seriresName) || cmp(it.EnglishSeries, config.enSerires)) &&
+        (cmp(it.ProductName, config.productName) || cmp(it.EnglishName, config.enProduct));
 
-    TopicName = concerned.Topic
-    SeriesName = concerned.Series
-    ProductName = concerned.ProductName
+    const data = await fetchWithBrand(config.brandName)
+    const concerned = transform(data).find(isConcerneded)
+    if (!concerned) {
+        console.error(`not found
+            ${config.topicName}/${config.seriresName}/${config.productName}
+            ${config.enTopic}/${config.enSerires}/${config.enProduct}`)
+        return
+    }
 
-    document.title = BrandName + " " + ProductName + " | MIS Sport 米詩國際"
+    document.title = config.brandName + " " + concerned.ProductName + " | MIS Sport 米詩國際"
 
     if (concerned.ImgList || concerned.Img) {
         // input string format:'[label]url'
@@ -239,9 +252,8 @@ const setupProduct = async (rootNode, config) => {
         if (first) first.click()
     }
 
-    concerned.BrandUrl = `${BrandName.toLowerCase()}.html`
-    concerned.BrandName = BrandName
-    concerned.ProductName = ProductName
+    concerned.BrandUrl = `${config.brandName.toLowerCase()}.html`
+    concerned.BrandName = config.brandName
     concerned.ThisProductUrl = location.href
     concerned.IsMobile = navigator && navigator.userAgent && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
     concerned.CanBack = window.history.length >= 2

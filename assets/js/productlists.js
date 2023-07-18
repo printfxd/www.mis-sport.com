@@ -146,11 +146,20 @@ const setupProductLists = async (rootNode, config) => {
         let dataStr
         const brandName = config.brandName
         const itemName = itemObj.ProductName
-        const urlParams = new URLSearchParams('show=1');
-        urlParams.append('brand', brandName)
-        urlParams.append('topic', itemObj.Topic)
-        urlParams.append('series', itemObj.Series)
-        urlParams.append('product', itemName)
+        const urlParams = new URLSearchParams('s=1')
+        urlParams.append('b', brandName)
+        if (itemObj.EnglishTopic)
+            urlParams.append('et', itemObj.EnglishTopic.replaceAll(' ', '_'))
+        else
+            urlParams.append('t', itemObj.Topic.replaceAll(' ', '_'))
+        if (itemObj.EnglishSeries)
+            urlParams.append('es', itemObj.EnglishSeries.replaceAll(' ', '_'))
+        else
+            urlParams.append('ss', itemObj.Series.replaceAll(' ', '_'))
+        if (itemObj.EnglishName)
+            urlParams.append('ep', itemObj.EnglishName.replaceAll(' ', '_'))
+        else
+            urlParams.append('p', itemName.replaceAll(' ', '_'))
         const productUrl = 'product.html?' + urlParams.toString()
         const imgList = (itemObj.Img || '').split(';').map(embedUrl).filter(Boolean)
         const imgUrl = imgList[0] || ''
