@@ -33,30 +33,19 @@ const onTabSelected = (e) => {
     if (titleEl) titleEl.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }))
 }
 const setupProductLists = async (rootNode, config) => {
-    const ATTR_NAME_FOR_ORDER = '_order'
-    const ATTR_NAME_FOR_TOPIC = '_topic'
     const DATA_RANGE = 'A1:AZ200'
 
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
 
-    const numDef = (v, def) => {
-        let num = NaN
-        if (typeof v === 'string') num = parseInt(v)
-        else if (typeof v === 'number') num = v
-        return isNaN(num) ? def : n
-    }
-
     // default values
-    const LIMIT_ALL_ITEMS = numDef(config.limit_for_show_all_items, 0)
     const SELECT_NODE = config.querySelectNode || '.select-tabs'
 
-    const builtinAttr = (n) => n.startsWith('_')
     const embedUrl = (s) => typeof s === 'string' && s.trim().replaceAll('\'', '%27').replaceAll('"', '%22') || ''
     const chkrsp = (r) => {
         if (!r) return undefined
         if (r.ok) return r
-        throw new Error(`error code:${failure.status} msg:${failure.statusText}`)
+        throw new Error(`error code:${r.status} msg:${r.statusText}`)
     }
 
     const fetchFromSheet = async (config) => {
@@ -67,57 +56,42 @@ const setupProductLists = async (rootNode, config) => {
         return fetch(`https://sheets.googleapis.com/v4/spreadsheets/${decoded[0]}/values/${sheetName}!${dataRange}?key=${decoded[1]}`)
     }
 
-    const row2seriesList = (seriesMap, cols) => {
-        let series
-        const seriesName = (cols[1] || '').trim()
-        const itemName = (cols[2] || '').trim()
-        const restCols = cols.slice(3) // 取之後的所有元素
-        if (builtinAttr(seriesName))
-            throw new Error('invalid seriesName')
-        if (seriesName && !seriesMap[seriesName]) {
-            series = {
-                seriesName: seriesName,
-                items: [],
-            }
-            seriesMap[seriesName] = series
-            seriesMap[ATTR_NAME_FOR_ORDER].push(seriesName)
-        } else {
-            const series_order = seriesMap[ATTR_NAME_FOR_ORDER]
-            // 如果連一個series都還沒定義就寫item,則忽略該行資料
-            if (!series_order.length) return seriesMap
-            series = seriesMap[series_order[series_order.length - 1]]
-        }
-        if (itemName) {
-            series.items.push({
-                name: itemName,
-                attrs: restCols || [],
+    const splitByAttr = (list, attr = 0) => {
+        let last
+        const idxes = [];
+        list.forEach((o, i) => {
+            if (last === o[attr]) return
+            last = o[attr]
+            idxes.push(i)
+        });
+        return idxes.map((e, i, a) => list.slice(e, a[i + 1]))
+    }
+
+    const trimStr = (s) => typeof s === 'string' ? s.trim() : s
+
+    const getReducerForRow2obj = (header) => (prev, val, idx) => {
+        let attr = trimStr(header[idx])
+        if (attr) prev[attr] = trimStr(val)
+        return prev
+    }
+
+    const transform = (rows, headerRow) => {
+        const row2obj = getReducerForRow2obj((headerRow === undefined) ? rows.shift() : headerRow)
+        const couldBeLast = ['Topic', 'Series', 'EnglishSeries']
+        const nonEmptyAttrs = ['ProductName']
+        let last = {}
+        const objList = []
+        rows.forEach(row => {
+            if (!row || !row.length) return
+            const obj = row.reduce(row2obj, {})
+            couldBeLast.forEach((attr) => {
+                if (obj[attr]) last[attr] = obj[attr]
+                else obj[attr] = last[attr]
             })
-        }
-        return seriesMap
-    }
-
-    const splitRows = (rows) => {
-        const indexes = rows.reduce((last, row, idx) => {
-            if (row[0]) last.push(idx)
-            return last
+            if (nonEmptyAttrs.find((attr) => !obj[attr])) return
+            objList.push(obj)
         }, [])
-        return indexes.map((e, i, a) => rows.slice(e, a[i + 1]))
-    }
-
-    const attr2obj = (row) => {
-        let obj = {}
-        if (!Array.isArray(row)) return obj
-        row.forEach((n, i) => { if (i - 3 >= 0) obj[n] = i - 3 })
-        return obj
-    }
-
-    const transform = (rows) => {
-        const cleared = rows.filter((c) => c && c.length)
-        const lists = splitRows(cleared)
-        return lists.map(rows => rows.reduce(row2seriesList, {
-            [ATTR_NAME_FOR_ORDER]: [],
-            [ATTR_NAME_FOR_TOPIC]: rows.length > 0 && rows[0].length > 0 && rows[0][0],
-        }))
+        return splitByAttr(objList, 'Topic')
     }
 
     const fetchWithBrand = async () => {
@@ -168,25 +142,24 @@ const setupProductLists = async (rootNode, config) => {
         }
     }
 
-    const itemObject2html = (itemObj, attr2idx, itemLoc) => {
+    const itemO2html = (itemObj) => {
         let dataStr
-        const brandName = itemLoc.brandName
-        const itemName = itemObj.name
+        const brandName = config.brandName
+        const itemName = itemObj.ProductName
         const urlParams = new URLSearchParams('show=1');
         urlParams.append('brand', brandName)
-        urlParams.append('topic', itemLoc.topicName)
-        urlParams.append('series', itemLoc.seriesName)
+        urlParams.append('topic', itemObj.Topic)
+        urlParams.append('series', itemObj.Series)
         urlParams.append('product', itemName)
-        const productUrl = "product.html?" + urlParams.toString()
-        dataStr = itemObj.attrs[attr2idx['Img']] || ''
-        const imgList = dataStr.split(';').map(embedUrl).filter(Boolean)
+        const productUrl = 'product.html?' + urlParams.toString()
+        const imgList = (itemObj.Img || '').split(';').map(embedUrl).filter(Boolean)
         const imgUrl = imgList[0] || ''
         const hoverImgAttr = imgList[1] && `data-hover-src="${imgList[1]}"` || ''
-        const logoUrl = embedUrl(itemObj.attrs[attr2idx['Logo']])
-        const labelPrice = price4label(itemObj.attrs[attr2idx['Price']], itemObj.attrs[attr2idx['Price2']], itemObj.attrs[attr2idx['New']])
+        const logoUrl = embedUrl(itemObj.Logo)
+        const labelPrice = price4label(itemObj.Price, itemObj.Price2, itemObj.New)
 
         let colorList = '';
-        if (dataStr = itemObj.attrs[attr2idx['ColorWithSizes']]) {
+        if (dataStr = itemObj.ColorWithSizes) {
             // input string format:'color' or '[label]color' or '[label]color(x-y)'
             // output color button(html)
             const str2color = (s) => {
@@ -225,52 +198,33 @@ const setupProductLists = async (rootNode, config) => {
         </div></div></div>`
     }
 
-    const seriesTemplate = (seriesName, itemsHtml) => {
-        return `<li>
-            <h3>${seriesName}</h3>
-            <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
-                ${itemsHtml}
-            </div>
-        </li>`
-    }
-
     const node4list = rootNode.querySelectorAll(config.queryTopicNode)
     if (node4list.length < 1) return console.debug('not found topic node(s)')
 
     const data = await fetchWithBrand(config.brandName)
-    const aname2idx = attr2obj(data.shift())
     const listByTopic = transform(data)
+
     node4list.forEach((node, idx) => {
-        const tab = node.querySelector(config.queryTabNode)
-        if (!tab) return console.error('not found tabs for items')
-        const sel = node.querySelector(SELECT_NODE)
-        const topicObj = listByTopic[idx]
-        if (!topicObj) return
-        const seriesNameList = topicObj[ATTR_NAME_FOR_ORDER]
-        let allItemsHtml = ''
-        let countItems = 0
-        const seriesHtml = seriesNameList.map((seriesName) => {
-            const seriesObj = topicObj[seriesName]
-            if (!seriesObj) return ''
-            const itemsHtml = topicObj[seriesName].items
-                .map(item => itemObject2html(item, aname2idx, {
-                    brandName: config.brandName,
-                    topicName: topicObj[ATTR_NAME_FOR_TOPIC],
-                    seriesName: seriesName,
-                }))
-                .join('\n')
-            if (countItems <= LIMIT_ALL_ITEMS) {
-                allItemsHtml += itemsHtml
-                countItems += topicObj[seriesName].items.length
+        const tabNode = node.querySelector(config.queryTabNode)
+        if (!tabNode) return console.error('not found tabs for items')
+        const selNode = node.querySelector(SELECT_NODE)
+        const itemList = listByTopic[idx]
+        if (!itemList) return
+        const seriesNameList = []
+        let seriesNode = null
+        itemList.forEach((item) => {
+            const { Topic, Series } = item
+            if (!seriesNameList.includes(Series)) {
+                seriesNameList.push(Series)
+                tabNode.innerHTML += `<li>
+                    <h3>${Series}</h3>
+                    <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5"
+                        data-topic="${Topic}" data-series="${Series}" />
+                </li>\n`
+                seriesNode = tabNode.querySelector(`[data-series="${Series}"]`)
             }
-            return seriesTemplate(seriesName, itemsHtml)
+            if (seriesNode) seriesNode.innerHTML += itemO2html(item) + '\n'
         })
-        if (countItems <= LIMIT_ALL_ITEMS) {
-            tab.innerHTML = seriesTemplate('ALL', allItemsHtml) + seriesHtml.join('\n')
-            if (sel) sel.innerHTML = '<option>ALL</option>' + seriesNameList.map((n) => `<option>${n}</option>`).join('\n')
-        } else {
-            tab.innerHTML = seriesHtml.join('\n')
-            if (sel) sel.innerHTML = seriesNameList.map((n) => `<option>${n}</option>`).join('\n')
-        }
+        if (selNode) selNode.innerHTML = seriesNameList.map((n) => `<option>${n}</option>`).join('\n')
     })
 }
