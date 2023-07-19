@@ -349,84 +349,80 @@
 
                 <!-- Footer -->
                     <section id="footer" class="wrapper">
-                        <div class="row">
-                            <div class="col-1"></div>
-                            <div class="col-10 box">
-                                <div class="row">
-                                    <div class="col-7 col-7-xlarge col-7-large col-12-medium col-12-small col-12-xsmall">
-                                        <div class="row">
-                                            <header class="major special">
-                                                <h2 class="text-center"><i class="fa-solid fa-globe fa-xl"></i></h2>
-                                                <br>
-                                                <h2 class="text-center">商品描述</h2>
-                                            </header>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-1"></div>         
-                                            <div class="col-10">
-                                                <blockquote>
-                                                    <p j-set-html="Description"></p>
-                                                </blockquote>
-                                            </div>
-                                            <div class="col-1"></div>         
-                                        </div>
-                                    </div>
-                                    <div class="d-none d-lg-block col-1" style="border-right: thick solid #C0C0C0; border-width:1px; left:50%;"></div>
-                                    <div class="d-block d-lg-none"><br><br></div>
-                                    <div class="col-4 col-4-xlarge col-4-large col-12-medium col-12-small col-12-xsmall">
+                        <div class="col-10 box" style="margin-left: auto; margin-right: auto;">
+                            <div class="row">
+                                <div class="col-7 col-7-xlarge col-7-large col-12-medium col-12-small col-12-xsmall">
+                                    <div class="row">
                                         <header class="major special">
-                                            <h2 class="text-center"><i class="fa-solid fa-list-check fa-xl"></i></h2>
+                                            <h2 class="text-center"><i class="fa-solid fa-globe fa-xl"></i></h2>
                                             <br>
-                                            <h2 class="text-center">重點特色</h2>
+                                            <h2 class="text-center">商品描述</h2>
                                         </header>
-                                        <ul  class="alt" style="list-style-type: none; margin: 0; padding: 0;">
-                                            <li j-if="Style">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>版型</b></code></div>
-                                                    <div class="col-7">{{Style}}</div>
-                                                </div>
-                                            </li>
-                                            <li j-if="BikingStyle">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>騎乘風格</b></code></div>
-                                                    <div class="col-7">{{BikingStyle}}</div>
-                                                </div>
-                                            </li>
-                                            <li j-if="Temperature">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>溫度範圍</b></code></div>
-                                                    <div class="col-7" j-set-html="Temperature"></div>
-                                                </div>
-                                            </li>
-                                            <li j-if="SunProtect">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>防曬係數</b></code></div>
-                                                    <div class="col-7" j-set-html="SunProtect"></div>
-                                                </div>
-                                            </li>
-                                            <li j-if="Water">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>防水等級</b></code></div>
-                                                    <div class="col-7" j-set-html="Water"></div>
-                                                </div>
-                                            </li>
-                                            <li j-if="Weight">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>重量</b></code></div>
-                                                    <div class="col-7" j-if="Weight">{{Weight}}</div>
-                                                </div>
-                                            </li>
-                                            <li j-if="Pad">
-                                                <div class="row">
-                                                    <div class="col-5"><code><b>褲墊等級</b></code></div>
-                                                    <div class="col-7">{{Pad}}</div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-1"></div>         
+                                        <div class="col-10">
+                                            <blockquote>
+                                                <p j-set-html="Description"></p>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-1"></div>         
                                     </div>
                                 </div>
+                                <div class="d-none d-lg-block col-1" style="border-right: thick solid #C0C0C0; border-width:1px; left:50%;"></div>
+                                <div class="d-block d-lg-none"><br><br></div>
+                                <div class="col-4 col-4-xlarge col-4-large col-12-medium col-12-small col-12-xsmall">
+                                    <header class="major special">
+                                        <h2 class="text-center"><i class="fa-solid fa-list-check fa-xl"></i></h2>
+                                        <br>
+                                        <h2 class="text-center">重點特色</h2>
+                                    </header>
+                                    <ul  class="alt" style="list-style-type: none; margin: 0; padding: 0;">
+                                        <li j-if="Style">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>版型</b></code></div>
+                                                <div class="col-7">{{Style}}</div>
+                                            </div>
+                                        </li>
+                                        <li j-if="BikingStyle">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>騎乘風格</b></code></div>
+                                                <div class="col-7">{{BikingStyle}}</div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Temperature">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>溫度範圍</b></code></div>
+                                                <div class="col-7" j-set-html="Temperature"></div>
+                                            </div>
+                                        </li>
+                                        <li j-if="SunProtect">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>防曬係數</b></code></div>
+                                                <div class="col-7" j-set-html="SunProtect"></div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Water">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>防水等級</b></code></div>
+                                                <div class="col-7" j-set-html="Water"></div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Weight">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>重量</b></code></div>
+                                                <div class="col-7" j-if="Weight">{{Weight}}</div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Pad">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>褲墊等級</b></code></div>
+                                                <div class="col-7">{{Pad}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-1"></div>
                         </div>
                     </section>
 
