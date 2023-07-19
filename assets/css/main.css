@@ -4726,3 +4726,8 @@ input, select, textarea {
 		color: rgba(40, 40, 40, 0.5);
 		text-align: center;
 	}
+
+	.user-select-all {
+		-webkit-user-select: all;
+		user-select: all;
+	}
