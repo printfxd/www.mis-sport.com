@@ -1,4 +1,5 @@
 const AllSizes = ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
+const closest = (el, fn) => el && (fn(el) ? el : closest(el.parentNode, fn))
 const onClickProductColor = (e) => {
     const colorEl = e.target
     if (!colorEl) return

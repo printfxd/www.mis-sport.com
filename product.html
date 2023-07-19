@@ -521,7 +521,8 @@
                 }
                 function showInsideWindowByUrl(e) {
                     e.preventDefault()
-                    const url = e.target && e.target.dataset.url
+                    const el = closest(e.target, el => el.dataset.url)
+                    const url = el && el.dataset.url
                     if (!url) return
                     if (IsMobileScreen()) {
                         window.location.href = url
