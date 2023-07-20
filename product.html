@@ -356,7 +356,7 @@
                                         <header class="major special">
                                             <h2 class="text-center"><i class="fa-solid fa-globe fa-xl"></i></h2>
                                             <br>
-                                            <h2 class="text-center">商品描述</h2>
+                                            <h2 class="text-center">商品介紹</h2>
                                         </header>
                                     </div>
                                     <div class="row">
@@ -375,7 +375,7 @@
                                     <header class="major special">
                                         <h2 class="text-center"><i class="fa-solid fa-list-check fa-xl"></i></h2>
                                         <br>
-                                        <h2 class="text-center">重點特色</h2>
+                                        <h2 class="text-center">商品特色</h2>
                                     </header>
                                     <ul  class="alt" style="list-style-type: none; margin: 0; padding: 0;">
                                         <li j-if="Style">
@@ -384,15 +384,15 @@
                                                 <div class="col-7">{{Style}}</div>
                                             </div>
                                         </li>
-                                        <li j-if="BikingStyle">
+                                        <li j-if="CyclingType">
                                             <div class="row">
-                                                <div class="col-5"><code><b>騎乘風格</b></code></div>
-                                                <div class="col-7">{{BikingStyle}}</div>
+                                                <div class="col-5"><code><b>適用場合</b></code></div>
+                                                <div class="col-7">{{CyclingType}}</div>
                                             </div>
                                         </li>
                                         <li j-if="Temperature">
                                             <div class="row">
-                                                <div class="col-5"><code><b>溫度範圍</b></code></div>
+                                                <div class="col-5"><code><b>建議溫度</b></code></div>
                                                 <div class="col-7" j-set-html="Temperature"></div>
                                             </div>
                                         </li>
@@ -416,8 +416,26 @@
                                         </li>
                                         <li j-if="Pad">
                                             <div class="row">
-                                                <div class="col-5"><code><b>褲墊等級</b></code></div>
+                                                <div class="col-5"><code><b>褲墊款式</b></code></div>
                                                 <div class="col-7">{{Pad}}</div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Feature1">
+                                            <div class="row">
+                                                <div class="col-5"><code><b>細節與特點</b></code></div>
+                                                <div class="col-7">{{Feature1}}</div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Feature2">
+                                            <div class="row">
+                                                <div class="col-5"></div>
+                                                <div class="col-7">{{Feature2}}</div>
+                                            </div>
+                                        </li>
+                                        <li j-if="Feature3">
+                                            <div class="row">
+                                                <div class="col-5"></div>
+                                                <div class="col-7">{{Feature3}}</div>
                                             </div>
                                         </li>
                                     </ul>
