@@ -361,10 +361,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-1"></div>         
-                                        <div class="col-10">
-                                            <blockquote>
+                                        <div class="col-10">                                            
+                                            <!-- lg 以上顯示 Description + PadTech -->
+                                            <div class="d-none d-lg-block">
+                                                <blockquote>
+                                                    <p j-set-html="Description"></p>
+                                                    <style>li{margin-bottom : 1rem; margin-top : 1rem;}</style>
+                                                    <p j-set-html="PadTech"></p>
+                                                </blockquote>
+                                            </div>
+                                            <!-- md 以下顯示 Description -->
+                                            <div class="d-block d-lg-none">
                                                 <p j-set-html="Description"></p>
-                                            </blockquote>
+                                                <br><hr>
+                                            </div>
+                                            
                                         </div>
                                         <div class="col-1"></div>         
                                     </div>
@@ -422,7 +433,7 @@
                                         </li>
                                         <li j-if="Feature1">
                                             <div class="row">
-                                                <div class="col-5"><code><b>細節與特點</b></code></div>
+                                                <div class="col-5"><code><b>細節特點</b></code></div>
                                                 <div class="col-7">{{Feature1}}</div>
                                             </div>
                                         </li>
