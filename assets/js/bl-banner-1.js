@@ -16,10 +16,12 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							// 'https://storage.googleapis.com/mis-sport/banner/slide01.jpg': '0% 35%',
-							// 'https://storage.googleapis.com/mis-sport/banner/slide02.jpg': 'center',
-							// 'https://storage.googleapis.com/mis-sport/banner/slide03.jpg': 'center',
-							// 'https://storage.googleapis.com/mis-sport/banner/slide04.jpg': 'center'
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-06274.jpg': '0% 35%',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-05633.jpg': 'top',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-03140.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-04754.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-00472.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-02064.jpg': 'center'
 						},
 
 					// Delay.
