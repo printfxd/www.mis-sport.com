@@ -16,10 +16,10 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'https://storage.googleapis.com/mis-sport/banner/slide01.jpg': '0% 35%',
-							'https://storage.googleapis.com/mis-sport/banner/slide02.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/slide05.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/slide06.jpg': 'center'
+							// 'https://storage.googleapis.com/mis-sport/banner/slide01.jpg': '0% 35%',
+							// 'https://storage.googleapis.com/mis-sport/banner/slide02.jpg': 'center',
+							// 'https://storage.googleapis.com/mis-sport/banner/slide05.jpg': 'center',
+							// 'https://storage.googleapis.com/mis-sport/banner/slide06.jpg': 'center'
 						},
 
 					// Delay.
