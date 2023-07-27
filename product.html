@@ -35,7 +35,7 @@
         <!-- Slideshow -->
         <style>
             * {box-sizing:border-box}
-            
+
             /* Slideshow container */
             .slideshow-container {
               max-width: 1000px;
@@ -192,6 +192,22 @@
                 display: block;
                 width: 640px;
                 height: 100%;
+            }
+            .mobile-size-img-zoom {
+                position: fixed;
+                top: 10%;
+                left: 10%;
+                width: 80%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mobile-size-img-zoom img{
+                position: relative;
+                transform-origin: top left;
+                max-width: 100%;
+                max-height: 100%;
             }
         </style>
     </head>
@@ -477,6 +493,7 @@
             <!-- fontawesome icon -->
             <script src="assets/fontawesome-free-6.4.0-web/js/fontawesome.min.js"></script>
             <script src="assets/js/product.js"></script>
+            <script src="assets/js/mtzoom.js"></script>
             <!-- Slideshow -->
             <script>
                 let slideIndex = 1;
@@ -536,15 +553,15 @@
                             handleGesture(e)
                         },{passive:true})
                         el.addEventListener('click', (e) => {
-                            if (!e.target || IsMobileScreen() || !e.target.classList.contains('product-img-mask')) return
+                            if (!e.target.classList.contains('product-img-mask')) return
                             const tag = e.target.querySelector('img')
                             const imgUrl = tag && tag.src
                             if (!imgUrl) return
                             const fullscreen = document.querySelector('.img-full-page')
                             if (!fullscreen) return
-                            fullscreen.innerHTML = ''
-                            fullscreen.style.backgroundImage = 'url(\'' + imgUrl + '\')'
+                            fullscreen.innerHTML = `<div class="mobile-size-img-zoom"><img src="${imgUrl}" alt="image"></div>`
                             fullscreen.style.display = 'block'
+                            ZoomImgClass.setScale(3).setImg(fullscreen.querySelector('img'))
                         })
                     })
                 }
