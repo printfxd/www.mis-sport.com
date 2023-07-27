@@ -547,6 +547,16 @@
                 }
                 const IsMobileScreen = () => window.matchMedia && window.matchMedia('(max-width: 736px)').matches;
                 // window.screen.width, window.innerWidth, max-device-width
+                const onShowFullscreenImg = ({target}) => {
+                    const imgEl = target.tagName == 'IMG'? target : target.querySelector('img')
+                    const imgUrl = imgEl && imgEl.src
+                    if (!imgUrl) return
+                    const fullscreen = document.querySelector('.img-full-page')
+                    if (!fullscreen) return
+                    fullscreen.innerHTML = `<div class="mobile-size-img-zoom"><img src="${imgUrl}" alt="image"></div>`
+                    fullscreen.style.display = 'block'
+                    ZoomImgClass.setScale(3).setImg(fullscreen.querySelector('img'))
+                }
                 function initGestureForSlider() {
                     document.querySelectorAll('.mySlides').forEach(el => {
                         el.addEventListener('touchstart', (e) => {
@@ -556,17 +566,7 @@
                             setTouchEnd(e.changedTouches[0].screenX, e.changedTouches[0].screenY)
                             handleGesture(e)
                         },{passive:true})
-                        el.addEventListener('click', (e) => {
-                            if (!e.target.classList.contains('product-img-mask')) return
-                            const tag = e.target.querySelector('img')
-                            const imgUrl = tag && tag.src
-                            if (!imgUrl) return
-                            const fullscreen = document.querySelector('.img-full-page')
-                            if (!fullscreen) return
-                            fullscreen.innerHTML = `<div class="mobile-size-img-zoom"><img src="${imgUrl}" alt="image"></div>`
-                            fullscreen.style.display = 'block'
-                            ZoomImgClass.setScale(3).setImg(fullscreen.querySelector('img'))
-                        })
+                        el.addEventListener('click', onShowFullscreenImg)
                     })
                 }
                 function showInsideWindowByUrl(e) {
@@ -608,7 +608,7 @@
                     setupProduct(document.body, initProductConfig(config)).then(() => {
                         currentSlide(1)
                         initGestureForSlider()
-                        initGallery(jQuery)
+                        initGallery(jQuery, onShowFullscreenImg)
                     })
                 })
             </script>

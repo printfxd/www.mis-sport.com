@@ -229,7 +229,8 @@
 
 })(jQuery);
 
-function initGallery($) {
+function initGallery($, onImgClicked) {
+	var useCallback = (typeof onImgClicked === 'function')
 	var	$body = $('body')
 	// Gallery.
 	$('.gallery')
@@ -245,6 +246,10 @@ function initGallery($) {
 			// Prevent default.
 			event.preventDefault();
 			event.stopPropagation();
+			if (useCallback) {
+				onImgClicked(event);
+				return;
+			}
 			// Locked? Bail.
 			if ($modal[0]._locked)
 				return;
