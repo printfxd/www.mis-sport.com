@@ -213,6 +213,10 @@
                 transform-origin: top left;
                 max-width: 100%;
                 max-height: 100%;
+                pointer-events: none;
+                user-select: none;
+                -webkit-user-drag: none;
+                user-drag: none;
             }
         </style>
     </head>
@@ -553,9 +557,9 @@
                     if (!imgUrl) return
                     const fullscreen = document.querySelector('.img-full-page')
                     if (!fullscreen) return
-                    fullscreen.innerHTML = `<div class="mobile-size-img-zoom"><img src="${imgUrl}" alt="image"></div>`
+                    fullscreen.innerHTML = `<div class="mobile-size-img-zoom"><img draggable="false" src="${imgUrl}" alt="image"></div>`
                     fullscreen.style.display = 'block'
-                    ZoomImgClass.setScale(3).setImg(fullscreen.querySelector('img'))
+                    ZoomImgClass.setScale(2).setImg(fullscreen.querySelector('img'))
                 }
                 function initGestureForSlider() {
                     document.querySelectorAll('.mySlides').forEach(el => {
