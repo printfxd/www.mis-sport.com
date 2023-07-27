@@ -36,6 +36,11 @@
         <style>
             * {box-sizing:border-box}
 
+            .PadTech li {
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+
             /* Slideshow container */
             .slideshow-container {
               max-width: 1000px;
@@ -382,8 +387,7 @@
                                             <div class="d-none d-lg-block">
                                                 <blockquote>
                                                     <p j-set-html="Description"></p>
-                                                    <style>li{margin-bottom : 1rem; margin-top : 1rem;}</style>
-                                                    <p j-set-html="PadTech"></p>
+                                                    <p class="PadTech" j-set-html="PadTech"></p>
                                                 </blockquote>
                                             </div>
                                             <!-- md 以下顯示 Description -->
