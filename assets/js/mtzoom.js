@@ -1,8 +1,7 @@
 const ZoomImgClass = {
-    SACLE: 2,
-    debug: true,
     setScale(s) {
         this.SACLE = s
+        this.FACTOR = - 100 / s
         return this
     },
     setImg(imgEl) {
@@ -12,13 +11,10 @@ const ZoomImgClass = {
         this.parent = imgEl.parentNode
         const set = {
             onMove: ({ clientX, clientY }) => {
-                const imgPosX = clientX - this.parent.offsetLeft
-                const imgPosY = clientY - this.parent.offsetTop
-        
-                const left = Math.ceil(imgPosX * (1 - this.SACLE))
-                const top = Math.ceil(imgPosY * (1 - this.SACLE))
-        
-                this.imgEl.style.transform = `scale(${this.SACLE}) translate(${left}px,${top}px)`
+                let percentX = (clientX - this.parent.offsetLeft) / this.parent.offsetWidth
+                let percentY = (clientY - this.parent.offsetTop) / this.parent.offsetHeight
+
+                this.imgEl.style.transform = `scale(${this.SACLE}) translate(${percentX * this.FACTOR}%,${percentY * this.FACTOR}%)`
             },
             onEnd: () => {
                 this.imgEl.style.transform = 'scale(1) translate(0)'
@@ -78,6 +74,7 @@ const ZoomImgClass = {
             touch: createHandler(set).touch(this.parent),
             mouse: createHandler(set).mouse(this.parent),
         }
+        imgEl.style.transformOrigin = 'left top'
         imgEl.addEventListener('load', this.handlers.load)
         return this
     },
