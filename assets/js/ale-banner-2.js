@@ -16,14 +16,16 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							// 'https://storage.googleapis.com/mis-sport/banner/slide05.jpg': '0% 35%',
-							// 'https://storage.googleapis.com/mis-sport/banner/slide06.jpg': 'center',
-							// 'https://storage.googleapis.com/mis-sport/banner/slide07.jpg': 'center',
-							// 'https://storage.googleapis.com/mis-sport/banner/slide08.jpg': 'center'
+							// 'https://storage.googleapis.com/mis-sport/banner/ale/ale-winter-banner-001.jpg': '0% 35%',
+							// 'https://storage.googleapis.com/mis-sport/banner/ale/ale-winter-banner-002.jpg': 'auto',
+							// 'https://storage.googleapis.com/mis-sport/banner/ale/ale-winter-banner-003.jpg': 'center',
+							// 'https://storage.googleapis.com/mis-sport/banner/ale/ale-winter-banner-004.jpg': 'center',
+							// 'https://storage.googleapis.com/mis-sport/banner/ale/ale-winter-banner-005.jpg': 'center',
+							// 'https://storage.googleapis.com/mis-sport/banner/ale/ale-winter-banner-006.jpg': 'center'
 						},
 
 					// Delay.
-						delay: 6000
+						delay: 8000
 
 				};
 
