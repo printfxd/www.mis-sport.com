@@ -16,14 +16,14 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06555.jpg': '0% 35%', //1
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06233.jpg': 'top',    //2
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06274.jpg': 'center', //3
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06203.jpg': 'center', //4
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06217.jpg': 'center', //5
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06540.jpg': 'center', //6
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06566.jpg': 'center', //7
-							'https://storage.googleapis.com/mis-sport/banner/home/DSC06447.jpg': 'bottom'  //8
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-001.jpg': '0% 35%', //1
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-002.jpg': 'top',    //2
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-003.jpg': 'center', //3
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-004.jpg': 'center', //4
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-005.jpg': 'center', //5
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-006.jpg': 'center', //6
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-007.jpg': 'center', //7
+							'https://storage.googleapis.com/mis-sport/banner/home/mis-autumn-008.jpg': 'bottom'  //8
 						},
 
 					// Delay.
