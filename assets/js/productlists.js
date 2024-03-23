@@ -33,7 +33,7 @@ const onTabSelected = (e) => {
     if (titleEl) titleEl.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }))
 }
 const setupProductLists = async (rootNode, config) => {
-    const DATA_RANGE = 'A1:AZ200'
+    const DATA_RANGE = 'A1:AZ400'
 
     if (!config) throw new Error('config not found')
     if (typeof config.brandName !== 'string' || !config.brandName) throw new Error('invalid brand')
