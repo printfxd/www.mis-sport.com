@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent, e as renderSlot, f as renderHead, b as addAttribute, u as unescapeHTML } from './chunk.b0db1f2f.js';
 import 'clsx';
-import { $ as $$Copyright, a as $$Navigator, b as $$Header, e as embedUrl, j as json } from './chunk.276468ee.js';
+import { $ as $$Copyright, a as $$Navigator, b as $$Header, e as embedUrl, j as json } from './chunk.627f9ab4.js';
 /* empty css                *//* empty css                */
 const $$Astro$4 = createAstro("https://mis-sport.com");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
@@ -13,7 +13,7 @@ MIS Sport於2016創立，成員皆是單車的愛好者，主因是對運動及�
 <br>
 如同我們的口號"you are not alone"一樣，我們的責任是建立一個友善的騎車環境與社群，透過騎乘單車，連結我們與社群之間的情誼．
 </p> </div> <ul class="contact-icons"> <li> <a href="https://www.facebook.com/MISsports" class="icon brands alt fa-facebook-f"><span class="label">FB@MISsports</span></a> </li> <li> <a href="https://line.me/R/ti/p/@457xrpaj" class="icon brands alt fa-line"><span class="label">LINE@Mis Sport</span></a> </li> <li> <a href="mailto:official@mis-sport.com" class="icon solid alt fa-envelope"><span class="label">official@mis-sport.com</span></a> </li> <li> <a href="tel:+886-2-28853525" class="icon solid alt fa-phone"><span class="label">(02) 2885 3525</span></a> </li> </ul> </div> ${showMap ? renderTemplate`<div class="box"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1260.025102256792!2d121.52073561939807!3d25.080218765083487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aeb4a0898c2d%3A0x6a7b9201c0929beb!2zTUlTIFNQT1JUIOe-qeWkp-WIqeWwiOalreWWrui7iuacjQ!5e0!3m2!1szh-TW!2stw!4v1678721423838!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>` : void 0} </div> </section>`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/Footer.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/Footer.astro", void 0);
 
 var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
@@ -25,7 +25,7 @@ const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Layout;
   const { title, darkText, showMap } = Astro2.props;
   return renderTemplate(_a$1 || (_a$1 = __template$1(["<html> <head><title>", '</title><meta charset="utf-8"><link rel="icon" type="images/x-icon" href="https://storage.googleapis.com/mis-sport/logo/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><link rel="stylesheet" href="/assets/css/main.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"><\/script><script defer src="/assets/js/jquery.min.js"><\/script><script defer src="/assets/js/jquery.scrollex.min.js"><\/script><script defer src="/assets/js/jquery.scrolly.min.js"><\/script><script defer src="/assets/js/jquery.selectorr.min.js"><\/script><script defer src="/assets/js/browser.min.js"><\/script><script defer src="/assets/js/breakpoints.min.js"><\/script><script defer src="/assets/js/util.js"><\/script><script defer src="/assets/js/main.js"><\/script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-FVNCV5VCTL"><\/script><script>\n			window.dataLayer = window.dataLayer || [];\n			function gtag() {\n				dataLayer.push(arguments);\n			}\n			gtag("js", new Date());\n\n			gtag("config", "G-FVNCV5VCTL");\n		<\/script>', '</head> <body class="is-preload"> <!-- Page wrapper --> <div id="page-wrapper"> ', " ", " ", " </div> ", " ", " </body></html>"])), title, renderHead(), renderComponent($$result, "Header", $$Header, { "darkText": darkText }), renderComponent($$result, "Navigator", $$Navigator, {}), renderSlot($$result, $$slots["default"]), renderComponent($$result, "Footer", $$Footer, { "showMap": showMap }), renderComponent($$result, "Copyright", $$Copyright, {}));
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/layouts/Layout.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/layouts/Layout.astro", void 0);
 
 const splitByAttr = (list, attr = 0) => {
     let last;
@@ -150,7 +150,7 @@ const $$ProductCard = createComponent(async ($$result, $$props, $$slots) => {
     colorList = product.ColorWithSizes.split(";").map(str2color).filter(Boolean).join("");
   }
   return renderTemplate`${maybeRenderHead()}<div class="col"> <div class="card card-cover h-100% overflow-hidden text-bg-white rounded-4 shadow-lg" onmouseenter="onHoverProductCard(event);" onmouseout="onHoverProductCard(event);"> <img${addAttribute(imgUrl, "src")}${addAttribute(imgUrl, "data-src")}${addAttribute(hoverImgAttr, "data-hover-src")} class="card-img-top"${addAttribute(product.ProductName, "alt")}> <div class="card-img-overlay"> <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto">${unescapeHTML(labelPrice.label)}</li> </ul> </div> <div class="d-flex justify-content-center p-2 pb-0">${unescapeHTML(colorList)}</div> <div class="card-body"> <h6 class="card-title text-center"> ${brandName}<br>${product.ProductName} </h6> <br> <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> <img${addAttribute(logoUrl, "src")}${addAttribute(brandName, "alt")} width="36" height="36" class="rounded-circle border border-white"> </li> <li class="me-auto"></li> <li class="me-auto"></li> <li class="me-auto"> <a class="product-link"${addAttribute(productUrl, "href")} onclick="onClickProductCard(event);">${unescapeHTML(labelPrice.price)}</a> </li> </ul> </div> </div> </div>`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/ProductCard.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/ProductCard.astro", void 0);
 
 const $$Astro$1 = createAstro("https://mis-sport.com");
 const $$ProductList = createComponent(async ($$result, $$props, $$slots) => {
@@ -173,7 +173,7 @@ const $$ProductList = createComponent(async ($$result, $$props, $$slots) => {
       return renderTemplate`${renderComponent($$result, "ProductCard", $$ProductCard, { "brandName": brandName, "product": product })}`;
     })}</div></li>`;
   })}</ul></div></section>` : null}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/ProductList.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/ProductList.astro", void 0);
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
@@ -186,10 +186,10 @@ const $$Ale = createComponent(async ($$result, $$props, $$slots) => {
   const BRAND_NAME = "ALE";
   const [header, ...rows] = json.values;
   const productlistByTopic = SheetToProduct(rows, header);
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "ALE CYCLING | MIS Sport \u7C73\u8A69\u570B\u969B", "darkText": true }, { "default": ($$result2) => renderTemplate(_a || (_a = __template(["  ", '<section id="aleBanner1"> <video autoplay muted loop playsinline poster="" class="video-background" style="position:absolute; top:0; left:0; width:100%; height: 100%; object-fit: cover; filter: brightness(70%);"> <source src="https://storage.googleapis.com/mis-sport/video/video-ale01.m4v" type="video/mp4"> </video> <div class="inner"> <h1>ALE SUMMER<br><br></h1> <h6> <br>\u5728\u6BCF\u4E00\u5929\uFF0C\u6BCF\u4E00\u6B21\u9A0E\u4E58\uFF0C\u4EAB\u53D7\u7576\u4E0B\u4E26\u76E1\u60C5\u4EAB\u53D7\u751F\u6D3B\u3002\n</h6> </div> </section> ', '  <section id="aleBanner2"> <video autoplay muted loop playsinline poster="" class="video-background" style="position:absolute; top:0; left:0; width:100%; height: 100%; object-fit: cover; filter: brightness(70%);"> <source src="https://storage.googleapis.com/mis-sport/video/video-ale02.mp4" type="video/mp4"> </video> <div class="inner"> <h1>ALE WINTER<br><br></h1> <h6> <br>\u7121\u61FC\u5BD2\u51B7\u7684\u6EAB\u5EA6\u3001\u98A8\u4EE5\u53CA\u96E8\u3002\n<br>\u7121\u8AD6\u5728\u4F55\u7A2E\u689D\u4EF6\u4E0B\u9A0E\u4E58\uFF0CAl\xE9\n                \u59CB\u7D42\u6703\u8B93\u60A8\u611F\u5230\u4FDD\u8B77\u3001\u4E7E\u723D\u3001\u900F\u6C23\uFF0C\u8B93\u60A8\u7684\u904B\u52D5\u8868\u73FE\u80FD\u5920\u767C\u63EE\u5230\u6975\u81F4\u3002\n</h6> </div> </section> ', '  <script defer src="/assets/js/ale-banner-1.js"><\/script> <script defer src="/assets/js/ale-banner-2.js"><\/script> <script defer src="/assets/js/jquery.selectorr.min.js"><\/script>  '])), maybeRenderHead(), renderComponent($$result2, "ProductList", $$ProductList, { "id": "aleSummer", "brandName": BRAND_NAME, "products": productlistByTopic[0] }), renderComponent($$result2, "ProductList", $$ProductList, { "id": "aleWinter", "brandName": BRAND_NAME, "products": productlistByTopic[1] })) })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/ale.astro", void 0);
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "ALE CYCLING | MIS Sport \u7C73\u8A69\u570B\u969B", "darkText": true }, { "default": ($$result2) => renderTemplate(_a || (_a = __template(["  ", '<section id="aleBanner1"> <video autoplay muted loop playsinline poster="" class="video-background" style="position:absolute; top:0; left:0; width:100%; height: 100%; object-fit: cover; filter: brightness(70%);"> <source src="https://storage.googleapis.com/mis-sport/video/video-ale01.m4v" type="video/mp4"> </video> <div class="inner"> <h1>ALE SUMMER<br><br></h1> <h6> <br>\u5728\u6BCF\u4E00\u5929\uFF0C\u6BCF\u4E00\u6B21\u9A0E\u4E58\uFF0C\u4EAB\u53D7\u7576\u4E0B\u4E26\u76E1\u60C5\u4EAB\u53D7\u751F\u6D3B\u3002\n</h6> </div> </section> ', '  <section id="aleBanner2"> <div class="inner"> <h1>ALE WINTER<br></h1> <h6> <br>\u7121\u61FC\u5BD2\u51B7\u7684\u6EAB\u5EA6\u3001\u98A8\u4EE5\u53CA\u96E8\u3002\n<br>\u7121\u8AD6\u5728\u4F55\u7A2E\u689D\u4EF6\u4E0B\u9A0E\u4E58\uFF0CAl\xE9 \u59CB\u7D42\u6703\u8B93\u60A8\u611F\u5230\u4FDD\u8B77\u3001\u6EAB\u6696\u3001\u900F\u6C23\uFF0C\u8B93\u60A8\u7684\u904B\u52D5\u8868\u73FE\u80FD\u5920\u767C\u63EE\u5230\u6975\u81F4\u3002\n</h6> </div> </section> ', '  <script defer src="/assets/js/ale-banner-1.js"><\/script> <script defer src="/assets/js/ale-banner-2.js"><\/script> <script defer src="/assets/js/jquery.selectorr.min.js"><\/script>  '])), maybeRenderHead(), renderComponent($$result2, "ProductList", $$ProductList, { "id": "aleSummer", "brandName": BRAND_NAME, "products": productlistByTopic[0] }), renderComponent($$result2, "ProductList", $$ProductList, { "id": "aleWinter", "brandName": BRAND_NAME, "products": productlistByTopic[1] })) })}`;
+}, "/Users/printfxd/git/mis-sport-next/src/pages/ale.astro", void 0);
 
-const $$file = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/ale.astro";
+const $$file = "/Users/printfxd/git/mis-sport-next/src/pages/ale.astro";
 const $$url = "/ale";
 
 const ale = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

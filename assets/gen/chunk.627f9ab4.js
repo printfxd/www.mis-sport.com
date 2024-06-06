@@ -7,14 +7,14 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Header;
   const { darkText } = Astro2.props;
   return renderTemplate`<!-- Header -->${maybeRenderHead()}<header id="header"${addAttribute(darkText ? null : "alt", "class")}> <span class="logo"> <a href="/"><img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="42" height="auto" class="rounded-circle"> MIS Sport <span>米詩國際</span></a> </span> <a href="#menu"><span>Menu</span></a> </header>`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/Header.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/Header.astro", void 0);
 
 const $$Astro$a = createAstro("https://mis-sport.com");
 const $$Navigator = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Navigator;
   return renderTemplate`<!-- Nav -->${maybeRenderHead()}<nav id="menu"> <div class="inner"> <h2>Menu</h2> <ul class="links"> <li><a href="/">Home</a></li> <li><a href="/bicycle-line/index.html">BICYCLE LINE</a></li> <li><a href="/nalini/index.html">NALINI CYCLING</a></li> <li><a href="/proteams/index.html">PRO TEAM SERIES</a></li> <li><a href="/met/index.html">MET HELMETS</a></li> <li><a href="/ale/index.html">ALE CYCLING</a></li> <li><a href="/sale/index.html">SALE</a></li> </ul> <a class="close"><span>Close</span></a> </div> </nav>`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/Navigator.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/Navigator.astro", void 0);
 
 const $$Astro$9 = createAstro("https://mis-sport.com");
 const $$Copyright = createComponent(async ($$result, $$props, $$slots) => {
@@ -22,7 +22,7 @@ const $$Copyright = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$Copyright;
   return renderTemplate`<!-- Copyright -->${maybeRenderHead()}<section class="wrapper style2 copyright"> <div class="inner"> <span>
 All rights reserved by <img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="36" height="auto" class="rounded-circle"> MIS-SPORT.</span> </div> </section>`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/Copyright.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/Copyright.astro", void 0);
 
 const embedUrl = (s) => typeof s === "string" && s.trim().replaceAll("'", "%27").replaceAll('"', "%22") || "";
 
@@ -1365,7 +1365,7 @@ const values$5 = [
 		"五個口袋",
 		"貼合度較高的壓縮板型",
 		"[Roy7WT]DodgerBlue(S,M,L,XL,2XL)",
-		"https://shopee.tw/product/2352815/28301283305/",
+		"https://shopee.tw/product/2352815/27351871442/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -1394,7 +1394,7 @@ const values$5 = [
 		"極致的競技版型",
 		"高性能的輕量布料",
 		"[RoyTC8]RoyalBlue(XS,2XS,S,M,L,XL,2XL,3XL,4XL)",
-		"https://shopee.tw/product/2352815/19184543253/",
+		"https://shopee.tw/product/2352815/28751871478/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -4616,7 +4616,7 @@ NT$${Discounted} </h5>`, ColreSizeList.map((cs) => {
 </a> </li>` : renderTemplate`<li> <a href="https://line.me/R/ti/p/@457xrpaj" class="button line fit" target="_blank"> <i class="bi bi-line" style="font-size: 1.2em;"></i>
 歡迎來店洽詢
 </a> </li>`);
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/ProductMain.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/ProductMain.astro", void 0);
 
 const $$Astro$7 = createAstro("https://mis-sport.com");
 const $$ProductFooter = createComponent(async ($$result, $$props, $$slots) => {
@@ -4643,7 +4643,7 @@ const $$ProductFooter = createComponent(async ($$result, $$props, $$slots) => {
   const SunProtect = Transformers.SunProtect(content.SunProtect);
   const Water = Transformers.Water(content.Water);
   return renderTemplate`<!-- Footer -->${maybeRenderHead()}<section id="footer" class="wrapper"> <div class="col-10 box" style="margin-left: auto; margin-right: auto;"> <div class="row"> <div class="col-7 col-7-xlarge col-7-large col-12-medium col-12-small col-12-xsmall"> <div class="row"> <header class="major special"> <h2 class="text-center"> <i class="fa-solid fa-globe fa-xl"></i> </h2> <br> <h2 class="text-center">商品介紹</h2> </header> </div> <div class="row"> <div class="col-1"></div> <div class="col-10"> <!-- lg 以上顯示 Description + PadTech --> <div class="d-none d-lg-block"> <blockquote> <p>${unescapeHTML(Description)}</p> <p class="PadTech">${unescapeHTML(content.PadTech)}</p> </blockquote> </div> <!-- md 以下顯示 Description --> <div class="d-block d-lg-none"> <p>${unescapeHTML(Description)}</p> <br><hr> </div> </div> <div class="col-1"></div> </div> </div> <div class="d-none d-md-block col-1" style="border-right: thick solid #C0C0C0; border-width:1px; left:50%;"></div> <div class="d-block d-md-none"><br><br></div> <div class="col-4 col-4-xlarge col-4-large col-12-medium col-12-small col-12-xsmall"> <header class="major special"> <h2 class="text-center"> <i class="fa-solid fa-list-check fa-xl"></i> </h2> <br> <h2 class="text-center">商品特色</h2> </header> <ul class="alt" style="list-style-type: none; margin: 0; padding: 0;"> ${content.Style && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>版型</b> </code> </div> <div class="col-7">${content.Style}</div> </div> </li>`} ${content.CyclingType && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>適用場合</b> </code> </div> <div class="col-7">${content.CyclingType}</div> </div> </li>`} ${Temperature && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>建議溫度</b> </code> </div> <div class="col-7">${unescapeHTML(Temperature)}</div> </div> </li>`} ${SunProtect && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>防曬係數</b> </code> </div> <div class="col-7">${unescapeHTML(SunProtect)}</div> </div> </li>`} ${Water && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>防水等級</b> </code> </div> <div class="col-7">${unescapeHTML(Water)}</div> </div> </li>`} ${content.Weight && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>重量</b> </code> </div> <div class="col-7">${content.Weight}</div> </div> </li>`} ${content.Pad && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>褲墊款式</b> </code> </div> <div class="col-7">${content.Pad}</div> </div> </li>`} ${content.Feature1 && renderTemplate`<li> <div class="row"> <div class="col-5"> <code> <b>細節特點</b> </code> </div> <div class="col-7">${content.Feature1}</div> </div> </li>`} ${content.Feature2 && renderTemplate`<li> <div class="row"> <div class="col-5"></div> <div class="col-7">${content.Feature2}</div> </div> </li>`} ${content.Feature3 && renderTemplate`<li> <div class="row"> <div class="col-5"></div> <div class="col-7">${content.Feature3}</div> </div> </li>`} </ul> </div> </div> </div> </section>`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/components/ProductFooter.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/components/ProductFooter.astro", void 0);
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
@@ -4655,7 +4655,7 @@ const $$ProductLayout = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$ProductLayout;
   const { title, darkText, content, brandName } = Astro2.props;
   return renderTemplate(_a || (_a = __template(["<html> <head><title>", '</title><meta charset="utf-8">', '<link rel="icon" type="images/x-icon" href="https://storage.googleapis.com/mis-sport/logo/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><link rel="stylesheet" href="/assets/css/main.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"><!-- carousel-10 --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"><!-- fontawesome icon --><link href="/assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet"><link href="/assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet"><link href="/assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet"><!-- update existing v5 CSS to use v6 icons and assets --><link href="/assets/fontawesome-free-6.4.0-web/css/v5-font-face.css" rel="stylesheet"><!-- Bootstrap Icons 1.9.1 https://icons.getbootstrap.com/#install --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"><\/script><script defer src="/assets/js/jquery.min.js"><\/script><script defer src="/assets/js/jquery.scrollex.min.js"><\/script><script defer src="/assets/js/jquery.scrolly.min.js"><\/script><script defer src="/assets/js/jquery.selectorr.min.js"><\/script><script defer src="/assets/js/browser.min.js"><\/script><script defer src="/assets/js/breakpoints.min.js"><\/script><script defer src="/assets/js/util.js"><\/script><script defer src="/assets/js/main.js"><\/script>', `</head> <body class="is-preload"> <div class="img-full-page" onclick="this.style.display='none';"></div> <!-- Page wrapper --> <div id="page-wrapper"> `, " ", " ", " ", " ", " </div> ", ' <!-- Scripts --> <!-- fontawesome icon --> <script defer src="/assets/fontawesome-free-6.4.0-web/js/fontawesome.min.js"><\/script>  </body> </html>'])), title, renderSlot($$result, $$slots["in-head"]), renderHead(), renderComponent($$result, "Header", $$Header, { "darkText": darkText }), renderComponent($$result, "Navigator", $$Navigator, {}), renderSlot($$result, $$slots["default"]), renderComponent($$result, "Main", $$ProductMain, { "brandName": brandName, "content": content }), renderComponent($$result, "Footer", $$ProductFooter, { "content": content }), renderComponent($$result, "Copyright", $$Copyright, {}));
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/layouts/ProductLayout.astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/layouts/ProductLayout.astro", void 0);
 
 const SheetJsonToStaticRoute = (SheetName, data) => {
   const [header, ...rows] = data.values;
@@ -4756,9 +4756,9 @@ const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro", void 0);
 
-const $$file$5 = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro";
+const $$file$5 = "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro";
 const $$url$5 = "/product/BICYCLE-LINE/[topic]/[series]/[name]";
 
 const _name_$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -4786,9 +4786,9 @@ const $$name$4 = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro", void 0);
 
-const $$file$4 = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro";
+const $$file$4 = "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro";
 const $$url$4 = "/product/PROTEAMS/[topic]/[series]/[name]";
 
 const _name_$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -4913,6 +4913,35 @@ const values$3 = [
 		"[Nav1AD]MidnightBlue(M,L,S,XL);",
 		"https://shopee.tw/product/2352815/29200867723/",
 		"nalini-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"NEW ROAD 吊帶短褲2.0",
+		"NEW ROAD BIB SHORT2.0",
+		"適合混合全地形環境的吊帶短褲",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-002.jpg;",
+		"4900",
+		"https://storage.googleapis.com/mis-sport/logo/nalini-logo.png",
+		"[OliISA]\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-001.jpg;\n[OliISA]\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-002.jpg;\n[OliISA]\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-003.jpg;\n[OliISA]\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-004.jpg;\n[OliISA]\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-005.jpg;\n[OliISA]\nhttps://storage.googleapis.com/mis-sport/item/upload/NALINI/SUMMER/Summer Trousers/NEW ROAD BIB SHORT 2.0/NEWROAD-BIBSHORT-ARMY-GREEN-006.jpg;\n",
+		"",
+		"舒適的背帶短褲，由運動萊卡製成，配有超細纖維黑色彈性背帶。帶有凝膠盤插入物的特殊高厚度墊，適合需要墊特殊支撐的您。褲管管口採用彈性設計，並有矽膠微粒，具有抓握效果。",
+		"競技 | 選手",
+		"公路競賽",
+		"18ºC ～ 30ºC",
+		"",
+		"50+UPF",
+		"",
+		"ALL TERRAIN MEN",
+		"<br><hr>\n<b>ALL TERRAIN MEN 護墊介紹：</b>\n<ul>\n<li>將兩種不同密度的兩層不同泡沫模塑在一起，面向坐墊的密度較高，而面向您的坐骨處的則較軟。</li>\n<li>使用最好質量和最輕的膠水，護墊具有很強的抗壓力和重量能力，且柔軟且有彈性。特別適合強烈受到振動和衝擊影響的全地形混合路徑，保護身體免受來自坐墊的傷害。</li>\n</ul>",
+		"高壓縮布料能加強肌肉支撐，適合長距離競賽",
+		"紮實的護墊讓騎士感受最大的舒適度和減壓感",
+		"光滑舒適的布料",
+		"[OliISA]DarkOliveGreen(S,M,L,XL,2XL);",
+		"",
+		"nalini-men-racefit-size-guide.html"
 	]
 ];
 const json$3 = {
@@ -4938,9 +4967,9 @@ const $$name$3 = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/NALINI/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/NALINI/[topic]/[series]/[name].astro", void 0);
 
-const $$file$3 = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/NALINI/[topic]/[series]/[name].astro";
+const $$file$3 = "/Users/printfxd/git/mis-sport-next/src/pages/product/NALINI/[topic]/[series]/[name].astro";
 const $$url$3 = "/product/NALINI/[topic]/[series]/[name]";
 
 const _name_$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -8057,6 +8086,66 @@ const values$2 = [
 		"Summer Accessories Sale"
 	],
 	[
+		"",
+		"",
+		"",
+		"ACCESSORI REFLEX AIR 空力短指手套",
+		"ACCESSORI REFLEX AIR Summer Gloves",
+		"高貼合的極致手感",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-02.jpg;",
+		"1500",
+		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
+		"[BLK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-02.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-03.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-04.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-05.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-06.jpg;",
+		"750",
+		"一款輕巧的科技手套，擁有絕佳的貼合度與舒適度。手掌處使用絨面革以獲得優質手感，在重點部位加入抗震凝膠緩和崎嶇道路帶來的衝擊，手背上印有反光材質的品牌標誌增加夜晚能見度。",
+		"競技 | 選手",
+		"公路競賽",
+		"18ºC ～ 35ºC",
+		"",
+		"50+UPF",
+		"70g (M號)",
+		"",
+		"",
+		"高貼合度",
+		"超高透氣耐磨布料",
+		"恰到好處的抗震凝膠",
+		"[BLK]Black(S-L);",
+		"https://shp.ee/xets9px",
+		"ale-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"ACCESSORI SUNSELECT 短指手套",
+		"ACCESSORI SUNSELECT Summer Gloves",
+		"",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-02.jpg;",
+		"1200",
+		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
+		"[YL]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-02.jpg;\n[WH]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-03.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-04.jpg;\n[PK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-05.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-06.jpg;",
+		"900",
+		"這些高科技、空氣動力學優化的手套採用科學開發的 SunSelect 面料製成，具有保護過濾效果，可通過控制照射皮膚的紫外線波來提供更安全的防曬效果。手掌上的傳統絨面革結構為您的皮膚提供優質觸感，同時抗震凝膠提供最佳保護和對桿的出色抓握。",
+		"競技 | 選手",
+		"公路競賽",
+		"18ºC ～ 35ºC",
+		"",
+		"50+UPF",
+		"25g (M號)",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"[YL]Yellow(S-L);\n[WH]White(S-L);\n[PK]Magenta(S-L);",
+		"https://shopee.tw/ALE'-%E7%B8%BD%E4%BB%A3%E7%90%86-%E5%85%AC%E5%8F%B8%E8%B2%A8-Glove-%E8%B6%85%E6%9C%8D%E8%B2%BC%E5%BD%88%E5%8A%9B%E4%BD%8E%E9%A2%A8%E9%98%BB%E6%89%8B%E5%A5%97-i.2352815.9877649549?sp_atk=b054931f-ce15-4bb0-9d54-4f198c048207&xptdk=b054931f-ce15-4bb0-9d54-4f198c048207",
+		"ale-men-racefit-size-guide.html"
+	],
+	[
+	],
+	[
 	],
 	[
 	],
@@ -10609,9 +10698,9 @@ const $$name$2 = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/SALE/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/SALE/[topic]/[series]/[name].astro", void 0);
 
-const $$file$2 = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/SALE/[topic]/[series]/[name].astro";
+const $$file$2 = "/Users/printfxd/git/mis-sport-next/src/pages/product/SALE/[topic]/[series]/[name].astro";
 const $$url$2 = "/product/SALE/[topic]/[series]/[name]";
 
 const _name_$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -10692,35 +10781,6 @@ const values$1 = [
 		"",
 		"",
 		"[YL]Gold(S-L);",
-		"",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
-		"PR-R SUN OF SICILY 短袖車衣",
-		"PR-R SUN OF SICILY Short Sleeve Jersey",
-		"",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-02.jpg;",
-		"2900",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[BLK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-02.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-03.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-04.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-05.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/pr-r-sun-of-sicily-jerseys/PR-R-SUN-OF-SICILY-06.jpg;",
-		"",
-		"為了慶祝西西里島的精神與創造力，這款限量的車衣將義大利島嶼maiolica陶瓷獨特的耀眼色彩與擁有先進機能的布料相結合，打造出引人注目的夏季必備單品。這款大膽的車衣採用輕量透氣面料製成，具有Alé一貫的優秀性能與鮮明的西西里活力，提供足以抵抗炎夏的舒適度以確保騎乘體驗。",
-		"競技 | 選手",
-		"公路競賽",
-		"18ºC ～ 30ºC",
-		"",
-		"50+UPF",
-		"115g (M號)",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[BLK]Black(S-L);",
 		"",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -10957,64 +11017,6 @@ const values$1 = [
 		"",
 		"春夏配件",
 		"Summer Accessories"
-	],
-	[
-		"",
-		"",
-		"",
-		"ACCESSORI REFLEX AIR 空力短指手套",
-		"ACCESSORI REFLEX AIR Summer Gloves",
-		"高貼合的極致手感",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-02.jpg;",
-		"1500",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[BLK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-02.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-03.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-04.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-05.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/reflex-air-gloves/REFLEX-AIR-GLOVES-06.jpg;",
-		"",
-		"一款輕巧的科技手套，擁有絕佳的貼合度與舒適度。手掌處使用絨面革以獲得優質手感，在重點部位加入抗震凝膠緩和崎嶇道路帶來的衝擊，手背上印有反光材質的品牌標誌增加夜晚能見度。",
-		"競技 | 選手",
-		"公路競賽",
-		"18ºC ～ 35ºC",
-		"",
-		"50+UPF",
-		"70g (M號)",
-		"",
-		"",
-		"高貼合度",
-		"超高透氣耐磨布料",
-		"恰到好處的抗震凝膠",
-		"[BLK]Black(S-L);",
-		"https://shp.ee/xets9px",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
-		"ACCESSORI SUNSELECT 短指手套",
-		"ACCESSORI SUNSELECT Summer Gloves",
-		"",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-02.jpg;",
-		"1200",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[YL]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-02.jpg;\n[WH]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-03.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-04.jpg;\n[PK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-05.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/unisex/ACCESSORI-SUNSELECT-Summer-gloves/ACCESSORI-SUNSELECT-Summer-gloves-06.jpg;",
-		"",
-		"這些高科技、空氣動力學優化的手套採用科學開發的 SunSelect 面料製成，具有保護過濾效果，可通過控制照射皮膚的紫外線波來提供更安全的防曬效果。手掌上的傳統絨面革結構為您的皮膚提供優質觸感，同時抗震凝膠提供最佳保護和對桿的出色抓握。",
-		"競技 | 選手",
-		"公路競賽",
-		"18ºC ～ 35ºC",
-		"",
-		"50+UPF",
-		"25g (M號)",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[YL]Yellow(S-L);\n[WH]White(S-L);\n[PK]Magenta(S-L);",
-		"https://shopee.tw/ALE'-%E7%B8%BD%E4%BB%A3%E7%90%86-%E5%85%AC%E5%8F%B8%E8%B2%A8-Glove-%E8%B6%85%E6%9C%8D%E8%B2%BC%E5%BD%88%E5%8A%9B%E4%BD%8E%E9%A2%A8%E9%98%BB%E6%89%8B%E5%A5%97-i.2352815.9877649549?sp_atk=b054931f-ce15-4bb0-9d54-4f198c048207&xptdk=b054931f-ce15-4bb0-9d54-4f198c048207",
-		"ale-men-racefit-size-guide.html"
 	],
 	[
 		"",
@@ -12380,9 +12382,9 @@ const $$name$1 = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/ALE/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/ALE/[topic]/[series]/[name].astro", void 0);
 
-const $$file$1 = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/ALE/[topic]/[series]/[name].astro";
+const $$file$1 = "/Users/printfxd/git/mis-sport-next/src/pages/product/ALE/[topic]/[series]/[name].astro";
 const $$url$1 = "/product/ALE/[topic]/[series]/[name]";
 
 const _name_$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -13724,9 +13726,9 @@ const $$name = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/MET/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/MET/[topic]/[series]/[name].astro", void 0);
 
-const $$file = "/mnt/hdd2/biz.repo/astro-mis-sport/src/pages/product/MET/[topic]/[series]/[name].astro";
+const $$file = "/Users/printfxd/git/mis-sport-next/src/pages/product/MET/[topic]/[series]/[name].astro";
 const $$url = "/product/MET/[topic]/[series]/[name]";
 
 const _name_ = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
