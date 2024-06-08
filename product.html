@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MIS Sport 米詩國際</title>
+  <link rel="icon" type="images/x-icon" href="https://storage.googleapis.com/mis-sport/logo/favicon.ico" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVNCV5VCTL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-FVNCV5VCTL');
+</script>
+
+<!-- body -->
+
+<body>
+  <noscript>
+    您的瀏覽器不支援javascript，請進入<a href="/index.html">我們的首頁</a>重新選擇您你喜愛的商品。
+  </noscript>
+  <script type="text/javascript">
+    const urlParams = new URLSearchParams(window.location.search);
+    const b = urlParams.get('b');
+    const t = urlParams.get('t');
+    const es = urlParams.get('es');
+    const ep = urlParams.get('ep');
+    let newUrl;
+    if (b && t && es && ep) {
+      newUrl = `/product/${b}/${t}/${es}/${ep}/`;
+    } else {
+      newUrl = '/index.html';
+    }
+    window.location.replace(newUrl);
+    const h1El = document.createElement('p');
+    h1El.innerHTML = `1秒後會跳轉，若沒有跳轉<a href="${newUrl}">請點擊這裡</a>`;
+    document.body.prepend(h1El);
+  </script>
+</body>
+
+</html>
