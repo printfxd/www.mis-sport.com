@@ -16,12 +16,14 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-06274.jpg': '0% 35%',
-							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-05633.jpg': 'top',
-							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-03140.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-04754.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-00472.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-FINAL-WEB_RES-02064.jpg': 'center'
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-001.jpg': '0% 35%',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-002.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-003.jpg': 'bottom',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-004.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-005.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-006.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-007.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/bicycle-line/BL-SS24-BANNER-008.jpg': 'center'
 						},
 
 					// Delay.
