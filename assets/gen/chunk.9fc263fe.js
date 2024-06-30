@@ -2018,7 +2018,7 @@ const values$5 = [
 		"能夠應對天氣變化的多功能外套",
 		"",
 		"https://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-004.jpg;",
-		"3600",
+		"3900",
 		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
 		"[opt1]\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-004.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-005.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-006.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-007.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-008.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-showerproof-jacket-NORMANDIA_E/rain-windproof-cycling-jacket-normandiae-009.jpg;",
 		"",
@@ -2302,7 +2302,7 @@ const values$5 = [
 		"能夠應對天氣變化的多功能外套",
 		"",
 		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-002.jpg",
-		"3600",
+		"3900",
 		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
 		"[Bla0EO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-001.jpg;\n[Bla0EO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-002.jpg;\n[Bla0EO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-003.jpg;\n[Bla0EO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-004.jpg;\n[Bla0EO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof jacket NORMANDIA_E/rain-windproof-cycling-jacket-woman-normandiae-005.jpg",
 		"",
@@ -2841,7 +2841,7 @@ const values$5 = [
 		"更高的耐用性",
 		"PaleVioletRed(s,m,l);",
 		"",
-		"bicycle-line-men-racefit-size-guide.html"
+		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
 		"",
@@ -2870,7 +2870,7 @@ const values$5 = [
 		"",
 		"DarkOrchid(s,m,l);",
 		"",
-		"bicycle-line-men-racefit-size-guide.html"
+		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
 		"",
@@ -2899,7 +2899,7 @@ const values$5 = [
 		"更高的耐用性",
 		"Black(s,m,l);",
 		"",
-		"bicycle-line-men-racefit-size-guide.html"
+		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
 		"",
@@ -6126,35 +6126,6 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"R-EV1 特價夏季短褲 001",
-		"Outlet Bibshorts Men 007",
-		"夏季零碼出清",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-2.jpg",
-		"3300",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-1.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-2.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-3.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-4.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-5.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-6.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-7.jpg;\n[Bla4HQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Bibshorts Men 007/Outlet Bibshorts Men 007-8.jpg",
-		"2500",
-		"兼顧舒適以及性能的優秀設計，能有效支撐並保護大腿肌肉，多面剪裁讓腿部活動更加靈活，擁有搶眼色彩的ALE經典設計風格。",
-		"競技 | 選手",
-		"公路競賽",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[Bla4HQ]Black(,2XS,XS,XL)",
-		"https://shopee.tw/product/2352815/1360799050/",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
 		"R-EV1 特價夏季短褲 002",
 		"Outlet Bibshorts Men 012",
 		"夏季零碼出清",
@@ -8577,16 +8548,6 @@ const values$2 = [
 		"ale-men-racefit-size-guide.html"
 	],
 	[
-	],
-	[
-	],
-	[
-	],
-	[
-	],
-	[
-	],
-	[
 		"",
 		"",
 		"",
@@ -8613,7 +8574,7 @@ const values$2 = [
 		"",
 		"[DeeAZL]DeepPink(M);\n[IvoYDQ]Yellow(L);\n[WhiR4V]White(L,M)",
 		"https://shopee.tw/product/2352815/16207226738/",
-		"ale-htmlmen-racefit-size-guide."
+		"ale-men-racefit-size-guide.html"
 	],
 	[
 		"",
@@ -8671,7 +8632,36 @@ const values$2 = [
 		"",
 		"[Bla82Z]Black(S,M,L);\n[IvoBMX]Ivory(M,L)",
 		"https://shopee.tw/product/2352815/19468733408/",
-		"ale-htmlmen-racefit-size-guide."
+		"ale-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"ACCESSORI 特價夏季短襪 015",
+		"ACCESSORI Summer Socks 015",
+		"",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_10.jpg;\n",
+		"900",
+		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
+		"[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_10.jpg;\n[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_8.jpg;\n[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_7.jpg;\n[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_9.jpg;\n[SlaMJJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_2.jpg;\n[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_5.jpg;\n[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_6.jpg;\n[BlaB0S]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 015/LINE_ALBUM_450 出清_240620_1.jpg",
+		"450",
+		"透氣,提供急速排汗的優異特性\n材質:Composizione/Composition\n74%SkinLife(PA) -12%EL -14%PA\n18-30度C  16CM",
+		"",
+		"",
+		"",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"",
+		"專為騎車設計,防滑與高筒襪身,柔軟舒適,防臭抗菌.",
+		"",
+		"",
+		"[BlaB0S]Black(S,M);\n[SlaMJJ]SlateGray(M,L)",
+		"https://shopee.tw/product/2352815/17481963147/",
+		"ale-men-racefit-size-guide.html"
 	],
 	[
 		"",
@@ -12659,12 +12649,12 @@ const values = [
 		"TRENTA 3K CARBON TADEJ POGAČAR",
 		"MET 與巨星 Tadej Pogačar 合作的限定聯名款",
 		"NEW",
-		"https://storage.googleapis.com/mis-sport/item/met/road/TRENTA-3K-CARBON-MIPS/met-trenta-3k-carbon-mips-road-cycling-helmet-TP1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/met/road/TRENTA-3K-CARBON-MIPS/met-trenta-3k-carbon-mips-road-cycling-helmet-TP1-side.jpg;",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-side-2.webp",
 		"11000",
 		"https://storage.googleapis.com/mis-sport/logo/met-logo.png",
-		"https://storage.googleapis.com/mis-sport/item/met/road/TRENTA-3K-CARBON-MIPS/met-trenta-3k-carbon-mips-road-cycling-helmet-TP1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/met/road/TRENTA-3K-CARBON-MIPS/met-trenta-3k-carbon-mips-road-cycling-helmet-TP1-side.jpg;\nhttps://storage.googleapis.com/mis-sport/item/met/road/TRENTA-3K-CARBON-MIPS/met-trenta-3k-carbon-mips-road-cycling-helmet-TP1-back.jpg;\nhttps://storage.googleapis.com/mis-sport/item/met/road/TRENTA-3K-CARBON-MIPS/met-trenta-3k-carbon-mips-road-cycling-helmet-TP1-top.jpg",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-side-2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-back-2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-top-2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-b.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-unique-process-2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON TADEJ POGAČAR/met-trenta-3k-carbon-mips-tadej-pogacar-road-cycling-helmet-TP2-hair-vent (1).webp",
 		"",
-		"<b>TRENTA 3K CARBON with TADEJ POGAČAR</b>\n\nMET Trenta 3K Carbon Mips® 是一款高性能公路安全帽，專為最多產和最著名的自行車手而設計。它曾兩次贏得環法自行車賽冠軍，見證了多個大環賽賽段、紀念碑賽和單日賽的勝利，並在所有地形的比賽中表現出色，從雄偉的哈吉爾山脈到意大利的白色道路，從弗蘭德斯鵝卵石一直到比利牛斯山峰。MET Trenta 3K Carbon Mips® 配備 Mips AIR® 旋轉管理系統，旨在讓您的頭部和頭髮保持涼爽並節省寶貴的體力，是我們迄今為止製造的最先進的公路安全帽，現在進一步為我們的好朋友和合作夥伴 - Tadej Pogačar 在賽道上提供幫助。",
+		"<b>TRENTA 3K CARBON with TADEJ POGAČAR 2024年版</b>\n\nTadej Pogačar 是個特立獨行卻又富有魅力的人，同時這就是車迷愛他的原因。\n\nMET與他本人專屬聯名的 Trenta 3K Carbon，以液態塗裝為設計理念，每一頂呈現都是獨一無二，都是Tadej Pogačar的各式變體概念，找不到第二頂相同的圖裝。\n\n加上”TP”聯名專屬帽款盒裝，還有眾所皆知的頭毛起飛處招牌標示。",
 		"",
 		"公路競賽 | 旅行",
 		"",
@@ -12676,7 +12666,65 @@ const values = [
 		"",
 		"",
 		"",
-		"[undefined]DarkGray()",
+		"[undefined]DarkKhaki(,M,L)",
+		"",
+		"met-road-helmet-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"TRENTA 3K CARBON MIPS UAE TEAM ADQ 2024 車隊專屬限定版",
+		"TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024",
+		"UAE ADQ 女子車隊專屬限定版",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/met-trenta-3k-carbon-mips-road-cycling-helmet-TW2.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/met-trenta-3k-carbon-mips-road-cycling-helmet-TW2-side.jpg",
+		"11000",
+		"https://storage.googleapis.com/mis-sport/logo/met-logo.png",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/met-trenta-3k-carbon-mips-road-cycling-helmet-TW2.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/met-trenta-3k-carbon-mips-road-cycling-helmet-TW2-side.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/met-trenta-3k-carbon-mips-road-cycling-helmet-TW2-back.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/met-trenta-3k-carbon-mips-road-cycling-helmet-TW2-top.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/2.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/5.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS UAE TEAM ADQ EDITION 2024/7.jpg",
+		"",
+		"<b>UAE TEAM EDITIONS 車隊專屬限定版</b>\n\n車隊版的推出，在於讓您感受到自己是賽事中主集團的一部分，核心在自行車精神之間的聯繫，以及激勵我們超越極限及團隊榮耀。\n\nUAE Team ADQ版本採用標誌性的多色底紋，讓人想起沙漠上的日落。每個形狀和邊緣都經過精心製作，以最大限度地減少阻力並提高空氣動力學效率。其大膽的設計將讓您在路上脫穎而出!!\n\nJoin the ranks of the elite.",
+		"",
+		"公路競賽 | 旅行",
+		"",
+		"",
+		"",
+		"225g (M號) | 265g (L號)",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"[Lig68K]LightCoral(,M)",
+		"",
+		"met-road-helmet-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"TRENTA 3K CARBON MIPS WH1 (香草金)",
+		"TRENTA 3K CARBON MIPS WH1",
+		"",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS WH1/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS WH1/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1-side.jpg",
+		"10800",
+		"https://storage.googleapis.com/mis-sport/logo/met-logo.png",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS WH1/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS WH1/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1-side.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS WH1/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1-back.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Road/TRENTA 3K CARBON MIPS WH1/met-trenta-3k-carbon-mips-road-cycling-helmet-WH1-top.jpg",
+		"",
+		"<b>公路自行車安全帽的性能指標</b>\n\nMET Trenta 3K Carbon Mips® 是一款高性能公路安全帽，專為精英自行車手設計，在環法自行車賽以及列日-巴斯托涅-列日和倫巴第大區的紀念碑上獲得勝利。MET Trenta 3K Carbon Mips® 旨在讓您的頭部保持涼爽並在每次踏板行程中節省體力，是我們製造的最先進的公路自行車安全帽，現在升級為添加了 Mips AIR®，這是最輕便、最先進的旋轉安全帽管理系統。",
+		"",
+		"公路競賽 | 旅行",
+		"",
+		"",
+		"",
+		"225g (M號) | 265g (L號)",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"[LigYK3]LightYellow(M,L)",
 		"",
 		"met-road-helmet-size-guide.html"
 	],
@@ -13316,9 +13364,42 @@ const values = [
 		"https://shopee.tw/product/2352815/17197096878/"
 	],
 	[
+	],
+	[
+	],
+	[
 		"",
 		"Tri．Aero 空力三鐵",
 		"Tri and Aero"
+	],
+	[
+		"",
+		"",
+		"",
+		"MANTA MIPS UAE TEAM ADQ 2024 車隊專屬限定版",
+		"MANTA MIPS UAE TEAM ADQ EDITION 2024",
+		"UAE ADQ 女子車隊專屬限定版",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/met-manta-mips-road-cycling-helmet-TW2.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/met-manta-mips-road-cycling-helmet-TW2-side.jpg",
+		"9000",
+		"https://storage.googleapis.com/mis-sport/logo/met-logo.png",
+		"https://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/met-manta-mips-road-cycling-helmet-TW2.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/met-manta-mips-road-cycling-helmet-TW2-side.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/met-manta-mips-road-cycling-helmet-TW2-back.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/met-manta-mips-road-cycling-helmet-TW2-top.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/2.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/3.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/MET/On Road/Tri and Aero/MANTA MIPS UAE TEAM ADQ EDITION 2024/4.jpg",
+		"",
+		"<b>UAE TEAM EDITIONS 車隊專屬限定版</b>\n\n車隊版的推出，在於讓您感受到自己是賽事中主集團的一部分，核心在自行車精神之間的聯繫，以及激勵我們超越極限及團隊榮耀。\n\nUAE Team ADQ版本採用標誌性的多色底紋，讓人想起沙漠上的日落。每個形狀和邊緣都經過精心製作，以最大限度地減少阻力並提高空氣動力學效率。其大膽的設計將讓您在路上脫穎而出!!\n\nJoin the ranks of the elite.",
+		"",
+		"空力 | 三鐵競技",
+		"",
+		"",
+		"",
+		"250g (M號)",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"[Sal7H5]Salmon(M)",
+		"",
+		"met-road-helmet-size-guide.html"
 	],
 	[
 		"",
@@ -13493,6 +13574,8 @@ const values = [
 		"DodgerBlue(M);",
 		"",
 		"met-road-helmet-size-guide.html"
+	],
+	[
 	],
 	[
 		"Off Road"
