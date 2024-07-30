@@ -24,7 +24,14 @@ const $$Copyright = createComponent(async ($$result, $$props, $$slots) => {
 All rights reserved by <img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="36" height="auto" class="rounded-circle"> MIS-SPORT.</span> </div> </section>`;
 }, "/Users/printfxd/git/mis-sport-next/src/components/Copyright.astro", void 0);
 
-const embedUrl = (s) => typeof s === "string" && s.trim().replaceAll("'", "%27").replaceAll('"', "%22") || "";
+function escapePercent(s) {
+  if (s === void 0)
+    return "";
+  if (s.match(/[ !"#$&\'()*+,;=@\[\]]/g)) {
+    return s.replaceAll(" ", "%20").replaceAll("!", "%21").replaceAll('"', "%22").replaceAll("#", "%23").replaceAll("$", "%24").replaceAll("&", "%26").replaceAll("'", "%27").replaceAll("(", "%28").replaceAll(")", "%29").replaceAll("*", "%2A").replaceAll("+", "%2B").replaceAll(",", "%2C").replaceAll(";", "%3B").replaceAll("=", "%3D").replaceAll("?", "%3F").replaceAll("@", "%40").replaceAll("[", "%5B").replaceAll("]", "%5D");
+  }
+  return s;
+}
 
 const range$5 = "'BICYCLE-LINE'!A1:AM400";
 const majorDimension$5 = "ROWS";
@@ -456,14 +463,14 @@ const values$5 = [
 		"",
 		"ZONCOLAN S4 吊帶短褲",
 		"Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad",
-		"",
+		"舒適的布料猶如第二層皮膚",
 		"NEW",
 		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_beige_01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_beige_02.jpg",
 		"4900",
 		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
 		"[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_beige_01.jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_beige_02.jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (10).jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (11).jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (12).jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (19).jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (18).jpg;\n[DarZIJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (8)-1.jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_black_01.jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_black_02.jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (9).jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (13).jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (14).jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (16).jpg;\n[BlaA5C]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (8)-3.jpg;\n[CriGSO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_cerise_01.jpg;\n[CriGSO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_cerise_02.jpg;\n[CriGSO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (8)-2.jpg;\n[DarOVG]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_green_01.jpg;\n[DarOVG]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/ZONCOLAN_S4_cycling_bibshort_man_green_02.jpg;\n[DarOVG]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (15).jpg;\n[DarOVG]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (17).jpg;\n[DarOVG]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men%27s cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (20).jpg;\n[DarOVG]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Men's cycling bib shorts ZONCOLAN S4 Elastic Interface pad/men-cycling-bibshorts-zoncolan-s4 (8)-4.jpg",
 		"",
-		"",
+		"此款車褲與肩帶採用創新的超細纖維面料和高彈性布料，具有出色的壓縮性和活動自由度。內層的止滑矽膠，不僅提供出色的附著力並大幅降低令人不適的過敏反應，性能優越的褲墊更加提升長距離騎乘的舒適度。",
 		"選手版",
 		"公路競賽",
 		"20ºC ～ 32ºC",
@@ -472,7 +479,7 @@ const values$5 = [
 		"",
 		"Man Road Performance Force  頂級護墊",
 		"<br><hr>\n<b>Man Road Performance Force 護墊介紹：</b>\n<ul>\n<li>根據男性解剖學開發的結構，多向曲率的坐墊設計能提供更好的貼合性和騎乘穩定性。在高強度騎乘和超長距離情況下，具有改善血液流動、減輕壓力和麻木的效果。</li>\n<li>EIT X FIFTY + MAX 的布料技術以創新的 Air-Mapping 氣流概念，提高了透氣性並大幅度減少熱能堆積，強化吸濕排汗性能。</li>\n<li>護墊結構是採用Road Master的混合式蜂巢技術(Hybrid Cell System)，由頂層 60kg/m<sup>3</sup>，中層 200kg/m<sup>3</sup>，以及底層 80kg/m<sup>3</sup>所組成。能更好地提供多方向性的支撐。</li>\n</ul>",
-		"",
+		"肩帶採用新型扁平微纖維鬆緊帶，舒適加倍",
 		"",
 		"",
 		"[DarZIJ]DarkKhaki();\n[BlaA5C]Black();\n[CriGSO]Crimson();\n[DarOVG]DarkSlateGray()",
@@ -2032,7 +2039,7 @@ const values$5 = [
 		"",
 		"",
 		"防風防潑水",
-		"透氣且具有彈性",
+		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
 		"[opt1]Black(S,M,L,XL,2XL,3XL)",
 		"https://shopee.tw/product/2352815/20591559755/",
@@ -2061,7 +2068,7 @@ const values$5 = [
 		"",
 		"",
 		"防風防潑水",
-		"透氣且具有彈性",
+		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
 		"[opt1]Black(S,M,L,XL,2XL)",
 		"https://shopee.tw/product/2352815/15997915782/",
@@ -2156,6 +2163,35 @@ const values$5 = [
 		"",
 		"",
 		"歐版"
+	],
+	[
+		"",
+		"",
+		"",
+		"MAESTRALE 防風背心",
+		"Men's windproof vest Maestrale",
+		"採用新技術與高品質布料的防風背心",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Jackets/Men%27s windproof vest Maestrale/954EDEC9-C76B-4363-AAF3-A2AF4FF43043.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Jackets/Men%27s windproof vest Maestrale/786EFF9B-23A0-4374-9D85-7E48ABDC9D5C.jpg",
+		"3400",
+		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
+		"[Mid4WZ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Jackets/Men%27s windproof vest Maestrale/954EDEC9-C76B-4363-AAF3-A2AF4FF43043.jpg;\n[Mid4WZ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Jackets/Men%27s windproof vest Maestrale/786EFF9B-23A0-4374-9D85-7E48ABDC9D5C.jpg;\n[SilRAJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Jackets/Men%27s windproof vest Maestrale/0B55A9F4-2B7B-4514-932F-1C7A6F47AE95.jpg;\n[SilRAJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Jackets/Men%27s windproof vest Maestrale/96261044-A86F-4DDE-90F9-5801D95EF6FB.jpg",
+		"",
+		"一款採用新技術與高品質布料的防風背心，可在任何季節提供完美的防風保護。精緻的質感、絕佳的貼合度並且易於收納進車衣口袋，雙開拉鍊增加溫度調節的便利性，同時讓騎乘者能輕易拿取口袋的物品。",
+		"歐版",
+		"公路競賽",
+		"10ºC ～ 23ºC",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"輕量防風",
+		" 柔軟的高品質布料",
+		" 便利的雙開拉鍊",
+		"[Mid4WZ]MidnightBlue(2XS,XS,S,M,L,XL,2XL);\n[SilRAJ]DarkGray(2XS,XS,S,M,L,XL,2XL)",
+		"",
+		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
 		"",
@@ -2380,7 +2416,7 @@ const values$5 = [
 		"",
 		"",
 		"防風防潑水",
-		"透氣且具有彈性",
+		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
 		"[Bla0EO]Black(S,M,XS,2XS)",
 		"",
@@ -2399,7 +2435,7 @@ const values$5 = [
 		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
 		"[PalJPK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women%27s windproof cycling jacket MAESTRALE/women-windproof-cycling-jersey-maestrale-001.jpg;\n[PalJPK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women%27s windproof cycling jacket MAESTRALE/women-windproof-cycling-jersey-maestrale-002.jpg;\n[Red38S]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women%27s windproof cycling jacket MAESTRALE/women-windproof-cycling-jersey-maestrale-003.jpg;\n[Red38S]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women%27s windproof cycling jacket MAESTRALE/women-windproof-cycling-jersey-maestrale-004.jpg;\n[GraHNK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women%27s windproof cycling jacket MAESTRALE/4C4E7086-A799-497A-B946-33E00934FB4C.jpg;\n[GraHNK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women%27s windproof cycling jacket MAESTRALE/345DA8BB-E339-43B6-8B15-C5BC2264E900.jpg;\n[GraHNK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof cycling jacket MAESTRALE/A3F9A5C8-AF4A-4CB9-A43D-280EDDA2239F.jpg;\n[GraHNK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof cycling jacket MAESTRALE/8DD653A4-837E-4698-AC25-B7B0450F6762.jpg",
 		"",
-		"用優質布料製成高機能性外套，可在四季提供完美的防風保護。符合身體結構的貼合度，搭配柔和的色彩，並且易於收納進車衣口袋，適合隨身攜帶。",
+		"用優質布料製成高機能性外套，可在四季提供完美的防風保護。符合身體結構的貼合度，搭配柔和的色彩，雙開拉鍊增加溫度調節的便利性，並且易於收納進車衣口袋，適合隨身攜帶。",
 		"歐版",
 		"公路競賽",
 		"6ºC ～ 18ºC",
@@ -2438,7 +2474,7 @@ const values$5 = [
 		"",
 		"",
 		"防風防潑水",
-		"透氣且具有彈性",
+		"極輕量，透氣且具有彈性",
 		"能應對多種天氣變化",
 		"[BlaWQB]Black(,XS,S,M)",
 		"",
@@ -2534,6 +2570,35 @@ const values$5 = [
 	[
 	],
 	[
+	],
+	[
+		"",
+		"",
+		"",
+		"MAESTRALE 防風背心(女)",
+		"Women's windproof vest Maestrale",
+		"採用新技術與高品質布料的防風背心",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof vest Maestrale/BA8BF67D-5439-4169-8BF7-91945E90D287.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof vest Maestrale/51A6513A-DDD9-4D7A-8EE2-921F16481082.jpg",
+		"3400",
+		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
+		"[GraI1Z]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof vest Maestrale/BA8BF67D-5439-4169-8BF7-91945E90D287.jpg;\n[GraI1Z]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof vest Maestrale/51A6513A-DDD9-4D7A-8EE2-921F16481082.jpg;\n[MidDXT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof vest Maestrale/869F7B57-3B1C-4876-8965-2486890F25FC.jpg;\n[MidDXT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Woman Winter/Women's windproof vest Maestrale/3A8401CC-65A2-48BD-ACCC-16CD8E893996.jpg",
+		"",
+		"用優質布料製成高機能性背心，可在四季提供完美的防風保護。符合身體結構的貼合度，雙開拉鍊增加溫度調節的便利性，並且易於收納進車衣口袋，適合隨身攜帶。",
+		"歐版",
+		"公路競賽",
+		" 10ºC ～ 23ºC",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"輕量防風",
+		"柔軟的高品質布料",
+		"便利的雙開拉鍊",
+		"[GraI1Z]Gray(2XS,XS,S,M);\n[MidDXT]MidnightBlue(2XS,XS,S,M,L)",
+		"",
+		"bicycle-line-women-europeanfit-size-guide.html"
 	],
 	[
 		"",
@@ -4646,6 +4711,7 @@ const $$ProductMain = createComponent(async ($$result, $$props, $$slots) => {
     const found = ColreSizeList.find(
       (c) => c.label === io.tag
     );
+    io.url = escapePercent(io.url);
     return {
       ...io,
       styleValue: found ? `background-color:${found.color};opacity:0.6;border:solid 1px` : null
@@ -4817,7 +4883,7 @@ const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
   const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
-  const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro", void 0);
@@ -4847,7 +4913,7 @@ const $$name$4 = createComponent(async ($$result, $$props, $$slots) => {
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
   const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
-  const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro", void 0);
@@ -5028,7 +5094,7 @@ const $$name$3 = createComponent(async ($$result, $$props, $$slots) => {
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
   const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
-  const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/NALINI/[topic]/[series]/[name].astro", void 0);
@@ -6654,7 +6720,7 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"[BlaXKI]Black(,2XS)",
+		"[BlaXKI]Black()",
 		"",
 		"ale-women-racefit-size-guide.html"
 	],
@@ -11284,7 +11350,7 @@ const $$name$2 = createComponent(async ($$result, $$props, $$slots) => {
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
   const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
-  const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/SALE/[topic]/[series]/[name].astro", void 0);
@@ -12634,7 +12700,7 @@ const $$name$1 = createComponent(async ($$result, $$props, $$slots) => {
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
   const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
-  const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/ALE/[topic]/[series]/[name].astro", void 0);
@@ -14071,7 +14137,7 @@ const $$name = createComponent(async ($$result, $$props, $$slots) => {
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
   const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
-  const imgList = (content.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/MET/[topic]/[series]/[name].astro", void 0);
@@ -14087,4 +14153,4 @@ const _name_ = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Copyright as $, _name_$5 as _, $$Navigator as a, $$Header as b, json$5 as c, json as d, embedUrl as e, json$3 as f, json$4 as g, json$2 as h, _name_$4 as i, json$1 as j, _name_$3 as k, _name_$2 as l, _name_$1 as m, _name_ as n };
+export { $$Copyright as $, _name_$5 as _, $$Navigator as a, $$Header as b, json$5 as c, json as d, escapePercent as e, json$3 as f, json$4 as g, json$2 as h, _name_$4 as i, json$1 as j, _name_$3 as k, _name_$2 as l, _name_$1 as m, _name_ as n };

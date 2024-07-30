@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent, e as renderSlot, f as renderHead, b as addAttribute, u as unescapeHTML } from './chunk.b0db1f2f.js';
 import 'clsx';
-import { $ as $$Copyright, a as $$Navigator, b as $$Header, e as embedUrl, j as json } from './chunk.97dd6f0e.js';
+import { $ as $$Copyright, a as $$Navigator, b as $$Header, e as escapePercent, j as json } from './chunk.92eb73cd.js';
 /* empty css                *//* empty css                */
 const $$Astro$4 = createAstro("https://mis-sport.com");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
@@ -119,15 +119,15 @@ const $$ProductCard = createComponent(async ($$result, $$props, $$slots) => {
   const ep = product.EnglishName?.replaceAll(" ", "_") || "";
   const productUrl = `/${[
     "product",
-    encodeURIComponent(brandName),
-    encodeURIComponent(t),
-    encodeURIComponent(es),
-    encodeURIComponent(ep)
+    escapePercent(encodeURIComponent(brandName)),
+    escapePercent(encodeURIComponent(t)),
+    escapePercent(encodeURIComponent(es)),
+    escapePercent(encodeURIComponent(ep))
   ].join("/")}/`;
-  const imgList = (product.Img || "").split(";").map(embedUrl).filter(Boolean);
+  const imgList = (product.Img || "").split(";").map(escapePercent).filter(Boolean);
   const imgUrl = imgList[0] || "";
   const hoverImgAttr = imgList[1] || null;
-  const logoUrl = embedUrl(product.Logo);
+  const logoUrl = escapePercent(product.Logo);
   const labelPrice = price4label(
     toStr(product.Price),
     toStr(product.Price2),
