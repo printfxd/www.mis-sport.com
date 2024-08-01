@@ -482,8 +482,8 @@ const values$5 = [
 		"肩帶採用新型扁平微纖維鬆緊帶，舒適加倍",
 		"",
 		"",
-		"[DarZIJ]DarkKhaki();\n[BlaA5C]Black();\n[CriGSO]Crimson();\n[DarOVG]DarkSlateGray()",
-		"",
+		"[DarZIJ]DarkKhaki(,XS,S,L,M,XL,2XL);\n[BlaA5C]Black(,XS,3XL,2XL,L,XL,M,S);\n[CriGSO]Crimson(,S);\n[DarOVG]DarkSlateGray(,XS,S,M,L,2XL,XL,3XL)",
+		"https://shopee.tw/product/2352815/29306723440/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -512,7 +512,7 @@ const values$5 = [
 		"兩側採用空氣動力布料，可減少空氣阻力",
 		"專為長時間騎乘而生",
 		"[BLK]Black(XS-4XL);",
-		"",
+		"https://shopee.tw/product/2352815/27006723598/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -599,7 +599,7 @@ const values$5 = [
 		"貼合度優秀，有效支撐肌肉",
 		"符合生態永續性的製程",
 		"[BlaM1T]Black(S,M,L,XL,2XL)",
-		"",
+		"https://shopee.tw/product/2352815/23225550946/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -5175,7 +5175,7 @@ const values$2 = [
 		"石墨烯蜂巢式面料,具有輕度防風.更加緊貼,排汗透氣效果佳",
 		"手臂腋下兩側為Aerostat透氣網,可形成對流,迅速散熱",
 		"",
-		"[RED]FireBrick(M);\n[BLK]LightSlateGray(S,M,L);\n[OliNEP]OliveDrab(S,L)",
+		"[RED]FireBrick();\n[BLK]LightSlateGray(S,M,L);\n[OliNEP]OliveDrab(S,L)",
 		"https://shopee.tw/product/2352815/5852539976/",
 		"ale-men-racefit-size-guide.html"
 	],
