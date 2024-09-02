@@ -156,7 +156,7 @@ const values$5 = [
 		"複合多種布料以滿足不同部位的需求",
 		"高彈性、高透氣的袖子",
 		"清爽鮮明的配色，充滿夏日風情",
-		"[BLU]DeepSkyBlue(S,M,L,XL,2XL,3XL);\n[GRE]LightSeaGreen(S,M,L,XL,2XL,3XL);\n[GLD]Gold(S,M,L,XL);\n[RED]Crimson(S,M,L,XL);\n[DarVEC]DarkSlateGray(,S,M,L,XL,2XL,3XL)",
+		"[BLU]DeepSkyBlue(S,M,L,XL,2XL,3XL);\n[GRE]LightSeaGreen(S,M,L,XL,2XL,3XL);\n[GLD]Gold(M,L,XL,S);\n[RED]Crimson(S,M,L,XL);\n[DarVEC]DarkSlateGray(,S,M,L,XL,2XL,3XL)",
 		"https://shopee.tw/product/2352815/23172799531/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -717,7 +717,7 @@ const values$5 = [
 		"合身親膚的材質與版型",
 		"",
 		"[BlaZR6]Black(S,M,L,XL,2XL,3XL)",
-		"",
+		"https://shopee.tw/product/2352815/29959481504/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -731,7 +731,7 @@ const values$5 = [
 		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen%27s bib shorts EOHELON/EOHELON正面.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen%27s bib shorts EOHELON/EOHELON背面.jpg",
 		"6500",
 		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
-		"[Bla6W8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen%27s bib shorts EOHELON/EOHELON正面.jpg;\n[Bla6W8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen%27s bib shorts EOHELON/EOHELON背面.jpg;\n[Bla6W8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen's bib shorts EOHELON/padded-cycling-boxer-long-distances-segreto-s2.jpg",
+		"[Bla6W8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen%27s bib shorts EOHELON/EOHELON正面.jpg;\n[Bla6W8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen%27s bib shorts EOHELON/EOHELON背面.jpg;\n[Bla6W8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Trousers/Ｍen's bib shorts EOHELON/BL-CC_Custom Team 2024 - X-Tra Pad-003-MAN_0.jpg",
 		"",
 		"專為追求最佳性能的騎士而研發的系列。由專業的團隊與經驗豐富的職業自行車手共同研究，最新一代的高性能輕量布料以及毛邊剪裁、鑲板、結構吊帶等技術細節，搭配能與身體貼合的人體工學設計，以實現符合預期的高性能。",
 		"選手版",
@@ -741,12 +741,12 @@ const values$5 = [
 		" 50+UPF",
 		"",
 		"",
-		"<br><hr>\n<b>All Mountain 護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 面料製成的高性能褲墊，手感柔軟且乾燥速度非常快，直徑 5 毫米的孔隙更加利於空氣流通與散熱。</li>\n<li>主墊結構 100 kg/m<sup>3</sup>，副墊結構 65 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
+		"<br><hr>\n<b>Ghost Air Gel  護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 面料製成的高性能褲墊，觸感柔軟且乾燥速度非常快，直徑 5 mm的孔隙更加利於空氣流通與散熱。</li>\n<li>主墊結構 110 kg/m<sup>3</sup>，副墊結構 110 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
 		"極致的競技版型",
 		" 高性能的輕量布料",
 		"提升長時間騎乘的舒適度",
 		"[Bla6W8]Black(,2XS,XS,S,M,L,XL,2XL,3XL,4XL)",
-		"",
+		"https://shopee.tw/product/2352815/27709478092/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -1215,7 +1215,7 @@ const values$5 = [
 		"50+UPF",
 		"",
 		"X-Stra 複合護墊",
-		"<br><hr>\n<b>X-Stra 護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 再生生態布料包覆整個護墊，直徑 3 毫米的孔隙有助於空氣流通與散熱。</li>\n<li>主墊結構 100 kg/m<sup>3</sup>，副墊結構 65 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
+		"<br><hr>\n<b>X-Stra 護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 再生生態布料包覆整個護墊，直徑 3 毫米的孔隙有助於空氣流通與散熱。</li>\n<li>主墊結構 85 kg/m<sup>3</sup>，副墊結構 65 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
 		"背部額外提供兩個隱藏口袋",
 		"大腿外側口袋方便拿取小型必需品",
 		"礫石或是公路多日旅行第一選擇",
@@ -1360,7 +1360,7 @@ const values$5 = [
 		"50+UPF",
 		"",
 		"X-Stra 複合護墊",
-		"<br><hr>\n<b>X-Stra 護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 再生生態布料包覆整個護墊，直徑 3 毫米的孔隙有助於空氣流通與散熱。</li>\n<li>主墊結構 100 kg/m<sup>3</sup>，副墊結構 65 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
+		"<br><hr>\n<b>X-Stra 護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 再生生態布料包覆整個護墊，直徑 3 毫米的孔隙有助於空氣流通與散熱。</li>\n<li>主墊結構 85 kg/m<sup>3</sup>，副墊結構 65 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
 		"支撐性較強的布料",
 		"適合長距離的複合材質褲墊",
 		"",
@@ -6219,7 +6219,7 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"[Cya9TG]Cyan(,M);\n[YelWPE]YellowGreen(,XS,S,XL);\n[ChaW6K]Chartreuse(,M)",
+		"[Cya9TG]Cyan(,M);\n[YelWPE]YellowGreen(,XS,S);\n[ChaW6K]Chartreuse(,M)",
 		"https://shopee.tw/product/2352815/1372418213/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -8439,7 +8439,7 @@ const values$2 = [
 		"專為騎車設計,防滑與高筒襪身,柔軟舒適,防臭抗菌.",
 		"",
 		"",
-		"[AquQ66]Aqua(,M);\n[Dee7SB]DeepPink(,M,L);\n[YelUAC]Yellow(,S,M,L);\n[DarNJR]DarkOrange(,S,M,L);\n[BlaHJY]Black(,S,M,L);\n[Ivo1HX]Ivory(,S,M,L)",
+		"[AquQ66]Aqua(,M);\n[Dee7SB]DeepPink(,M,L);\n[YelUAC]Yellow(,S,M,L);\n[DarNJR]DarkOrange(,S,M,L);\n[BlaHJY]Black(,S,M,L);\n[Ivo1HX]Ivory(,M,L)",
 		"https://shopee.tw/product/2352815/20568730040/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -8468,7 +8468,7 @@ const values$2 = [
 		"專為騎車設計,防滑與高筒襪身,柔軟舒適,防臭抗菌.",
 		"涼感",
 		"",
-		"[DarNKD]DarkOrange(,S,M,L);\n[Ivo27Y]Ivory(,S,L);\n[Bla3FT]Black(,S,M,L);\n[Dim14Y]DimGray(,L,S);\n[Dar47W]Blue(,M,L);\n[Cho2TR]Chocolate(,S,L)",
+		"[DarNKD]DarkOrange(,S,L);\n[Ivo27Y]Ivory(,S,L,M);\n[Bla3FT]Black(,S,M,L);\n[Dim14Y]DimGray(,L,S,M);\n[Dar47W]Blue(,M,L);\n[Cho2TR]Chocolate(,S,L)",
 		"https://shopee.tw/product/2352815/8122272961/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -8543,7 +8543,7 @@ const values$2 = [
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[RoyHPK]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Accessories Sale/ACCESSORI Summer Socks 007/LINE_ALBUM_出清價：450（M號，L號）深藍色_240614_1.jpg",
 		"450",
-		" MOVISATAR TEAM 職業隊車襪\n透氣材質,能持續抑制異味,常保腳部的乾爽舒適.\n搭配耐磨透氣的混紡布料\n提供急速排汗的優異特性\n",
+		"MOVISTAR TEAM 職業隊車襪\n透氣材質,能持續抑制異味,常保腳部的乾爽舒適.\n搭配耐磨透氣的混紡布料\n提供急速排汗的優異特性",
 		"選手版",
 		"公路競賽",
 		"18ºC ～ 35ºC",
@@ -8613,7 +8613,7 @@ const values$2 = [
 		"專為騎車設計,防滑與高筒襪身,柔軟舒適,防臭抗菌.",
 		"",
 		"",
-		"[YelTDV]Yellow(L);\n[DeeYBU]DeepPink(M,L);\n[DimNZ0]DarkGray(L)",
+		"[YelTDV]Yellow(L);\n[DeeYBU]DeepPink(M,L);\n[DimNZ0]DarkGray(L,M)",
 		"https://shopee.tw/product/2352815/19968660824/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -8642,7 +8642,7 @@ const values$2 = [
 		"專為騎車設計,防滑與高筒襪身,柔軟舒適,防臭抗菌.",
 		"",
 		"",
-		"[Ivo8UC]Ivory(S,M,L);\n[YelFXB]Yellow(L,M,S);\n[BluPBE]Blue(S,M,L);\n[Dee5TM]DeepPink(L,M)",
+		"[Ivo8UC]Ivory(M,L);\n[YelFXB]Yellow(L,M,S);\n[BluPBE]Blue(S,M,L);\n[Dee5TM]DeepPink(L,M)",
 		"https://shopee.tw/product/2352815/22211298834/",
 		"ale-men-racefit-size-guide.html"
 	],
