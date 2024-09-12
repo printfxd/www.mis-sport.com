@@ -3394,7 +3394,7 @@ const values$4 = [
 		"與車把接觸點上有輕量襯墊",
 		"在訓練和比賽期間享受與 DSM 相同的性能優勢",
 		"[WhiXX1]White(S,M,L);\n[DodUDK]LightSkyBlue(S,M,L);\n[Dar6OR]DarkOrange(S,M,L)",
-		"",
+		"https://shopee.tw/product/2352815/28110978925/",
 		"nalini-men-racefit-size-guide.html"
 	],
 	[
@@ -3423,7 +3423,7 @@ const values$4 = [
 		"襪筒長度 19 cm",
 		"",
 		"[WhiXX1]White(XS,S,M,L,XL);\n[DodUDK]LightSkyBlue(XS,S,M,L,XL);\n[Dar6OR]DarkOrange(XS,S,M,L,XL)",
-		"",
+		"https://shopee.tw/product/2352815/26061127967/",
 		"nalini-men-racefit-size-guide.html"
 	],
 	[
@@ -8307,7 +8307,7 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"[YL]Yellow(2XS);\n[WH]White(2XS);\n[PK]Magenta(2XS,L,XL)",
+		"[YL]Yellow(2XS);\n[WH]White(2XS);\n[PK]Magenta(2XS,XL)",
 		"https://shopee.tw/ALE'-%E7%B8%BD%E4%BB%A3%E7%90%86-%E5%85%AC%E5%8F%B8%E8%B2%A8-Glove-%E8%B6%85%E6%9C%8D%E8%B2%BC%E5%BD%88%E5%8A%9B%E4%BD%8E%E9%A2%A8%E9%98%BB%E6%89%8B%E5%A5%97-i.2352815.9877649549?sp_atk=b054931f-ce15-4bb0-9d54-4f198c048207&xptdk=b054931f-ce15-4bb0-9d54-4f198c048207",
 		"ale-men-racefit-size-guide.html"
 	],
