@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent, e as renderSlot, f as renderHead, b as addAttribute, u as unescapeHTML } from './chunk.b0db1f2f.js';
 import 'clsx';
-import { $ as $$Copyright, a as $$Navigator, b as $$Header, e as escapePercent, j as json } from './chunk.7f8357a4.js';
+import { $ as $$Copyright, a as $$Navigator, b as $$Header, e as escapePercent, j as json } from './chunk.19fadc37.js';
 /* empty css                *//* empty css                */
 const $$Astro$4 = createAstro("https://mis-sport.com");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {

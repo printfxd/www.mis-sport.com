@@ -2998,7 +2998,7 @@ const values$5 = [
 		"如同第二層皮膚般舒適",
 		"更高的耐用性",
 		"PaleVioletRed(s,m,l);",
-		"https://shopee.tw/product/2352815/18893686915/",
+		"https://shopee.tw/product/2352815/28713482408/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -5246,7 +5246,7 @@ const values$2 = [
 		"夏季零碼出清",
 		"",
 		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-1.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-2.jpg",
-		"3000",
+		"6000",
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[Red3YS]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-1.jpg;\n[Red3YS]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-2.jpg;\n[Red3YS]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-3.jpg;\n[Red3YS]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-6.jpg;\n[BluT5B]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-7.jpg;\n[BluT5B]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-8.jpg;\n[BluT5B]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/Outlet Short Sleeve Jersey Men 001-9.jpg;\n[YelP18]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/19399111_01.jpg;\n[OraUXI]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 001/19420513_02.jpg",
 		"1500",
@@ -5263,7 +5263,7 @@ const values$2 = [
 		"",
 		"",
 		"[Red3YS]Red(,M);\n[BluT5B]RoyalBlue(,S,M);\n[YelP18]Yellow(S,L,2XL);\n[OraUXI]OrangeRed(XL)",
-		"https://shopee.tw/product/2352815/1324402428/",
+		"https://shopee.tw/product/2352815/26563472217/",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
@@ -9462,7 +9462,7 @@ const values$2 = [
 		"4500",
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[Blu79C]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 004/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_10.jpg;\n[Blu79C]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 004/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_11.jpg;\n[Blu79C]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 004/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_12.jpg",
-		"1600",
+		"1500",
 		"對於需要秋冬或初春戶外騎乘的人，擁有保暖與快速排汗的車衣是外出的必備品。出色的貼合度搭配柔軟舒適的材質，時尚的色彩和完美的 Ale® 風格。",
 		"歐版",
 		"公路競賽",
@@ -9476,7 +9476,7 @@ const values$2 = [
 		"",
 		"",
 		"[Blu79C]Blue(S,M)",
-		"https://shopee.tw/product/2352815/10051735901/",
+		"https://shopee.tw/product/2352815/26063645764/",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
