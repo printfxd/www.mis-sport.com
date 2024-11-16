@@ -10556,6 +10556,34 @@ const values$2 = [
 	],
 	[
 		"",
+		"",
+		"",
+		"特價冬季手套 004",
+		"Outlet Winter Accessories 004",
+		"冬季零碼出清",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/L09040116_NEOPRENEGLOVE_neroGD021DV.webp;\n",
+		"2000",
+		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
+		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/L09040116_NEOPRENEGLOVE_neroGD021DV.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/L09040116_NEOPRENEGLOVE_neroGD021DT.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/L22117401_NEOPRENE_3.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/L22117401_NEOPRENE_2.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/L22117401_NEOPRENE_1.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/558e1bb259e8cafa4664f68377b53a76.webp;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/S__139927556_0.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Accessories Sale/Winter Accessories Sale/S__139927558_0.jpg",
+		"1450",
+		"預成型的人體工學貼合性和技術粘合接縫，在潮濕寒冷氣候條件下提供終極保護。\n\n特殊規格(手套尺碼)對照表請參考圖片\n虎口~小指尾端 (實際測量圖)\nXS/S  <7~8.5CM>\nM/L  <9~10.5CM>\nXL/XXL  <11~12.5CM>\n\n因手掌厚薄也會有些差距,以上供參考",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"55G",
+		"",
+		"",
+		"防風.防潑水.微保暖",
+		"潮濕寒冷氣候條件下提供終極保護",
+		"",
+		"[BlaGWI]Black(M,XL)",
+		"https://shopee.tw/product/2352815/27817493480/"
+	],
+	[
+		"",
 		"職業隊夏季特價",
 		"Proteam Summer Sale"
 	],
@@ -12169,7 +12197,7 @@ const values$1 = [
 		"快速排汗透氣",
 		"適合多變天氣的輕度保暖",
 		"[WH]White(S-L);",
-		"",
+		"https://shopee.tw/product/2352815/29516965871/",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
