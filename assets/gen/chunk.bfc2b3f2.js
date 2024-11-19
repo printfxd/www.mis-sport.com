@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from './chunk.b0db1f2f.js';
 import 'clsx';
-import { a as $$Layout } from './chunk.00c2cf8c.js';
+import { a as $$Layout } from './chunk.fe61c36c.js';
 /* empty css                */
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
