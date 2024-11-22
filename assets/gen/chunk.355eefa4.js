@@ -5254,7 +5254,7 @@ const values$2 = [
 		"5900",
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-05.jpg;\n[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-06.jpg;\n[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-07.jpg;\n[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-08.jpg;\n[BLK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-01.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_23_0.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_24_0.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_25_0.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_26_0.jpg;\n[BLK]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/S__128294952.jpg",
-		"2500",
+		"3000",
 		"極簡主義的視覺設計，統一和啞光飾面。採用雙彈性萊卡面料開發，可壓縮肌肉並提高運動表現。",
 		"選手版",
 		"公路競賽",
@@ -5267,7 +5267,7 @@ const values$2 = [
 		"石墨烯蜂巢式面料,具有輕度防風.更加緊貼,排汗透氣效果佳",
 		"手臂腋下兩側為Aerostat透氣網,可形成對流,迅速散熱",
 		"",
-		"[BLK]LightSlateGray(S,M,L);\n[OliNEP]OliveDrab(S,L)",
+		"[BLK]LightSlateGray(S,M,L);\n[OliNEP]OliveDrab(S)",
 		"https://shopee.tw/product/2352815/5852539976/",
 		"ale-men-racefit-size-guide.html"
 	],
