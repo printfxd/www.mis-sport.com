@@ -1011,7 +1011,7 @@ const values$5 = [
 		"高彈性的輕薄布料",
 		"兼顧透氣與防曬",
 		"",
-		"[MidPPC]MidnightBlue(,2XS,XS,S,M,L);\n[Sea4P7]SeaGreen(,2XS,XS,S,M,L,XL);\n[Cri0BG]Crimson(,2XS,XS,S,M,L);\n[BlaGBC]Black(,2XS,S,M,L,XL)",
+		"[MidPPC]MidnightBlue(,2XS,XS,S,M,L);\n[Sea4P7]SeaGreen(,2XS,XS,S,M,L,XL);\n[Cri0BG]Crimson(,2XS,XS,S,M,L);\n[BlaGBC]Black(,2XS,S,M,L,XL,XS)",
 		"",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -6224,7 +6224,7 @@ const values$2 = [
 		"高透氣的細纖維吊帶",
 		"貼合度優秀，有效支撐肌肉",
 		"符合生態永續性的製程",
-		"[BlaM1T]Black(M,2XL,3XL,XL)",
+		"[BlaM1T]Black(2XL,3XL,XL)",
 		"https://shopee.tw/product/2352815/23225550946/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
