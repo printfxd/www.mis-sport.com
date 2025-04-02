@@ -1,24 +1,24 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderComponent, F as Fragment, u as unescapeHTML, e as renderSlot, f as renderHead } from './chunk.b0db1f2f.js';
 /* empty css                */import 'clsx';
 
-const $$Astro$b = createAstro("https://mis-sport.com");
+const $$Astro$c = createAstro("https://mis-sport.com");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Header;
   const { darkText } = Astro2.props;
   return renderTemplate`<!-- Header -->${maybeRenderHead()}<header id="header"${addAttribute(darkText ? null : "alt", "class")}> <span class="logo"> <a href="/"><img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="42" height="auto" class="rounded-circle"> MIS Sport <span>米詩國際</span></a> </span> <a href="#menu"><span>Menu</span></a> </header>`;
 }, "/Users/printfxd/git/mis-sport-next/src/components/Header.astro", void 0);
 
-const $$Astro$a = createAstro("https://mis-sport.com");
+const $$Astro$b = createAstro("https://mis-sport.com");
 const $$Navigator = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$Navigator;
-  return renderTemplate`<!-- Nav -->${maybeRenderHead()}<nav id="menu"> <div class="inner"> <h2>Menu</h2> <ul class="links"> <li><a href="/">Home</a></li> <li><a href="/bicycle-line/index.html">BICYCLE LINE</a></li> <li><a href="/nalini/index.html">NALINI CYCLING</a></li> <li><a href="/proteams/index.html">PRO TEAM SERIES</a></li> <li><a href="/met/index.html">MET HELMETS</a></li> <li><a href="/ale/index.html">ALE CYCLING</a></li> <li><a href="/sale/index.html">SALE</a></li> </ul> <a class="close"><span>Close</span></a> </div> </nav>`;
+  return renderTemplate`<!-- Nav -->${maybeRenderHead()}<nav id="menu"> <div class="inner"> <h2>Menu</h2> <ul class="links"> <li><a href="/">Home</a></li> <li><a href="/bicycle-line/index.html">BICYCLE LINE</a></li> <li><a href="/teosport.html">TEOSPORT</a></li> <li><a href="/ale/index.html">ALE CYCLING</a></li> <li><a href="/nalini/index.html">NALINI CYCLING</a></li> <li><a href="/proteams/index.html">PRO TEAM SERIES</a></li> <li><a href="/met/index.html">MET HELMETS</a></li> <li><a href="/sale/index.html">SALE</a></li> </ul> <a class="close"><span>Close</span></a> </div> </nav>`;
 }, "/Users/printfxd/git/mis-sport-next/src/components/Navigator.astro", void 0);
 
-const $$Astro$9 = createAstro("https://mis-sport.com");
+const $$Astro$a = createAstro("https://mis-sport.com");
 const $$Copyright = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Copyright;
   return renderTemplate`<!-- Copyright -->${maybeRenderHead()}<section class="wrapper style2 copyright"> <div class="inner"> <span>
 All rights reserved by <img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="36" height="auto" class="rounded-circle"> MIS-SPORT.</span> </div> </section>`;
@@ -33,9 +33,9 @@ function escapePercent(s) {
   return s;
 }
 
-const range$5 = "'BICYCLE-LINE'!A1:AM400";
-const majorDimension$5 = "ROWS";
-const values$5 = [
+const range$6 = "'BICYCLE-LINE'!A1:AM400";
+const majorDimension$6 = "ROWS";
+const values$6 = [
 	[
 		"Topic",
 		"Series",
@@ -3182,15 +3182,15 @@ const values$5 = [
 		"[BlaCY2]Black(,S,M,L)"
 	]
 ];
-const json$5 = {
-	range: range$5,
-	majorDimension: majorDimension$5,
-	values: values$5
+const json$6 = {
+	range: range$6,
+	majorDimension: majorDimension$6,
+	values: values$6
 };
 
-const range$4 = "PROTEAMS!A1:AM400";
-const majorDimension$4 = "ROWS";
-const values$4 = [
+const range$5 = "PROTEAMS!A1:AM400";
+const majorDimension$5 = "ROWS";
+const values$5 = [
 	[
 		"Topic",
 		"Series",
@@ -4675,6 +4675,490 @@ const values$4 = [
 		"ale-women-racefit-size-guide.html"
 	]
 ];
+const json$5 = {
+	range: range$5,
+	majorDimension: majorDimension$5,
+	values: values$5
+};
+
+const range$4 = "TEOSPORT!A1:AN400";
+const majorDimension$4 = "ROWS";
+const values$4 = [
+	[
+		"Topic",
+		"Series",
+		"EnglishSeries",
+		"ProductName",
+		"EnglishName",
+		"Summary",
+		"New",
+		"Img",
+		"Price",
+		"Logo",
+		"ImgList",
+		"Price2",
+		"Description",
+		"Style",
+		"CyclingType",
+		"Temperature",
+		"Water",
+		"SunProtect",
+		"Weight",
+		"Pad",
+		"PadTech",
+		"Feature1",
+		"Feature2",
+		"Feature3",
+		"ColorWithSizes",
+		"PurchaseUrl",
+		"SizeGuide"
+	],
+	[
+		"ACCESSORY"
+	],
+	[
+		"",
+		"人身部品配件",
+		"Accessories"
+	],
+	[
+	],
+	[
+		"",
+		"",
+		"",
+		"CHRONO PRO MIS夏季短指手套（空力型）",
+		"Active Aero Glove - TE2061 MIS Navy",
+		"訓練和比賽的最佳選擇",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-3.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-3.png;\n[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-2.png;\n[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-1.png;\n[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/2B53FCB4-E7B7-49A5-B033-85DFD1D225F8.jpg",
+		"",
+		"這款加長的夏季手套在手腕處貼合緊密，提供更高保護並提升空氣動力學性能，加長袖口使手腕處氣流更加順暢。\n\n採用輕盈而高效的面料、加固材料和填充物構建而成。能夠緊密貼合手掌卻無束縛感，符合人體工學的掌面設計。\n\n\n產品成分\n\t•\t上層：80% 聚酯纖維 (pl) | 20% 彈性纖維 (ea)\n\t•\t掌部：50% 聚酰胺 (pa) | 50% 聚氨酯 (pu)",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"在訓練與比賽中提供卓越支撐、極佳觸感與維持手部靈活性",
+		"優異的彈性隨著手部開合運動，呈現卓越人體工學貼合效果。",
+		"特殊合成絨面革掌面確保了卓越的耐磨性。",
+		"[SteG8X]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/oCCxgJ7",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"CORSA MIS夏季短指手套(空力型)",
+		"Active Short Figure Glove - TE2060 MIS Black",
+		"訓練和比賽的最佳選擇",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-3.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-3.png;\n[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-2.png;\n[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-1.png;\n[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/863D3E7F-0F79-4001-B870-8C9DCBC33DE3.jpg",
+		"",
+		"採用輕盈且高效的面料、加固材料與填充物，呈現極簡結構。\n而出色的貼合度，能與手掌緊密貼合卻不限制手部活動，在訓練與比賽中提供卓越支撐、極佳觸感與維持手部靈活性。\n\n\n材質成分\n\t•\t上層：80% 聚酯纖維 (pl) | 20% 彈性纖維 (ea)\n\t•\t掌部：50% 聚酰胺 (pa) | 50% 聚氨酯 (pu)",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"優異的彈性隨著手部開合運動，呈現卓越人體工學貼合效果。",
+		"造型袖口設計減少手腕不適：靠近掌部處較短，而手腕背面則較長。",
+		"特殊合成絨面革掌面確保了卓越的耐磨性。",
+		"[BlaKGM]Black(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/oCCxgJ7",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"SUPERIOR 夏季手套(黑)",
+		"Superior Summer Glove - TE2033 Black",
+		"專為高性能騎行設計，結合透氣性、舒適度與穩定性。",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-6-3.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-6-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[Bla79U]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-6-3.png;\n[Bla79U]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-6-2.png;\n[Bla79U]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-6-1.png;\n[Bla79U]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/7A6AF9E5-C7BD-44A2-A276-05F382250CEE.jpg;\n[Bla79U]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Black/33E2718A-3CEA-4CDD-A882-278312AF1AC1.jpg",
+		"",
+		"此款手套為 Teo Sport 產品中的熱銷款式之一。\n\n手掌部位採用 3D 網狀布料、矽膠防滑設計、高透氣背部布料，並搭配特殊袖口設計，出色的貼合度，使騎乘時具有更好的附著力與穩定性。\n\n成分\n上層： 80% 聚酯纖維（PL）、20% 彈性纖維（EA）\n掌部： 90% 聚酯纖維（PL）、10% 聚氨酯（PU）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"採用高透氣布料設計，使手套更快乾燥。",
+		"掌部矽膠防滑設計，可增強抓握力，確保在所有路況下的操控穩定性與保護性。",
+		"特殊袖口貼合設計，確保手套能夠穩固貼合手部。",
+		"[Bla79U]Black(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/ZxAwgGN",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"SUPERIOR 夏季手套(灰)",
+		"Superior Summer Glove - TE2033 Gary",
+		"",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-7-3.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-7-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[DimIFT]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-7-3.png;\n[DimIFT]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-7-2.png;\n[DimIFT]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-7-1.png;\n[DimIFT]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/7A6AF9E5-C7BD-44A2-A276-05F382250CEE.jpg;\n[DimIFT]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Superior Summer Glove - TE2033 Gary/33E2718A-3CEA-4CDD-A882-278312AF1AC1.jpg",
+		"",
+		"此款手套為 Teo Sport 產品中的熱銷款式之一。\n\n手掌部位採用 3D 網狀布料、矽膠防滑設計、高透氣背部布料，並搭配特殊袖口設計，出色的貼合度，使騎乘時具有更好的附著力與穩定性。 \n\n成分 \n上層： 80% 聚酯纖維（PL）、20% 彈性纖維（EA）\n 掌部： 90% 聚酯纖維（PL）、10% 聚氨酯（PU）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"採用高透氣布料設計，使手套更快乾燥。",
+		"掌部矽膠防滑設計，可增強抓握力，確保在所有路況下的操控穩定性與保護性。",
+		"特殊袖口貼合設計，確保手套能夠穩固貼合手部。",
+		"[DimIFT]DimGray(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/ZxAwgGN",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"POTENZA 夏季短指手套(色塊藍)",
+		"Potenza Summer Glove - TE2071 Blue",
+		"專為夏季騎乘而設計",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-9-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-9-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[NavPJA]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-9-1.png;\n[NavPJA]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-9-2.png;\n[NavPJA]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-9-3.png;\n[NavPJA]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Blue/53FBB593-C9FE-4419-B284-6BABBFB95849.jpg",
+		"",
+		"這款手套專為夏季設計，即使在炎熱的天氣中也能滿足各方面的需求。不同材質的組合，提供優異的透氣性和舒適度，適合長時間配戴。\n\n材質成分:\n上層： 80% 聚酯纖維（PL）、20% 彈性纖維（EA）\n掌部： 90% 聚酯纖維（PL）、10% 聚氨酯（PU）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"採用透氣面料設計，提高透氣性並使手套更快乾燥。",
+		"採用特殊布料增強抗紫外線效果。",
+		"採用專為快速穿脫設計的彈力拉帶，拉帶位於手指關節區域。",
+		"[NavPJA]SteelBlue(,2XS,S,XS,M,L,XL,2XL)",
+		"https://tw.shp.ee/snGeAFZ",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"POTENZA 夏季短指手套(黑)",
+		"Potenza Summer Glove - TE2071 Black",
+		"專為夏季騎乘而設計",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-8-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-8-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[BlaVSK]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-8-1.png;\n[BlaVSK]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-8-2.png;\n[BlaVSK]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-8-3.png;\n[BlaVSK]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Potenza Summer Glove - TE2071 Black/53FBB593-C9FE-4419-B284-6BABBFB95849.jpg",
+		"",
+		"這款手套專為夏季設計，即使在炎熱的天氣中也能滿足各方面的需求。不同材質的組合，提供優異的透氣性和舒適度，適合長時間配戴。 \n\n材質成分:\n 上層： 80% 聚酯纖維（PL）、20% 彈性纖維（EA） \n 掌部： 90% 聚酯纖維（PL）、10% 聚氨酯（PU）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"採用透氣面料設計，提高透氣性並使手套更快乾燥。",
+		"採用特殊布料增強抗紫外線效果。",
+		"採用專為快速穿脫設計的彈力拉帶，拉帶位於手指關節區域。",
+		"[BlaVSK]Black(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/snGeAFZ",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"CONCETTO 冬季保暖手套(色塊藍)",
+		"Concetto Winter Glove - TE3050 Blue",
+		"提供最佳貼合度和極致舒適感的保暖手套",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-11-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-11-2.png",
+		"1300",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[Ste39P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-11-1.png;\n[Ste39P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-11-2.png;\n[Ste39P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-11-3.png;\n[Ste39P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/8AD62629-BA81-42A6-9815-A68EA3EA5C22.jpg;\n[Ste39P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Concetto Winter Glove - TE3050 Blue/E77A856C-86C8-4A3C-ADBA-F0C99419CE24.jpg",
+		"",
+		"這款由彈性面料製成的冬季手套能夠提供最佳貼合度和極致舒適感\n\n該產品適用於多種場合：無論是春秋季節氣溫尚未低到需要冬季手套、夏季清晨天氣涼爽且日出之前，或是在寒冷時作為內戴手套使用。手掌特殊矽化處理有助於更好地控制車把，提供一定程度的保護。\n\n\n成分 \n85% 聚酰胺 (PA) | 15% 彈性纖維 (EA)",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"彈性羊毛絨面料，手感溫暖。",
+		"",
+		"",
+		"[Ste39P]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/zbNMMRf",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		" ACTIVE PERFORMANCE 四季防曬手套",
+		"Active Performace Long Figure Glove - TE2860 Black",
+		"適用於各種車型的全能手套",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Performace Long Figure Glove - TE2860 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-10-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Performace Long Figure Glove - TE2860 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-10-2.png",
+		"1300",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[Bla24P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Performace Long Figure Glove - TE2860 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-10-1.png;\n[Bla24P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Performace Long Figure Glove - TE2860 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-10-2.png;\n[Bla24P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Performace Long Figure Glove - TE2860 Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-10-3.png;\n[Bla24P]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Performace Long Figure Glove - TE2860 Black/B4E9A749-8E24-478E-AB31-7083B75DF7E6.jpg",
+		"",
+		"採用極簡設計，使用輕盈但高效的布料、加固材質與填充墊。緊貼手部但不造成壓迫感，此外拇指與手掌的支撐點處設有分割區域，提高貼合度與舒適性。\n\n\n材質組成\n\t•\t手背：80% 聚酯纖維（Polyester, PL）| 20% 彈性纖維（Elastane, EA）\n\t•\t手掌：50% 聚醯胺（Polyamide, PA）| 50% 聚氨酯（Polyurethane, PU）\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t",
+		"選手版",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"人體工學設計，提高握感與舒適度。",
+		"長指設計提供額外保護，適合登山車（MTB）或高速競速。",
+		"手掌採用特殊合成麂皮材質，更耐磨損。",
+		"[Bla24P]Black(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/PgqXAWR",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"RAIN PLUS 防水鞋套(黑)",
+		"Rain Shoe Cover - TE4068 Rain Plus Black",
+		"適合各種天氣條件下的戶外騎乘使用",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Rain Shoe Cover - TE4068 Rain Plus Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-14-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Rain Shoe Cover - TE4068 Rain Plus Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-14-2.png",
+		"1600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[Bla8SS]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Rain Shoe Cover - TE4068 Rain Plus Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-14-1.png;\n[Bla8SS]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Rain Shoe Cover - TE4068 Rain Plus Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-14-2.png",
+		"",
+		"採用高彈性的防水面料能有效防雨，確保雙腳在各種天氣條件下保持溫暖與乾爽。前方設有貼合防水帶，保護您的鞋子免受雨水侵襲，同時防止潮氣滲透。布料的優異彈性能夠緊密貼合各型鞋款，提供最好的保護，並且不影響舒適度。\n\n材質成分\n33%POLYURETHANE(PU)\n57%POLYESTER(PL)\n10%ELASTANE(EA)",
+		"",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"背面的防水反光拉鍊設計，提高能見度，適合低光源環境使用。",
+		"布料的優異彈性能夠緊密貼合各型鞋款。",
+		"特殊保護系統可防止拉鍊與皮膚摩擦造成不適。",
+		"[Bla8SS]Black()",
+		"https://tw.shp.ee/PGz5b29",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Aero Socks MIS 空力襪(藍)",
+		"Aero Socks - TE5001 MIS Blue",
+		"推薦給熱愛公路競技或追求極致效率的你",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-2.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-1.png",
+		"1200",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[Ste8E6]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-2.png;\n[Ste8E6]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-1.png",
+		"",
+		"Veloce Aero Socks\n\n採用條紋 Lycra 面料與極細緻的無縫設計，Aero Veloce 車襪是追求緊貼腿部貼合度與速度優勢的理想選擇。內緣的矽膠防滑設計確保動作精準流暢，提升騎乘表現。\n\n100% 義大利製造。\n\n材質：\n • 80% 聚酯纖維（Polyester, PL）\n • 20% 彈性纖維（Elastam, EA）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"不同的的布料製成，使舒適與機能共存",
+		"特殊的結構實現了絕佳空氣力學性能",
+		"經驗豐富的專業團隊設計出的空氣力學長襪",
+		"[Ste8E6]SteelBlue(,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/9Sn5jTX",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Light Cap 冬季刷毛保暖小帽(海軍藍)",
+		"Light Cap - TE6730 Navy",
+		"柔軟服貼的保暖帽",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Light Cap - TE6730 Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-3-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Light Cap - TE6730 Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-3-2.png",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[MidREF]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Light Cap - TE6730 Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-3-1.png;\n[MidREF]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Light Cap - TE6730 Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-3-2.png",
+		"",
+		"此款產品採用雙彈性絨毛布料製成，提供極佳的貼合度。作為頭盔下的搭配產品，它是防寒的理想選擇。\n採用彈性絨毛布料製成，適合春秋季節使用，在夏季早晨天氣尚涼時同樣是一個極佳的選擇。\n\n52% 尼龍 | 32% 聚酯纖維 (PL) | 16% 氨綸 (EA)\n\n",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"縫線平整設計,減少摩擦",
+		"保暖不悶熱",
+		"透氣排汗",
+		"[MidREF]SteelBlue()",
+		"https://tw.shp.ee/nPd1Mrf",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Dritto Cap MIS圓點小帽",
+		"Dritto Cap  - TE7000",
+		"美觀與防曬功能兼俱的經典小帽",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-2.png",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-1.png;\n[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-2.png;\n[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-3.png;\n[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-4.png",
+		"",
+		"擁有極少的接縫，帶來無與倫比的舒適感，並融合復古設計，專為熱愛昔日自行車文化的人士打造。DRITTO 小帽採用傳統的半月形結構，並可完全客製化。\n100% 義大利製造，非常適合長時間的夏季活動。\n\n單一尺寸：\n適用頭圍 55cm 至 61cm\n\n材質：\n100% 聚酯纖維（POLYESTER, PL）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"有效阻隔陽光與汗水",
+		"",
+		"",
+		"[GraODJ]Gray()",
+		"https://tw.shp.ee/poDvdm9",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Spicchio Cap MIS斑紋小帽",
+		"Spicchio Cap  - TE7002",
+		"美觀與防曬功能兼俱的經典小帽",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-2.png",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-1.png;\n[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-2.png;\n[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-3.png;\n[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-4.png",
+		"",
+		"對 70 年代的懷舊情懷促使我們打造 SPICCHIO，這款復古風格的帽子。其剪裁讓佩戴更加舒適，是夏日外出騎乘的理想配件。\n\n100% 義大利製造，非常適合長時間的夏季活動。\n\n單一尺寸：\n適用頭圍 55cm 至 61cm\n材質： 100% 聚酯纖維（POLYESTER, PL）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"有效阻隔陽光與汗水",
+		"",
+		"[NavGGY]SteelBlue()",
+		"https://tw.shp.ee/poDvdm9",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Neck Warmer Mis 冬季保暖圍脖(色塊藍)",
+		"Neck Warmer - TE6753 MIS Blue",
+		"男女適用，季節交替時，提供保暖效果。",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-1.png;\n",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[MidYAW]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-1.png",
+		"",
+		"簡單易用的騎乘配件，採用彈性抓絨面料製成。不僅能抵禦寒冷，也非常適合春秋季使用。\n它可以作為圍巾、面罩、防曬層或安全帽內裏配戴。適合所有季節。\n\n84% POLYESTER (PL) | 16% ELASTANE (EA)\n36.5 x 25 cm",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"多功能的戶外活動配件",
+		"騎車.登山.日常皆可使用",
+		"",
+		"[MidYAW]SteelBlue()",
+		"https://tw.shp.ee/SoPW1en",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Neck Warmer Mis 冬季保暖圍脖(幾何灰)",
+		"Neck Warmer - TE6753 MIS geometry Gary",
+		"男女適用，季節交替時，提供保暖效果。",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS geometry Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-2.png;\n",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[SilV5J]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS geometry Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-2.png",
+		"",
+		"簡單易用的騎乘配件，採用彈性抓絨面料製成。不僅能抵禦寒冷，也非常適合春秋季使用。\n它可以作為圍巾、面罩、防曬層或安全帽內裏配戴。適合所有季節。\n\n84% POLYESTER (PL) | 16% ELASTA\n36.5 x 25 cm",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"多功能的戶外活動配件 ",
+		"騎車.登山.日常皆可使用",
+		"",
+		"[SilV5J]Silver()",
+		"https://tw.shp.ee/SoPW1en",
+		"teosport-size-guide.html"
+	]
+];
 const json$4 = {
 	range: range$4,
 	majorDimension: majorDimension$4,
@@ -4754,9 +5238,9 @@ var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
 var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(raw || cooked.slice()) }));
 var _a$1;
-const $$Astro$8 = createAstro("https://mis-sport.com");
+const $$Astro$9 = createAstro("https://mis-sport.com");
 const $$ProductMain = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$ProductMain;
   const { brandName, content } = Astro2.props;
   const withComma = (v) => {
@@ -4840,9 +5324,9 @@ NT$${Discounted} </h5>`, ColreSizeList.map((cs) => {
 </a> </li>`);
 }, "/Users/printfxd/git/mis-sport-next/src/components/ProductMain.astro", void 0);
 
-const $$Astro$7 = createAstro("https://mis-sport.com");
+const $$Astro$8 = createAstro("https://mis-sport.com");
 const $$ProductFooter = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$ProductFooter;
   const { content } = Astro2.props;
   const Transformers = {
@@ -4871,9 +5355,9 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$Astro$6 = createAstro("https://mis-sport.com");
+const $$Astro$7 = createAstro("https://mis-sport.com");
 const $$ProductLayout = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$ProductLayout;
   const { title, darkText, content, brandName } = Astro2.props;
   return renderTemplate(_a || (_a = __template(["<html> <head><title>", '</title><meta charset="utf-8">', '<link rel="icon" type="images/x-icon" href="https://storage.googleapis.com/mis-sport/logo/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><link rel="stylesheet" href="/assets/css/main.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"><!-- carousel-10 --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"><!-- fontawesome icon --><link href="/assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet"><link href="/assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet"><link href="/assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet"><!-- update existing v5 CSS to use v6 icons and assets --><link href="/assets/fontawesome-free-6.4.0-web/css/v5-font-face.css" rel="stylesheet"><!-- Bootstrap Icons 1.9.1 https://icons.getbootstrap.com/#install --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"><\/script><script defer src="/assets/js/jquery.min.js"><\/script><script defer src="/assets/js/jquery.scrollex.min.js"><\/script><script defer src="/assets/js/jquery.scrolly.min.js"><\/script><script defer src="/assets/js/jquery.selectorr.min.js"><\/script><script defer src="/assets/js/browser.min.js"><\/script><script defer src="/assets/js/breakpoints.min.js"><\/script><script defer src="/assets/js/util.js"><\/script><script defer src="/assets/js/main.js"><\/script>', `</head> <body class="is-preload"> <div class="img-full-page" onclick="this.style.display='none';"></div> <!-- Page wrapper --> <div id="page-wrapper"> `, " ", " ", " ", " ", " </div> ", ' <!-- Scripts --> <!-- fontawesome icon --> <script defer src="/assets/fontawesome-free-6.4.0-web/js/fontawesome.min.js"><\/script>  </body> </html>'])), title, renderSlot($$result, $$slots["in-head"]), renderHead(), renderComponent($$result, "Header", $$Header, { "darkText": darkText }), renderComponent($$result, "Navigator", $$Navigator, {}), renderSlot($$result, $$slots["default"]), renderComponent($$result, "Main", $$ProductMain, { "brandName": brandName, "content": content }), renderComponent($$result, "Footer", $$ProductFooter, { "content": content }), renderComponent($$result, "Copyright", $$Copyright, {}));
@@ -4961,15 +5445,15 @@ const SheetJsonToStaticRoute = (SheetName, data) => {
   return products;
 };
 
-const $$Astro$5 = createAstro("https://mis-sport.com");
-function getStaticPaths$5() {
-  const products = SheetJsonToStaticRoute("BICYCLE-LINE", json$5);
+const $$Astro$6 = createAstro("https://mis-sport.com");
+function getStaticPaths$6() {
+  const products = SheetJsonToStaticRoute("BICYCLE-LINE", json$6);
   console.debug(`BICYCLE-LINE products:${products.length}`);
   return products;
 }
-const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
-  Astro2.self = $$name$5;
+const $$name$6 = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  Astro2.self = $$name$6;
   const BrandName = "BICYCLE-LINE";
   const { content } = Astro2.props;
   const ProductUrl = Astro2.url.pathname;
@@ -4980,8 +5464,38 @@ const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro", void 0);
 
-const $$file$5 = "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro";
-const $$url$5 = "/product/BICYCLE-LINE/[topic]/[series]/[name]";
+const $$file$6 = "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro";
+const $$url$6 = "/product/BICYCLE-LINE/[topic]/[series]/[name]";
+
+const _name_$6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+    __proto__: null,
+    default: $$name$6,
+    file: $$file$6,
+    getStaticPaths: getStaticPaths$6,
+    url: $$url$6
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$Astro$5 = createAstro("https://mis-sport.com");
+function getStaticPaths$5() {
+  const products = SheetJsonToStaticRoute("PROTEAMS", json$5);
+  console.debug(`PROTEAMS products:${products.length}`);
+  return products;
+}
+const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  Astro2.self = $$name$5;
+  const BrandName = "PROTEAMS";
+  const { content } = Astro2.props;
+  const ProductUrl = Astro2.url.pathname;
+  const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
+  const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
+  const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
+  return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro", void 0);
+
+const $$file$5 = "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro";
+const $$url$5 = "/product/PROTEAMS/[topic]/[series]/[name]";
 
 const _name_$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     __proto__: null,
@@ -4993,14 +5507,14 @@ const _name_$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 const $$Astro$4 = createAstro("https://mis-sport.com");
 function getStaticPaths$4() {
-  const products = SheetJsonToStaticRoute("PROTEAMS", json$4);
-  console.debug(`PROTEAMS products:${products.length}`);
+  const products = SheetJsonToStaticRoute("TEOSPORT", json$4);
+  console.debug(`TEOSPORT products:${products.length}`);
   return products;
 }
 const $$name$4 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$name$4;
-  const BrandName = "PROTEAMS";
+  const BrandName = "TEOSPORT";
   const { content } = Astro2.props;
   const ProductUrl = Astro2.url.pathname;
   const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
@@ -5008,10 +5522,10 @@ const $$name$4 = createComponent(async ($$result, $$props, $$slots) => {
   const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
   const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
-}, "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro", void 0);
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/TEOSPORT/[topic]/[series]/[name].astro", void 0);
 
-const $$file$4 = "/Users/printfxd/git/mis-sport-next/src/pages/product/PROTEAMS/[topic]/[series]/[name].astro";
-const $$url$4 = "/product/PROTEAMS/[topic]/[series]/[name]";
+const $$file$4 = "/Users/printfxd/git/mis-sport-next/src/pages/product/TEOSPORT/[topic]/[series]/[name].astro";
+const $$url$4 = "/product/TEOSPORT/[topic]/[series]/[name]";
 
 const _name_$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     __proto__: null,
@@ -14244,4 +14758,4 @@ const _name_ = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Copyright as $, _name_$5 as _, $$Navigator as a, $$Header as b, json$5 as c, json as d, escapePercent as e, json$3 as f, json$4 as g, json$2 as h, _name_$4 as i, json$1 as j, _name_$3 as k, _name_$2 as l, _name_$1 as m, _name_ as n };
+export { $$Copyright as $, _name_$6 as _, $$Navigator as a, $$Header as b, json$6 as c, json as d, escapePercent as e, json$3 as f, json$5 as g, json$2 as h, json$4 as i, json$1 as j, _name_$5 as k, _name_$4 as l, _name_$3 as m, _name_$2 as n, _name_$1 as o, _name_ as p };
