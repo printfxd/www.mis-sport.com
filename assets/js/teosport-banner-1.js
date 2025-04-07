@@ -16,9 +16,13 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-01.gif': '0% 35%',
+							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-01.jpg': '0% 35%',
 							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-02.jpg': 'center',
-							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-03.jpg': 'center'
+							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-03.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-04.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-05.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-06.jpg': 'center',
+							'https://storage.googleapis.com/mis-sport/banner/teosport/teosport-banner-07.jpg': 'center'
 						},
 
 					// Delay.
