@@ -13,7 +13,7 @@ const $$Astro$a = createAstro("https://mis-sport.com");
 const $$Navigator = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Navigator;
-  return renderTemplate`<!-- Nav -->${maybeRenderHead()}<nav id="menu"> <div class="inner"> <h2>Menu</h2> <ul class="links"> <li><a href="/">Home</a></li> <li><a href="/ale/index.html">ALE CYCLING</a></li> <li><a href="/bicycle-line/index.html">BICYCLE LINE</a></li> <li><a href="/teosport.html">TEOSPORT</a></li> <li><a href="/proteams/index.html">PRO TEAM SERIES</a></li> <li><a href="/mis.html">MIS SPORT SERIES</a></li> <li><a href="/met/index.html">MET HELMETS</a></li> <li><a href="/sale/index.html">SALE</a></li> </ul> <a class="close"><span>Close</span></a> </div> </nav>`;
+  return renderTemplate`<!-- Nav -->${maybeRenderHead()}<nav id="menu"> <div class="inner"> <h2>Menu</h2> <ul class="links"> <li><a href="/">Home</a></li> <li><a href="/ale/index.html">ALE CYCLING</a></li> <li><a href="/bicycle-line/index.html">BICYCLE LINE</a></li> <li><a href="/teosport.html">TEOSPORT</a></li> <li><a href="/proteams/index.html">PRO TEAM SERIES</a></li> <li><a href="/met/index.html">MET HELMETS</a></li> <li><a href="/mis-sport/index.html">MIS SPORT</a></li> <li><a href="/sale/index.html">SALE</a></li> </ul> <a class="close"><span>Close</span></a> </div> </nav>`;
 }, "/Users/printfxd/git/mis-sport-next/src/components/Navigator.astro", void 0);
 
 const $$Astro$9 = createAstro("https://mis-sport.com");
