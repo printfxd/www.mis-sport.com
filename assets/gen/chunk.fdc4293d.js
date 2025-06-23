@@ -12266,35 +12266,6 @@ const values$1 = [
 		"ale-men-europeanfit-size-guide.html"
 	],
 	[
-		"",
-		"",
-		"",
-		"INTIMO PRO RACE 保暖內搭衣(短袖)",
-		"INTIMO PRO RACE Short Sleeve Base Layer",
-		"能與空力車衣搭配的高性能內衣",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/ale/summer/men/underwears/PRO-RACE-Short-sleeve-base-layer-man/PRO-RACE-Short-sleeve-base-layer-man-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/underwears/PRO-RACE-Short-sleeve-base-layer-man/PRO-RACE-Short-sleeve-base-layer-man-02.jpg;",
-		"1900",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[WH]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/underwears/PRO-RACE-Short-sleeve-base-layer-man/PRO-RACE-Short-sleeve-base-layer-man-01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/underwears/PRO-RACE-Short-sleeve-base-layer-man/PRO-RACE-Short-sleeve-base-layer-man-02.jpg;",
-		"",
-		"這款無痕的底衫專為競賽而開發，適合與空力型車衣或計時連身裝搭配，能夠快速吸濕排汗以及更強的透氣性。",
-		"選手版",
-		"公路競賽",
-		"18ºC ～ 30ºC",
-		"",
-		"",
-		"100g (M號)",
-		"",
-		"",
-		"超高貼合度",
-		"快速排汗透氣",
-		"適合多變天氣的輕度保暖",
-		"[WH]White(M,S)",
-		"https://shopee.tw/product/2352815/29516965871/",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
 	],
 	[
 		"",
@@ -13517,7 +13488,7 @@ const values = [
 		"",
 		"",
 		"[GraB4S]Gray(M)",
-		"https://shopee.tw/product/2352815/25314783895/",
+		"https://tw.shp.ee/P1rtYhZ",
 		"met-mtb-helmet-size-guide.html"
 	],
 	[
@@ -13546,7 +13517,7 @@ const values = [
 		"",
 		"",
 		"[BlaLFP]Black(M)",
-		"https://shopee.tw/product/2352815/24414783393/",
+		"https://tw.shp.ee/P1rtYhZ",
 		"met-mtb-helmet-size-guide.html"
 	],
 	[
