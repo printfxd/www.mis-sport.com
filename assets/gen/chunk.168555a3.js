@@ -1,24 +1,24 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, d as renderComponent, F as Fragment, u as unescapeHTML, e as renderSlot, f as renderHead } from './chunk.b0db1f2f.js';
 /* empty css                */import 'clsx';
 
-const $$Astro$b = createAstro("https://mis-sport.com");
+const $$Astro$c = createAstro("https://mis-sport.com");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Header;
   const { darkText } = Astro2.props;
   return renderTemplate`<!-- Header -->${maybeRenderHead()}<header id="header"${addAttribute(darkText ? null : "alt", "class")}> <span class="logo"> <a href="/"><img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="42" height="auto" class="rounded-circle"> MIS Sport <span>米詩國際</span></a> </span> <a href="#menu"><span>Menu</span></a> </header>`;
 }, "/Users/printfxd/git/mis-sport-next/src/components/Header.astro", void 0);
 
-const $$Astro$a = createAstro("https://mis-sport.com");
+const $$Astro$b = createAstro("https://mis-sport.com");
 const $$Navigator = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$Navigator;
   return renderTemplate`<!-- Nav -->${maybeRenderHead()}<nav id="menu"> <div class="inner"> <h2>Menu</h2> <ul class="links"> <li><a href="/">Home</a></li> <li><a href="/ale/index.html">ALE CYCLING</a></li> <li><a href="/bicycle-line/index.html">BICYCLE LINE</a></li> <li><a href="/teosport.html">TEOSPORT</a></li> <li><a href="/proteams/index.html">PRO TEAM SERIES</a></li> <li><a href="/met/index.html">MET HELMETS</a></li> <li><a href="/mis-sport/index.html">MIS SPORT</a></li> <li><a href="/sale/index.html">SALE</a></li> </ul> <a class="close"><span>Close</span></a> </div> </nav>`;
 }, "/Users/printfxd/git/mis-sport-next/src/components/Navigator.astro", void 0);
 
-const $$Astro$9 = createAstro("https://mis-sport.com");
+const $$Astro$a = createAstro("https://mis-sport.com");
 const $$Copyright = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Copyright;
   return renderTemplate`<!-- Copyright -->${maybeRenderHead()}<section class="wrapper style2 copyright"> <div class="inner"> <span>
 All rights reserved by <img src="https://storage.googleapis.com/mis-sport/logo/mis-logo.png" alt="logo" width="36" height="auto" class="rounded-circle"> MIS-SPORT.</span> </div> </section>`;
@@ -33,9 +33,9 @@ function escapePercent(s) {
   return s;
 }
 
-const range$5 = "'BICYCLE-LINE'!A1:AM400";
-const majorDimension$5 = "ROWS";
-const values$5 = [
+const range$6 = "'BICYCLE-LINE'!A1:AM400";
+const majorDimension$6 = "ROWS";
+const values$6 = [
 	[
 		"Topic",
 		"Series",
@@ -2128,6 +2128,470 @@ const values$5 = [
 		"https://tw.shp.ee/EDw9uiL"
 	]
 ];
+const json$6 = {
+	range: range$6,
+	majorDimension: majorDimension$6,
+	values: values$6
+};
+
+const range$5 = "'MIS-SPORT'!A1:AN400";
+const majorDimension$5 = "ROWS";
+const values$5 = [
+	[
+		"Topic",
+		"Series",
+		"EnglishSeries",
+		"ProductName",
+		"EnglishName",
+		"Summary",
+		"New",
+		"Img",
+		"Price",
+		"Logo",
+		"ImgList",
+		"Price2",
+		"Description",
+		"Style",
+		"CyclingType",
+		"Temperature",
+		"Water",
+		"SunProtect",
+		"Weight",
+		"Pad",
+		"PadTech",
+		"Feature1",
+		"Feature2",
+		"Feature3",
+		"ColorWithSizes",
+		"PurchaseUrl",
+		"SizeGuide"
+	],
+	[
+		"SUMMER"
+	],
+	[
+		"",
+		"BL x MIS 聯名車衣",
+		"BL x MIS Series"
+	],
+	[
+		"",
+		"",
+		"",
+		"G CAVE MIS競賽版車衣(楓葉紅)",
+		"G CAVE - MIS-Short-sleeved jersey - maple men’s",
+		"針對礫石越野的競賽車衣",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_35.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_36.jpg",
+		"4500",
+		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
+		"[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_35.jpg;\n[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_36.jpg;\n[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_15.jpg;\n[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_13.jpg;\n[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_14.jpg;\n[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_11.jpg;\n[Dar3WX]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_12.jpg",
+		"",
+		"精英競賽級的礫石越野自行車服。專為高強度礫石賽事所設計，前側的開放式網狀布料，可在劇烈運動時快速通風。擁有5個經過優化的收納口袋，穩固性良好，方便取放必需品。壓縮貼合的版型，適合低風阻騎姿。獨特的MIS設計風格讓您成為道路上的焦點。",
+		"選手版",
+		"礫石旅行",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"",
+		"專為礫石競賽設計",
+		"五個口袋",
+		"貼合度較高的壓縮板型",
+		"[Dar3WX]DarkOrange(,XS,M,S,L,XL,2XL);",
+		"https://shopee.tw/product/2352815/28301283305/",
+		"bicycle-line-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"G CAVE MIS競賽版車衣(電漿藍)",
+		"G CAVE - MIS-Short-sleeved jersey - Plasma men’s",
+		"針對礫石越野的競賽車衣",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/G CAVE - MIS-Short-sleeved jersey - Plasma men’s/IMG_1292-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/G CAVE - MIS-Short-sleeved jersey - Plasma men’s/IMG_1292-002.jpg",
+		"4500",
+		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
+		"[Roy7WT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/G CAVE - MIS-Short-sleeved jersey - Plasma men’s/IMG_1292-001.jpg;\n[Roy7WT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/G CAVE - MIS-Short-sleeved jersey - Plasma men’s/IMG_1292-002.jpg;\n[Roy7WT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_24.jpg;\n[Roy7WT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_22.jpg;\n[Roy7WT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_23.jpg;\n[Roy7WT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/G CAVE - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_21.jpg",
+		"",
+		"精英競賽級的礫石越野自行車服。專為高強度礫石賽事所設計，前側的開放式網狀布料，可在劇烈運動時快速通風。擁有5個經過優化的收納口袋，穩固性良好，方便取放必需品。壓縮貼合的版型，適合低風阻騎姿。獨特的MIS設計風格讓您成為道路上的焦點。",
+		"選手版",
+		"礫石旅行",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"",
+		"專為礫石競賽設計",
+		"五個口袋",
+		"貼合度較高的壓縮板型",
+		"[Roy7WT]DodgerBlue(S,M,L,XL,2XL)",
+		"https://shopee.tw/product/2352815/27351871442/",
+		"bicycle-line-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"ECHELON MIS競賽版車衣",
+		"ECHELON - MIS-Short-sleeved jersey - men’s",
+		"追求最佳性能的頂級車衣",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/IMG_1291-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/IMG_1291-002.jpg",
+		"4300",
+		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
+		"[RoyTC8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/IMG_1291-001.jpg;\n[RoyTC8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/IMG_1291-002.jpg;\n[RoyTC8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_10.jpg;\n[RoyTC8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_8.jpg;\n[RoyTC8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_9.jpg;\n[RoyTC8]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom MIS/ECHELON - MIS-Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_7.jpg",
+		"",
+		"專為追求最佳性能的騎士而研發的系列。由專業的團隊與經驗豐富的職業自行車手共同研究，最新一代的高性能輕量布料以及毛邊剪裁、鑲板、結構吊帶等技術細節，搭配能與身體貼合的人體工學設計，以實現符合預期的高性能。獨特的MIS設計風格讓您成為道路上的焦點。",
+		"選手版",
+		"公路競賽",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"",
+		"與職業選手共同研發",
+		"極致的競技版型",
+		"高性能的輕量布料",
+		"[RoyTC8]RoyalBlue(XS,2XS,M,L,XL,2XL,3XL,4XL,5XL)",
+		"https://shopee.tw/product/2352815/28751871478/",
+		"bicycle-line-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"GIRO DRAFT MIS競賽版車衣",
+		"GIRO DRAFT - MIS-Short-sleeved jersey - men’s",
+		"能滿足各種騎士的平衡性能",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_32.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_31.jpg",
+		"3600",
+		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
+		"[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_32.jpg;\n[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240530_31.jpg;\n[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240531_20.jpg;\n[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240531_17.jpg;\n[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240531_18.jpg;\n[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240531_19.jpg;\n[undefined]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - Short-sleeved jersey - men’s/LINE_ALBUM_BL車隊客製服_240531_16.jpg",
+		"",
+		"為日常車衣的性能、舒適度與價錢樹立了良好的標準。提供騎士優異的性能與舒適度，同時保有實惠的價格。採用彈力布料製成，貼身但不束縛，並兼具高透氣。袖子使用Bicycle Line的經典設計，巧妙配置的肩線，讓手臂活動不受阻礙。",
+		"選手版",
+		"公路競賽",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"",
+		"平衡的性能與舒適度",
+		"貼身不束縛",
+		"",
+		"[undefined]DarkCyan(S,M,L,2XS,XS,XL,2XL,3XL,4XL,5XL)",
+		"https://shopee.tw/product/2352815/28551287590/",
+		"bicycle-line-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"GIRO DRAFT MIS競賽版車衣(女)",
+		"GIRO DRAFT - MIS-Short-sleeved jersey - women’s",
+		"能滿足各種騎士的平衡性能",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_34.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_33.jpg",
+		"3600",
+		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
+		"[Tea4VK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_34.jpg;\n[Tea4VK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_33.jpg;\n[Tea4VK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_3.jpg;\n[Tea4VK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_2.jpg;\n[Tea4VK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SPECIAL CUSTOM/Custom Test/GIRO DRAFT(SP) - MIS-Short-sleeved jersey - women’s/LINE_ALBUM_BL車隊客製服_240530_1.jpg",
+		"",
+		"為日常車衣的性能、舒適度與價錢樹立了良好的標準。提供騎士優異的性能與舒適度，同時保有實惠的價格。採用彈力布料製成，貼身但不束縛，並兼具高透氣。袖子使用Bicycle Line的經典設計，巧妙配置的肩線，讓手臂活動不受阻礙。獨特的MIS設計風格讓您成為道路上的焦點。",
+		"選手版",
+		"公路競賽",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"",
+		"平衡的性能與舒適度",
+		"貼身不束縛",
+		"",
+		"[Tea4VK]MediumBlue(,XS,S,M,L,XL,2XL)",
+		"https://shopee.tw/product/2352815/29051287858/",
+		"bicycle-line-men-racefit-size-guide.html"
+	],
+	[
+	],
+	[
+	],
+	[
+		"",
+		"",
+		"",
+		"ECHELON MIS競賽版車褲",
+		"ECHELON- Mis- Ｍen's bib shorts - Men's",
+		"追求最佳性能的頂級車褲",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen's bib shorts - Men's/3D_MIS_SPORT_2025_artwork_EB-1-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen's bib shorts - Men's/3D_MIS_SPORT_2025_artwork_EB-1-2.png",
+		"6500",
+		"https://storage.googleapis.com/mis-sport/logo/mis-logo.png",
+		"[BlaPD2]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen's bib shorts - Men's/3D_MIS_SPORT_2025_artwork_EB-1-1.png;\n[BlaPD2]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen's bib shorts - Men's/3D_MIS_SPORT_2025_artwork_EB-1-2.png;\n[BlaPD2]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen%27s bib shorts - Men%27s/BL-CC_Custom Team 2024 - X-Tra Pad-003-MAN_0.jpg;\n[BlaPD2]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen%27s bib shorts - Men%27s/MIS_sport_W6005_Salopette_Echelon.JPG1_0.jpg;\n[BlaPD2]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Ｍen%27s bib shorts - Men%27s/MIS_sport_W6005_Salopette_Echelon.JPG2_0.jpg",
+		"",
+		"專為追求最佳性能的騎士而研發的系列。由專業的團隊與經驗豐富的職業自行車手共同研究，最新一代的高性能輕量布料以及毛邊剪裁、鑲板、結構吊帶等技術細節，搭配能與身體貼合的人體工學設計，以實現符合預期的高性能。獨特的MIS設計風格讓您成為道路上的焦點。",
+		"選手版",
+		"公路競賽",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"<br><hr>\n<b>Ghost Air Gel  護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 面料製成的高性能褲墊，觸感柔軟且乾燥速度非常快，直徑 5 mm的孔隙更加利於空氣流通與散熱。</li>\n<li>主墊結構 110 kg/m<sup>3</sup>，副墊結構 110 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
+		"極致的競技版型",
+		"高性能的輕量布料",
+		"提升長時間騎乘的舒適度",
+		"[BlaPD2]Black(2XS,XS,S,M,L,XL,2XL,3XL,4XL,5XL)",
+		"",
+		"bicycle-line-men-racefit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"ECHELON MIS競賽版車褲(女)",
+		"ECHELON- Mis- Women's bib shorts - Women's",
+		"追求最佳性能的頂級車褲",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women's bib shorts - Women's/3D_MIS_SPORT_2025_artwork_EB-2-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women's bib shorts - Women's/3D_MIS_SPORT_2025_artwork_EB-2-2.png",
+		"6500",
+		"https://storage.googleapis.com/mis-sport/logo/mis-logo.png",
+		"[BlaFUQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women's bib shorts - Women's/3D_MIS_SPORT_2025_artwork_EB-2-1.png;\n[BlaFUQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women's bib shorts - Women's/3D_MIS_SPORT_2025_artwork_EB-2-2.png;\n[BlaFUQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women%27s bib shorts - Women%27s/S__160178216_0.jpg;\n[BlaFUQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women%27s bib shorts - Women%27s/MIS_sport_W6005_Salopette_Echelon.JPG1_0.jpg;\n[BlaFUQ]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/BL x MIS Series/ECHELON- Mis- Women%27s bib shorts - Women%27s/MIS_sport_W6005_Salopette_Echelon.JPG2_0.jpg",
+		"",
+		"專為追求最佳性能的騎士而研發的系列。由專業的團隊與經驗豐富的職業自行車手共同研究，最新一代的高性能輕量布料以及毛邊剪裁、鑲板、結構吊帶等技術細節，搭配能與身體貼合的人體工學設計，以實現符合預期的高性能。獨特的MIS設計風格讓您成為道路上的焦點。",
+		"選手版",
+		"公路競賽",
+		"20ºC ～ 32ºC",
+		"",
+		"50+UPF",
+		"",
+		"",
+		"<br><hr>\n<b>Ghost Air Gel  護墊介紹：</b>\n<ul>\n<li>採用 PREMIO 面料製成的高性能褲墊，觸感柔軟且乾燥速度非常快，直徑 5 mm的孔隙更加利於空氣流通與散熱。</li>\n<li>主墊結構 110 kg/m<sup>3</sup>，副墊結構 110 kg/m<sup>3</sup>，主墊設計以ROOTED凝膠提高坐骨支撐性。</li>\n<li>Dual Density + Gel construction 雙重結構的複合式系列，其特點為材質柔軟而富有彈性，能提供更好的舒適度和零摩擦。</li>\n</ul>",
+		"極致的競技版型",
+		"高性能的輕量布料",
+		"提升長時間騎乘的舒適度",
+		"[BlaFUQ]Black(2XS,XS,S,M,L,XL)",
+		"",
+		"bicycle-line-women-racefit-size-guide.html"
+	],
+	[
+	],
+	[
+		"",
+		"TEOSPORT x MIS 聯名配件",
+		"TEOSPORT x MIS Accessories"
+	],
+	[
+		"",
+		"",
+		"",
+		"CHRONO PRO MIS夏季短指手套（空力型）",
+		"Active Aero Glove - TE2061 MIS Navy",
+		"訓練和比賽的最佳選擇",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-3.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-3.png;\n[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-2.png;\n[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-12-1.png;\n[SteG8X]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Aero Glove - TE2061 MIS Navy/2B53FCB4-E7B7-49A5-B033-85DFD1D225F8.jpg",
+		"",
+		"這款加長的夏季手套在手腕處貼合緊密，提供更高保護並提升空氣動力學性能，加長袖口使手腕處氣流更加順暢。\n\n採用輕盈而高效的面料、加固材料和填充物構建而成。能夠緊密貼合手掌卻無束縛感，符合人體工學的掌面設計。\n\n\n產品成分\n\t•\t上層：80% 聚酯纖維 (pl) | 20% 彈性纖維 (ea)\n\t•\t掌部：50% 聚酰胺 (pa) | 50% 聚氨酯 (pu)",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"在訓練與比賽中提供卓越支撐、極佳觸感與維持手部靈活性",
+		"優異的彈性隨著手部開合運動，呈現卓越人體工學貼合效果。",
+		"特殊合成絨面革掌面確保了卓越的耐磨性。",
+		"[SteG8X]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/oCCxgJ7",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"CORSA MIS夏季短指手套(空力型)",
+		"Active Short Figure Glove - TE2060 MIS Black",
+		"訓練和比賽的最佳選擇",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-3.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-2.png",
+		"1100",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-3.png;\n[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-2.png;\n[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-13-1.png;\n[BlaKGM]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Active Short Figure Glove - TE2060 MIS Black/863D3E7F-0F79-4001-B870-8C9DCBC33DE3.jpg",
+		"",
+		"採用輕盈且高效的面料、加固材料與填充物，呈現極簡結構。\n而出色的貼合度，能與手掌緊密貼合卻不限制手部活動，在訓練與比賽中提供卓越支撐、極佳觸感與維持手部靈活性。\n\n\n材質成分\n\t•\t上層：80% 聚酯纖維 (pl) | 20% 彈性纖維 (ea)\n\t•\t掌部：50% 聚酰胺 (pa) | 50% 聚氨酯 (pu)",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"優異的彈性隨著手部開合運動，呈現卓越人體工學貼合效果。",
+		"造型袖口設計減少手腕不適：靠近掌部處較短，而手腕背面則較長。",
+		"特殊合成絨面革掌面確保了卓越的耐磨性。",
+		"[BlaKGM]Black(,2XS,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/oCCxgJ7",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Aero Socks MIS 空力襪(藍)",
+		"Aero Socks - TE5001 MIS Blue",
+		"推薦給熱愛公路競技或追求極致效率的你",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-2.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-1.png",
+		"1200",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[Ste8E6]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-2.png;\n[Ste8E6]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Aero Socks - TE5001 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-15-1.png",
+		"",
+		"Veloce Aero Socks\n\n採用條紋 Lycra 面料與極細緻的無縫設計，Aero Veloce 車襪是追求緊貼腿部貼合度與速度優勢的理想選擇。內緣的矽膠防滑設計確保動作精準流暢，提升騎乘表現。\n\n100% 義大利製造。\n\n材質：\n • 80% 聚酯纖維（Polyester, PL）\n • 20% 彈性纖維（Elastam, EA）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"不同的的布料製成，使舒適與機能共存",
+		"特殊的結構實現了絕佳空氣力學性能",
+		"經驗豐富的專業團隊設計出的空氣力學長襪",
+		"[Ste8E6]SteelBlue(,XS,S,M,L,XL,2XL)",
+		"https://tw.shp.ee/9Sn5jTX",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Dritto Cap MIS圓點小帽",
+		"Dritto Cap  - TE7000",
+		"美觀與防曬功能兼俱的經典小帽",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-2.png",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-1.png;\n[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-2.png;\n[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-3.png;\n[GraODJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Dritto Cap  - TE7000/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-5-4.png",
+		"",
+		"擁有極少的接縫，帶來無與倫比的舒適感，並融合復古設計，專為熱愛昔日自行車文化的人士打造。DRITTO 小帽採用傳統的半月形結構，並可完全客製化。\n100% 義大利製造，非常適合長時間的夏季活動。\n\n單一尺寸：\n適用頭圍 55cm 至 61cm\n\n材質：\n100% 聚酯纖維（POLYESTER, PL）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"有效阻隔陽光與汗水",
+		"",
+		"",
+		"[GraODJ]Gray()",
+		"https://tw.shp.ee/poDvdm9",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Spicchio Cap MIS斑紋小帽",
+		"Spicchio Cap  - TE7002",
+		"美觀與防曬功能兼俱的經典小帽",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-1.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-2.png",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-1.png;\n[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-2.png;\n[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-3.png;\n[NavGGY]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Spicchio Cap  - TE7002/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-4-4.png",
+		"",
+		"對 70 年代的懷舊情懷促使我們打造 SPICCHIO，這款復古風格的帽子。其剪裁讓佩戴更加舒適，是夏日外出騎乘的理想配件。\n\n100% 義大利製造，非常適合長時間的夏季活動。\n\n單一尺寸：\n適用頭圍 55cm 至 61cm\n材質： 100% 聚酯纖維（POLYESTER, PL）",
+		"選手版",
+		"公路競賽",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"有效阻隔陽光與汗水",
+		"",
+		"[NavGGY]SteelBlue()",
+		"https://tw.shp.ee/poDvdm9",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Neck Warmer Mis 冬季保暖圍脖(色塊藍)",
+		"Neck Warmer - TE6753 MIS Blue",
+		"男女適用，季節交替時，提供保暖效果。",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-1.png;\n",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[MidYAW]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS Blue/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-1.png",
+		"",
+		"簡單易用的騎乘配件，採用彈性抓絨面料製成。不僅能抵禦寒冷，也非常適合春秋季使用。\n它可以作為圍巾、面罩、防曬層或安全帽內裏配戴。適合所有季節。\n\n84% POLYESTER (PL) | 16% ELASTANE (EA)\n36.5 x 25 cm",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"多功能的戶外活動配件",
+		"騎車.登山.日常皆可使用",
+		"",
+		"[MidYAW]SteelBlue()",
+		"https://tw.shp.ee/SoPW1en",
+		"teosport-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
+		"Neck Warmer Mis 冬季保暖圍脖(幾何灰)",
+		"Neck Warmer - TE6753 MIS geometry Gary",
+		"男女適用，季節交替時，提供保暖效果。",
+		"",
+		"https://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS geometry Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-2.png;\n",
+		"600",
+		"https://storage.googleapis.com/mis-sport/logo/teosport-logo.png",
+		"[SilV5J]\nhttps://storage.googleapis.com/mis-sport/item/upload/TEOSPORT/ACCESSORY/Accessories/Neck Warmer - TE6753 MIS geometry Gary/ACCESSORIES_LINK_Mis_Sport_PROPOSAL_0_10_10_2023-2.png",
+		"",
+		"簡單易用的騎乘配件，採用彈性抓絨面料製成。不僅能抵禦寒冷，也非常適合春秋季使用。\n它可以作為圍巾、面罩、防曬層或安全帽內裏配戴。適合所有季節。\n\n84% POLYESTER (PL) | 16% ELASTA\n36.5 x 25 cm",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"多功能的戶外活動配件 ",
+		"騎車.登山.日常皆可使用",
+		"",
+		"[SilV5J]Silver()",
+		"https://tw.shp.ee/SoPW1en",
+		"teosport-size-guide.html"
+	]
+];
 const json$5 = {
 	range: range$5,
 	majorDimension: majorDimension$5,
@@ -2627,9 +3091,9 @@ var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
 var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(raw || cooked.slice()) }));
 var _a$1;
-const $$Astro$8 = createAstro("https://mis-sport.com");
+const $$Astro$9 = createAstro("https://mis-sport.com");
 const $$ProductMain = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$ProductMain;
   const { brandName, content } = Astro2.props;
   const withComma = (v) => {
@@ -2713,9 +3177,9 @@ NT$${Discounted} </h5>`, ColreSizeList.map((cs) => {
 </a> </li>`);
 }, "/Users/printfxd/git/mis-sport-next/src/components/ProductMain.astro", void 0);
 
-const $$Astro$7 = createAstro("https://mis-sport.com");
+const $$Astro$8 = createAstro("https://mis-sport.com");
 const $$ProductFooter = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$ProductFooter;
   const { content } = Astro2.props;
   const Transformers = {
@@ -2744,9 +3208,9 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$Astro$6 = createAstro("https://mis-sport.com");
+const $$Astro$7 = createAstro("https://mis-sport.com");
 const $$ProductLayout = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$ProductLayout;
   const { title, darkText, content, brandName } = Astro2.props;
   return renderTemplate(_a || (_a = __template(["<html> <head><title>", '</title><meta charset="utf-8">', '<link rel="icon" type="images/x-icon" href="https://storage.googleapis.com/mis-sport/logo/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><link rel="stylesheet" href="/assets/css/main.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"><!-- carousel-10 --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"><!-- fontawesome icon --><link href="/assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet"><link href="/assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet"><link href="/assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet"><!-- update existing v5 CSS to use v6 icons and assets --><link href="/assets/fontawesome-free-6.4.0-web/css/v5-font-face.css" rel="stylesheet"><!-- Bootstrap Icons 1.9.1 https://icons.getbootstrap.com/#install --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"><\/script><script defer src="/assets/js/jquery.min.js"><\/script><script defer src="/assets/js/jquery.scrollex.min.js"><\/script><script defer src="/assets/js/jquery.scrolly.min.js"><\/script><script defer src="/assets/js/jquery.selectorr.min.js"><\/script><script defer src="/assets/js/browser.min.js"><\/script><script defer src="/assets/js/breakpoints.min.js"><\/script><script defer src="/assets/js/util.js"><\/script><script defer src="/assets/js/main.js"><\/script>', `</head> <body class="is-preload"> <div class="img-full-page" onclick="this.style.display='none';"></div> <!-- Page wrapper --> <div id="page-wrapper"> `, " ", " ", " ", " ", " </div> ", ' <!-- Scripts --> <!-- fontawesome icon --> <script defer src="/assets/fontawesome-free-6.4.0-web/js/fontawesome.min.js"><\/script>  </body> </html>'])), title, renderSlot($$result, $$slots["in-head"]), renderHead(), renderComponent($$result, "Header", $$Header, { "darkText": darkText }), renderComponent($$result, "Navigator", $$Navigator, {}), renderSlot($$result, $$slots["default"]), renderComponent($$result, "Main", $$ProductMain, { "brandName": brandName, "content": content }), renderComponent($$result, "Footer", $$ProductFooter, { "content": content }), renderComponent($$result, "Copyright", $$Copyright, {}));
@@ -2834,15 +3298,15 @@ const SheetJsonToStaticRoute = (SheetName, data) => {
   return products;
 };
 
-const $$Astro$5 = createAstro("https://mis-sport.com");
-function getStaticPaths$5() {
-  const products = SheetJsonToStaticRoute("BICYCLE-LINE", json$5);
+const $$Astro$6 = createAstro("https://mis-sport.com");
+function getStaticPaths$6() {
+  const products = SheetJsonToStaticRoute("BICYCLE-LINE", json$6);
   console.debug(`BICYCLE-LINE products:${products.length}`);
   return products;
 }
-const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
-  Astro2.self = $$name$5;
+const $$name$6 = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  Astro2.self = $$name$6;
   const BrandName = "BICYCLE-LINE";
   const { content } = Astro2.props;
   const ProductUrl = Astro2.url.pathname;
@@ -2853,8 +3317,38 @@ const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
 }, "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro", void 0);
 
-const $$file$5 = "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro";
-const $$url$5 = "/product/BICYCLE-LINE/[topic]/[series]/[name]";
+const $$file$6 = "/Users/printfxd/git/mis-sport-next/src/pages/product/BICYCLE-LINE/[topic]/[series]/[name].astro";
+const $$url$6 = "/product/BICYCLE-LINE/[topic]/[series]/[name]";
+
+const _name_$6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+    __proto__: null,
+    default: $$name$6,
+    file: $$file$6,
+    getStaticPaths: getStaticPaths$6,
+    url: $$url$6
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$Astro$5 = createAstro("https://mis-sport.com");
+function getStaticPaths$5() {
+  const products = SheetJsonToStaticRoute("MIS-SPORT", json$5);
+  console.debug(`MIS-SPORT products:${products.length}`);
+  return products;
+}
+const $$name$5 = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  Astro2.self = $$name$5;
+  const BrandName = "MIS-SPORT";
+  const { content } = Astro2.props;
+  const ProductUrl = Astro2.url.pathname;
+  const Title = `${BrandName} ${content.ProductName} | MIS Sport \u7C73\u8A69\u570B\u969B`;
+  const FALLBACK_IMG_URL = "https://storage.googleapis.com/mis-sport/logo/mis-logo.png";
+  const imgList = (content.Img || "").split(";").map(escapePercent).filter(Boolean);
+  const ProductImgUrl = imgList[0] || FALLBACK_IMG_URL;
+  return renderTemplate`${renderComponent($$result, "ProductLayout", $$ProductLayout, { "title": Title, "darkText": true, "content": content, "brandName": BrandName }, { "in-head": ($$result2) => renderTemplate`<meta property="og:url"${addAttribute(ProductUrl, "content")}><meta property="og:type" content="website"><meta property="og:title"${addAttribute(Title, "content")}><meta property="og:description"${addAttribute(content.Summary, "content")}><meta property="og:image"${addAttribute(ProductImgUrl, "content")}>` })}`;
+}, "/Users/printfxd/git/mis-sport-next/src/pages/product/MIS-SPORT/[topic]/[series]/[name].astro", void 0);
+
+const $$file$5 = "/Users/printfxd/git/mis-sport-next/src/pages/product/MIS-SPORT/[topic]/[series]/[name].astro";
+const $$url$5 = "/product/MIS-SPORT/[topic]/[series]/[name]";
 
 const _name_$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     __proto__: null,
@@ -14373,4 +14867,4 @@ const _name_ = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Copyright as $, _name_$5 as _, $$Navigator as a, $$Header as b, json$5 as c, json as d, escapePercent as e, json$4 as f, json$2 as g, json$3 as h, _name_$4 as i, json$1 as j, _name_$3 as k, _name_$2 as l, _name_$1 as m, _name_ as n };
+export { $$Copyright as $, _name_$6 as _, $$Navigator as a, $$Header as b, json$6 as c, json as d, escapePercent as e, json$5 as f, json$4 as g, json$2 as h, json$3 as i, json$1 as j, _name_$5 as k, _name_$4 as l, _name_$3 as m, _name_$2 as n, _name_$1 as o, _name_ as p };
