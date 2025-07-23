@@ -250,6 +250,8 @@ const values$6 = [
 	[
 	],
 	[
+	],
+	[
 		"",
 		"春夏車褲",
 		"Summer Trousers"
@@ -524,6 +526,35 @@ const values$6 = [
 		"",
 		"",
 		"",
+		"SESTO G1 短袖車衣(女)",
+		"Women's cycling jersey SESTO G1",
+		"高效能與優雅兼具",
+		"NEW",
+		"https://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_VERDE_front - max.png;\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_VERDE_back_max.png",
+		"3500",
+		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
+		"[LigC1O]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_AZZURRO_front.png;\n[LigC1O]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_AZZURRO_back.png;\n[Pal8EK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_VERDE_front - max.png;\n[Pal8EK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_VERDE_back_max.png;\n[BlaGUR]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_NERO_front.png;\n[BlaGUR]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/BL45XXX_SESTOG1_mmc_woman_NERO_back.png;\n[Pal8EK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (3).webp;\n[Pal8EK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero.webp;\n[Pal8EK]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (5).webp;\n[LigC1O]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (12).jpg;\n[LigC1O]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (11).jpg;\n[LigC1O]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (13).jpg;\n[BlaGUR]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (7).jpg;\n[BlaGUR]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (5).jpg;\n[BlaGUR]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (6).jpg;\n[BlaGUR]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/SUMMER/Summer Tops/Women%27s cycling jersey SESTO G1/new-maglia-m-corta-donna-sesto-g1-nera-001-nero (3).jpg",
+		"",
+		"Sesto G1 車衣向品牌傳統致敬，胸前印有首款經典象徵——雄獅圖騰，展現 BL 的傳承精神。\n設計風格簡約俐落，採用透氣彈性面料，加長袖口無縫設計，優化空氣力學與貼合度，兼具現代剪裁與騎乘性能。",
+		"歐版",
+		"公路競賽",
+		"",
+		"",
+		"30+UPF",
+		"",
+		"",
+		"",
+		"採用立體透氣網眼彈性布料，袖口為無縫切割設計，提升舒適與空氣力學效率",
+		"後方反光標誌設計，提升夜騎安全性",
+		"人體工學領口剪裁，更貼合頸部不勒緊",
+		"[Pal8EK]PaleGreen(XS);\n[LigC1O]LightSkyBlue(S);\n[BlaGUR]Black(XS)",
+		"https://tw.shp.ee/A4k4ob9",
+		"bicycle-line-women-europeanfit-size-guide.html"
+	],
+	[
+		"",
+		"",
+		"",
 		"TRACY S2 長袖車衣(女)",
 		"Women's long sleeved jersey TRACY S2",
 		"透氣、柔軟、防曬，抵抗紫外線的首選",
@@ -606,6 +637,8 @@ const values$6 = [
 		"[Whi0CF]White(,XS,S,M)",
 		"",
 		"bicycle-line-women-racefit-size-guide.html"
+	],
+	[
 	],
 	[
 	],
@@ -3731,7 +3764,7 @@ const values$2 = [
 		"5900",
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-05.jpg;\n[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-06.jpg;\n[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-07.jpg;\n[RED]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-08.jpg;\n[BLK]\nhttps://storage.googleapis.com/mis-sport/item/ale/summer/men/jeresys/r-ev1-velocity-jerseys/R-EV1-VELOCITY-JERSEY-01.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_23_0.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_24_0.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_25_0.jpg;\n[OliNEP]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/回收 3200 _ G+ 5900_200911_26_0.jpg;\n[BLK]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/R-EV1 VELOCITY Short Sleeve Jersey/S__128294952.jpg",
-		"2900",
+		"2500",
 		"極簡主義的視覺設計，統一和啞光飾面。採用雙彈性萊卡面料開發，可壓縮肌肉並提高運動表現。",
 		"選手版",
 		"公路競賽",
@@ -4456,7 +4489,7 @@ const values$2 = [
 		"3500",
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[NavFZG]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_1.jpg;\n[NavFZG]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_2.jpg;\n[NavFZG]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_3.jpg;\n[PurJEC]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_6.jpg;\n[PurJEC]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_7.jpg;\n[PurJEC]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_8.jpg;\n[BlaSXO]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_10.jpg;\n[BlaSXO]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_11.jpg;\n[BlaSXO]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_14.jpg;\n[TurUYV]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_18.jpg;\n[TurUYV]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_19.jpg;\n[TurUYV]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Men Sale/Outlet Short Sleeve Jersey Men 029/LINE_ALBUM_L  出清價3000_240311_20.jpg",
-		"2900",
+		"2500",
 		"高效率的透氣與快乾性能，義大利生產的優秀布料搭配符合人體解剖學的貼身剪裁，擁有搶眼色彩的ALE經典設計風格。",
 		"選手版",
 		"公路競賽",
@@ -10636,7 +10669,7 @@ const values$2 = [
 		"人體工學立體剪裁，透氣柔軟貼身",
 		"UPF30+的紫外線防護與抗菌防臭布料",
 		"肩膀與腋下兩側使用Aerostat透氣網，可形成對流，迅速散熱",
-		"[WhiXX1]White(XL,L,2XL);\n[DodUDK]LightSkyBlue(L,XL,2XL);\n[Dar6OR]DarkOrange(L,XL,2XL)",
+		"[WhiXX1]White(L,2XL);\n[DodUDK]LightSkyBlue(L,2XL);\n[Dar6OR]DarkOrange(L,2XL)",
 		"https://shopee.tw/product/2352815/29250675366/",
 		"nalini-men-racefit-size-guide.html"
 	],
