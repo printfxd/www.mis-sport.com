@@ -1,7 +1,7 @@
 import { c as createAstro, a as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from './chunk.b0db1f2f.js';
 import 'clsx';
-import { S as SheetToProduct, $ as $$ProductList, a as $$Layout } from './chunk.bba13fda.js';
-/* empty css                *//* empty css                */import { i as json } from './chunk.969e0f54.js';
+import { S as SheetToProduct, $ as $$ProductList, a as $$Layout } from './chunk.12bc658d.js';
+/* empty css                *//* empty css                */import { i as json } from './chunk.97ecda4c.js';
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
