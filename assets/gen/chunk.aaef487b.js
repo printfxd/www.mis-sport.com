@@ -156,7 +156,7 @@ const values$6 = [
 		"輕柔的觸感",
 		"適合戶外運動的合身版型",
 		"多口袋設計，能攜帶更多補給",
-		"[BLU]DarkSlateBlue(S,M,L,2XL,3XL);\n[BLK]Black(S,L,XL,2XL,2XS,XS,M);\n[BRW]Sienna(M,L,XL,3XL,2XL);\n[GRE]DarkSeaGreen(L,XL,2XL,3XL,2XS,S,M);\n[TAN]Tan(M,L,XL,2XL,XS,S);\n[TEA]Teal(S,M,L,XL,2XL,3XL);\n[DarU54]DarkGoldenrod(,2XS,S,M,L,XL,2XL)",
+		"[BLU]DarkSlateBlue(S,M,3XL);\n[BLK]Black(L,XL,2XS,XS,M);\n[BRW]Sienna(M,L,XL);\n[GRE]DarkSeaGreen(L,XL,2XS,S,2XL,XS);\n[TAN]Tan(M,L,XL,2XL);\n[TEA]Teal(S,M,L,XL,3XL);\n[DarU54]DarkGoldenrod(,2XS,S,M,L,XL,2XL)",
 		"https://shopee.tw/product/2352815/23347480824/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -459,7 +459,7 @@ const values$6 = [
 		"肩帶採用新型扁平微纖維鬆緊帶，舒適加倍",
 		"背部採用排汗孔的柔軟面料製成，提供舒適的體感並能適度調節體溫。",
 		"親膚布料設計，在踩踏時提供更高的舒適延展度。",
-		"[DarZIJ]DarkKhaki(,S,L,M,XL,2XL);\n[BlaA5C]Black(,XS,3XL,2XL,L,XL,M,S);\n[DarOVG]DarkSlateGray(,XS,S,M,L,2XL,XL,3XL);\n[MidUKQ]MidnightBlue(,S,M,L,XL,2XL)",
+		"[DarZIJ]DarkKhaki(,L,M,XL,2XL);\n[BlaA5C]Black(,3XL,2XL,L,XL,M,S);\n[DarOVG]DarkSlateGray(,S,M,L,2XL,XL,3XL);\n[MidUKQ]MidnightBlue(,S,M,L,XL,2XL)",
 		"https://shopee.tw/product/2352815/29306723440/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -689,7 +689,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"高性價比的經典款",
 		"",
-		"[NavU6R]Navy(S,M,L,XL,2XL,3XL);\n[BlaC7V]Black(S,M,L,XL,2XL,3XL)",
+		"[NavU6R]Navy(S,M,L,XL,2XL,3XL);\n[BlaC7V]Black(XL,2XL)",
 		"https://shopee.tw/product/2352815/24609284504/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -941,7 +941,7 @@ const values$6 = [
 		"親膚布料設計，在踩踏時提供更高的舒適延展度。",
 		"背部採用排汗孔的柔軟面料製成，提供舒適的體感並能適度調節體溫。",
 		"肩帶採用新型扁平微纖維鬆緊帶，舒適加倍",
-		"[DarUK3]DarkKhaki(,XS,S,L,XL);\n[DarLNF]DarkSlateGray(,XS,S,M,L,XL);\n[Cri9QI]Crimson(,S,M);\n[BlaDON]Black(2XS,XS,S,M,L,XL)",
+		"[DarUK3]DarkKhaki(,XS,S,L,XL);\n[DarLNF]DarkSlateGray(,XS,S,M,L,XL);\n[Cri9QI]Crimson(,M);\n[BlaDON]Black(2XS,XS,S,M,L,XL)",
 		"https://shopee.tw/product/2352815/28868030526/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1057,7 +1057,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"高性價比的經典款",
 		"柔軟的減壓束腰",
-		"[BlaNR2]Black(XS,S,M,L)",
+		"[BlaNR2]Black(XS,2XS)",
 		"https://shopee.tw/product/2352815/24809353782/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1182,7 +1182,7 @@ const values$6 = [
 		"空氣力學設計",
 		"兼具效率與舒適",
 		"絕佳的貼合感",
-		"[WhiV3S]White(,L,S);\n[MidPK3]MidnightBlue();\n[BlaOAS]Black(S,XS)",
+		"[WhiV3S]White(,L);\n[MidPK3]MidnightBlue();\n[BlaOAS]Black(S,XS)",
 		"https://shopee.tw/product/2352815/18382210364/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1211,7 +1211,7 @@ const values$6 = [
 		"輕盈透氣",
 		"絕佳的包覆性",
 		"適合長距離騎乘",
-		"[NVY]Navy(S,M,L);\n[WH]White(S)",
+		"[NVY]Navy(S,M);\n[WH]White()",
 		"https://shopee.tw/product/2352815/22949219135/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1298,7 +1298,7 @@ const values$6 = [
 		"抑制細菌，減少異味產生",
 		"輕盈柔軟",
 		"極高的排汗效率",
-		"[Bla8M9]Black(,S);\n[Red93T]Red(,L,M);\n[Dar9RB]DarkSlateGray(,S);\n[RoyEMH]RoyalBlue(,S);\n[Fir1DV]FireBrick(,S,L);\n[WhiMDC]White(S);\n[NavXH8]Navy(S,M);\n[YelMOG]Yellow(S,M,L)",
+		"[Bla8M9]Black(,S);\n[Red93T]Red(,L,M);\n[Dar9RB]DarkSlateGray(,S);\n[RoyEMH]RoyalBlue(,S);\n[Fir1DV]FireBrick(,S);\n[WhiMDC]White();\n[NavXH8]Navy(S,M);\n[YelMOG]Yellow(S,M,L)",
 		"https://shopee.tw/product/2352815/24265889926/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1327,7 +1327,7 @@ const values$6 = [
 		"抑制細菌，減少異味產生",
 		"輕盈柔軟",
 		"極高的排汗效率",
-		"[Whi93C]White(,S,M,XS)",
+		"[Whi93C]White(,M,XS)",
 		"https://shopee.tw/product/2352815/24415893595/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1356,7 +1356,7 @@ const values$6 = [
 		"柔軟透氣",
 		"可愛的圓點圖案",
 		"",
-		"[RedA9Q]Red(,S,M,XS);\n[BlaJSQ]Black(,S,M,XS);\n[AntNB8]Gainsboro(,M,S,XS)",
+		"[RedA9Q]Red(,S);\n[BlaJSQ]Black();\n[AntNB8]Gainsboro(,M,XS)",
 		"https://shopee.tw/product/2352815/25115891412/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1385,7 +1385,7 @@ const values$6 = [
 		"抑制細菌，減少異味產生",
 		"輕盈柔軟",
 		"極高的排汗效率",
-		"[BlaQFE]Black(,XS,M,S);\n[DeeEWX]DeepPink(,XS,S,M);\n[TomKDG]Coral(,XS,S,M);\n[Med9EA]MediumVioletRed(,M,S,XS)",
+		"[BlaQFE]Black(,XS,M,S);\n[DeeEWX]DeepPink(,XS,S,M);\n[TomKDG]Coral(,XS,S,M);\n[Med9EA]MediumVioletRed(,M,XS)",
 		"https://shopee.tw/product/2352815/25615892626/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1443,7 +1443,7 @@ const values$6 = [
 		"極致輕量",
 		"完美的防曬效果",
 		"",
-		"[Bla6EE]Black(,XS,S,M,XL,L,2XL)",
+		"[Bla6EE]Black(,S,M,L)",
 		"https://shopee.tw/product/2352815/25865912419/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1568,7 +1568,7 @@ const values$6 = [
 		"輕量、高彈性",
 		"輕度防潑水",
 		"柔軟的束腰",
-		"[BLK]Black(M,L);\n[ORG]DarkOrange();\n[GRE]DarkOliveGreen(S,M,L,XL);\n[BLU]RoyalBlue(M,L,XL);\n[NVY]Navy();\n[GolSKP]Gold(S,M,L,XL,2XL)",
+		"[BLK]Black(M,L);\n[ORG]DarkOrange();\n[GRE]DarkOliveGreen(S,M,L);\n[BLU]RoyalBlue(L);\n[NVY]Navy(,M);\n[GolSKP]Gold(S,M,L,XL,2XL)",
 		"https://shopee.tw/product/2352815/21996259637/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1640,7 +1640,7 @@ const values$6 = [
 		"防風防潑水",
 		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
-		"[opt1]Black(S,M,L,XL,2XL,3XL)",
+		"[opt1]Black(S,M,L,XL,2XL,3XL,2XS,XS)",
 		"https://shopee.tw/product/2352815/20591559755/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1698,7 +1698,7 @@ const values$6 = [
 		"防風防潑水",
 		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
-		"[opt1]Black(S,M,L,XL,2XL)",
+		"[opt1]Black(S,M,L,XL,2XL,2XS,XS)",
 		"https://shopee.tw/product/2352815/15997915782/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1776,7 +1776,7 @@ const values$6 = [
 		"天然抗菌特性，騎乘後保持清爽。",
 		"出色的保暖透氣性和體溫調節能力",
 		"美麗諾薄刷毛，適合多變天氣",
-		"[DarBOW]DarkOliveGreen(XS,S,M,L,2XL,XL);\n[BluKED]Blue(2XL,XL,L,M,XS,S);\n[Bla7ZK]Black(XS,S,M,L,2XL,XL)",
+		"[DarBOW]DarkOliveGreen(XS,S,M,L,XL);\n[BluKED]Blue(2XL,XL,L,M,XS,S);\n[Bla7ZK]Black(XS,S,M,L,XL)",
 		"https://shopee.tw/product/2352815/27866913683/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1823,7 +1823,7 @@ const values$6 = [
 		"表層防潑水處理",
 		"溫暖的刷毛內層",
 		"Road performance space褲墊",
-		"[Bla0EO]Black(S,M,L,XL,2XL)",
+		"[Bla0EO]Black(M,L,2XL)",
 		"https://shopee.tw/product/2352815/25409770389/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1852,7 +1852,7 @@ const values$6 = [
 		"舒適版型",
 		"溫暖的刷毛內層",
 		"實用的側邊小口袋",
-		"[Bla0EO]Black(S,M,L,XL,2XL)",
+		"[Bla0EO]Black(S,M,L)",
 		"https://shopee.tw/product/2352815/24809775389/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1977,7 +1977,7 @@ const values$6 = [
 		"防風防潑水",
 		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
-		"[Bla0EO]Black(S,M,XS,2XS)",
+		"[Bla0EO]Black(S,XS,2XS)",
 		"https://tw.shp.ee/RojQy1U",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
@@ -2006,7 +2006,7 @@ const values$6 = [
 		"輕量防風",
 		"柔軟的高品質布料",
 		"便利的雙開拉鍊",
-		"[GraHNK]Gray(,XS,M,S,L);\n[Mid3EQ]MidnightBlue(2XS,XS,S,M,L);\n[Dee3XF]DeepPink(XS)",
+		"[GraHNK]Gray(,XS,M,S,L,2XS);\n[Mid3EQ]MidnightBlue(2XS,XS,S,M,L);\n[Dee3XF]DeepPink(XS)",
 		"https://tw.shp.ee/9ps5nu5",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
@@ -2035,7 +2035,7 @@ const values$6 = [
 		"天然抗菌特性，騎乘後保持清爽。",
 		"出色的保暖透氣性和體溫調節能力",
 		"美麗諾薄刷毛，適合多變天氣",
-		"[MedNY3]Blue(2XS,XS,S,M);\n[DarH5D]DarkOliveGreen(M,S,XS,2XS)",
+		"[MedNY3]Blue(2XS,XS,S,M);\n[DarH5D]DarkOliveGreen(S,XS,2XS)",
 		"https://shopee.tw/product/2352815/28266918330/",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
@@ -2093,7 +2093,7 @@ const values$6 = [
 		"防風防潑水",
 		"極輕量，透氣且具有彈性",
 		"能應對多種天氣變化",
-		"[BlaWQB]Black(,XS,S,M)",
+		"[BlaWQB]Black(,XS,S,2XS)",
 		"https://tw.shp.ee/9jzsnY8",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
@@ -2151,7 +2151,7 @@ const values$6 = [
 		"舒適的解剖結構",
 		" 溫暖的刷毛內層",
 		"反光設計，增加安全性",
-		"[Bla0EO]Black(S,M,XS)",
+		"[Bla0EO]Black(XS)",
 		"https://shopee.tw/product/2352815/24159775197/",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
@@ -2180,7 +2180,7 @@ const values$6 = [
 		"溫暖舒適",
 		"與膝套腿套搭配，應對多種天氣",
 		"實用的側邊小口袋",
-		"[Bla0EO]Black(S,M,XS)",
+		"[Bla0EO]Black(S,M,XS,2XS,L)",
 		"https://shopee.tw/product/2352815/24959770690/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -2482,7 +2482,7 @@ const values$5 = [
 		"優異的彈性隨著手部開合運動，呈現卓越人體工學貼合效果。",
 		"特殊合成絨面革掌面確保了卓越的耐磨性。",
 		"[SteG8X]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/oCCxgJ7",
+		"https://tw.shp.ee/t962GmA",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2511,7 +2511,7 @@ const values$5 = [
 		"造型袖口設計減少手腕不適：靠近掌部處較短，而手腕背面則較長。",
 		"特殊合成絨面革掌面確保了卓越的耐磨性。",
 		"[BlaKGM]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/oCCxgJ7",
+		"https://tw.shp.ee/t962GmA",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2540,7 +2540,7 @@ const values$5 = [
 		"特殊的結構實現了絕佳空氣力學性能",
 		"經驗豐富的專業團隊設計出的空氣力學長襪",
 		"[Ste8E6]SteelBlue(,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/9Sn5jTX",
+		"https://tw.shp.ee/DN3sBZ8",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2569,7 +2569,7 @@ const values$5 = [
 		"",
 		"",
 		"[GraODJ]Gray()",
-		"https://tw.shp.ee/poDvdm9",
+		"https://tw.shp.ee/Xc5k9us",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2598,7 +2598,7 @@ const values$5 = [
 		"有效阻隔陽光與汗水",
 		"",
 		"[NavGGY]SteelBlue()",
-		"https://tw.shp.ee/poDvdm9",
+		"https://tw.shp.ee/Xc5k9us",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2627,7 +2627,7 @@ const values$5 = [
 		"騎車.登山.日常皆可使用",
 		"",
 		"[MidYAW]SteelBlue()",
-		"https://tw.shp.ee/SoPW1en",
+		"https://tw.shp.ee/QEWpwKM",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2656,7 +2656,7 @@ const values$5 = [
 		"騎車.登山.日常皆可使用",
 		"",
 		"[SilV5J]Silver()",
-		"https://tw.shp.ee/SoPW1en",
+		"https://tw.shp.ee/QEWpwKM",
 		"teosport-size-guide.html"
 	]
 ];
@@ -2873,7 +2873,7 @@ const values$3 = [
 		"掌部矽膠防滑設計，可增強抓握力，確保在所有路況下的操控穩定性與保護性。",
 		"特殊袖口貼合設計，確保手套能夠穩固貼合手部。",
 		"[Bla79U]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/ZxAwgGN",
+		"https://tw.shp.ee/hg5zmMK",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2902,7 +2902,7 @@ const values$3 = [
 		"掌部矽膠防滑設計，可增強抓握力，確保在所有路況下的操控穩定性與保護性。",
 		"特殊袖口貼合設計，確保手套能夠穩固貼合手部。",
 		"[DimIFT]DimGray(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/ZxAwgGN",
+		"https://tw.shp.ee/hg5zmMK",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2931,7 +2931,7 @@ const values$3 = [
 		"採用特殊布料增強抗紫外線效果。",
 		"採用專為快速穿脫設計的彈力拉帶，拉帶位於手指關節區域。",
 		"[NavPJA]SteelBlue(,2XS,S,XS,M,L,XL,2XL)",
-		"https://tw.shp.ee/snGeAFZ",
+		"https://tw.shp.ee/yuWvtPg",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2960,7 +2960,7 @@ const values$3 = [
 		"採用特殊布料增強抗紫外線效果。",
 		"採用專為快速穿脫設計的彈力拉帶，拉帶位於手指關節區域。",
 		"[BlaVSK]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/snGeAFZ",
+		"https://tw.shp.ee/yuWvtPg",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2989,7 +2989,7 @@ const values$3 = [
 		"",
 		"",
 		"[Ste39P]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/zbNMMRf",
+		"https://tw.shp.ee/ZD2hXLV",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3018,7 +3018,7 @@ const values$3 = [
 		"長指設計提供額外保護，適合登山車（MTB）或高速競速。",
 		"手掌採用特殊合成麂皮材質，更耐磨損。",
 		"[Bla24P]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/PgqXAWR",
+		"https://tw.shp.ee/4Y5NruB",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3047,7 +3047,7 @@ const values$3 = [
 		"布料的優異彈性能夠緊密貼合各型鞋款。",
 		"特殊保護系統可防止拉鍊與皮膚摩擦造成不適。",
 		"[Bla8SS]Black()",
-		"https://tw.shp.ee/PGz5b29",
+		"https://tw.shp.ee/W48jNkE",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3076,7 +3076,7 @@ const values$3 = [
 		"保暖不悶熱",
 		"透氣排汗",
 		"[MidREF]SteelBlue()",
-		"https://tw.shp.ee/nPd1Mrf",
+		"https://tw.shp.ee/f8Wgi5C",
 		"teosport-size-guide.html"
 	]
 ];
