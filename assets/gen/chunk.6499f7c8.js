@@ -397,7 +397,7 @@ const values$6 = [
 		"快速排汗，保持乾爽",
 		"網眼結構，增強散熱",
 		"[Whi0Y0]White(XS,S,M,L,XL,2XL)",
-		"",
+		"https://tw.shp.ee/drP4Av8",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -1584,7 +1584,7 @@ const values$6 = [
 		"輕量防風",
 		"柔軟的高品質布料",
 		"便利的雙開拉鍊",
-		"[opt1]DimGray(XS,S,M,L,XL,2XL);\n[NavQT3]MidnightBlue(XS,S,L,M,XL,2XL,2XS)",
+		"[opt1]DimGray(XS,S,M,L,XL,2XL);\n[NavQT3]MidnightBlue(XS,S,L,M,XL,2XL)",
 		"https://shopee.tw/product/2352815/17098349948/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1705,7 +1705,7 @@ const values$6 = [
 		"雙向拉鍊，可調節體溫並方便取用後口袋",
 		"可摺疊收納於車衣口袋，方便攜帶",
 		"[San0FA]SandyBrown(,S,M,L,XL,2XL);\n[SteJRQ]LightSlateGray(,2XL,XL,L,S,M);\n[BlaVCN]Black(,2XL,XL,L,M,S)",
-		"",
+		"https://tw.shp.ee/ndiAnRm",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
@@ -1854,7 +1854,7 @@ const values$6 = [
 		"舒適的解剖結構",
 		"溫暖的刷毛內層",
 		"反光設計，增加安全性",
-		"[Bla0EO]Black(S)",
+		"[Bla0EO]Black()",
 		"",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1883,7 +1883,7 @@ const values$6 = [
 		"舒適版型",
 		"溫暖的刷毛內層",
 		"實用的側邊小口袋",
-		"[Bla0EO]Black(S,M,L,XL,2XL)",
+		"[Bla0EO]Black()",
 		"https://shopee.tw/product/2352815/24459770891/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -2185,7 +2185,7 @@ const values$6 = [
 		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
 		"[Bla0EO]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Accessories/Seamless arm warmers FRAME/BL44835_001.jpg",
 		"",
-		"這款無痕的保暖袖套能幫助您維持體溫。可與各種短袖車衣搭配，讓您適應訓練中的天氣變化。",
+		"這款無痕的保暖袖套能幫助您維持體溫。可與各種短袖車衣搭配，讓您適應訓練中的天氣變化。\n材質:54%Polypropllene.41%Polyamlde.5%Elastan",
 		"選手版",
 		"公路競賽",
 		"5ºC ～ 18ºC",
@@ -2198,7 +2198,7 @@ const values$6 = [
 		"刷毛保暖",
 		"能與各種短袖搭配",
 		"[Bla0EO]Black(S,M,XS)",
-		"",
+		"https://tw.shp.ee/cezCuwV",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
@@ -2214,7 +2214,7 @@ const values$6 = [
 		"https://storage.googleapis.com/mis-sport/logo/bl-logo.png",
 		"[Bla1IT]\nhttps://storage.googleapis.com/mis-sport/item/upload/BICYCLE-LINE/WINTER/Winter Accessories/Seamless leg warmers FRAME/cycling-seamless-leg-warmers-frame.jpg",
 		"",
-		"這款無痕的保暖腿套能幫助您維持體溫。可與各種短車褲搭配，讓您適應訓練中的天氣變化。",
+		"這款無痕的保暖腿套能幫助您維持體溫。可與各種短車褲搭配，讓您適應訓練中的天氣變化。\n材質:54%Polypropllene.41%Polyamlde.5%Elastan",
 		"選手版",
 		"公路競賽",
 		"5ºC ～ 18ºC",
@@ -2227,7 +2227,7 @@ const values$6 = [
 		"刷毛保暖",
 		"能與各種短褲搭配",
 		"[Bla1IT]Black()",
-		"",
+		"https://tw.shp.ee/cezCuwV",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	]
 ];
@@ -11568,7 +11568,7 @@ const values$1 = [
 		"不影響身體活動的多面結構",
 		"猶如車衣的高透氣",
 		"[GRY]SlateGray(s,m,l,xl);\n[BLK]Black(s,m,l,xl);",
-		"",
+		"https://tw.shp.ee/ni5q7JM",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
