@@ -5193,7 +5193,7 @@ const values$2 = [
 		"5900",
 		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
 		"[BLK]\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-004.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-005.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-006.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-007.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-009.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-010.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/summer/men/shorts/Men-cycling-bib-shorts-COMANDO-S2/cycling-bib-shorts-comando-s2-011.jpg;",
-		"4900",
+		"4500",
 		"採用高壓縮布料製成的高品質吊帶車褲，為肌肉帶來良好的支撐同時擁有超級舒適的觸感，如同極輕的第二層皮膚。柔軟的彈性吊帶，以及由領先市場的供應商Elastic Interface製作的頂級褲墊，不論是訓練還是比賽都能夠讓每公里維持舒適。接縫選用更柔軟的紗線，褲管邊採毛邊剪裁，精緻細節帶來優雅觸感。",
 		"選手版",
 		"公路競賽",
@@ -5207,7 +5207,7 @@ const values$2 = [
 		"最輕薄的布料與最少的剪裁，觸感如同第二層皮膚",
 		"在炙熱的夏天，給自己最好的",
 		"[BLK]Black(XL)",
-		"https://shopee.tw/product/2352815/23347610308/",
+		"https://tw.shp.ee/VC6N6BW",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -7942,7 +7942,7 @@ const values$2 = [
 		"",
 		"",
 		"[YelKS2]Yellow(M)",
-		"https://shopee.tw/product/2352815/1354321117/",
+		"https://tw.shp.ee/nPj9jU4",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
@@ -8086,8 +8086,8 @@ const values$2 = [
 		"專為騎車設計,防滑與高筒襪身,柔軟舒適,防臭抗菌.",
 		"",
 		"",
-		"[DeeYOQ]DeepPink(M,L);\n[Bla0S1]Black(L)",
-		"https://shopee.tw/product/2352815/16791434413/",
+		"[DeeYOQ]DeepPink(M,L);\n[Bla0S1]Black()",
+		"https://tw.shp.ee/ouTfb5v",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
