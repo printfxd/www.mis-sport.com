@@ -633,7 +633,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"高性價比的經典款",
 		"",
-		"[BLK]Black(S,M,L,XL,2XL,3XL);\n[NB]Navy(L)",
+		"[BLK]Black(S,M,L,XL,2XL,3XL,2XS,XS);\n[NB]Navy(L,XS,S,M,XL,2XL,3XL)",
 		"https://shopee.tw/product/2352815/18681947242/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -662,7 +662,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"高性價比的經典款",
 		"",
-		"[NavU6R]Navy(S,M,L,XL,2XL,3XL);\n[BlaC7V]Black(XL,2XL)",
+		"[NavU6R]Navy(L,XL,2XL);\n[BlaC7V]Black(XL,2XL,2XS,XS,S,M,L)",
 		"https://shopee.tw/product/2352815/24609284504/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -2360,7 +2360,7 @@ const values$5 = [
 		"專為礫石競賽設計",
 		"五個口袋",
 		"貼合度較高的壓縮板型",
-		"[Dar3WX]DarkOrange(,XS,M,S,L,XL,2XL);",
+		"[Dar3WX]DarkOrange(,XS,M,S,L,XL)",
 		"https://shopee.tw/product/2352815/28301283305/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -3988,7 +3988,7 @@ const values$2 = [
 		"平衡的性能與舒適度",
 		"貼身不束縛",
 		"",
-		"[undefined]DarkCyan(S,M,L,XS,XL,2XL,3XL,4XL,5XL)",
+		"[undefined]DarkCyan(S,M,L,XS,XL,2XL,3XL)",
 		"https://shopee.tw/product/2352815/28551287590/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -6521,7 +6521,7 @@ const values$2 = [
 		"",
 		"",
 		"[Dar6QU]MediumPurple(,L);\n[FucUXK]HotPink(,2XS,XS,S)",
-		"https://shopee.tw/product/2352815/1414702639/",
+		"https://tw.shp.ee/kZzxMwA",
 		"ale-women-racefit-size-guide.html"
 	],
 	[
@@ -6868,7 +6868,7 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"[Dim7HF]DimGray(XS,S,M);\n[DeeUIL]DeepPink(XS,S);\n[DarB4Z]DeepSkyBlue(XS);\n[WhiMSK]White(XS)",
+		"[Dim7HF]DimGray(XS,S,M);\n[DeeUIL]DeepPink(XS,S);\n[DarB4Z]DeepSkyBlue(XS);\n[WhiMSK]White()",
 		"https://shopee.tw/product/2352815/4154972968/",
 		"ale-women-racefit-size-guide.html"
 	],
@@ -7599,8 +7599,8 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"[YelLRU]Yellow(,S);\n[HotZIV]HotPink(,2XS,XS)",
-		"",
+		"[YelLRU]Yellow(,XS);\n[HotZIV]HotPink(,XS)",
+		"https://tw.shp.ee/kZzxMwA",
 		"ale-women-racefit-size-guide.html"
 	],
 	[
@@ -7847,7 +7847,7 @@ const values$2 = [
 		"2100",
 		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
 		"[HotUK0]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-5.jpg;\n[HotUK0]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-6.jpg;\n[HotUK0]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-7.jpg;\n[HotUK0]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-8.jpg;\n[YelHYJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-1.jpg;\n[YelHYJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-2.jpg;\n[YelHYJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-3.jpg;\n[YelHYJ]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Summer Women Sale/Outlet Shorts Women 012/Outlet Shorts Women 012-4.jpg",
-		"1500",
+		"1200",
 		"兼顧舒適以及性能的優秀設計，能有效支撐並保護大腿肌肉，多面剪裁讓腿部活動更加靈活，擁有搶眼色彩的ALE經典設計風格。",
 		"選手版",
 		"公路競賽",
@@ -7860,8 +7860,8 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"[YelHYJ]Yellow(,S);\n[HotUK0]HotPink(,XS,S)",
-		"https://shopee.tw/product/2352815/1414702639/",
+		"[YelHYJ]Yellow();\n[HotUK0]HotPink(,XS,S)",
+		"https://tw.shp.ee/kZzxMwA",
 		"ale-women-racefit-size-guide.html"
 	],
 	[
