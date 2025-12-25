@@ -185,7 +185,7 @@ const values$6 = [
 		" 人體工學立領，舒適不束縛",
 		"輕量透氣微網布料，散熱舒適、排汗快乾",
 		"延長袖型，提升空氣動力學表現",
-		"[Spr3O7]SpringGreen(M,L,XL);\n[CriDPR]Crimson();\n[BluQM3]MediumBlue(S)",
+		"[Spr3O7]SpringGreen();\n[CriDPR]Crimson();\n[BluQM3]MediumBlue()",
 		"https://tw.shp.ee/73M5ewX",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -576,7 +576,7 @@ const values$6 = [
 		"平縫車工，降低摩擦、提升耐用性",
 		"抗菌防滑矽膠與原邊褲腳，舒適貼合不滑動",
 		"[BlaO9D]Black(,S,M,L,XL,2XL,3XL,4XL)",
-		"https://tw.shp.ee/bRaxEJC",
+		"https://tw.shp.ee/fq8oVZ3",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -662,7 +662,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"高性價比的經典款",
 		"",
-		"[NavU6R]Navy(L,XL,2XL);\n[BlaC7V]Black(XL,2XL,2XS,XS,S,M,L)",
+		"[NavU6R]Navy(L,2XL);\n[BlaC7V]Black(XL,2XL,2XS,XS,S,M,L)",
 		"https://shopee.tw/product/2352815/24609284504/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -816,8 +816,8 @@ const values$6 = [
 		"快速吸濕排汗",
 		"如同第二層皮膚貼合",
 		"",
-		"[Whi4Q4]White(,M,S)",
-		"",
+		"[Whi4Q4]White(,M,S,XS,L,XL)",
+		"https://tw.shp.ee/MH2oxBy",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -885,7 +885,7 @@ const values$6 = [
 		"極致的競技版型",
 		"高性能的輕量布料",
 		"提升長時間騎乘的舒適度",
-		"[BlaB9Y]Black(2XS,XS,M,S,L,XL);\n[Whi460]White();\n[Dim6LA]DimGray(XL,L,M,S,XS,2XS)",
+		"[BlaB9Y]Black(2XS,XS);\n[Whi460]White();\n[Dim6LA]DimGray(XL,L,M,S,XS,2XS)",
 		"https://tw.shp.ee/E1P5ypc",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -914,7 +914,7 @@ const values$6 = [
 		"親膚布料設計，在踩踏時提供更高的舒適延展度。",
 		"背部採用排汗孔的柔軟面料製成，提供舒適的體感並能適度調節體溫。",
 		"肩帶採用新型扁平微纖維鬆緊帶，舒適加倍",
-		"[DarUK3]DarkKhaki(,XS,S,L,XL);\n[DarLNF]DarkSlateGray(,XS,S,M,L,XL);\n[Cri9QI]Crimson(,M);\n[BlaDON]Black(2XS,XS,S,M,L,XL)",
+		"[DarUK3]DarkKhaki(,XS,S,L,XL);\n[DarLNF]DarkSlateGray(,XS,S,M,L,XL);\n[Cri9QI]Crimson(,M);\n[BlaDON]Black(2XS,XS,S,M,XL)",
 		"https://shopee.tw/product/2352815/28868030526/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1117,7 +1117,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"高性價比的經典款",
 		"柔軟的減壓束腰",
-		"[BlaN65]Black(XS,S,L,XL)",
+		"[BlaN65]Black(XS,S,L,M)",
 		"https://shopee.tw/product/2352815/24859356475/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1242,7 +1242,7 @@ const values$6 = [
 		"輕盈透氣",
 		"柔軟的觸感",
 		"可愛的不對稱圖案",
-		"[BlaMDG]Black(,S,M,L);\n[WhiO2S]White(,S,M,L)",
+		"[BlaMDG]Black(,S,M,L);\n[WhiO2S]White(,M,L)",
 		"https://shopee.tw/product/2352815/24315887083/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1271,7 +1271,7 @@ const values$6 = [
 		"抑制細菌，減少異味產生",
 		"輕盈柔軟",
 		"極高的排汗效率",
-		"[Bla8M9]Black(,S);\n[Red93T]Red(,L,M);\n[Dar9RB]DarkSlateGray(,S);\n[RoyEMH]RoyalBlue(,S);\n[Fir1DV]FireBrick(,S);\n[WhiMDC]White();\n[NavXH8]Navy(S,M);\n[YelMOG]Yellow(S,M,L)",
+		"[Bla8M9]Black(,S);\n[Red93T]Red(,M);\n[Dar9RB]DarkSlateGray(,S);\n[RoyEMH]RoyalBlue(,S);\n[Fir1DV]FireBrick(,S);\n[WhiMDC]White();\n[NavXH8]Navy(S,M);\n[YelMOG]Yellow(S,M,L)",
 		"https://shopee.tw/product/2352815/24265889926/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -1329,7 +1329,7 @@ const values$6 = [
 		"柔軟透氣",
 		"可愛的圓點圖案",
 		"",
-		"[RedA9Q]Red(,S);\n[BlaJSQ]Black();\n[AntNB8]Gainsboro(,M,XS)",
+		"[RedA9Q]Red(,S);\n[BlaJSQ]Black();\n[AntNB8]Gainsboro(,M)",
 		"https://shopee.tw/product/2352815/25115891412/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1358,7 +1358,7 @@ const values$6 = [
 		"抑制細菌，減少異味產生",
 		"輕盈柔軟",
 		"極高的排汗效率",
-		"[BlaQFE]Black(,XS,M,S);\n[DeeEWX]DeepPink(,XS,S,M);\n[TomKDG]Coral(,XS,S,M);\n[Med9EA]MediumVioletRed(,M,XS)",
+		"[BlaQFE]Black(,XS,M,S);\n[DeeEWX]DeepPink(,XS,S,M);\n[TomKDG]Coral(,XS,S);\n[Med9EA]MediumVioletRed(,M,XS)",
 		"https://shopee.tw/product/2352815/25615892626/",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
@@ -1733,7 +1733,7 @@ const values$6 = [
 		"Zerowind 防風防水布料｜防水係數高達 10,000 mm、透氣不悶熱",
 		"超輕量設計，僅 53g/m²｜柔軟貼合不束縛，可直接收進車衣口袋，輕裝出發無負擔",
 		"雙向 Vislon 拉鍊，可自由調節通風，騎乘取物更方便",
-		"[BlaE1X]Black(S,M,L,XL,2XL,3XL)",
+		"[BlaE1X]Black(S,M,L,2XL,3XL)",
 		"https://tw.shp.ee/eSzKPcE",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -1807,7 +1807,7 @@ const values$6 = [
 		"天然抗菌特性，騎乘後保持清爽。",
 		"出色的保暖透氣性和體溫調節能力",
 		"美麗諾薄刷毛，適合多變天氣",
-		"[DarBOW]DarkOliveGreen(XS,S,M,L,XL);\n[BluKED]Blue(2XL,XL,L,M,XS,S);\n[Bla7ZK]Black(XS,S,M,L,XL)",
+		"[DarBOW]DarkOliveGreen(XS,S,M,L,XL);\n[BluKED]Blue(2XL,XL,L,M,XS,S);\n[Bla7ZK]Black(S,M,L,XL)",
 		"https://shopee.tw/product/2352815/27866913683/",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
@@ -2009,7 +2009,7 @@ const values$6 = [
 		"極輕量,透氣且具有彈性",
 		"能應對多種天氣變化",
 		"[Bla0EO]Black(S,XS,2XS)",
-		"https://tw.shp.ee/RojQy1U",
+		"https://tw.shp.ee/Qc36so6",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
 	[
@@ -2125,7 +2125,7 @@ const values$6 = [
 		"極輕量，透氣且具有彈性",
 		"能應對多種天氣變化",
 		"[BlaWQB]Black(,XS,S,2XS)",
-		"https://tw.shp.ee/9jzsnY8",
+		"https://tw.shp.ee/6hQ4K7U",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
 	[
@@ -2389,7 +2389,7 @@ const values$5 = [
 		"專為礫石競賽設計",
 		"五個口袋",
 		"貼合度較高的壓縮板型",
-		"[Roy7WT]DodgerBlue(S,M,L,XL,2XL)",
+		"[Roy7WT]DodgerBlue(S,L,XL,2XL)",
 		"https://shopee.tw/product/2352815/27351871442/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -2418,7 +2418,7 @@ const values$5 = [
 		"與職業選手共同研發",
 		"極致的競技版型",
 		"高性能的輕量布料",
-		"[RoyTC8]RoyalBlue(XS,2XS,M,L,XL,2XL,3XL,4XL,5XL)",
+		"[RoyTC8]RoyalBlue(XS,2XS,M,L,XL,2XL,3XL,4XL)",
 		"https://shopee.tw/product/2352815/28751871478/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -3582,7 +3582,7 @@ const values$2 = [
 		"極為柔軟的高彈性布料",
 		"較長的袖子與較短的衣長",
 		"完全貼合的修身版",
-		"[ORG]Orange(L);\n[NB]Navy(S,M,L,XL,2XL,3XL);\n[PurAXN]Purple(,S,M,XL,2XL);\n[DarTIY]DarkGreen(,XS,S,M,L,XL,2XL);\n[ThiNPO]Thistle(,L,XL,M,2XL,3XL)",
+		"[ORG]Orange();\n[NB]Navy(S,M,XL,2XL,3XL);\n[PurAXN]Purple(,S,M,XL,2XL);\n[DarTIY]DarkGreen(,XS,S,M,L,XL,2XL);\n[ThiNPO]Thistle(,L,XL,M,2XL,3XL)",
 		"https://shopee.tw/product/2352815/29357306537/",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
@@ -4076,7 +4076,7 @@ const values$2 = [
 		"舒適寬鬆版型",
 		"休閒、運動兼顧的設計",
 		"[WH]White(S,M)",
-		"https://tw.shp.ee/bdRqWUy",
+		"https://tw.shp.ee/v7PLUvb",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
@@ -4105,7 +4105,7 @@ const values$2 = [
 		"涼爽抗菌的布料",
 		"能夠與輕度護具搭配",
 		"[WH]White(M);\n[RED]Crimson(M);\n[GRE]DarkSeaGreen(M);\n[BLU]SteelBlue(M)",
-		"https://tw.shp.ee/RutTEqX",
+		"https://tw.shp.ee/46B5cgy",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
@@ -4134,7 +4134,7 @@ const values$2 = [
 		"高透氣的耐磨布料",
 		"全開式拉鍊",
 		"[Dar7SG]DimGray(,M);\n[TeaJZH]SteelBlue();\n[DarCLF]DarkGreen(,L)",
-		"https://tw.shp.ee/PoK7yaq",
+		"https://tw.shp.ee/Qjnd5fr",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
@@ -4163,7 +4163,7 @@ const values$2 = [
 		"版型舒適寬鬆",
 		"休閒、運動兼顧的設計",
 		"[BRW]SaddleBrown();\n[GRY]Gray(M)",
-		"https://tw.shp.ee/cHJKtvS",
+		"https://tw.shp.ee/xUi7wU3",
 		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
@@ -5767,7 +5767,7 @@ const values$2 = [
 		"較長的袖子與較短的衣長",
 		"完全貼合的修身版",
 		"[DarPIP]DarkGreen(,XS,S,M);\n[ThiQJZ]Thistle(,XS,S,M);\n[MedDIR]MediumVioletRed()",
-		"https://tw.shp.ee/Fy3HMJt",
+		"https://tw.shp.ee/eVJW4tX",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -5883,7 +5883,7 @@ const values$2 = [
 		"特殊的口袋結構，可收納更多物品",
 		"",
 		"[Mar13P]Maroon();\n[Dar69K]DarkCyan(,XS);\n[MedQTD]DarkBlue();\n[PluBMI]Plum(,XS)",
-		"https://tw.shp.ee/QUKp4vu",
+		"https://tw.shp.ee/1fwP7CR",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -5970,7 +5970,7 @@ const values$2 = [
 		"包覆感優秀",
 		"",
 		"[CriGF2]Crimson(,S);\n[DarM2V]DarkSeaGreen(,XS);\n[MidDYJ]MidnightBlue(,XS)",
-		"https://tw.shp.ee/8MkcaSR",
+		"https://tw.shp.ee/VatUnU4",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -5999,7 +5999,7 @@ const values$2 = [
 		"袖子包覆感極佳",
 		"適合夏季的鮮豔印花",
 		"[Mid73V]MidnightBlue(,XS);\n[Sea8QK]DarkSeaGreen(,S);\n[CriL9E]Crimson(,M)",
-		"https://tw.shp.ee/x78XHFr",
+		"https://tw.shp.ee/G7zV33P",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -6028,7 +6028,7 @@ const values$2 = [
 		"兼顧透氣與防曬",
 		"",
 		"[MidPPC]MidnightBlue(,S,M);\n[Sea4P7]SeaGreen(,2XS,XS,S,M,L,XL);\n[Cri0BG]Crimson(,XS,S,M);\n[BlaGBC]Black(,2XS,S,M,L,XL,XS)",
-		"https://tw.shp.ee/VbMikcL",
+		"https://tw.shp.ee/Pevuqwh",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -6057,7 +6057,7 @@ const values$2 = [
 		"後側實用拉鍊口袋，收納便利",
 		"反光細節設計，提升夜間能見度與安全性",
 		"[DarTUL]DarkOliveGreen(S)",
-		"https://tw.shp.ee/YHooUWB",
+		"https://tw.shp.ee/AaHWK2k",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
 	[
@@ -6086,7 +6086,7 @@ const values$2 = [
 		"胸前反光 LOGO，提升夜間能見度與安全性",
 		"全新平滑內領吸汗帶，穿著更舒適",
 		"[Bla8Y9]Black(,XS);\n[Med5TK]MediumVioletRed(,S)",
-		"https://tw.shp.ee/ef4zdA6",
+		"https://tw.shp.ee/LkggMPo",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
 	[
@@ -8418,35 +8418,6 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"特價防潑水外套 006",
-		"Outlet Long Sleeve Jacket Men 006",
-		"",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_16.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_18.jpg",
-		"6000",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[MedTQV]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_12.jpg;\n[MedTQV]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_14.jpg;\n[Bla0H9]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_16.jpg;\n[Bla0H9]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_18.jpg;\n[Bla0H9]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_19.jpg;\n[Bla0H9]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jacket Men 006/LINE_ALBUM_男 外套_240201_20.jpg",
-		"2900",
-		"優秀的保暖與快速排汗，使身體能夠維持在最舒適的狀態。外層的防風防潑水在惡劣的天氣為騎士提供保護，與合適的內衣搭配可達到最佳效果，讓您忘記寒冷專注享受騎乘。",
-		"選手版",
-		"公路競賽",
-		"",
-		"3",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[MedTQV]DodgerBlue();\n[Bla0H9]Black(M)",
-		"https://shopee.tw/product/2352815/25911849122/",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
 		"特價防潑水外套 001",
 		"Outlet Long Sleeve Jacket Men 001",
 		"冬季零碼出清",
@@ -8471,35 +8442,6 @@ const values$2 = [
 		"[BlaE0G]Black(M);\n[RedTBY]Red(M)",
 		"https://shopee.tw/product/2352815/24361415326/",
 		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
-		"STELVIO 防風外套",
-		"Men's windproof cycling jacket STELVIO",
-		"極輕量外套，非常容易收納，適合隨身攜帶的優秀小物",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-005.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-006.jpg;",
-		"2200",
-		"https://storage.googleapis.com/mis-sport/logo/bicycle-line-logo.png",
-		"[opt1]\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-004.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-005.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-006.jpg;\n[opt2]\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-yellow-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-yellow-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-yellow-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-yellow-004.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-yellow-005.jpg;\nhttps://storage.googleapis.com/mis-sport/item/bl/winter/men/jackets/Men-windproof-cycling-jacket-STELVIO/men-windproof-cycling-jacket-stelvio-yellow-006.jpg;",
-		"1900",
-		"採用高辨識色的極輕量外套，非常容易收納，具有完美的防風性能，適合隨身攜帶的優秀小物。",
-		"歐版",
-		"公路競賽",
-		"6ºC ～ 18ºC",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"完美的防風性能",
-		"極輕量，適合隨身攜帶",
-		"",
-		"[opt1]White(S);\n[opt2]Yellow()",
-		"https://shopee.tw/product/2352815/23850420009/",
-		"bicycle-line-men-europeanfit-size-guide.html"
 	],
 	[
 		"",
@@ -8615,35 +8557,6 @@ const values$2 = [
 		"",
 		"[BlaCP9]Black(L)",
 		"https://shopee.tw/product/2352815/24211146699/",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
-		"R-EV1 特價薄刷毛車衣 001",
-		"Outlet Long Sleeve Jersey Men 003",
-		"",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Men 003/LINE_ALBUM_52001900_240208_01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Men 003/LINE_ALBUM_52001900_240208_03.jpg",
-		"5200",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[FirZYA]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Men 003/LINE_ALBUM_52001900_240208_01.jpg;\n[FirZYA]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Men 003/LINE_ALBUM_52001900_240208_02.jpg;\n[FirZYA]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Men 003/LINE_ALBUM_52001900_240208_03.jpg",
-		"1900",
-		"對於需要秋冬或初春戶外騎乘的人，擁有保暖與快速排汗的車衣是外出的必備品。出色的貼合度搭配柔軟舒適的材質，時尚的色彩和完美的 Ale® 風格。",
-		"選手版",
-		"公路競賽",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[FirZYA]Crimson(M)",
-		"https://shopee.tw/product/2352815/10980951218/",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
@@ -8976,35 +8889,6 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"特價防潑水外套(女) 005",
-		"Outlet Long Sleeve Jacket Women 005",
-		"冬季零碼出清",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Women Sale/Outlet Long Sleeve Jacket Women 005/LINE_ALBUM_女外套2500_240127_07.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Women Sale/Outlet Long Sleeve Jacket Women 005/LINE_ALBUM_女外套2500_240127_08.jpg",
-		"5000",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[HotP8O]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Women Sale/Outlet Long Sleeve Jacket Women 005/LINE_ALBUM_女外套2500_240127_07.jpg;\n[HotP8O]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Women Sale/Outlet Long Sleeve Jacket Women 005/LINE_ALBUM_女外套2500_240127_08.jpg",
-		"2500",
-		"優秀的保暖與快速排汗，使身體能夠維持在最舒適的狀態。外層的防風防潑水在惡劣的天氣為騎士提供保護，與合適的內衣搭配可達到最佳效果，讓您忘記寒冷專注享受騎乘。",
-		"選手版",
-		"公路競賽",
-		"",
-		"3",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[HotP8O]Fuchsia()",
-		"https://shopee.tw/product/2352815/18687349529/",
-		"ale-women-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
 		"特價防潑水外套(女) 006",
 		"Outlet Long Sleeve Jacket Women 006",
 		"冬季零碼出清",
@@ -9143,7 +9027,7 @@ const values$2 = [
 		"極輕量，適合隨身攜帶",
 		"",
 		"[YelR4G]Yellow(XS);\n[WhiX0U]White(XS,S)",
-		"https://tw.shp.ee/bxc27TL",
+		"https://tw.shp.ee/cZCoyW5",
 		"bicycle-line-women-europeanfit-size-guide.html"
 	],
 	[
@@ -10940,35 +10824,6 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"DSM-FIRMENICH-POSTNL  職業隊上衣(選手版)24\"",
-		"DSM-FIRMENICH-POSTNL - Racing Short Sleeve Jersey 24\"",
-		"DSM-荷蘭皇家郵政車隊",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/DSM-FIRMENICH-POSTNL-RACING-JERSEY-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/DSM-FIRMENICH-POSTNL-RACING-JERSEY-002.jpg;\n",
-		"4850",
-		"https://storage.googleapis.com/mis-sport/logo/nalini-logo.png",
-		"https://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/DSM-FIRMENICH-POSTNL-RACING-JERSEY-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/DSM-FIRMENICH-POSTNL-RACING-JERSEY-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/dsm-men-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/dsm-men-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/dsm-men-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/proteams/DSM-FIRMENICH-POSTNL-2024/dsm-men-004.jpg;",
-		"3000",
-		"<b>NALINI - MOA 實驗室的最高傑作</b>\n\n隨著 DSM 車隊與 NALINI 這個擁有悠久傳統的品牌成為策略夥伴，堅定以不妥協的方向為車隊的冬季、夏季和空力競賽中研發出最快、性能最好的服裝。\n\n2024年，NALINI 的 MOA 實驗室發表了與防護材質融合，同時又不影響活動彈性和空氣動力學的新式布料，成為 Team DSM-Firmenich PostNL 的新款制服，這種高性能競賽車服將為選手帶來更大的助力。",
-		"選手版",
-		"公路競賽",
-		"18ºC ～ 35ºC",
-		"0",
-		"50+UPF",
-		"",
-		"",
-		"",
-		"輕盈、透氣的高性能布料",
-		"紋狀織物的袖子提供了空氣動力學優勢",
-		"在訓練和比賽期間享受與 DSM 相同的性能優勢。",
-		"[WhiXX1]White(M,L);\n[DodUDK]LightSkyBlue(M,L);\n[Dar6OR]DarkOrange(M,L)",
-		"https://shopee.tw/product/2352815/22490164998/",
-		"nalini-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
 		"DSM-FIRMENICH-POSTNL  職業隊車褲 24\"",
 		"DSM-FIRMENICH-POSTNL - Training Cycling Bib Shorts 24\"",
 		"DSM-荷蘭皇家郵政車隊",
@@ -11324,35 +11179,6 @@ const values$2 = [
 		"",
 		"",
 		"",
-		"職業隊 特價薄刷毛車衣 001",
-		"Outlet Long Sleeve Jersey Pro 001",
-		"",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 001/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_01.jpg;\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 001/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_03.jpg",
-		"4500",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[RedP6F]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 001/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_01.jpg;\n[RedP6F]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 001/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_02.jpg;\n[RedP6F]\nhttps://storage.googleapis.com/mis-sport/item/upload/SALE/SALE/Winter Men Sale/Outlet Long Sleeve Jersey Pro 001/LINE_ALBUM_職業隊薄刷毛車衣 45001600_240203_03.jpg",
-		"1600",
-		"對於需要秋冬或初春戶外騎乘的人，擁有保暖與快速排汗的車衣是外出的必備品。出色的貼合度搭配柔軟舒適的材質，時尚的色彩和完美的 Ale® 風格。",
-		"歐版",
-		"公路競賽",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"",
-		"[RedP6F]Red(S)",
-		"https://shopee.tw/product/2352815/13814777512/",
-		"ale-men-racefit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
 		"職業隊 特價薄刷毛車衣 002",
 		"Outlet Long Sleeve Jersey Pro 002",
 		"",
@@ -11375,7 +11201,7 @@ const values$2 = [
 		"",
 		"",
 		"[RedXBM]Red(S)",
-		"https://shopee.tw/product/2352815/11451720092/",
+		"https://tw.shp.ee/CmZ7S23",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
@@ -11568,7 +11394,7 @@ const values$1 = [
 		"背部設有網布內裡的收納口袋，可有效排出積水，維持乾爽。",
 		"貼合身形但不緊繃，兼具活動自由度與運動表現。",
 		"[DimFL0]DimGray(L)",
-		"https://tw.shp.ee/TV41mQ8",
+		"https://tw.shp.ee/VZUVqYo",
 		"ale-men-europeanfit-size-guide.html"
 	],
 	[
@@ -11654,7 +11480,7 @@ const values$1 = [
 		"DWR防潑水布料",
 		"FON-DRY三層結構，保暖透氣",
 		"視溫度搭配底衫，輕鬆應對天氣變化",
-		"[CBL]CadetBlue(s,m,l)",
+		"[CBL]CadetBlue(S,M)",
 		"https://shopee.tw/product/2352815/15436073276/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -11772,35 +11598,6 @@ const values$1 = [
 		"",
 		"[BLK]Black(XL,2XL)",
 		"https://shopee.tw/product/2352815/14940734054/",
-		"ale-men-europeanfit-size-guide.html"
-	],
-	[
-		"",
-		"",
-		"",
-		"SOLID SHARP 防潑水保暖外套",
-		"SOLID SHARP Jacket",
-		"保暖與時尚合而為一",
-		"",
-		"https://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-002.jpg;",
-		"3900",
-		"https://storage.googleapis.com/mis-sport/logo/ale-logo.png",
-		"[SB]\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-001.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-002.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-003.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-004.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-009.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-010.jpg;\n[BLK]\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-005.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-006.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-007.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-008.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-009.jpg;\nhttps://storage.googleapis.com/mis-sport/item/ale/winter/men/jackets/SOLID-SHARP-Jacket-man/SOLID-SHARP-Jacket-man-010.jpg;",
-		"",
-		"將保護性與時尚合而為一!如同車衣般合身但擁有與防風夾克相同的功能。版型遵循我們的Body Mapping系統，策略性地選擇布料並放置到合適的位置，使這件外套在最激烈的運動期間也能確保透氣性與保護性。三層的W-Wind 3L Soft 280布料搭配Windtex保護層，可防風以及輕度防潑水，柔軟的內部絨毛可有效吸濕排汗，讓身體不再因寒冷而發抖。",
-		"歐版",
-		"公路競賽",
-		"2ºC ～ 8ºC",
-		"2",
-		"",
-		"345g (M號)",
-		"",
-		"",
-		"防風、輕度防潑水的Windtex外層",
-		"像車衣一樣合身",
-		"吸濕排汗的三層保暖結構",
-		"[SB]SteelBlue();\n[BLK]Black(M)",
-		"https://tw.shp.ee/26qc9f1",
 		"ale-men-europeanfit-size-guide.html"
 	],
 	[
@@ -13157,7 +12954,7 @@ const values = [
 		"",
 		"",
 		"",
-		"[BluIAU]Blue(M)",
+		"[BluIAU]Blue()",
 		"https://tw.shp.ee/eMN2Cxo",
 		"met-road-helmet-size-guide.html"
 	],
