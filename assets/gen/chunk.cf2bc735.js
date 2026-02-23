@@ -1151,7 +1151,7 @@ const values$6 = [
 		"光滑舒適的布料",
 		"柔軟的減壓束腰",
 		"[BlaNB2]Black(2XS,XS,S,M,L)",
-		"",
+		"https://tw.shp.ee/TueQmTg",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
