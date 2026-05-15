@@ -246,7 +246,7 @@ const values$6 = [
 		"貼身不束縛",
 		"",
 		"[Lig9R2]LightGray(,S,M,L,XL,2XL);\n[StePMD]DarkBlue(,2XS,XS,S,M,L,XL,2XL,3XL)",
-		"https://tw.shp.ee/kcHxoyg",
+		"https://tw.shp.ee/cj9VdksP",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -304,7 +304,7 @@ const values$6 = [
 		"貼身不束縛",
 		"",
 		"[SteM12]DarkBlue(S,M,L,XL,2XL,XS,2XS)",
-		"https://tw.shp.ee/R8JeyFN",
+		"https://tw.shp.ee/pr3Z3kKq",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -397,7 +397,7 @@ const values$6 = [
 		"快速排汗，保持乾爽",
 		"網眼結構，增強散熱",
 		"[Whi0Y0]White(XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/drP4Av8",
+		"https://tw.shp.ee/iB5tad4J",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -547,7 +547,7 @@ const values$6 = [
 		"採用耐磨且抗起毛球高彈性面料",
 		"凝膠褲墊減壓抗疲勞",
 		"[BlaJMA]Black(XS,S,M,L,XL,2XL,3XL,4XL)",
-		"https://tw.shp.ee/htC5BEj",
+		"https://tw.shp.ee/CiRxCjYT",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -730,7 +730,7 @@ const values$6 = [
 		"貼身不束縛",
 		"",
 		"[LigL4B]LightSeaGreen(,XS,S,M,L,2XS,XL);\n[SteI3E]DarkBlue(,2XS,XS,S,M,L,XL);\n[LigOPQ]LightGray(,XS,S,M,L)",
-		"https://tw.shp.ee/4tnMMzh",
+		"https://tw.shp.ee/bJRNwJKd",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -788,7 +788,7 @@ const values$6 = [
 		"貼身不束縛",
 		"",
 		"[LigL03]LightGray(M,L,XL)",
-		"https://tw.shp.ee/3AT6FK4",
+		"https://tw.shp.ee/ECAKPJKc",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -886,7 +886,7 @@ const values$6 = [
 		"高性能的輕量布料",
 		"提升長時間騎乘的舒適度",
 		"[BlaB9Y]Black(2XS,XS);\n[Whi460]White();\n[Dim6LA]DimGray(XL,L,M,S,XS,2XS)",
-		"https://tw.shp.ee/E1P5ypc",
+		"https://tw.shp.ee/Qi9vMitr",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -973,7 +973,7 @@ const values$6 = [
 		"採用耐磨且抗起毛球高彈性面料",
 		"凝膠褲墊減壓抗疲勞",
 		"[Bla5N1]Black(,2XS,XS,S,M,L,XL)",
-		"https://tw.shp.ee/bJLDJFB",
+		"https://tw.shp.ee/GRMZr7p9",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -1060,7 +1060,7 @@ const values$6 = [
 		"雙密度＋ROOTED GEL 雙重結構，針對坐骨區域加強支撐",
 		"採用耐磨且抗起毛球高彈性面料",
 		"[Bla674]Black(S,M,L,XS)",
-		"https://tw.shp.ee/tJwNQrW",
+		"https://tw.shp.ee/owR2jck1",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -2477,7 +2477,7 @@ const values$5 = [
 		"高性能的輕量布料",
 		"提升長時間騎乘的舒適度",
 		"[BlaPD2]Black(2XS,XS,S,M,L,XL,2XL,3XL,4XL,5XL)",
-		"https://tw.shp.ee/cQ7Th4r",
+		"https://tw.shp.ee/dfq9pakN",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -2506,7 +2506,7 @@ const values$5 = [
 		"高性能的輕量布料",
 		"提升長時間騎乘的舒適度",
 		"[BlaFUQ]Black(2XS,XS,S,M,L,XL)",
-		"https://tw.shp.ee/E1P5ypc",
+		"https://tw.shp.ee/nNpJPjkL",
 		"bicycle-line-women-racefit-size-guide.html"
 	],
 	[
@@ -2542,7 +2542,7 @@ const values$5 = [
 		"優異的彈性隨著手部開合運動，呈現卓越人體工學貼合效果。",
 		"特殊合成絨面革掌面確保了卓越的耐磨性。",
 		"[SteG8X]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/t962GmA",
+		"https://tw.shp.ee/85kP6Hsh",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2571,7 +2571,7 @@ const values$5 = [
 		"造型袖口設計減少手腕不適：靠近掌部處較短，而手腕背面則較長。",
 		"特殊合成絨面革掌面確保了卓越的耐磨性。",
 		"[BlaKGM]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/t962GmA",
+		"https://tw.shp.ee/85kP6Hsh",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2600,7 +2600,7 @@ const values$5 = [
 		"特殊的結構實現了絕佳空氣力學性能",
 		"經驗豐富的專業團隊設計出的空氣力學長襪",
 		"[Ste8E6]SteelBlue(,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/DN3sBZ8",
+		"https://tw.shp.ee/TP8AgQgB",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2629,7 +2629,7 @@ const values$5 = [
 		"",
 		"",
 		"[GraODJ]Gray()",
-		"https://tw.shp.ee/Xc5k9us",
+		"https://tw.shp.ee/UGnkDHTt",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2658,7 +2658,7 @@ const values$5 = [
 		"有效阻隔陽光與汗水",
 		"",
 		"[NavGGY]SteelBlue()",
-		"https://tw.shp.ee/Xc5k9us",
+		"https://tw.shp.ee/UGnkDHTt",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2687,7 +2687,7 @@ const values$5 = [
 		"騎車.登山.日常皆可使用",
 		"",
 		"[MidYAW]SteelBlue()",
-		"https://tw.shp.ee/QEWpwKM",
+		"https://tw.shp.ee/oWzHa2cA",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2716,7 +2716,7 @@ const values$5 = [
 		"騎車.登山.日常皆可使用",
 		"",
 		"[SilV5J]Silver()",
-		"https://tw.shp.ee/QEWpwKM",
+		"https://tw.shp.ee/oWzHa2cA",
 		"teosport-size-guide.html"
 	]
 ];
@@ -2933,7 +2933,7 @@ const values$3 = [
 		"掌部矽膠防滑設計，可增強抓握力，確保在所有路況下的操控穩定性與保護性。",
 		"特殊袖口貼合設計，確保手套能夠穩固貼合手部。",
 		"[Bla79U]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/hg5zmMK",
+		"https://tw.shp.ee/P9DLv7cV",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2962,7 +2962,7 @@ const values$3 = [
 		"掌部矽膠防滑設計，可增強抓握力，確保在所有路況下的操控穩定性與保護性。",
 		"特殊袖口貼合設計，確保手套能夠穩固貼合手部。",
 		"[DimIFT]DimGray(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/hg5zmMK",
+		"https://tw.shp.ee/P9DLv7cV",
 		"teosport-size-guide.html"
 	],
 	[
@@ -2991,7 +2991,7 @@ const values$3 = [
 		"採用特殊布料增強抗紫外線效果。",
 		"採用專為快速穿脫設計的彈力拉帶，拉帶位於手指關節區域。",
 		"[NavPJA]SteelBlue(,2XS,S,XS,M,L,XL,2XL)",
-		"https://tw.shp.ee/yuWvtPg",
+		"https://tw.shp.ee/Q5L993H1",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3020,7 +3020,7 @@ const values$3 = [
 		"採用特殊布料增強抗紫外線效果。",
 		"採用專為快速穿脫設計的彈力拉帶，拉帶位於手指關節區域。",
 		"[BlaVSK]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/yuWvtPg",
+		"https://tw.shp.ee/Q5L993H1",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3049,7 +3049,7 @@ const values$3 = [
 		"",
 		"",
 		"[Ste39P]SteelBlue(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/ZD2hXLV",
+		"https://tw.shp.ee/f5QCpTvQ",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3078,7 +3078,7 @@ const values$3 = [
 		"長指設計提供額外保護，適合登山車（MTB）或高速競速。",
 		"手掌採用特殊合成麂皮材質，更耐磨損。",
 		"[Bla24P]Black(,2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/4Y5NruB",
+		"https://tw.shp.ee/7Cwr6eBB",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3107,7 +3107,7 @@ const values$3 = [
 		"布料的優異彈性能夠緊密貼合各型鞋款。",
 		"特殊保護系統可防止拉鍊與皮膚摩擦造成不適。",
 		"[Bla8SS]Black()",
-		"https://tw.shp.ee/W48jNkE",
+		"https://tw.shp.ee/8KGoHge9",
 		"teosport-size-guide.html"
 	],
 	[
@@ -3136,7 +3136,7 @@ const values$3 = [
 		"保暖不悶熱",
 		"透氣排汗",
 		"[MidREF]SteelBlue()",
-		"https://tw.shp.ee/f8Wgi5C",
+		"https://tw.shp.ee/KaVLGaDV",
 		"teosport-size-guide.html"
 	]
 ];
@@ -4192,7 +4192,7 @@ const values$2 = [
 		"",
 		"",
 		"[LigVP0]LightGray(2XS,XS,M,L,S,XL);\n[LimIPA]Lime(2XS,XS,S,L,M);\n[MidWE9]MidnightBlue(2XS,XS,S,M,L,XL,2XL)",
-		"https://tw.shp.ee/idTXTSB",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-TENAX-PRO-%E5%A4%8F%E5%AD%A3%E8%BB%8A%E8%A1%A3%E8%BB%8A%E8%A4%B2-i.2352815.42757620464?extraParams=%7B%22display_model_id%22%3A218589729347%2C%22model_selection_logic%22%3A3%7D&sp_atk=2c75f10f-54da-48f3-9803-b0999b42e505&xptdk=2c75f10f-54da-48f3-9803-b0999b42e505",
 		"giordana-men-europeanfit-size-guide.html"
 	],
 	[
@@ -4221,7 +4221,7 @@ const values$2 = [
 		"",
 		"",
 		"[DeeTGU]DeepSkyBlue(,XS,S,L,M)",
-		"https://tw.shp.ee/YEmqAAX",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-FRC-PRO-%E5%A4%8F%E5%AD%A3%E7%9F%AD%E8%A2%96-i.2352815.43907321805?extraParams=%7B%22display_model_id%22%3A258595571519%2C%22model_selection_logic%22%3A3%7D&sp_atk=b2124199-2242-48ad-9ccf-6ea3115cd04b&xptdk=b2124199-2242-48ad-9ccf-6ea3115cd04b",
 		"giordana-men-racefit-size-guide.html"
 	],
 	[
@@ -4250,7 +4250,7 @@ const values$2 = [
 		"",
 		"",
 		"[DeeHXA]DeepSkyBlue(XS,S,M,XL,L)",
-		"https://tw.shp.ee/YEmqAAX",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-FRC-PRO-%E5%A4%8F%E5%AD%A3%E7%9F%AD%E8%A2%96-i.2352815.43907321805?extraParams=%7B%22display_model_id%22%3A258595571519%2C%22model_selection_logic%22%3A3%7D&sp_atk=b2124199-2242-48ad-9ccf-6ea3115cd04b&xptdk=b2124199-2242-48ad-9ccf-6ea3115cd04b",
 		"giordana-men-racefit-size-guide.html"
 	],
 	[
@@ -4279,7 +4279,7 @@ const values$2 = [
 		"",
 		"",
 		"[LawJ4E]LawnGreen(S,M,L,XL)",
-		"https://tw.shp.ee/fJZJWbx",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-NX-G-Air-%E5%A4%8F%E5%AD%A3%E7%9F%AD%E8%A2%96-i.2352815.42107326068?extraParams=%7B%22display_model_id%22%3A89203083969%2C%22model_selection_logic%22%3A3%7D&sp_atk=3d2c5609-4e75-4bff-9f5f-90dc3949543a&xptdk=3d2c5609-4e75-4bff-9f5f-90dc3949543a",
 		"giordana-men-racefit-size-guide.html"
 	],
 	[
@@ -4337,7 +4337,7 @@ const values$2 = [
 		"",
 		"",
 		"[WhiB74]White(XS,S,M,L,XL,2XS,2XL);\n[MidXI7]MidnightBlue(XS,S,M,L,XL,2XL,2XS);\n[Yel7AU]Yellow(XS,S,M,L,XL,2XS)",
-		"https://tw.shp.ee/xmnFr9n",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-VERO-PRO-MARE-%E5%A4%8F%E5%AD%A3%E7%9F%AD%E8%A2%96-i.2352815.27238168893?extraParams=%7B%22display_model_id%22%3A270564577485%2C%22model_selection_logic%22%3A3%7D&sp_atk=30d30fc6-b0ff-47a2-aabd-e216d877c7dc&xptdk=30d30fc6-b0ff-47a2-aabd-e216d877c7dc",
 		"giordana-men-europeanfit-size-guide.html"
 	],
 	[
@@ -4366,7 +4366,7 @@ const values$2 = [
 		"",
 		"",
 		"[Bla4ZS]Black(2XS,XS,M,S,L,XL,2XL);\n[BeiJNR]Beige(XL,L,S,M,XS,2XS);\n[Gre7S6]GreenYellow(2XS,XS,S,M,L,XL);\n[TeaW2M]Teal(,2XS,XS,S,L,M,XL)",
-		"https://tw.shp.ee/dA4QmhR",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-VERO-PRO-SPECTRUM-%E5%A4%8F%E5%AD%A3%E7%9F%AD%E8%A2%96-i.2352815.42807075148?extraParams=%7B%22display_model_id%22%3A270599435711%2C%22model_selection_logic%22%3A3%7D&sp_atk=f68ab76f-48e2-4d5d-b0c5-1e60d43609bd&xptdk=f68ab76f-48e2-4d5d-b0c5-1e60d43609bd",
 		"giordana-men-europeanfit-size-guide.html"
 	],
 	[
@@ -5236,7 +5236,7 @@ const values$2 = [
 		"最輕薄的布料與最少的剪裁，觸感如同第二層皮膚",
 		"在炙熱的夏天，給自己最好的",
 		"[BLK]Black(XL)",
-		"https://tw.shp.ee/VC6N6BW",
+		"https://shopee.tw/Bicycle-Line-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-%E5%87%BA%E6%B8%85%E5%83%B9-COMANDO-S2-%E9%A0%82%E7%B4%9A%E5%90%8A%E5%B8%B6%E7%9F%AD%E8%A4%B2-i.2352815.40825552732?extraParams=%7B%22display_model_id%22%3A267072119217%2C%22model_selection_logic%22%3A3%7D&sp_atk=b9fd5377-de4f-4913-9e54-8829676e02c6&xptdk=b9fd5377-de4f-4913-9e54-8829676e02c6",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
@@ -5671,7 +5671,7 @@ const values$2 = [
 		"",
 		"",
 		"[BlaOFN]Black(XS,M,S,L,XL)",
-		"https://tw.shp.ee/idTXTSB",
+		"https://shopee.tw/Giordana-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8~%E5%87%BA%E6%B8%85%E5%83%B9-TENAX-PRO-%E5%A4%8F%E5%AD%A3%E8%BB%8A%E8%A1%A3%E8%BB%8A%E8%A4%B2-i.2352815.42757620464?extraParams=%7B%22display_model_id%22%3A218589729347%2C%22model_selection_logic%22%3A3%7D&sp_atk=25a212b0-ab93-4816-bfa8-8e25e560e267&xptdk=25a212b0-ab93-4816-bfa8-8e25e560e267",
 		"giordana-men-racefit-size-guide.html"
 	],
 	[
@@ -8116,7 +8116,7 @@ const values$2 = [
 		"",
 		"",
 		"[DeeYOQ]DeepPink(M,L);\n[Bla0S1]Black()",
-		"https://tw.shp.ee/ouTfb5v",
+		"https://shopee.tw/ALE'%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-%E5%87%BA%E6%B8%85%E5%83%B9-ACCESSORI-Summer-Socks-%E8%BB%8A%E8%A5%AA-i.2352815.40625558537?extraParams=%7B%22display_model_id%22%3A297072836809%2C%22model_selection_logic%22%3A3%7D",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
@@ -8795,7 +8795,7 @@ const values$2 = [
 		"",
 		"",
 		"[Med09L]MediumVioletRed(S)",
-		"https://tw.shp.ee/BUNMUwA",
+		"https://shopee.tw/ALE-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-%E5%86%AC%E5%AD%A3~%E9%9B%B6%E7%A2%BC%E5%87%BA%E6%B8%85%E5%83%B9~%E5%A5%B3%E7%89%88PRR%E5%A4%96%E5%A5%97-i.2352815.40124916182?extraParams=%7B%22display_model_id%22%3A287019309642%2C%22model_selection_logic%22%3A3%7D&sp_atk=83e967d8-ddbb-434a-bd2c-16e6835b69bf&xptdk=83e967d8-ddbb-434a-bd2c-16e6835b69bf",
 		"ale-women-racefit-size-guide.html"
 	],
 	[
@@ -9114,7 +9114,7 @@ const values$2 = [
 		"",
 		"",
 		"[ChaVC8]GreenYellow(S)",
-		"https://tw.shp.ee/Z697gUA",
+		"https://shopee.tw/ALE-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-%E5%87%BA%E6%B8%85%E5%83%B9-%E5%86%AC%E5%AD%A3~%E8%96%84%E5%88%B7%E6%AF%9B%E8%BB%8A%E8%A1%A3(%E5%A5%B3)-(%E6%AD%90%E7%89%88)-i.2352815.29993145620?extraParams=%7B%22display_model_id%22%3A267019021419%2C%22model_selection_logic%22%3A3%7D",
 		"ale-women-europeanfit-size-guide.html"
 	],
 	[
@@ -9143,7 +9143,7 @@ const values$2 = [
 		"",
 		"",
 		"[HotCPR]HotPink(S,XS,M,XL);\n[DodF5B]RoyalBlue(2XS,XS,M,S);\n[OraNTB]OrangeRed(S,XS,L);\n[TurJC9]Turquoise(S,M)",
-		"https://tw.shp.ee/G4BVhvz",
+		"https://shopee.tw/ALE-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-%E5%86%AC%E5%AD%A3~%E9%9B%B6%E7%A2%BC%E5%87%BA%E6%B8%85%E5%83%B9~%E5%A5%B3%E7%89%88PRR-i.2352815.5116685073?extraParams=%7B%22display_model_id%22%3A165247692481%2C%22model_selection_logic%22%3A3%7D",
 		"ale-women-racefit-size-guide.html"
 	],
 	[
@@ -11423,7 +11423,7 @@ const values$1 = [
 		"不影響身體活動的多面結構",
 		"猶如車衣的高透氣",
 		"[GRY]SlateGray(s,m,l,xl);\n[BLK]Black(s,m,l,xl);",
-		"https://tw.shp.ee/ni5q7JM",
+		"https://tw.shp.ee/QWo2eXHM",
 		"ale-men-racefit-size-guide.html"
 	],
 	[
@@ -11685,7 +11685,7 @@ const values$1 = [
 		"三層外層防風防水布料",
 		"Primaloft 保暖棉",
 		"背部高透氣設計",
-		"[BLK]Black(2XS,M)",
+		"[BLK]Black(M)",
 		"https://shopee.tw/product/2352815/14945970758/",
 		"ale-men-europeanfit-size-guide.html"
 	],
@@ -11956,7 +11956,7 @@ const values$1 = [
 		"適合臺灣春秋冬季節",
 		"保暖、透氣",
 		"[YL]Yellow(m);",
-		"https://tw.shp.ee/VXFXU3h",
+		"https://tw.shp.ee/bjY9SrkV",
 		"ale-men-europeanfit-size-guide.html"
 	],
 	[
@@ -12078,7 +12078,7 @@ const values$1 = [
 		"彈性細刷毛布料",
 		"符合人體工學的簡約設計",
 		"",
-		"[BLK]Black(2XS,XS,2XL,3XL)",
+		"[BLK]Black(2XS,2XL)",
 		"https://shopee.tw/product/2352815/15619919677/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -12301,7 +12301,7 @@ const values$1 = [
 		"防潑水透氣布料",
 		"柔軟的刷毛內層",
 		"",
-		"[BLK]Black(s,m);",
+		"[BLK]Black(S)",
 		"https://shopee.tw/product/2352815/14837014300/",
 		"ale-men-racefit-size-guide.html"
 	],
@@ -12868,7 +12868,7 @@ const values = [
 		"",
 		"",
 		"[RedKZX]FireBrick(M)",
-		"https://tw.shp.ee/eMN2Cxo",
+		"https://tw.shp.ee/QkxzoSjt",
 		"met-road-helmet-size-guide.html"
 	],
 	[
@@ -12955,7 +12955,7 @@ const values = [
 		"",
 		"",
 		"[BluIAU]Blue()",
-		"https://tw.shp.ee/eMN2Cxo",
+		"https://tw.shp.ee/QkxzoSjt",
 		"met-road-helmet-size-guide.html"
 	],
 	[
