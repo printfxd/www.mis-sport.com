@@ -304,7 +304,7 @@ const values$6 = [
 		"貼身不束縛",
 		"",
 		"[SteM12]DarkBlue(S,M,L,XL,2XL,XS,2XS)",
-		"https://tw.shp.ee/pr3Z3kKq",
+		"https://shopee.tw/Bicycle-line-%E7%B8%BD%E4%BB%A3%E7%90%86%E5%85%AC%E5%8F%B8%E8%B2%A8-GIRO-DRAFT-(%E7%94%B7%E7%89%B9%E4%BB%95%E7%89%88)%E9%95%B7%E8%A2%96%E8%BB%8A%E8%A1%A3-i.2352815.28941947045?extraParams=%7B%22display_model_id%22%3A301678990016%2C%22model_selection_logic%22%3A3%7D",
 		"bicycle-line-men-racefit-size-guide.html"
 	],
 	[
