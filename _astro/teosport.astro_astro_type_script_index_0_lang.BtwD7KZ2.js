@@ -1,0 +1,1 @@
+import{t as e}from"./productlistsForAstro.Cp4JX8Iz.js";e.init(),document.addEventListener(`DOMContentLoaded`,()=>{jQuery(`.tabs`).selectorr({titleSelector:`h3`,delay:250})});
